@@ -662,13 +662,17 @@ class _PlanCardState extends State<_PlanCard>
               Icon(icon, size: 14, color: widget.tone),
               const SizedBox(width: 6),
             ],
-            Text(
-              text,
-              style: GoogleFonts.inter(
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
-                letterSpacing: -0.1,
-                color: widget.tone,
+            Flexible(
+              child: Text(
+                text,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: GoogleFonts.inter(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: -0.1,
+                  color: widget.tone,
+                ),
               ),
             ),
           ],
@@ -737,11 +741,20 @@ class _PlanCardState extends State<_PlanCard>
                   // Header
                   Row(
                     children: [
-                      Expanded(child: Text(widget.title, style: titleStyle)),
+                      Expanded(
+                        child: Text(
+                          widget.title,
+                          style: titleStyle,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
                       if (widget.badge != null)
-                        _isRecommended
-                            ? recommendedChip(widget.badge!)
-                            : baseChip(widget.badge!),
+                        Flexible(
+                          child: _isRecommended
+                              ? recommendedChip(widget.badge!)
+                              : baseChip(widget.badge!),
+                        ),
                     ],
                   ),
 
