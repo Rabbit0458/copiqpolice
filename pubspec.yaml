@@ -54,7 +54,6 @@ dependencies:
   # CODE-070 : export PDF de la copie corrigée (A4 + entête COP'IQ + watermark)
   pdf: ^3.11.1
   printing: ^5.13.4
-  purchases_flutter: ^10.9.0
   purchases_ui_flutter: ^10.9.0
 
 dev_dependencies:

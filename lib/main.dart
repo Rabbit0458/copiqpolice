@@ -30,7 +30,6 @@ import 'package:copiqpolice/features/home/abonnement_page.dart';
 import 'package:copiqpolice/features/home/premium_required_page.dart';
 import 'package:copiqpolice/features/home/payment_result_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
-import 'package:copiqpolice/core/services/revenuecat_payment_service.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
 import 'package:copiqpolice/core/services/ad_service.dart';
 import 'package:copiqpolice/core/services/deep_links_service.dart';
@@ -1808,20 +1807,6 @@ Future<void> _initBackend() async {
       debugPrint(
         '$_cyan[COP\'IQ] [ROUTES] ${RouteRegistry.routes.keys.toList()}$_rst',
       );
-    }
-
-    // RevenueCat (achats iOS/Android) — web garde Stripe, StoreKit/Play
-    // Billing n'existent pas dans un navigateur. Best-effort : une erreur ici
-    // ne doit pas empêcher le reste de l'app de démarrer.
-    if (!kIsWeb) {
-      try {
-        await RevenueCatPaymentService.instance.initialize();
-      } catch (e) {
-        if (kDebugMode) {
-          // ignore: avoid_print
-          debugPrint('$_red[COP\'IQ] [ERROR] Échec init RevenueCat: $e$_rst');
-        }
-      }
     }
 
     _backendReady.complete();

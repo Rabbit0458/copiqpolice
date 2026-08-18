@@ -257,14 +257,6 @@ class _AbonnementPageState extends State<AbonnementPage>
                 child: const Text("Résilier mon abonnement"),
               ),
 
-              if (!kIsWeb) ...[
-                const SizedBox(height: 12),
-                TextButton(
-                  onPressed: _restorePurchases,
-                  child: const Text("Restaurer mes achats"),
-                ),
-              ],
-
               const SizedBox(height: 22),
 
               // ================= GRATUIT =================
@@ -843,7 +835,7 @@ class _LegalFooter extends StatelessWidget {
           constraints: const BoxConstraints(maxWidth: 520),
           child: Text(
             "Les abonnements se renouvellent automatiquement sauf annulation au moins 24 h avant la fin de la période en cours. "
-            "${kIsWeb ? "Le paiement est traité de façon sécurisée par Stripe (carte bancaire), via un navigateur externe à l’app. " : "Le paiement est traité de façon sécurisée par l’App Store / Google Play. "}"
+            "Le paiement est traité de façon sécurisée par Stripe (carte bancaire), via un navigateur externe à l’app. "
             "Vous pouvez gérer ou annuler votre abonnement à tout moment depuis votre profil. "
             "L’annulation prend effet à la fin de la période en cours.",
             textAlign: TextAlign.center,
