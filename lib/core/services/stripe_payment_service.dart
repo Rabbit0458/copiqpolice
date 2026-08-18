@@ -27,7 +27,6 @@ import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'revenuecat_payment_service.dart';
 import 'subscription_service.dart';
 
 enum CopiqPlan { week, month, year }
@@ -105,13 +104,11 @@ extension CopiqPlanX on CopiqPlan {
   bool get highlighted => this == CopiqPlan.month;
 }
 
-/// Web : payé par Stripe Checkout (navigateur externe).
-/// Mobile (iOS/Android) : payé par In-App Purchase (App Store / Google Play),
-/// obligatoire pour le contenu numérique débloqué dans l'app (règle Apple
-/// 3.1.1) — ne jamais afficher une mention Stripe sur mobile, ce serait faux.
-String get kCopiqBillingLine => kIsWeb
-    ? 'Facturé par carte bancaire via Stripe (paiement sécurisé, navigateur externe)'
-    : 'Facturé via App Store / Google Play (renouvellement automatique)';
+/// Le paiement est traité par Stripe Checkout (navigateur externe), pas par
+/// l’IAP App Store / Google Play. Ne JAMAIS afficher "Facturé via App Store
+/// / Google Play / AppGallery" dans l’UI — c’est faux et trompeur.
+const String kCopiqBillingLine =
+    'Facturé par carte bancaire via Stripe (paiement sécurisé, navigateur externe)';
 
 class StripePaymentService {
   StripePaymentService._();
@@ -139,8 +136,6 @@ class StripePaymentService {
   /// Launches Stripe Checkout for [plan] in an external browser.
   /// On return (deep-link/app resume), [SubscriptionService.refresh] reconciles state.
   Future<StripeLaunchResult> startCheckout(CopiqPlan plan) async {
-    if (!kIsWeb) return RevenueCatPaymentService.instance.startCheckout(plan);
-
     HapticFeedback.lightImpact();
 
     if (_sb.auth.currentUser == null) {
@@ -184,8 +179,6 @@ class StripePaymentService {
 
   /// Opens the Stripe Customer Portal (manage billing / payment methods / cancel).
   Future<StripeLaunchResult> openPortal() async {
-    if (!kIsWeb) return RevenueCatPaymentService.instance.openPortal();
-
     if (_sb.auth.currentUser == null) {
       return StripeLaunchResult.failure('not_authenticated');
     }
@@ -218,8 +211,6 @@ class StripePaymentService {
   /// Cancels the active subscription at period end.
   /// Returns the period-end date (when access actually stops).
   Future<CancelResult> cancelAtPeriodEnd() async {
-    if (!kIsWeb) return RevenueCatPaymentService.instance.cancelAtPeriodEnd();
-
     if (_sb.auth.currentUser == null) {
       return const CancelResult(ok: false, reason: 'not_authenticated');
     }
@@ -253,14 +244,6 @@ class StripePaymentService {
       }
       return CancelResult(ok: false, reason: _reasonFromError(e));
     }
-  }
-
-  /// Restaure un achat In-App existant (obligatoire côté Apple/Google).
-  /// Sans équivalent Stripe web — Stripe n'a pas de notion de "restauration",
-  /// le paiement web est déjà lié au compte via le Customer Portal.
-  Future<StripeLaunchResult> restorePurchases() async {
-    if (!kIsWeb) return RevenueCatPaymentService.instance.restorePurchases();
-    return StripeLaunchResult.failure('unavailable_on_web');
   }
 
   // ── Internal ───────────────────────────────────────────────────────────

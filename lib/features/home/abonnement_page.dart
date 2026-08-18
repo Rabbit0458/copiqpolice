@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -80,26 +79,6 @@ class _AbonnementPageState extends State<AbonnementPage>
           "Le navigateur de paiement ne peut pas être ouvert sur cet appareil.",
         _ =>
           "Le paiement ne peut pas être ouvert pour le moment. Réessaie dans quelques secondes.",
-      };
-      _info(message);
-    }
-  }
-
-  Future<void> _restorePurchases() async {
-    final result = await StripePaymentService.instance.restorePurchases();
-    if (!mounted) return;
-    if (result.ok) {
-      AppNotifier.success(
-        context,
-        title: "Achats restaurés",
-        message: "Ton abonnement actif a été retrouvé et réappliqué.",
-      );
-    } else {
-      final message = switch (result.reason) {
-        'not_authenticated' =>
-          "Reconnecte-toi à ton compte avant de restaurer tes achats.",
-        _ =>
-          "Aucun achat actif retrouvé sur ce compte App Store / Google Play.",
       };
       _info(message);
     }
