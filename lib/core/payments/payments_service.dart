@@ -1,17 +1,14 @@
 // ╔═══════════════════════════════════════════════════════════════════════════╗
-// ║  COP'IQ — Cas Pratique — Payments service (Stripe + RevenueCat ready)     ║
+// ║  COP'IQ — Cas Pratique — Payments service (Stripe)                        ║
 // ║  Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-085             ║
+// ║  Setup : docs/cas_pratique/STRIPE_SETUP.md                                ║
 // ║                                                                           ║
+// ║  Stripe est le SEUL moteur de paiement de l'application.                  ║
 // ║  Façade légère sans dépendance externe forcée.                            ║
 // ║   • Lit le tier courant via la vue `cp_my_subscription` (CODE-084)        ║
 // ║   • Crée une Checkout Session via edge fn `cas_pratique_create_checkout`  ║
 // ║   • Ouvre l'URL Stripe Checkout dans le navigateur natif                  ║
 // ║   • Expose un état Listenable pour rebuild les widgets dépendants         ║
-// ║                                                                           ║
-// ║  Pour brancher RevenueCat plus tard (paywall iOS/Android natif) :        ║
-// ║   1. Ajouter purchases_flutter au pubspec                                 ║
-// ║   2. Créer CpRevenueCatPayments implements CpPaymentsInterface           ║
-// ║   3. Appeler CpPayments.I.bindImpl(myRevenueCat) au démarrage            ║
 // ║                                                                           ║
 // ║  Usage minimal :                                                          ║
 // ║   final tier = await CpPayments.I.refreshTier();                         ║
@@ -278,7 +275,9 @@ class CpPayments extends ChangeNotifier implements CpPaymentsInterface {
     }
   }
 
-  /// Permet de swap l'implémentation (ex: RevenueCat) plus tard.
+  /// Point d'extension pour swapper l'implémentation (tests, mocks).
+  /// Stripe reste le seul provider de production — ne pas brancher ici une
+  /// couche d'achat intégré sans arbitrage explicite (cf. STRIPE_SETUP.md §5).
   void bindImpl(CpPaymentsInterface impl) {
     _delegated = impl;
   }

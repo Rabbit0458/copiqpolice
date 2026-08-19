@@ -170,19 +170,23 @@ Après création du webhook :
 - [ ] Effectuer ensuite un remboursement de contrôle.
 - [ ] Activer les alertes sur les erreurs du webhook et les paiements échoués.
 
-## 9. Abonnements iOS et Android
+## 9. Conformité iOS et Android
 
-Cette partie est distincte de Stripe Checkout sur le web.
+**Décision projet (18/08/2026) : Stripe est le seul moteur de paiement.**
+Aucune couche d'achat intégré (RevenueCat, StoreKit, Play Billing) n'est
+présente dans le repo, et il ne faut pas en réintroduire sans arbitrage.
 
-- [ ] Intégrer RevenueCat ou une autre couche d'achats intégrés.
-- [ ] Ajouter le SDK Flutter nécessaire.
-- [ ] Créer les abonnements dans App Store Connect.
-- [ ] Créer les abonnements dans Google Play Console.
-- [ ] Configurer l'entitlement Premium commun.
-- [ ] Relier les identifiants des produits Apple et Google aux offres.
-- [ ] Configurer un webhook RevenueCat vers Supabase.
-- [ ] Faire écrire les achats mobiles dans la même source de vérité que Stripe.
-- [ ] Tester l'achat, la restauration et l'annulation sur les environnements de test Apple et Google.
+Point de vigilance : Apple (App Store Review Guidelines 3.1.1) et Google
+(Play Payments Policy) exigent leur propre facturation pour le contenu
+numérique consommé dans l'application. Le flux actuel ouvre Stripe Checkout
+dans le navigateur externe, ce qui peut motiver un rejet en soumission.
+
+- [ ] Arbitrer la stratégie de conformité avant soumission aux stores.
+- [ ] Option A — demander l'entitlement Apple `StoreKit External Purchase Link` (commission réduite, dépend de la juridiction).
+- [ ] Option B — ne pas exposer de CTA d'achat dans les builds iOS/Android, souscription depuis le web uniquement, l'app se contentant de lire l'entitlement.
+- [ ] Vérifier que le Premium acheté sur le web est bien reconnu sur mobile via `cp_my_subscription`.
+
+Détails et procédure : `docs/cas_pratique/STRIPE_SETUP.md` §5.
 
 ## 10. Définition de terminé
 
@@ -197,6 +201,48 @@ Les paiements pourront être considérés comme prêts uniquement lorsque :
 - [ ] les événements répétés ne provoquent aucun doublon ;
 - [ ] les prix, essais et conditions sont identiques partout ;
 - [ ] les tests Live et le remboursement de contrôle ont réussi.
+
+## Correction tarif annuel — 19/08/2026
+
+Ancien Price ID annuel (`price_1U0fS9B0KfG7vcB9W89zWMLw`, créé par erreur à
+86,99 €/**mois**) remplacé par le nouveau Price ID Stripe LIVE :
+
+- Price ID : `price_1U5xdbBEMUz8FsmjDzMTSDGv`
+- Lookup key : `copiq_premium_annual`
+- Vérifié en direct via l'API Stripe (compte `COP'IQ`, `livemode: true`) :
+  `active=true`, `currency=eur`, `recurring.interval=year`,
+  `unit_amount=8699` — tout correct.
+
+Audit du code : aucune référence en dur à un `price_...` nulle part dans le
+dépôt (Web, Edge Functions, Flutter) — l'architecture utilise déjà
+`STRIPE_PRICE_WEEK` / `STRIPE_PRICE_MONTH` / `STRIPE_PRICE_YEAR` en variables
+d'environnement centralisées (Vercel + secrets Edge Functions Supabase), donc
+aucun remplacement dispersé n'était nécessaire. Seul bug de code trouvé et
+corrigé : `admin_subscriptions_overview()` comparait `stripe_price_id` à un
+GUC Postgres (`app.settings.stripe_price_year`) jamais configurable sur
+Supabase managé (permission refusée sur `ALTER DATABASE ... SET`) — tout
+abonné annuel s'affichait donc "month" dans le panel admin. Remplacé par une
+comparaison directe au Price ID réel
+(`supabase/migrations/20260819130000_stripe_annual_price_correction.sql`).
+
+L'ancien Price ID n'existe qu'en **mode test** sur Stripe ("No such price" en
+live) — la seule ligne DB qui le référence est un abonnement déjà `canceled`
+(historique, non modifié, conformément à la règle de ne jamais réécrire
+l'historique de facturation).
+
+**⚠️ Action requise hors de portée des outils disponibles ici** — à faire
+manuellement :
+
+- [ ] Mettre à jour `STRIPE_PRICE_YEAR=price_1U5xdbBEMUz8FsmjDzMTSDGv` dans
+      Vercel (copiq-web).
+- [ ] Mettre à jour `STRIPE_PRICE_YEAR=price_1U5xdbBEMUz8FsmjDzMTSDGv` dans
+      les secrets Edge Functions Supabase (`supabase secrets set`).
+- [ ] **Vérifier que `STRIPE_SECRET_KEY` (Vercel + Supabase) est bien la clé
+      LIVE (`sk_live_...`)** — ce Price ID est en mode live ; une clé secrète
+      encore en mode test ne pourra pas le résoudre et le Checkout échouera
+      (`No such price` côté serveur). D'après ce document, la configuration
+      était encore en test au 18/08 — à confirmer avant de considérer la
+      tâche terminée.
 
 ## Notes de reprise
 

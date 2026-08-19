@@ -25,10 +25,16 @@ dependencies:
   particles_flutter: ^2.0.2
   vibration: ^3.1.8
   device_info_plus: 12.3.0
-  flutter_localization: ^0.4.1
+  # flutter_localization (package tiers, singulier) retiré le 2026-08-18 :
+  #   • aucun fichier .dart du projet ne l'importait
+  #   • son android/build.gradle.kts 0.4.1 casse la build Android
+  #     (bloc `kotlin { compilerOptions { } }` sans accesseur généré)
+  # La localisation passe par flutter_localizations (SDK Flutter) + intl,
+  # déclarés plus haut. Ne pas le réintroduire sans vérifier sa build Gradle.
   hive: ^2.2.3
   audioplayers: ^6.6.0
-  lib: ^0.3.0
+  # `lib` (package tiers) retiré le 2026-08-18 : aucun `import 'package:lib/...'`
+  # dans le projet. Dart pur, sans code natif, donc sans impact sur la build.
   package_info_plus: 9.0.1
   lottie: ^3.3.3
   flutter_animate: ^4.5.2
@@ -54,6 +60,8 @@ dependencies:
   # CODE-070 : export PDF de la copie corrigée (A4 + entête COP'IQ + watermark)
   pdf: ^3.11.1
   printing: ^5.13.4
+  # Centre juridique : rendu Markdown des documents légaux (Supabase CMS)
+  flutter_markdown_plus: ^1.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

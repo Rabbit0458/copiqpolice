@@ -6,6 +6,12 @@
       "runtimeExecutable": "pnpm",
       "runtimeArgs": ["--dir", "copiq-web", "dev"],
       "port": 3000
+    },
+    {
+      "name": "copiq-flutter-web",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "serve", "-s", "build/web", "-l", "5050"],
+      "port": 5050
     }
   ]
 }

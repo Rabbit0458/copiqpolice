@@ -1073,8 +1073,20 @@ export interface CommunitySanction {
   revoked_at: string | null;
   imposed_by: string;
   revoked_by: string | null;
+  /** Ajoutés par la migration 20260818120000 — peuvent être absents si elle n'est pas appliquée. */
+  imposed_by_email?: string | null;
+  revoked_by_email?: string | null;
+  space_label?: string | null;
 }
 
+/**
+ * Dossier utilisateur renvoyé par `community_admin_user_detail`.
+ *
+ * Les champs marqués optionnels sont ceux ajoutés par la migration
+ * 20260818120000. L'interface reste donc compatible avec l'ancienne version
+ * de la fonction : la page dégrade proprement si la migration n'est pas encore
+ * appliquée en production.
+ */
 export interface CommunityAdminUserDetail {
   profile: {
     user_id: string;
@@ -1089,11 +1101,39 @@ export interface CommunityAdminUserDetail {
     user_mode: string | null;
     created_at: string;
     updated_at: string;
+    phone?: string | null;
+    birthday?: string | null;
+    has_passed_exam?: boolean | null;
+    cgv_accepted?: boolean | null;
+    cgv_accepted_at?: string | null;
+  };
+  settings?: {
+    locale?: string | null;
+    theme_dark?: boolean | null;
+    onboarding_done_at?: string | null;
+    updated_at?: string | null;
+  };
+  community_profile?: {
+    bio?: string | null;
+    show_activity?: boolean | null;
+    show_joined_at?: boolean | null;
+    show_spaces?: boolean | null;
+    show_display_name?: boolean | null;
+    created_at?: string | null;
+  };
+  staff?: {
+    role?: string | null;
+    disabled?: boolean | null;
+    last_admin_login_at?: string | null;
+    expires_at?: string | null;
   };
   subscription: {
     plan?: string;
     status?: string;
+    current_period_start?: string | null;
     current_period_end?: string;
+    created_at?: string | null;
+    updated_at?: string | null;
   };
   activity: {
     posts: number;
@@ -1101,8 +1141,194 @@ export interface CommunityAdminUserDetail {
     messages: number;
     reports_received: number;
     reports_sent: number;
+    posts_visible?: number;
+    comments_visible?: number;
+    rooms?: number;
+    reactions_given?: number;
+    reports_open?: number;
+    sanctions_total?: number;
+    sanctions_active?: number;
+    quiz_answers?: number;
+    psy_tests?: number;
+    cp_attempts?: number;
+    invoices?: number;
   };
+  quiz_summary?: {
+    answers?: number;
+    correct?: number;
+    wrong?: number;
+    accuracy?: number | null;
+    modules?: number;
+    first_at?: string | null;
+    last_at?: string | null;
+  };
+  cp_progress?: {
+    cases_started?: number;
+    cases_finished?: number;
+    total_attempts?: number;
+    avg_score_percent?: number | null;
+    best_score_percent?: number | null;
+    last_attempt_at?: string | null;
+    streak_days?: number;
+  };
+  last_activity?: string | null;
   sanctions: CommunitySanction[];
+}
+
+/* ---- Sous-listes paginées du dossier utilisateur ------------------------- */
+
+export interface CommunityUserPost {
+  id: string;
+  space_id: string | null;
+  space_label: string | null;
+  category_label: string | null;
+  type: string | null;
+  title: string | null;
+  content: string | null;
+  status: string;
+  is_pinned: boolean;
+  is_resolved: boolean;
+  reaction_count: number;
+  comment_count: number;
+  share_count: number;
+  view_count: number;
+  created_at: string;
+  edited_at: string | null;
+  deleted_at: string | null;
+  reports_count: number;
+  total_count: number;
+}
+
+export interface CommunityUserComment {
+  id: string;
+  post_id: string | null;
+  post_title: string | null;
+  space_id: string | null;
+  space_label: string | null;
+  content: string | null;
+  status: string;
+  is_solution: boolean;
+  reaction_count: number;
+  reply_count: number;
+  created_at: string;
+  edited_at: string | null;
+  deleted_at: string | null;
+  is_reply: boolean;
+  reports_count: number;
+  total_count: number;
+}
+
+export interface CommunityUserMessage {
+  id: string;
+  room_id: string | null;
+  room_title: string | null;
+  room_kind: string | null;
+  space_id: string | null;
+  space_label: string | null;
+  type: string | null;
+  status: string;
+  content_length: number;
+  /** Renseigné uniquement si le message est une pièce d'un signalement. */
+  disclosed_content: string | null;
+  is_evidence: boolean;
+  created_at: string;
+  edited_at: string | null;
+  deleted_at: string | null;
+  total_count: number;
+}
+
+export interface CommunityUserReport {
+  id: string;
+  direction: "received" | "sent";
+  space_id: string | null;
+  space_label: string | null;
+  target_type: string | null;
+  target_id: string | null;
+  reason: string;
+  details: string | null;
+  status: string;
+  priority: string | null;
+  resolution: string | null;
+  reporter_id: string | null;
+  reporter_email: string | null;
+  subject_user_id: string | null;
+  subject_email: string | null;
+  assigned_to: string | null;
+  assigned_email: string | null;
+  created_at: string;
+  acknowledged_at: string | null;
+  resolved_at: string | null;
+  appealed_at: string | null;
+  total_count: number;
+}
+
+export interface CommunityUserQuizModule {
+  track: string | null;
+  mode: string | null;
+  module_key: string | null;
+  answers: number;
+  correct: number;
+  wrong: number;
+  accuracy: number | null;
+  avg_response_ms: number | null;
+  first_at: string | null;
+  last_at: string | null;
+}
+
+export interface CommunityUserQuizAnswer {
+  id: string;
+  track: string | null;
+  mode: string | null;
+  module_key: string | null;
+  quiz_key: string | null;
+  question_text: string | null;
+  user_answer: string | null;
+  correct_answer: string | null;
+  is_correct: boolean | null;
+  difficulty: string | null;
+  response_time_ms: number | null;
+  answered_at: string;
+  total_count: number;
+}
+
+export interface CommunityUserBilling {
+  subscriptions: {
+    id: string;
+    plan: string | null;
+    status: string | null;
+    current_period_start: string | null;
+    current_period_end: string | null;
+    created_at: string | null;
+    updated_at: string | null;
+  }[];
+  invoices: {
+    id: string;
+    invoice_number: string | null;
+    amount_cents: number | null;
+    currency: string | null;
+    status: string | null;
+    plan: string | null;
+    period_start: string | null;
+    period_end: string | null;
+    created_at: string | null;
+    paid_at: string | null;
+    due_at: string | null;
+  }[];
+  events: {
+    id: number;
+    event_type: string | null;
+    created_at: string | null;
+    processed_at: string | null;
+  }[];
+}
+
+export interface CommunityUserTimelineEvent {
+  occurred_at: string;
+  kind: string;
+  label: string;
+  detail: string | null;
+  ref_type: string | null;
+  ref_id: string | null;
 }
 
 export const communityUsersApi = {
@@ -1151,5 +1377,96 @@ export const communityUsersApi = {
     rpc<void>("community_admin_revoke_sanction", {
       p_sanction_id: sanctionId,
       p_reason: reason,
+    }),
+
+  /* ---- Sous-listes du dossier (migration 20260818120000) ---------------- */
+
+  posts: (
+    userId: string,
+    opts: {
+      search?: string;
+      status?: string;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
+    rpc<CommunityUserPost[]>("community_admin_user_posts", {
+      p_user_id: userId,
+      p_search: opts.search || null,
+      p_status: opts.status || null,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  comments: (
+    userId: string,
+    opts: {
+      search?: string;
+      status?: string;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
+    rpc<CommunityUserComment[]>("community_admin_user_comments", {
+      p_user_id: userId,
+      p_search: opts.search || null,
+      p_status: opts.status || null,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  messages: (
+    userId: string,
+    opts: { limit?: number; offset?: number } = {},
+  ) =>
+    rpc<CommunityUserMessage[]>("community_admin_user_messages", {
+      p_user_id: userId,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  reports: (
+    userId: string,
+    opts: {
+      direction?: "received" | "sent";
+      status?: string;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
+    rpc<CommunityUserReport[]>("community_admin_user_reports", {
+      p_user_id: userId,
+      p_direction: opts.direction ?? "received",
+      p_status: opts.status || null,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  quizSummary: (userId: string) =>
+    rpc<CommunityUserQuizModule[]>("community_admin_user_quiz_summary", {
+      p_user_id: userId,
+    }),
+
+  quiz: (
+    userId: string,
+    opts: { module?: string; limit?: number; offset?: number } = {},
+  ) =>
+    rpc<CommunityUserQuizAnswer[]>("community_admin_user_quiz", {
+      p_user_id: userId,
+      p_module: opts.module || null,
+      p_limit: opts.limit ?? 25,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  billing: (userId: string) =>
+    rpc<CommunityUserBilling>("community_admin_user_billing", {
+      p_user_id: userId,
+    }),
+
+  timeline: (userId: string, opts: { limit?: number; offset?: number } = {}) =>
+    rpc<CommunityUserTimelineEvent[]>("community_admin_user_timeline", {
+      p_user_id: userId,
+      p_limit: opts.limit ?? 40,
+      p_offset: opts.offset ?? 0,
     }),
 };

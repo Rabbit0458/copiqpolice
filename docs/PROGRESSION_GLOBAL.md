@@ -291,12 +291,12 @@ Le paiement Stripe et la suppression RGPD sont donc **bien en production**, sous
 ## 💰 PHASE I — Monétisation & Business (très avancé)
 
 - [x] **I-01** Paywall + tiers ✅ (CODE-084)
-- [x] **I-02** Stripe + RevenueCat ✅ (CODE-085)
+- [x] **I-02** Stripe ✅ (CODE-085) — provider unique, RevenueCat retiré du repo le 18/08/2026
 - [x] **I-03** Tarification 3 plans ✅ (CODE-086)
 - [x] **I-04** Codes promo ✅ (CODE-087)
 - [x] **I-05** Dashboard business ✅ (CODE-088)
 - [x] **I-06** **Wiring final côté app** ✅ vérifié 26/07 — `stripe_payment_service.dart` appelle bien les edge functions Stripe déployées. Reste : test réel en sandbox (nécessite un device, non faisable ici)
-- [ ] **I-07** **Tests RevenueCat sandbox iOS + Android** avant submission stores — nécessite un device, non faisable ici
+- [ ] **I-07** **Arbitrer la conformité stores** (Apple 3.1.1 / Google Play Payments) avant submission — Stripe Checkout en navigateur externe peut motiver un rejet. Options dans `docs/cas_pratique/STRIPE_SETUP.md` §5
 - [x] **I-08** **Page abonnement utilisateur** ✅ vérifié 26/07 — `abonnement_page.dart` + `facture_page.dart` + `annulation_conditions_page.dart`
 - [ ] **I-09** **Webhook Slack new-sub** ✅ existe — vérifier que ça part bien en prod
 
@@ -448,7 +448,7 @@ Le paiement Stripe et la suppression RGPD sont donc **bien en production**, sous
 
 1. **`flutter analyze` + `flutter test` + device réel** — non exécutable dans cet environnement, à faire par Kaïs
 2. **J-05 + J-06** — Soumissions App Store + Google Play → débloque la release
-3. **I-07** — Tests RevenueCat sandbox iOS + Android → nécessite un device
+3. **I-07** — Arbitrer la conformité stores (Apple 3.1.1 / Google Play Payments) → cf. `docs/cas_pratique/STRIPE_SETUP.md` §5
 4. **M-09** — Smoke test sur 10 devices physiques
 5. **C-31 + C-32** — Compléter Réserve + PA Exam → tracks encore quasi vides
 6. **C-06** — Module Annales (placeholder non codé)

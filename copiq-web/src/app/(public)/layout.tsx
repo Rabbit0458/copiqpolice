@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-import Link from "next/link"
-import { ThemeToggle } from "@/components/ui/theme-toggle"
-import { ConsentLink } from "@/components/cookie-banner"
-import { SmoothScrollProvider } from "@/animations/smooth-scroll-provider"
-=======
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { ConsentLink } from "@/components/cookie-banner";
->>>>>>> 73f199b (Mise à jour COP'IQ)
+import { SmoothScrollProvider } from "@/animations/smooth-scroll-provider";
 
 export default function PublicLayout({
   children,
@@ -149,10 +143,6 @@ export default function PublicLayout({
         </div>
       </footer>
     </div>
-<<<<<<< HEAD
     </SmoothScrollProvider>
-  )
-=======
   );
->>>>>>> 73f199b (Mise à jour COP'IQ)
 }

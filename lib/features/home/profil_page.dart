@@ -31,6 +31,7 @@ import 'package:copiqpolice/features/home/information_page.dart';
 import 'package:copiqpolice/features/home/facture_page.dart';
 import 'package:copiqpolice/features/home/user_page.dart';
 import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
+import 'package:copiqpolice/legal/legal_center_page.dart';
 
 // <-- Logger centralisé (fourni par toi)
 import 'package:copiqpolice/core/services/app_console_logger.dart';
@@ -757,7 +758,8 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                   width: double.infinity,
                   height: 56,
                   child: ElevatedButton(
-                    onPressed: (_saving || _checkingUsername || _usernameError != null)
+                    onPressed:
+                        (_saving || _checkingUsername || _usernameError != null)
                         ? null
                         : _save,
                     style: ElevatedButton.styleFrom(
@@ -832,7 +834,7 @@ class _ProfilPageState extends State<ProfilPage> {
   static const double kMaxGrid = 220;
   static const double kMinAvatarZoom = 1.0;
   static const double kMaxAvatarZoom = 2.25;
-  static const double kDefaultAvatarRadius = 76;
+  static const double kDefaultAvatarRadius = 52;
   static const double kDefaultGrid = 160;
   static const double kDefaultAvatarZoom = 1.71;
 
@@ -1155,7 +1157,7 @@ class _ProfilPageState extends State<ProfilPage> {
     final displayName = fullName.isEmpty
         ? (_username.text.isEmpty ? 'Mon profil' : _username.text)
         : fullName;
-    final double headerHeight = math.max(260, _avatarRadius * 2 + 120);
+    final double headerHeight = math.max(180, _avatarRadius * 2 + 90);
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -1163,248 +1165,294 @@ class _ProfilPageState extends State<ProfilPage> {
         children: [
           GestureDetector(
             onTap: () => FocusScope.of(context).unfocus(),
-            child: ListView(
-              padding: const EdgeInsets.fromLTRB(20, 68, 20, 24),
-              physics: const BouncingScrollPhysics(),
-              children: [
-                // Header
-                ConstrainedBox(
-                  constraints: BoxConstraints(minHeight: headerHeight),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: _avatarRadius * 2 + 6,
-                        height: _avatarRadius * 2 + 6,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(color: _primary, width: 2),
+            // Le shell (home_page.dart) utilise Scaffold(extendBody: true) :
+            // le body s'étend TOUJOURS derrière la barre flottante, même sans
+            // scroll. Un padding interne à la ListView ne change que la zone
+            // scrollable, pas la zone visible — ça ne suffit pas à empêcher
+            // le dernier élément d'apparaître sous la barre au repos. Il faut
+            // réduire la hauteur du viewport lui-même (Padding EXTÉRIEUR à la
+            // ListView) pour que son bord bas s'arrête toujours au-dessus de
+            // la barre, quels que soient la taille de barre choisie par
+            // l'utilisateur (Paramètres) et la safe area de l'appareil.
+            child: ValueListenableBuilder<double>(
+              valueListenable: AppSettingsController.I.bottomBarHeight,
+              builder: (context, navBarHeight, _) => Padding(
+                padding: EdgeInsets.only(
+                  bottom:
+                      navBarHeight + 24 + MediaQuery.of(context).padding.bottom,
+                ),
+                child: ListView(
+                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
+                  physics: const BouncingScrollPhysics(),
+                  children: [
+                    // Header
+                    ConstrainedBox(
+                      constraints: BoxConstraints(minHeight: headerHeight),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: _avatarRadius * 2 + 6,
+                            height: _avatarRadius * 2 + 6,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: _primary, width: 2),
+                            ),
+                            child: Center(
+                              child: CircleAvatar(
+                                radius: _avatarRadius,
+                                backgroundColor: Theme.of(context).cardColor,
+                                child: _AvatarImage(
+                                  index: _avatarIndex,
+                                  radius: _avatarRadius,
+                                  zoom: _avatarZoom,
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          ValueListenableBuilder<Entitlement>(
+                            valueListenable: EntitlementService.instance.state,
+                            builder: (context, entitlement, _) {
+                              return Row(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      displayName,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .titleMedium
+                                          ?.copyWith(
+                                            fontWeight: FontWeight.w800,
+                                          ),
+                                    ),
+                                  ),
+                                  if (entitlement.badgeType !=
+                                      UserBadgeType.none) ...[
+                                    const SizedBox(width: 5),
+                                    UserVerificationBadge(
+                                      type: entitlement.badgeType,
+                                      size: 17,
+                                    ),
+                                  ],
+                                ],
+                              );
+                            },
+                          ),
+                          const SizedBox(height: 4),
+                          if (_username.text.isNotEmpty)
+                            Text(
+                              '@${_username.text}',
+                              style: Theme.of(context).textTheme.bodySmall
+                                  ?.copyWith(
+                                    color: Theme.of(context).hintColor,
+                                  ),
+                            ),
+                          const SizedBox(height: 10),
+                          SizedBox(
+                            height: 40,
+                            child: OutlinedButton.icon(
+                              onPressed: () async {
+                                await Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) => EditProfilePage(
+                                      primary: _primary,
+                                      avatarIndex: _avatarIndex,
+                                      avatarZoom: _avatarZoom,
+                                      gridIcon: _gridIcon,
+                                      name: displayName,
+                                      birthDate: _birthDate,
+                                      onPickAvatar: _openAvatarPicker,
+                                      getCurrentAvatarIndex: () => _avatarIndex,
+                                      getCurrentAvatarZoom: () => _avatarZoom,
+                                      onSaveImmediate: (name, bdate) async {
+                                        final parts = name.trim().split(
+                                          RegExp(r'\s+'),
+                                        );
+                                        final fn = parts.isEmpty
+                                            ? ''
+                                            : parts.first;
+                                        final ln = parts.length > 1
+                                            ? parts.sublist(1).join(' ')
+                                            : '';
+                                        await _saveAll(
+                                          firstName: fn,
+                                          lastName: ln,
+                                          city: _city.text,
+                                          phone: _phone.text,
+                                          username: _username.text.isEmpty
+                                              ? 'user_${_sb.auth.currentUser!.id.substring(0, 8)}'
+                                              : _username.text,
+                                          avatarIndex: _avatarIndex,
+                                          birthday: bdate ?? _birthDate,
+                                        );
+                                      },
+                                      onSliderChanged: (r, z, g) async {
+                                        setState(() {
+                                          _avatarRadius = r;
+                                          _avatarZoom = z;
+                                          _gridIcon = g;
+                                        });
+                                        final sp =
+                                            await SharedPreferences.getInstance();
+                                        await sp.setDouble(
+                                          'profile_avatar_radius',
+                                          r,
+                                        );
+                                        await sp.setDouble(
+                                          'profile_avatar_zoom',
+                                          z,
+                                        );
+                                        await sp.setDouble(
+                                          'profile_grid_icon_size',
+                                          g,
+                                        );
+                                      },
+                                    ),
+                                  ),
+                                );
+                              },
+                              icon: const Icon(
+                                Icons.edit_note_rounded,
+                                size: 18,
+                              ),
+                              label: const Text('Modifier le profil'),
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: _ink(context),
+                                side: BorderSide(
+                                  color: Theme.of(
+                                    context,
+                                  ).dividerColor.withValues(alpha: .35),
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                backgroundColor: Theme.of(
+                                  context,
+                                ).colorScheme.surface,
+                                textStyle: const TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    const SizedBox(height: 10),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 4),
+                        child: Text(
+                          'Joined $_joinedText',
+                          style: Theme.of(context).textTheme.bodySmall
+                              ?.copyWith(
+                                fontSize: 12,
+                                color: Theme.of(context).hintColor,
+                              ),
                         ),
-                        child: Center(
-                          child: CircleAvatar(
-                            radius: _avatarRadius,
-                            backgroundColor: Theme.of(context).cardColor,
-                            child: _AvatarImage(
-                              index: _avatarIndex,
-                              radius: _avatarRadius,
-                              zoom: _avatarZoom,
+                      ),
+                    ),
+
+                    const SizedBox(height: 14),
+
+                    _SettingsCard(
+                      children: [
+                        _SettingsTile(
+                          icon: Icons.workspace_premium_outlined,
+                          title: 'Abonnement',
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const AbonnementPage(),
                             ),
                           ),
                         ),
-                      ),
-                      const SizedBox(height: 10),
-                      ValueListenableBuilder<Entitlement>(
-                        valueListenable: EntitlementService.instance.state,
-                        builder: (context, entitlement, _) {
-                          return Row(
-                            mainAxisSize: MainAxisSize.min,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Flexible(
-                                child: Text(
-                                  displayName,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: Theme.of(context).textTheme.titleMedium
-                                      ?.copyWith(fontWeight: FontWeight.w800),
-                                ),
-                              ),
-                              if (entitlement.badgeType != UserBadgeType.none) ...[
-                                const SizedBox(width: 5),
-                                UserVerificationBadge(
-                                  type: entitlement.badgeType,
-                                  size: 17,
-                                ),
-                              ],
-                            ],
+                        _SettingsTile(
+                          icon: Icons.settings_outlined,
+                          title: 'Paramètres',
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const ParametreHomePage(),
+                            ),
+                          ),
+                        ),
+                        _SettingsTile(
+                          icon: Icons.receipt_long_outlined,
+                          title: 'Facturation',
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const FacturePage(),
+                            ),
+                          ),
+                        ),
+                        _SettingsTile(
+                          icon: Icons.group_outlined,
+                          title: 'Mon compte',
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const UserPage()),
+                          ),
+                        ),
+                        _SettingsTile(
+                          icon: Icons.info_outline_rounded,
+                          title: 'Information',
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const InformationPage(),
+                            ),
+                          ),
+                        ),
+                        _SettingsTile(
+                          icon: Icons.shield_outlined,
+                          title: 'Informations légales',
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => const LegalCenterPage(),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const SizedBox(height: 12),
+
+                    SizedBox(
+                      height: 48,
+                      child: ElevatedButton.icon(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFE53935),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(14),
+                          ),
+                          elevation: 0,
+                        ),
+                        onPressed: () async {
+                          await AppConsoleLogger.info(
+                            'auth:sign_out_initiated',
+                          );
+                          final sp = await SharedPreferences.getInstance();
+                          await sp.remove('first_time_welcome_shown');
+                          await _sb.auth.signOut();
+                          if (!mounted) return;
+                          Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(
+                              builder: (_) => const OnboardingScreen(),
+                            ),
+                            (route) => false,
                           );
                         },
-                      ),
-                      const SizedBox(height: 4),
-                      if (_username.text.isNotEmpty)
-                        Text(
-                          '@${_username.text}',
-                          style: Theme.of(context).textTheme.bodySmall
-                              ?.copyWith(color: Theme.of(context).hintColor),
-                        ),
-                      const SizedBox(height: 10),
-                      SizedBox(
-                        height: 40,
-                        child: OutlinedButton.icon(
-                          onPressed: () async {
-                            await Navigator.of(context).push(
-                              MaterialPageRoute(
-                                builder: (_) => EditProfilePage(
-                                  primary: _primary,
-                                  avatarIndex: _avatarIndex,
-                                  avatarZoom: _avatarZoom,
-                                  gridIcon: _gridIcon,
-                                  name: displayName,
-                                  birthDate: _birthDate,
-                                  onPickAvatar: _openAvatarPicker,
-                                  getCurrentAvatarIndex: () => _avatarIndex,
-                                  getCurrentAvatarZoom: () => _avatarZoom,
-                                  onSaveImmediate: (name, bdate) async {
-                                    final parts = name.trim().split(
-                                      RegExp(r'\s+'),
-                                    );
-                                    final fn = parts.isEmpty ? '' : parts.first;
-                                    final ln = parts.length > 1
-                                        ? parts.sublist(1).join(' ')
-                                        : '';
-                                    await _saveAll(
-                                      firstName: fn,
-                                      lastName: ln,
-                                      city: _city.text,
-                                      phone: _phone.text,
-                                      username: _username.text.isEmpty
-                                          ? 'user_${_sb.auth.currentUser!.id.substring(0, 8)}'
-                                          : _username.text,
-                                      avatarIndex: _avatarIndex,
-                                      birthday: bdate ?? _birthDate,
-                                    );
-                                  },
-                                  onSliderChanged: (r, z, g) async {
-                                    setState(() {
-                                      _avatarRadius = r;
-                                      _avatarZoom = z;
-                                      _gridIcon = g;
-                                    });
-                                    final sp =
-                                        await SharedPreferences.getInstance();
-                                    await sp.setDouble(
-                                      'profile_avatar_radius',
-                                      r,
-                                    );
-                                    await sp.setDouble(
-                                      'profile_avatar_zoom',
-                                      z,
-                                    );
-                                    await sp.setDouble(
-                                      'profile_grid_icon_size',
-                                      g,
-                                    );
-                                  },
-                                ),
-                              ),
-                            );
-                          },
-                          icon: const Icon(Icons.edit_note_rounded, size: 18),
-                          label: const Text('Modifier le profil'),
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: _ink(context),
-                            side: BorderSide(
-                              color: Theme.of(
-                                context,
-                              ).dividerColor.withValues(alpha: .35),
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            backgroundColor: Theme.of(
-                              context,
-                            ).colorScheme.surface,
-                            textStyle: const TextStyle(
-                              fontWeight: FontWeight.w700,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                const SizedBox(height: 16),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 4),
-                    child: Text(
-                      'Joined $_joinedText',
-                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        fontSize: 12,
-                        color: Theme.of(context).hintColor,
-                      ),
-                    ),
-                  ),
-                ),
-
-                const SizedBox(height: 24),
-
-                _SettingsCard(
-                  children: [
-                    _SettingsTile(
-                      icon: Icons.workspace_premium_outlined,
-                      title: 'Abonnement',
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const AbonnementPage()),
-                      ),
-                    ),
-                    _SettingsTile(
-                      icon: Icons.settings_outlined,
-                      title: 'Paramètres',
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ParametreHomePage(),
-                        ),
-                      ),
-                    ),
-                    _SettingsTile(
-                      icon: Icons.receipt_long_outlined,
-                      title: 'Facturation',
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const FacturePage()),
-                      ),
-                    ),
-                    _SettingsTile(
-                      icon: Icons.group_outlined,
-                      title: 'Mon compte',
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => const UserPage()),
-                      ),
-                    ),
-                    _SettingsTile(
-                      icon: Icons.info_outline_rounded,
-                      title: 'Information',
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const InformationPage(),
-                        ),
+                        icon: const Icon(Icons.logout_rounded),
+                        label: const Text('Déconnexion'),
                       ),
                     ),
                   ],
                 ),
-
-                const SizedBox(height: 12),
-
-                SizedBox(
-                  height: 48,
-                  child: ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFE53935),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
-                      ),
-                      elevation: 0,
-                    ),
-                    onPressed: () async {
-                      await AppConsoleLogger.info('auth:sign_out_initiated');
-                      final sp = await SharedPreferences.getInstance();
-                      await sp.remove('first_time_welcome_shown');
-                      await _sb.auth.signOut();
-                      if (!mounted) return;
-                      Navigator.of(context).pushAndRemoveUntil(
-                        MaterialPageRoute(
-                          builder: (_) => const OnboardingScreen(),
-                        ),
-                        (route) => false,
-                      );
-                    },
-                    icon: const Icon(Icons.logout_rounded),
-                    label: const Text('Déconnexion'),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
 

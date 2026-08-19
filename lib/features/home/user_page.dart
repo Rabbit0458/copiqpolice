@@ -124,6 +124,9 @@ class _UserPageState extends State<UserPage> with WidgetsBindingObserver {
           'Toutes tes données seront supprimées de nos serveurs : progression, '
           'messages, abonnement, tout. Cette action est IRRÉVERSIBLE — impossible '
           'de récupérer ton compte ensuite.\n\n'
+          'La suppression de ton compte COP’IQ n’annule pas automatiquement un '
+          'abonnement en cours via Stripe : pense à le résilier depuis '
+          '« Abonnement » si besoin.\n\n'
           'Tu seras déconnecté et redirigé vers l’onboarding.',
         ),
         actions: [

@@ -19,7 +19,11 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace = "fr.copiq.app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973"
+    // Aligné le 2026-08-18 sur la version exigée par le plugin transitif `jni`
+    // (1.0.3, tiré via jni_flutter / jni_util). Les NDK sont rétrocompatibles :
+    // on prend donc la plus haute version demandée, comme recommandé par
+    // l'outil Flutter lui-même. Ne pas redescendre sous 28.2.13676358.
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

@@ -1030,11 +1030,11 @@ class CpSubscription {
 **API :**
 - `refreshTier()` → CpTier courant
 - `startCheckout(priceId)` → launch Stripe Checkout (edge fn `cas_pratique_create_checkout`)
-- `bindImpl(impl)` → pour brancher RevenueCat plus tard
+- `bindImpl(impl)` → point d'extension (tests / mocks). Stripe reste le seul provider de production.
 
 #### subscription_service.dart (lib/core/cas_pratique/subscription/)
 **Placeholder CODE-064 :** vérifie `user_metadata.cas_pratique_premium = true` (override dev).
-À remplacer par le vrai check Stripe/RevenueCat (CODE-084).
+À remplacer par le vrai check Stripe (CODE-084).
 
 ---
 

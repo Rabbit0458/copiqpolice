@@ -12,7 +12,7 @@
 // ║  Route : CpPaywallPage.routeName = '/cas-pratique/paywall'                ║
 // ║  Arguments (Map) : {'trigger': 'second_case' | 'concours_blanc' | ...}    ║
 // ║                                                                           ║
-// ║  L'achat réel (Stripe / RevenueCat) est implémenté en CODE-085.          ║
+// ║  L'achat réel (Stripe Checkout) est implémenté en CODE-085.              ║
 // ║  Ici on affiche la maquette + on log l'event PostHog `paywall_viewed`.   ║
 // ╚═══════════════════════════════════════════════════════════════════════════╝
 
@@ -156,7 +156,7 @@ class CpPaywallPage extends StatelessWidget {
 
   // ── Action d'achat ──────────────────────────────────────────────────────
   void _onSubscribeTapped(BuildContext context) {
-    // L'intégration Stripe / RevenueCat est en CODE-085.
+    // L'intégration Stripe Checkout est en CODE-085.
     // Ici on affiche une modal informative.
     showModalBottomSheet(
       context: context,
@@ -197,7 +197,7 @@ class CpPaywallPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(
-                'Le module de paiement Stripe / RevenueCat est en cours\n'
+                'Le module de paiement Stripe est en cours\n'
                 'd\'intégration (CODE-085). Reste connecté.',
                 textAlign: TextAlign.center,
                 style: GoogleFonts.montserrat(

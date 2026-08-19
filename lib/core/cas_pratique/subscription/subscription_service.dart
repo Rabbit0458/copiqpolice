@@ -29,7 +29,7 @@ class CasPratiqueSubscriptionService {
 
   /// Retourne `true` si l'user est abonné (placeholder : check user_metadata).
   /// Sera remplacé en CODE-084 par un check Supabase RPC qui interroge
-  /// Stripe / RevenueCat.
+  /// l'abonnement Stripe (table `cas_pratique_subscriptions`).
   bool isPremium() {
     final user = _sb.auth.currentUser;
     if (user == null) return false;
