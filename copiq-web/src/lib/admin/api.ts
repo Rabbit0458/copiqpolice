@@ -1152,6 +1152,15 @@ export interface CommunityAdminUserDetail {
     psy_tests?: number;
     cp_attempts?: number;
     invoices?: number;
+    /** Ajoutés par la migration 20260820100000. */
+    badges?: number;
+    notifications?: number;
+    notifications_unread?: number;
+    favorites?: number;
+    devices?: number;
+    photolangage_attempts?: number;
+    placement_done?: boolean;
+    content_reports?: number;
   };
   quiz_summary?: {
     answers?: number;
@@ -1322,6 +1331,132 @@ export interface CommunityUserBilling {
   }[];
 }
 
+/* ---- Ajouts migration 20260820100000 — Phase A + B User 360 ------------- */
+
+export interface CommunityUserAuth {
+  user_id: string;
+  email: string | null;
+  phone: string | null;
+  email_confirmed_at: string | null;
+  phone_confirmed_at: string | null;
+  confirmation_sent_at: string | null;
+  last_sign_in_at: string | null;
+  created_at: string | null;
+  updated_at: string | null;
+  banned_until: string | null;
+  deleted_at: string | null;
+  is_anonymous: boolean | null;
+  is_sso_user: boolean | null;
+  provider: string | null;
+  providers: string[] | null;
+}
+
+export interface CommunityUserBadge {
+  slug: string;
+  label: string;
+  description: string | null;
+  icon: string | null;
+  color_hex: string | null;
+  kind: string | null;
+  unlocked_at: string;
+  metadata: Record<string, unknown> | null;
+}
+
+export interface CommunityUserNotification {
+  id: string;
+  type: string | null;
+  target_type: string | null;
+  target_id: string | null;
+  space_id: string | null;
+  space_label: string | null;
+  payload: Record<string, unknown> | null;
+  created_at: string;
+  read_at: string | null;
+  total_count: number;
+}
+
+export interface CommunityUserFavorite {
+  post_id: string;
+  post_title: string | null;
+  post_status: string | null;
+  space_id: string | null;
+  space_label: string | null;
+  created_at: string;
+  total_count: number;
+}
+
+export interface CommunityUserDevice {
+  id: number;
+  platform: string | null;
+  app_version: string | null;
+  token_masked: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface CommunityUserContentReport {
+  source: "quiz" | "culture_generale" | "cas_pratique";
+  id: string;
+  created_at: string;
+  report_type: string | null;
+  category: string | null;
+  content: string | null;
+  status: string | null;
+  total_count: number;
+}
+
+export interface CommunityUserPhotolangage {
+  id: string;
+  case_id: string | null;
+  status: string | null;
+  correction_status: string | null;
+  character_count: number | null;
+  word_count: number | null;
+  elapsed_seconds: number | null;
+  pedagogical_score: number | null;
+  started_at: string | null;
+  submitted_at: string | null;
+  total_count: number;
+}
+
+export interface CommunityUserPlacement {
+  results: {
+    id: string;
+    total_score: number;
+    max_score: number;
+    score_pct: number;
+    created_at: string;
+  }[];
+  by_domain: { domain: string; total: number; correct: number }[];
+}
+
+export interface CommunityUserCpAttempt {
+  id: string;
+  case_id: string | null;
+  status: string | null;
+  is_completed: boolean;
+  started_at: string | null;
+  finished_at: string | null;
+  time_spent_ms: number | null;
+  total_score: number | null;
+  total_max: number | null;
+  percent: number | null;
+  correction_percent: number | null;
+  xp_delta: number;
+  total_count: number;
+}
+
+/* ---- Ajouts migration 20260821100000 — Phase C, owner only -------------- */
+
+export type AdminUserTableScan = Record<string, { count: number; relation: string }>;
+
+export interface AdminUserRawTableData {
+  table: string;
+  relation: string;
+  total_count: number;
+  rows: Record<string, unknown>[];
+}
+
 export interface CommunityUserTimelineEvent {
   occurred_at: string;
   kind: string;
@@ -1467,6 +1602,119 @@ export const communityUsersApi = {
     rpc<CommunityUserTimelineEvent[]>("community_admin_user_timeline", {
       p_user_id: userId,
       p_limit: opts.limit ?? 40,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  /* ---- Ajouts migration 20260820100000 ---------------------------------- */
+
+  auth: (userId: string) =>
+    rpc<CommunityUserAuth>("community_admin_user_auth", { p_user_id: userId }),
+
+  badges: (userId: string) =>
+    rpc<CommunityUserBadge[]>("community_admin_user_badges", {
+      p_user_id: userId,
+    }),
+
+  notifications: (
+    userId: string,
+    opts: { unreadOnly?: boolean; limit?: number; offset?: number } = {},
+  ) =>
+    rpc<CommunityUserNotification[]>("community_admin_user_notifications", {
+      p_user_id: userId,
+      p_unread_only: opts.unreadOnly ?? null,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  favorites: (userId: string, opts: { limit?: number; offset?: number } = {}) =>
+    rpc<CommunityUserFavorite[]>("community_admin_user_favorites", {
+      p_user_id: userId,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  devices: (userId: string) =>
+    rpc<CommunityUserDevice[]>("community_admin_user_devices", {
+      p_user_id: userId,
+    }),
+
+  contentReports: (
+    userId: string,
+    opts: { limit?: number; offset?: number } = {},
+  ) =>
+    rpc<CommunityUserContentReport[]>("community_admin_user_content_reports", {
+      p_user_id: userId,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  photolangage: (
+    userId: string,
+    opts: { limit?: number; offset?: number } = {},
+  ) =>
+    rpc<CommunityUserPhotolangage[]>("community_admin_user_photolangage", {
+      p_user_id: userId,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  placement: (userId: string) =>
+    rpc<CommunityUserPlacement>("community_admin_user_placement", {
+      p_user_id: userId,
+    }),
+
+  cpAttempts: (
+    userId: string,
+    opts: { limit?: number; offset?: number } = {},
+  ) =>
+    rpc<CommunityUserCpAttempt[]>("community_admin_user_cp_attempts", {
+      p_user_id: userId,
+      p_limit: opts.limit ?? 20,
+      p_offset: opts.offset ?? 0,
+    }),
+
+  /* ---- Ajouts migration 20260821100000 — owner only ---------------------- */
+
+  scanTables: (userId: string) =>
+    rpc<AdminUserTableScan>("admin_scan_user_tables", { p_user_id: userId }),
+
+  logExport: (userId: string) =>
+    rpc<null>("community_admin_log_user_export", { p_user_id: userId }),
+
+  /**
+   * Suppression complète d'un compte tiers — owner only, confirmation email
+   * exacte, refus si la cible est elle-même staff. Toute la logique de garde
+   * vit dans la RPC `admin_delete_user_data_completely` appelée par l'edge
+   * function ; celle-ci n'accorde aucun droit de plus.
+   */
+  async deleteUserAccount(targetUserId: string, confirmEmail: string) {
+    const supabase = createClient();
+    const { data, error } = await supabase.functions.invoke(
+      "admin_delete_user_account",
+      { body: { target_user_id: targetUserId, confirm_email: confirmEmail } },
+    );
+    if (error) {
+      const message =
+        (data as { message?: string } | null)?.message ?? error.message;
+      throw new AdminApiError(message);
+    }
+    return data as {
+      success: boolean;
+      partial: boolean;
+      message: string;
+      report: { ok: boolean; deleted_rows: Record<string, number> };
+    };
+  },
+
+  rawTableData: (
+    userId: string,
+    table: string,
+    opts: { limit?: number; offset?: number } = {},
+  ) =>
+    rpc<AdminUserRawTableData>("admin_get_user_raw_table_data", {
+      p_user_id: userId,
+      p_table: table,
+      p_limit: opts.limit ?? 20,
       p_offset: opts.offset ?? 0,
     }),
 };

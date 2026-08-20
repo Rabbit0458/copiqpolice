@@ -19,22 +19,31 @@
 import { useDeferredValue, useMemo, useState } from "react";
 import {
   AlertTriangle,
+  Award,
   Ban,
+  Bell,
   BookOpenCheck,
+  Bookmark,
+  Compass,
   CreditCard,
+  Database,
+  Download,
   FileText,
   History,
+  Image as ImageIcon,
   Info,
   LayoutGrid,
   MessageSquare,
   ShieldAlert,
   ShieldCheck,
+  Smartphone,
   Trash2,
   UserRound,
   X,
 } from "lucide-react";
 import {
   communityUsersApi,
+  type AdminUserTableScan,
   type CommunityAdminUserDetail,
   type CommunitySanction,
   type CommunitySanctionKind,
@@ -103,8 +112,11 @@ type TabId =
   | "reports"
   | "sanctions"
   | "quiz"
+  | "parcours"
+  | "notifications"
   | "billing"
-  | "timeline";
+  | "timeline"
+  | "technical";
 
 const PAGE_SIZE = 20;
 
@@ -441,6 +453,8 @@ const TABS: { id: TabId; label: string }[] = [
   { id: "reports", label: "Signalements" },
   { id: "sanctions", label: "Sanctions" },
   { id: "quiz", label: "Quiz" },
+  { id: "parcours", label: "Parcours" },
+  { id: "notifications", label: "Notifications" },
   { id: "billing", label: "Abonnement" },
   { id: "timeline", label: "Activité" },
 ];
@@ -499,7 +513,10 @@ export function UserDossier({
                 className="flex gap-1 overflow-x-auto px-4 pb-1"
                 aria-label="Sections du dossier"
               >
-                {TABS.map((item) => (
+                {(detail.data.staff?.role === "owner"
+                  ? [...TABS, { id: "technical" as const, label: "Données techniques" }]
+                  : TABS
+                ).map((item) => (
                   <button
                     key={item.id}
                     onClick={() => setTab(item.id)}
@@ -529,6 +546,7 @@ export function UserDossier({
               userId={userId}
               detail={detail.data}
               reload={reload}
+              onClose={onClose}
             />
           )}
         </div>
@@ -596,16 +614,25 @@ function DossierBody({
   userId,
   detail,
   reload,
+  onClose,
 }: {
   tab: TabId;
   setTab: (next: TabId) => void;
   userId: string;
   detail: CommunityAdminUserDetail;
   reload: () => void;
+  onClose: () => void;
 }) {
   switch (tab) {
     case "overview":
-      return <OverviewTab detail={detail} setTab={setTab} reload={reload} />;
+      return (
+        <OverviewTab
+          detail={detail}
+          setTab={setTab}
+          reload={reload}
+          onClose={onClose}
+        />
+      );
     case "account":
       return <AccountTab detail={detail} />;
     case "posts":
@@ -620,10 +647,20 @@ function DossierBody({
       return <SanctionsTab detail={detail} reload={reload} />;
     case "quiz":
       return <QuizTab userId={userId} detail={detail} />;
+    case "parcours":
+      return <ParcoursTab userId={userId} />;
+    case "notifications":
+      return <NotificationsTab userId={userId} />;
     case "billing":
       return <BillingTab userId={userId} />;
     case "timeline":
       return <TimelineTab userId={userId} />;
+    case "technical":
+      return detail.staff?.role === "owner" ? (
+        <TechnicalDataTab userId={userId} />
+      ) : (
+        <Empty>Réservé au rôle owner.</Empty>
+      );
     default:
       return null;
   }
@@ -637,10 +674,12 @@ function OverviewTab({
   detail,
   setTab,
   reload,
+  onClose,
 }: {
   detail: CommunityAdminUserDetail;
   setTab: (next: TabId) => void;
   reload: () => void;
+  onClose: () => void;
 }) {
   const a = detail.activity;
   const liveSanctions = detail.sanctions.filter(isSanctionLive);
@@ -730,6 +769,22 @@ function OverviewTab({
             label="Factures"
             onClick={() => setTab("billing")}
           />
+          <MetricCard
+            icon={Award}
+            value={a.badges ?? 0}
+            label="Badges"
+            onClick={() => setTab("parcours")}
+          />
+          <MetricCard
+            icon={Bell}
+            value={a.notifications ?? 0}
+            label="Notifications"
+            hint={
+              a.notifications_unread ? `${a.notifications_unread} non lue(s)` : undefined
+            }
+            tone={a.notifications_unread ? "warn" : "neutral"}
+            onClick={() => setTab("notifications")}
+          />
         </div>
       </section>
 
@@ -747,7 +802,12 @@ function OverviewTab({
         </dl>
       </Card>
 
-      <AdminActions detail={detail} reload={reload} setTab={setTab} />
+      <AdminActions
+        detail={detail}
+        reload={reload}
+        setTab={setTab}
+        onClose={onClose}
+      />
     </div>
   );
 }
@@ -760,15 +820,164 @@ function AdminActions({
   detail,
   reload,
   setTab,
+  onClose,
 }: {
   detail: CommunityAdminUserDetail;
   reload: () => void;
   setTab: (next: TabId) => void;
+  onClose: () => void;
 }) {
   const live = detail.sanctions.filter(isSanctionLive);
   const ban = live.find((item) => item.kind === "ban");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<unknown>(null);
+  const [exporting, setExporting] = useState(false);
+  const isOwner = detail.staff?.role === "owner";
+  const userId = detail.profile.user_id;
+
+  async function exportUser360() {
+    setExporting(true);
+    setError(null);
+    try {
+      const [
+        auth,
+        badges,
+        notifications,
+        favorites,
+        devices,
+        contentReports,
+        photolangage,
+        placement,
+        cpAttempts,
+        posts,
+        comments,
+        messages,
+        reportsReceived,
+        reportsSent,
+        quizSummary,
+        billing,
+        timeline,
+        scan,
+      ] = await Promise.all([
+        communityUsersApi.auth(userId),
+        communityUsersApi.badges(userId),
+        communityUsersApi.notifications(userId, { limit: 200 }),
+        communityUsersApi.favorites(userId, { limit: 200 }),
+        communityUsersApi.devices(userId),
+        communityUsersApi.contentReports(userId, { limit: 200 }),
+        communityUsersApi.photolangage(userId, { limit: 200 }),
+        communityUsersApi.placement(userId),
+        communityUsersApi.cpAttempts(userId, { limit: 500 }),
+        communityUsersApi.posts(userId, { limit: 500 }),
+        communityUsersApi.comments(userId, { limit: 500 }),
+        communityUsersApi.messages(userId, { limit: 500 }),
+        communityUsersApi.reports(userId, { direction: "received", limit: 500 }),
+        communityUsersApi.reports(userId, { direction: "sent", limit: 500 }),
+        communityUsersApi.quizSummary(userId),
+        communityUsersApi.billing(userId),
+        communityUsersApi.timeline(userId, { limit: 500 }),
+        isOwner ? communityUsersApi.scanTables(userId) : Promise.resolve(null),
+      ]);
+
+      const payload = {
+        user_uuid: userId,
+        generated_at: new Date().toISOString(),
+        auth,
+        profile: detail.profile,
+        settings: detail.settings ?? {},
+        community_profile: detail.community_profile ?? {},
+        staff: detail.staff ?? {},
+        subscription: detail.subscription,
+        overview: detail.activity,
+        quiz: { summary: quizSummary },
+        cp_progress: detail.cp_progress ?? {},
+        cp_attempts: cpAttempts,
+        posts,
+        comments,
+        messages_metadata: messages,
+        reports: { received: reportsReceived, sent: reportsSent },
+        content_reports: contentReports,
+        sanctions: detail.sanctions,
+        notifications,
+        badges,
+        favorites,
+        devices,
+        photolangage,
+        placement,
+        billing,
+        timeline,
+        database_relations: scan ?? undefined,
+      };
+
+      const blob = new Blob([JSON.stringify(payload, null, 2)], {
+        type: "application/json",
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `user-360-${userId}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      await communityUsersApi.logExport(userId);
+    } catch (cause) {
+      setError(cause);
+    } finally {
+      setExporting(false);
+    }
+  }
+
+  const [deleting, setDeleting] = useState(false);
+
+  async function deleteAccount() {
+    setError(null);
+    let impact: AdminUserTableScan;
+    try {
+      impact = await communityUsersApi.scanTables(userId);
+    } catch (cause) {
+      setError(cause);
+      return;
+    }
+    const totalRows = Object.values(impact).reduce((sum, t) => sum + t.count, 0);
+    const summary =
+      Object.entries(impact)
+        .sort((a, b) => b[1].count - a[1].count)
+        .slice(0, 8)
+        .map(([table, info]) => `  · ${table} : ${info.count}`)
+        .join("\n") || "  (aucune donnée trouvée)";
+
+    const confirmEmail = prompt(
+      `SUPPRESSION DÉFINITIVE du compte ${detail.profile.email}.\n\n` +
+        `Impact réel (${Object.keys(impact).length} table(s), ${totalRows} ligne(s) au total) :\n${summary}\n\n` +
+        `Cette action est IRRÉVERSIBLE et supprime aussi le compte Auth.\n` +
+        `Pour confirmer, saisis exactement l'adresse e-mail du compte :`,
+    )?.trim();
+    if (!confirmEmail) return;
+    if (confirmEmail.toLowerCase() !== (detail.profile.email ?? "").toLowerCase()) {
+      setError(new Error("L'adresse e-mail saisie ne correspond pas."));
+      return;
+    }
+    const finalWord = prompt(
+      `Dernière confirmation : tape SUPPRIMER en majuscules pour supprimer définitivement ce compte.`,
+    )?.trim();
+    if (finalWord !== "SUPPRIMER") return;
+
+    setDeleting(true);
+    try {
+      const result = await communityUsersApi.deleteUserAccount(userId, confirmEmail);
+      if (!result.success) {
+        setError(new Error(result.message));
+        return;
+      }
+      alert(result.message);
+      onClose();
+      reload();
+    } catch (cause) {
+      setError(cause);
+    } finally {
+      setDeleting(false);
+    }
+  }
 
   async function lift(sanction: CommunitySanction) {
     const reason = prompt(
@@ -825,6 +1034,13 @@ function AdminActions({
             Lever la mesure en cours
           </Button>
         )}
+
+        <Button variant="ghost" disabled={exporting} onClick={exportUser360}>
+          <span className="inline-flex items-center gap-2">
+            <Download size={16} />
+            {exporting ? "Export en cours…" : "Exporter User 360"}
+          </span>
+        </Button>
       </div>
 
       {error != null && (
@@ -833,34 +1049,31 @@ function AdminActions({
         </div>
       )}
 
-      {/* Suppression de compte : volontairement non exposée — voir note. */}
-      <div className="mt-4 rounded-xl border border-[var(--outline-variant)] bg-[var(--surface-container)]/50 p-3">
-        <div className="flex items-start gap-2.5">
-          <Trash2
-            size={16}
-            className="mt-0.5 shrink-0 text-[var(--on-surface-faint)]"
-          />
-          <div className="text-xs text-[var(--on-surface-muted)]">
-            <strong className="text-[var(--on-surface)]">
-              Suppression du compte — indisponible depuis le panel.
-            </strong>
-            <p className="mt-1">
-              Les deux mécanismes de suppression existants (
-              <code>cas_pratique_delete_user_data</code> et{" "}
-              <code>/api/user/delete</code>) sont strictement auto-service : ils
-              ne suppriment que le compte de l&apos;appelant. Aucune RPC ne
-              permet aujourd&apos;hui à un administrateur de supprimer le compte
-              d&apos;un tiers, et le site étant exporté en statique, aucune route
-              serveur ne peut porter la clé <code>service_role</code>.
-            </p>
-            <p className="mt-1">
-              Exposer un bouton ici supposerait de créer une edge function
-              dédiée. En attendant, le bannissement permanent produit
-              l&apos;effet opérationnel recherché sans perte de données.
-            </p>
+      {isOwner && (
+        <div className="mt-4 rounded-xl border border-[var(--danger)]/30 bg-[var(--danger)]/5 p-3">
+          <div className="flex items-start gap-2.5">
+            <Trash2 size={16} className="mt-0.5 shrink-0 text-[var(--danger)]" />
+            <div className="min-w-0 flex-1 text-xs text-[var(--on-surface-muted)]">
+              <strong className="text-[var(--on-surface)]">Zone dangereuse.</strong>
+              <p className="mt-1">
+                Supprime définitivement le compte et toutes ses données dans
+                l&apos;ensemble des tables réellement liées (découverte
+                dynamique, même mécanisme que l&apos;onglet Données
+                techniques). Le journal d&apos;audit est conservé.
+                Irréversible.
+              </p>
+              <Button
+                variant="danger"
+                disabled={deleting}
+                onClick={deleteAccount}
+                className="mt-2"
+              >
+                {deleting ? "Suppression…" : "Supprimer définitivement ce compte"}
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </Card>
   );
 }
@@ -874,9 +1087,59 @@ function AccountTab({ detail }: { detail: CommunityAdminUserDetail }) {
   const s = detail.settings ?? {};
   const cp = detail.community_profile ?? {};
   const staff = detail.staff ?? {};
+  const auth = useAsync(() => communityUsersApi.auth(p.user_id), [p.user_id]);
+  const devices = useAsync(
+    () => communityUsersApi.devices(p.user_id),
+    [p.user_id],
+  );
 
   return (
     <div className="space-y-4">
+      <Card className="p-4">
+        <SectionTitle
+          icon={ShieldCheck}
+          hint="Champs Supabase Auth. Mot de passe, hachages et jetons ne sont jamais renvoyés."
+        >
+          Authentification Supabase
+        </SectionTitle>
+        {auth.loading && <Loading />}
+        {auth.error != null && <ErrorBox error={auth.error} />}
+        {auth.data && (
+          <dl className="grid gap-4 sm:grid-cols-3">
+            <Field label="E-mail confirmé">
+              {auth.data.email_confirmed_at ? (
+                <Badge tone="good">Le {fmtDate(auth.data.email_confirmed_at)}</Badge>
+              ) : (
+                <Badge tone="warn">Non confirmé</Badge>
+              )}
+            </Field>
+            <Field label="Téléphone confirmé">
+              {auth.data.phone_confirmed_at
+                ? fmtDate(auth.data.phone_confirmed_at)
+                : "—"}
+            </Field>
+            <Field label="Dernière connexion">
+              {fmtDateTime(auth.data.last_sign_in_at)}
+            </Field>
+            <Field label="Fournisseur">{auth.data.provider ?? "email"}</Field>
+            <Field label="Compte créé (Auth)">
+              {fmtDateTime(auth.data.created_at)}
+            </Field>
+            <Field label="Statut">
+              {auth.data.banned_until ? (
+                <Badge tone="bad">
+                  Banni jusqu&apos;au {fmtDateTime(auth.data.banned_until)}
+                </Badge>
+              ) : auth.data.deleted_at ? (
+                <Badge tone="bad">Supprimé le {fmtDateTime(auth.data.deleted_at)}</Badge>
+              ) : (
+                <Badge tone="good">Actif</Badge>
+              )}
+            </Field>
+          </dl>
+        )}
+      </Card>
+
       <Card className="p-4">
         <SectionTitle icon={Info}>Identité</SectionTitle>
         <dl className="grid gap-4 sm:grid-cols-3">
@@ -967,6 +1230,44 @@ function AccountTab({ detail }: { detail: CommunityAdminUserDetail }) {
           </dl>
         </Card>
       )}
+
+      <Card className="p-4">
+        <SectionTitle icon={Smartphone} hint="Jeton push masqué (6 derniers caractères).">
+          Appareils
+        </SectionTitle>
+        {devices.loading && <Loading />}
+        {devices.error != null && <ErrorBox error={devices.error} />}
+        {devices.data && devices.data.length === 0 && (
+          <Empty>Aucun appareil enregistré.</Empty>
+        )}
+        {devices.data && devices.data.length > 0 && (
+          <div className="space-y-2">
+            {devices.data.map((d) => (
+              <div
+                key={d.id}
+                className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-[var(--surface-container)] px-3 py-2 text-sm"
+              >
+                <span className="flex items-center gap-2">
+                  <Badge tone="neutral">{d.platform ?? "inconnu"}</Badge>
+                  {d.app_version && (
+                    <span className="text-xs text-[var(--on-surface-muted)]">
+                      v{d.app_version}
+                    </span>
+                  )}
+                  {d.token_masked && (
+                    <code className="text-xs text-[var(--on-surface-faint)]">
+                      {d.token_masked}
+                    </code>
+                  )}
+                </span>
+                <span className="text-xs text-[var(--on-surface-faint)]">
+                  Vu le {fmtDateTime(d.updated_at)}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </Card>
 
       <p className="px-1 text-xs text-[var(--on-surface-faint)]">
         Mots de passe, hachages, jetons, identifiants Stripe et moyens de
@@ -1326,6 +1627,10 @@ function ReportsTab({ userId }: { userId: string }) {
   const [direction, setDirection] = useState<"received" | "sent">("received");
   const [status, setStatus] = useState("");
   const [page, setPage] = useState(0);
+  const contentReports = useAsync(
+    () => communityUsersApi.contentReports(userId, { limit: 50 }),
+    [userId],
+  );
 
   const state = useAsync(
     () =>
@@ -1452,6 +1757,45 @@ function ReportsTab({ userId }: { userId: string }) {
           </div>
         )}
       </AsyncList>
+
+      <section>
+        <SectionTitle
+          icon={ShieldAlert}
+          hint="Erreurs de contenu signalées par l'utilisateur (quiz, culture générale, cas pratique) — distinct des signalements communautaires."
+        >
+          Signalements de contenu
+        </SectionTitle>
+        <AsyncList
+          state={contentReports}
+          empty="Aucun signalement de contenu émis par cet utilisateur."
+        >
+          {(rows) => (
+            <div className="space-y-2">
+              {rows.map((r) => (
+                <Card key={`${r.source}-${r.id}`} className="p-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <Badge tone="neutral">{r.source}</Badge>
+                    {r.report_type && <Badge tone="neutral">{r.report_type}</Badge>}
+                    {r.status && (
+                      <Badge tone={r.status === "resolved" ? "good" : "warn"}>
+                        {r.status}
+                      </Badge>
+                    )}
+                    <span className="text-xs text-[var(--on-surface-faint)]">
+                      {fmtDateTime(r.created_at)}
+                    </span>
+                  </div>
+                  {r.content && (
+                    <p className="mt-1.5 text-sm text-[var(--on-surface-muted)]">
+                      {r.content}
+                    </p>
+                  )}
+                </Card>
+              ))}
+            </div>
+          )}
+        </AsyncList>
+      </section>
     </div>
   );
 }
@@ -1799,6 +2143,10 @@ function QuizTab({
     () => communityUsersApi.quizSummary(userId),
     [userId],
   );
+  const cpAttempts = useAsync(
+    () => communityUsersApi.cpAttempts(userId, { limit: 50 }),
+    [userId],
+  );
   const answers = useAsync(
     () =>
       communityUsersApi.quiz(userId, {
@@ -1850,6 +2198,79 @@ function QuizTab({
           </dl>
         </Card>
       )}
+
+      {/* Cas pratique — détail des tentatives */}
+      <section>
+        <SectionTitle icon={BookOpenCheck}>
+          Cas pratique — tentatives
+        </SectionTitle>
+        <AsyncList
+          state={cpAttempts}
+          empty="Aucune tentative de cas pratique pour cet utilisateur."
+        >
+          {(rows) => (
+            <Card className="overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[720px] text-sm">
+                  <thead className="border-b border-[var(--outline-variant)] bg-[var(--surface-container)]/40 text-left text-xs text-[var(--on-surface-faint)]">
+                    <tr>
+                      <th className="px-4 py-3 font-medium">Cas</th>
+                      <th className="px-3 py-3 font-medium">Statut</th>
+                      <th className="px-3 py-3 font-medium">Score</th>
+                      <th className="px-3 py-3 font-medium">Correction</th>
+                      <th className="px-3 py-3 font-medium">XP</th>
+                      <th className="px-3 py-3 font-medium">Durée</th>
+                      <th className="px-4 py-3 font-medium">Terminée</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {rows.map((row) => (
+                      <tr
+                        key={row.id}
+                        className="border-b border-[var(--outline-variant)] last:border-0"
+                      >
+                        <td className="px-4 py-3 font-medium">{row.case_id ?? "—"}</td>
+                        <td className="px-3 py-3">
+                          <Badge tone={row.is_completed ? "good" : "neutral"}>
+                            {row.status ?? (row.is_completed ? "terminée" : "en cours")}
+                          </Badge>
+                        </td>
+                        <td className="px-3 py-3 tabular-nums">
+                          {row.percent != null ? `${Math.round(row.percent)} %` : "—"}
+                        </td>
+                        <td className="px-3 py-3 tabular-nums">
+                          {row.correction_percent != null
+                            ? `${Math.round(row.correction_percent)} %`
+                            : "—"}
+                        </td>
+                        <td className="px-3 py-3 tabular-nums">
+                          <span
+                            className={
+                              row.xp_delta > 0
+                                ? "text-[var(--success)]"
+                                : row.xp_delta < 0
+                                  ? "text-[var(--danger)]"
+                                  : ""
+                            }
+                          >
+                            {row.xp_delta > 0 ? `+${row.xp_delta}` : row.xp_delta}
+                          </span>
+                        </td>
+                        <td className="px-3 py-3 text-xs tabular-nums text-[var(--on-surface-muted)]">
+                          {fmtDuration(row.time_spent_ms)}
+                        </td>
+                        <td className="px-4 py-3 text-xs text-[var(--on-surface-muted)]">
+                          {fmtDateTime(row.finished_at)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </Card>
+          )}
+        </AsyncList>
+      </section>
 
       {/* Synthèse quiz par module */}
       <section>
@@ -2111,6 +2532,292 @@ function BillingTab({ userId }: { userId: string }) {
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
+   Onglet — Parcours (badges, photolangage, placement, favoris)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+function ParcoursTab({ userId }: { userId: string }) {
+  const badges = useAsync(() => communityUsersApi.badges(userId), [userId]);
+  const photolangage = useAsync(
+    () => communityUsersApi.photolangage(userId, { limit: 50 }),
+    [userId],
+  );
+  const placement = useAsync(
+    () => communityUsersApi.placement(userId),
+    [userId],
+  );
+  const favorites = useAsync(
+    () => communityUsersApi.favorites(userId, { limit: 50 }),
+    [userId],
+  );
+
+  return (
+    <div className="space-y-5">
+      <section>
+        <SectionTitle icon={Award}>Badges débloqués</SectionTitle>
+        <AsyncList state={badges} empty="Aucun badge débloqué.">
+          {(rows) => (
+            <div className="flex flex-wrap gap-2">
+              {rows.map((b) => (
+                <div
+                  key={b.slug}
+                  className="flex items-center gap-2 rounded-xl bg-[var(--surface-container)] px-3 py-2"
+                  title={b.description ?? undefined}
+                >
+                  <span
+                    className="h-2 w-2 rounded-full"
+                    style={{ backgroundColor: b.color_hex ?? "var(--brand)" }}
+                  />
+                  <span className="text-sm font-medium">{b.label}</span>
+                  <span className="text-xs text-[var(--on-surface-faint)]">
+                    {fmtDate(b.unlocked_at)}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+        </AsyncList>
+      </section>
+
+      {placement.data &&
+        (placement.data.results.length > 0 || placement.data.by_domain.length > 0) && (
+          <section>
+            <SectionTitle icon={Compass}>Test de placement</SectionTitle>
+            <Card className="p-4">
+              {placement.data.results.map((r) => (
+                <div key={r.id} className="mb-3 flex items-center gap-3">
+                  <Badge tone="brand">{Math.round(r.score_pct)} %</Badge>
+                  <span className="text-xs text-[var(--on-surface-faint)]">
+                    Passé le {fmtDateTime(r.created_at)}
+                  </span>
+                </div>
+              ))}
+              <div className="grid gap-3 sm:grid-cols-3">
+                {placement.data.by_domain.map((d) => (
+                  <div key={d.domain} className="rounded-xl bg-[var(--surface-container)] p-3">
+                    <div className="text-xs text-[var(--on-surface-faint)]">{d.domain}</div>
+                    <div className="mt-1 text-sm font-medium">
+                      {d.correct}/{d.total}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          </section>
+        )}
+
+      <section>
+        <SectionTitle icon={ImageIcon}>Photolangage</SectionTitle>
+        <AsyncList state={photolangage} empty="Aucune tentative de photolangage.">
+          {(rows) => (
+            <div className="space-y-2">
+              {rows.map((a) => (
+                <Card key={a.id} className="p-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-sm font-medium">{a.case_id ?? "—"}</span>
+                    <Badge tone={a.status === "submitted" ? "good" : "neutral"}>
+                      {a.status ?? "—"}
+                    </Badge>
+                    {a.pedagogical_score != null && (
+                      <Badge tone="brand">{a.pedagogical_score} pts</Badge>
+                    )}
+                    <span className="text-xs text-[var(--on-surface-faint)]">
+                      {fmtDateTime(a.submitted_at ?? a.started_at)}
+                    </span>
+                  </div>
+                  <div className="mt-1 text-xs text-[var(--on-surface-muted)]">
+                    {a.word_count ?? 0} mot(s) · {fmtDuration((a.elapsed_seconds ?? 0) * 1000)}
+                  </div>
+                </Card>
+              ))}
+            </div>
+          )}
+        </AsyncList>
+      </section>
+
+      <section>
+        <SectionTitle icon={Bookmark}>Favoris</SectionTitle>
+        <AsyncList state={favorites} empty="Aucun favori enregistré.">
+          {(rows) => (
+            <div className="space-y-2">
+              {rows.map((f) => (
+                <div
+                  key={f.post_id}
+                  className="flex flex-wrap items-center justify-between gap-2 rounded-xl bg-[var(--surface-container)] px-3 py-2 text-sm"
+                >
+                  <span>{f.post_title ?? "Publication supprimée"}</span>
+                  <span className="text-xs text-[var(--on-surface-faint)]">
+                    {f.space_label ?? ""} · Ajouté le {fmtDate(f.created_at)}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+        </AsyncList>
+      </section>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Onglet — Notifications
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+function NotificationsTab({ userId }: { userId: string }) {
+  const [unreadOnly, setUnreadOnly] = useState(false);
+  const state = useAsync(
+    () => communityUsersApi.notifications(userId, { unreadOnly: unreadOnly || undefined, limit: 50 }),
+    [userId, unreadOnly],
+  );
+
+  return (
+    <div className="space-y-4">
+      <label className="inline-flex min-h-11 cursor-pointer items-center gap-2 text-sm text-[var(--on-surface-muted)]">
+        <input
+          type="checkbox"
+          checked={unreadOnly}
+          onChange={(e) => setUnreadOnly(e.target.checked)}
+          className="h-4 w-4 accent-[var(--brand)]"
+        />
+        Non lues uniquement
+      </label>
+      <AsyncList state={state} empty="Aucune notification.">
+        {(rows) => (
+          <div className="space-y-2">
+            {rows.map((n) => (
+              <Card key={n.id} className="p-3">
+                <div className="flex flex-wrap items-center gap-2">
+                  <Badge tone={n.read_at ? "neutral" : "brand"}>
+                    {n.type ?? "notification"}
+                  </Badge>
+                  {n.space_label && <Badge tone="neutral">{n.space_label}</Badge>}
+                  <span className="text-xs text-[var(--on-surface-faint)]">
+                    {fmtDateTime(n.created_at)}
+                  </span>
+                  {!n.read_at && <Badge tone="warn">Non lue</Badge>}
+                </div>
+              </Card>
+            ))}
+          </div>
+        )}
+      </AsyncList>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Onglet — Données techniques (owner only)
+   Scanner générique : toutes les tables réellement liées à l'utilisateur,
+   découvertes dynamiquement en base — aucune liste figée côté client.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+const TECHNICAL_PAGE = 20;
+
+function TechnicalDataTab({ userId }: { userId: string }) {
+  const [selected, setSelected] = useState<string | null>(null);
+  const [page, setPage] = useState(0);
+
+  const scan = useAsync(() => communityUsersApi.scanTables(userId), [userId]);
+  const tables = useMemo(
+    () =>
+      Object.entries(scan.data ?? {}).sort((a, b) => b[1].count - a[1].count),
+    [scan.data],
+  );
+
+  const raw = useAsync(
+    () =>
+      selected
+        ? communityUsersApi.rawTableData(userId, selected, {
+            limit: TECHNICAL_PAGE,
+            offset: page * TECHNICAL_PAGE,
+          })
+        : Promise.resolve(null),
+    [userId, selected, page],
+  );
+
+  return (
+    <div className="space-y-4">
+      <Card className="border-[var(--warning)]/25 bg-[var(--warning)]/5 p-3">
+        <p className="text-xs text-[var(--on-surface-muted)]">
+          <strong className="text-[var(--on-surface)]">Réservé owner.</strong>{" "}
+          Découverte dynamique via information_schema — chaque table est
+          réellement liée à cet utilisateur, aucune liste figée. Mots de
+          passe, hachages, jetons et secrets sont systématiquement exclus.
+        </p>
+      </Card>
+
+      <div className="grid gap-4 lg:grid-cols-[280px_1fr]">
+        <section>
+          <SectionTitle icon={Database} hint={`${tables.length} table(s) avec des données.`}>
+            Tables
+          </SectionTitle>
+          {scan.loading && <Loading />}
+          {scan.error != null && <ErrorBox error={scan.error} />}
+          {scan.data && tables.length === 0 && (
+            <Empty>Aucune donnée trouvée pour cet utilisateur.</Empty>
+          )}
+          <div className="max-h-[60vh] space-y-1 overflow-y-auto">
+            {tables.map(([table, info]) => (
+              <button
+                key={table}
+                onClick={() => {
+                  setSelected(table);
+                  setPage(0);
+                }}
+                className={`flex w-full items-center justify-between gap-2 rounded-lg px-3 py-2 text-left text-sm transition ${
+                  selected === table
+                    ? "bg-[var(--brand)]/12 text-[var(--brand)]"
+                    : "hover:bg-[var(--surface-container)]"
+                }`}
+              >
+                <span className="truncate font-mono text-xs">{table}</span>
+                <Badge tone="neutral">{info.count}</Badge>
+              </button>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          {!selected && (
+            <Empty>Sélectionne une table pour voir ses lignes brutes.</Empty>
+          )}
+          {selected && (
+            <>
+              <SectionTitle
+                icon={Database}
+                hint={raw.data ? `Relation : ${raw.data.relation}` : undefined}
+              >
+                {selected}
+              </SectionTitle>
+              {raw.loading && <Loading />}
+              {raw.error != null && <ErrorBox error={raw.error} />}
+              {raw.data && (
+                <>
+                  <div className="max-h-[55vh] space-y-2 overflow-y-auto">
+                    {raw.data.rows.map((row, i) => (
+                      <Card key={i} className="overflow-x-auto p-3">
+                        <pre className="whitespace-pre-wrap break-all text-xs text-[var(--on-surface-muted)]">
+                          {JSON.stringify(row, null, 2)}
+                        </pre>
+                      </Card>
+                    ))}
+                  </div>
+                  <Paginator
+                    page={page}
+                    total={raw.data.total_count}
+                    size={TECHNICAL_PAGE}
+                    onPage={setPage}
+                  />
+                </>
+              )}
+            </>
+          )}
+        </section>
+      </div>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
    Onglet — Timeline
    ═══════════════════════════════════════════════════════════════════════════ */
 
@@ -2128,6 +2835,9 @@ const TIMELINE_TONE: Record<string, BadgeTone> = {
   subscription: "good",
   invoice: "good",
   moderation: "warn",
+  badge: "brand",
+  photolangage: "neutral",
+  placement: "neutral",
 };
 
 const TIMELINE_PAGE = 40;
