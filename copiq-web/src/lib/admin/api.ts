@@ -984,13 +984,84 @@ export const staffApi = {
 
 export const supportApi = {
   reports: (kind?: string, status?: string, search?: string) =>
-    rpc<Record<string, unknown>[]>("admin_reports_unified", {
+    rpc<Record<string, unknown>[]>("admin_report_center_list", {
       p_kind: kind || null,
       p_status: status || null,
       p_search: search || null,
       p_limit: 150,
       p_offset: 0,
     }),
+
+  inspectReport: (kind: string, id: string) =>
+    rpc<ReportInspection>("admin_report_inspect", { p_kind: kind, p_id: id }),
+
+  addReportNote: (kind: string, id: string, note: string) =>
+    rpc<Record<string, unknown>>("admin_report_add_note", {
+      p_kind: kind,
+      p_id: id,
+      p_note: note,
+    }),
+
+  setReportStatus: (
+    kind: string,
+    id: string,
+    status: string,
+    archive = false,
+    note?: string,
+  ) =>
+    rpc<Record<string, unknown>>("admin_report_set_status", {
+      p_kind: kind,
+      p_id: id,
+      p_status: status,
+      p_archive: archive,
+      p_note: note ?? null,
+    }),
+
+  async resolveReportWithEmail(
+    kind: string,
+    id: string,
+    archive = false,
+    note?: string,
+  ) {
+    const supabase = createClient();
+    const { data, error } = await supabase.functions.invoke(
+      "admin_report_resolved_email",
+      { body: { kind, id, archive, note: note ?? null } },
+    );
+    if (error) {
+      const message = (data as { message?: string } | null)?.message ?? error.message;
+      throw new AdminApiError(message);
+    }
+    return data as {
+      ok: boolean;
+      report: Record<string, unknown>;
+      email_sent: boolean;
+      already_sent?: boolean;
+      email_reason?: string;
+      reference?: string;
+    };
+  },
+
+  updateReportTarget: (
+    kind: string,
+    id: string,
+    expected: Record<string, unknown>,
+    patch: Record<string, unknown>,
+    resolve = false,
+  ) =>
+    rpc<{ ok: boolean; target: Record<string, unknown>; report_resolved: boolean }>(
+      "admin_report_update_target",
+      { p_kind: kind, p_id: id, p_expected: expected, p_patch: patch, p_resolve: resolve },
+    ),
+
+  deleteReport: (kind: string, id: string) =>
+    rpc<{ ok: boolean }>("admin_report_delete", { p_kind: kind, p_id: id }),
+
+  deleteReportTarget: (kind: string, id: string) =>
+    rpc<{ ok: boolean; deleted_table: string; deleted_id: string }>(
+      "admin_report_delete_target",
+      { p_kind: kind, p_id: id },
+    ),
 
   resolveReport: (
     kind: string,
@@ -1026,6 +1097,18 @@ export const supportApi = {
       p_offset: 0,
     }),
 };
+
+export interface ReportInspection {
+  report: Record<string, unknown>;
+  target: Record<string, unknown> | null;
+  target_table: string | null;
+  target_found: boolean;
+  can_edit: boolean;
+  can_delete_report: boolean;
+  can_delete_target: boolean;
+  notes: Record<string, unknown>[];
+  history: Record<string, unknown>[];
+}
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Utilisateurs & sanctions communautaires                                   */

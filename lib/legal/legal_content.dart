@@ -979,9 +979,11 @@ débloqués, classements hebdomadaires pseudonymisés.
 
 ── 12. DONNÉES DE NOTIFICATIONS ─────────────────
 
-Token Firebase Cloud Messaging (FCM) : collecté avec le
-consentement explicite de l'utilisateur. Révocable depuis
-les paramètres de l'appareil. Traité par Google LLC.
+Notifications locales uniquement, planifiées et affichées
+directement sur l'appareil (rappel quotidien, fin de quiz,
+activité communauté). Aucune donnée n'est transmise à un
+tiers pour ces notifications. Révocable depuis les
+paramètres de l'appareil.
 
 ── 13. ANALYTICS — POSTHOG ─────────────────────
 
@@ -1018,7 +1020,6 @@ Données d'abonnement       : 10 ans (obligation comptable)
 Journaux techniques        : 12 mois
 Analytics (PostHog)        : 2 ans
 Diagnostic (Sentry)        : 90 jours
-Token FCM                  : durée du compte
 Publications forum         : durée du compte (ou anonymisation)
 Notes personnelles         : durée du compte
 Gamification (XP, badges)  : durée du compte
@@ -1028,7 +1029,6 @@ Gamification (XP, badges)  : durée du compte
 Supabase, Inc.          — BDD, authentification, stockage
                           (USA, données en UE — Frankfurt)
 Stripe, Inc.            — Paiements (USA)
-Google LLC (Firebase)   — Notifications push (USA)
 PostHog, Inc.           — Analytics (USA)
 Sentry (Functional SW)  — Monitoring erreurs (USA)
 Apple Inc.              — Distribution iOS, paiements (USA)

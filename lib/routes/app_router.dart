@@ -568,7 +568,6 @@ class RouteRegistry {
           : '';
       return CpMemoReaderPage(slug: slug);
     },
-    CpNotifPrefsPage.routeName: (_) => const CpNotifPrefsPage(),
     CpPaywallPage.routeName: (context) {
       final args = ModalRoute.of(context)?.settings.arguments;
       final trigger = (args is String)

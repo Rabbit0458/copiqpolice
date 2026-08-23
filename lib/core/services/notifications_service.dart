@@ -1,16 +1,9 @@
 // lib/core/services/notifications_service.dart
 //
-// Service de notifications COP'IQ — locales et push.
-//
-// LOCAL :
-//   - Notifications planifiées via `flutter_local_notifications`.
+// Service de notifications locales COP'IQ, via `flutter_local_notifications`.
 //   - Rappel quotidien (par défaut 19h) pour relancer l'utilisateur sur ses
 //     quiz du jour.
-//
-// PUSH :
-//   - Setup Firebase Cloud Messaging pour les notifs serveur.
-//   - Le token FCM est sauvegardé dans `user_devices` côté Supabase pour
-//     pouvoir cibler un utilisateur (côté backend).
+//   - Notifications one-shot (fin de quiz, activité communauté).
 //
 // Initialisation : appeler `NotificationsService.I.init()` après Supabase
 // dans main.dart.
@@ -78,7 +71,7 @@ class NotificationsService {
       requestSoundPermission: false,
     );
     await _plugin.initialize(
-      const InitializationSettings(android: androidInit, iOS: iosInit),
+      settings: const InitializationSettings(android: androidInit, iOS: iosInit),
     );
 
     // Channels Android.
@@ -159,7 +152,7 @@ class NotificationsService {
     if (!_initialized) await init();
 
     const id = 1000;
-    await _plugin.cancel(id);
+    await _plugin.cancel(id: id);
 
     final now = tz.TZDateTime.now(tz.local);
     var scheduled = tz.TZDateTime(
@@ -175,11 +168,11 @@ class NotificationsService {
     }
 
     await _plugin.zonedSchedule(
-      id,
-      title,
-      body,
-      scheduled,
-      const NotificationDetails(
+      id: id,
+      title: title,
+      body: body,
+      scheduledDate: scheduled,
+      notificationDetails: const NotificationDetails(
         android: AndroidNotificationDetails(
           _dailyChannelId,
           _dailyChannelName,
@@ -190,8 +183,6 @@ class NotificationsService {
         iOS: DarwinNotificationDetails(),
       ),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents:
           DateTimeComponents.time, // récurrence quotidienne
     );
@@ -204,7 +195,7 @@ class NotificationsService {
 
   /// Annule le rappel quotidien.
   Future<void> cancelDailyReminder() async {
-    await _plugin.cancel(1000);
+    await _plugin.cancel(id: 1000);
     final sp = await SharedPreferences.getInstance();
     await sp.setBool('daily_reminder_enabled', false);
   }
@@ -229,10 +220,10 @@ class NotificationsService {
   }) async {
     if (!_initialized) await init();
     await _plugin.show(
-      DateTime.now().millisecondsSinceEpoch.remainder(100000),
-      title,
-      body,
-      const NotificationDetails(
+      id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
+      title: title,
+      body: body,
+      notificationDetails: const NotificationDetails(
         android: AndroidNotificationDetails(
           _quizFeedbackChannelId,
           _quizFeedbackChannelName,
@@ -250,10 +241,10 @@ class NotificationsService {
   }) async {
     if (!_initialized) await init();
     await _plugin.show(
-      DateTime.now().millisecondsSinceEpoch.remainder(100000),
-      title,
-      body,
-      const NotificationDetails(
+      id: DateTime.now().millisecondsSinceEpoch.remainder(100000),
+      title: title,
+      body: body,
+      notificationDetails: const NotificationDetails(
         android: AndroidNotificationDetails(
           _communityChannelId,
           _communityChannelName,
@@ -272,8 +263,7 @@ class NotificationsService {
   }
 
   // ---------------------------------------------------------------------------
-  // Push token sync (Firebase Messaging branché ailleurs ; cette méthode
-  // permet de sauvegarder le token côté Supabase).
+  // Push token sync (sauvegarde côté Supabase, transport push non branché).
   // ---------------------------------------------------------------------------
 
   Future<void> savePushToken(String token) async {

@@ -820,7 +820,6 @@ import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 import 'package:copiqpolice/content/gpx_scolarite/shared/plainte_page.dart';
 import 'package:copiqpolice/features/memos/cp_memos_page.dart';
 import 'package:copiqpolice/content/paywall/cp_paywall_page.dart';
-import 'package:copiqpolice/core/notifications/cp_notif_prefs_page.dart';
 
 // ═══════════════════════════════════════════════════════════════════
 //  PAGES EXISTANTES REMISES DANS LE ROUTEUR (audit 2026-07-26)
@@ -1510,7 +1509,7 @@ const String kSupabaseUrl = 'https://nuoonagnkhbeeymtvrcn.supabase.co';
 const String kSupabaseAnonKey =
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51b29uYWdua2hiZWV5bXR2cmNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYwNjE0NDUsImV4cCI6MjA3MTYzNzQ0NX0.7MRDtIcYRMwO8bykUiqhhRcdxMPjtOajbYy1SVW4PHw';
 
-const bool kDeveloperMode = true;
+const bool kDeveloperMode = false;
 const String _kWarningAckKey = 'warning_ack';
 const String _kOnboardingDoneKey = 'onboarding_done';
 

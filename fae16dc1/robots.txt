@@ -25,4 +25,4 @@ Disallow: /historique/
 Disallow: /favoris/
 Disallow: /notifications/
 
-Sitemap: https://copiqpolice.app/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml

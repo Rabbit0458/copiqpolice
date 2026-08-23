@@ -8,6 +8,7 @@
     "publish:folder": "node scripts/publish-static.mjs",
     "release:hosting": "next build && node scripts/publish-static.mjs",
     "test:content-validation": "node --experimental-strip-types --test tests/content-validation.test.ts",
+    "test:report-targets": "node --experimental-strip-types --test tests/report-target-resolver.test.ts",
     "start": "next start",
     "lint": "eslint"
   },
