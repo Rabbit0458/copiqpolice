@@ -15,8 +15,11 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'package:copiqpolice/core/services/learning_answer_history_service.dart';
+
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 // Utilitaire alpha (évite withOpacity déprécié)
 Color _opa(Color c, double a) => c.withValues(alpha: a);
@@ -301,6 +304,18 @@ class PaQuizQuestionsRepository {
   /// - si on n'a pas assez, on "wrap" avec rand_key < seed
   ///
   /// ✅ Rapide si un index existe sur (category, difficulty, rand_key)
+  Future<int> countAvailable({
+    required String category,
+    String? difficulty,
+  }) async {
+    dynamic query = sb
+        .from('quiz_questions')
+        .count(CountOption.exact)
+        .eq('category', category);
+    if (difficulty != null) query = query.eq('difficulty', difficulty);
+    return await query as int;
+  }
+
   Future<List<PaQuizQuestion>> fetchRandomSet({
     required String category,
     String? difficulty,
@@ -668,6 +683,25 @@ class _PaQuizCultureGeneraleSportState extends State<PaQuizCultureGeneraleSport>
       return;
     }
 
+    final availableQuestions = await _repo.countAvailable(
+      category: _categoryNameDb,
+      difficulty: _difficultyFilter,
+    );
+    if (!mounted) return;
+    if (availableQuestions <= 0) {
+      AppNotifier.warning(
+        context,
+        title: 'Aucune question disponible',
+        message: 'Aucune question ne correspond à ce niveau pour le moment.',
+      );
+      return;
+    }
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: availableQuestions,
+    );
+    if (!mounted || session == null) return;
+
     setState(() {
       _loading = true;
       _hasQuiz = false;
@@ -693,7 +727,7 @@ class _PaQuizCultureGeneraleSportState extends State<PaQuizCultureGeneraleSport>
     });
 
     try {
-      const int quizLength = 50;
+      final quizLength = session.questionCount;
       final seed = _rng.nextDouble();
 
       final questions = await _repo.fetchRandomSet(
@@ -790,12 +824,21 @@ class _PaQuizCultureGeneraleSportState extends State<PaQuizCultureGeneraleSport>
     unawaited(_playAnswerSfx(ok));
 
     unawaited(
-      _saveAnswer(
+      LearningAnswerHistoryService().record(
+        historyId: _historyRowId,
+        track: 'pa',
+        mode: 'exam',
+        moduleKey: q.category.toString(),
+        quizKey: 'pa_quiz_culture_generale_sport',
+        questionId: '${q.category}:${_index + 1}',
         question: q.question,
+        options: q.options.map((value) => value.toString()).toList(),
         userAnswer: _currentChoice!,
         correctAnswer: q.answer,
         isCorrect: ok,
+        explanation: q.explanation,
         difficulty: q.difficulty,
+        questionPosition: _index + 1,
       ),
     );
   }
@@ -971,7 +1014,7 @@ class _PaQuizCultureGeneraleSportState extends State<PaQuizCultureGeneraleSport>
         // 🔥 LIVE : 0 / 50 affiché immédiatement
         'score': 0,
         'correct_count': 0,
-        'total_questions': 500,
+        'total_questions': _total,
 
         'mode': 'exam',
         'track': 'pa',
@@ -1015,10 +1058,9 @@ class _PaQuizCultureGeneraleSportState extends State<PaQuizCultureGeneraleSport>
       await _sb
           .from('quiz_history')
           .update({
+            'total_questions': answered,
             'score': percent,
             'correct_count': _score,
-            'total_questions':
-                answered, // 🔥 comme grammaire: questions traitées
             'finished_at': nowUtc,
             'completed_at': nowUtc,
 

@@ -6,9 +6,14 @@ export interface BlogArticle {
   date: string
   category: string
   readTime: number
+  image: string
+  imageAlt: string
   content: string
   keywords: string[]
 }
+
+const ASSET_BASE =
+  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets"
 
 export const BLOG_ARTICLES: BlogArticle[] = [
   {
@@ -19,6 +24,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     date: "2025-04-15",
     category: "Préparation concours",
     readTime: 8,
+    image: `${ASSET_BASE}/website_assets/police.webp`,
+    imageAlt: "Policiers nationaux illustrant la préparation au concours de Policier adjoint",
     keywords: ["concours policier adjoint", "PA police nationale", "concours PA 2025", "préparer concours police"],
     content: `## Le concours de Policier Adjoint
 
@@ -86,6 +93,8 @@ COP'IQ rassemble tout ce dont vous avez besoin : cours structurés, QCM par thè
     date: "2025-05-02",
     category: "Cours",
     readTime: 10,
+    image: `${ASSET_BASE}/website_assets/gpx.jpg`,
+    imageAlt: "Gardien de la paix en uniforme pendant une formation de droit pénal",
     keywords: ["droit pénal police nationale", "classification infractions concours", "cours droit pénal PA GPX"],
     content: `## Droit pénal : ce qu'il faut savoir pour le concours
 
@@ -152,6 +161,8 @@ Les causes **subjectives** (troubles de la volonté) :
     date: "2025-05-20",
     category: "Méthode",
     readTime: 12,
+    image: `${ASSET_BASE}/website_assets/pv_intro.jpg`,
+    imageAlt: "Policier en intervention illustrant la préparation aux cas pratiques GPX",
     keywords: ["cas pratique GPX méthode", "rédaction cas pratique police", "concours Gardien de la Paix", "exercice GPX"],
     content: `## Les cas pratiques GPX : méthode complète
 
@@ -221,6 +232,8 @@ Sur COP'IQ, l'IA corrige vos cas pratiques en temps réel : détection des quali
     date: "2025-06-01",
     category: "Psychotechniques",
     readTime: 7,
+    image: `${ASSET_BASE}/website_assets/pv_circulation_routiere.jpeg`,
+    imageAlt: "Motocycliste de la Police nationale illustrant les exercices de concentration",
     keywords: ["psychotechniques police nationale", "exercices psychotechniques concours police", "suites logiques", "calcul mental concours"],
     content: `## Les épreuves psychotechniques aux concours de police
 

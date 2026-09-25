@@ -4,7 +4,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
@@ -12,7 +11,17 @@ import 'package:copiqpolice/core/widgets/app_notifier.dart'
 
 class WarningScreen extends StatefulWidget {
   final VoidCallback onAccepted;
-  const WarningScreen({super.key, required this.onAccepted});
+  final String title;
+  final String content;
+  const WarningScreen({
+    super.key,
+    required this.onAccepted,
+    this.title = 'Avertissement',
+    this.content =
+        'COP’IQ est une application privée de préparation scolaire.\n'
+        'Elle n’est ni affiliée ni autorisée par le Gouvernement.\n'
+        'Les contenus sont pédagogiques et ne remplacent pas les instructions officielles.',
+  });
 
   @override
   State<WarningScreen> createState() => _WarningScreenState();
@@ -92,9 +101,6 @@ class _WarningScreenState extends State<WarningScreen>
 
   Future<void> _accept() async {
     HapticFeedback.selectionClick();
-
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('warning_ack', true);
 
     if (!mounted) return;
     setState(() => _redirecting = true);
@@ -253,6 +259,8 @@ class _WarningScreenState extends State<WarningScreen>
                                   },
                                   child: _GlassCardPremium(
                                     child: _CardContent(
+                                      title: widget.title,
+                                      content: widget.content,
                                       h1: _h1(),
                                       p: _p(),
                                       pulse: reduceMotion ? null : _pulse,
@@ -332,6 +340,8 @@ class _GlassCardPremium extends StatelessWidget {
 
 class _CardContent extends StatelessWidget {
   const _CardContent({
+    required this.title,
+    required this.content,
     required this.h1,
     required this.p,
     required this.onAccept,
@@ -341,6 +351,8 @@ class _CardContent extends StatelessWidget {
 
   final TextStyle h1;
   final TextStyle p;
+  final String title;
+  final String content;
   final VoidCallback onAccept;
   final VoidCallback onOpenPrivacy;
 
@@ -417,16 +429,14 @@ class _CardContent extends StatelessWidget {
         const SizedBox(height: 14),
 
         Text(
-          "Avertissement",
+          title,
           textAlign: TextAlign.center,
           style: h1.copyWith(fontSize: 24),
         ),
         const SizedBox(height: 10),
 
         Text(
-          "COP’IQ est une application privée de préparation scolaire.\n"
-          "Elle n’est ni affiliée ni autorisée par le Gouvernement.\n"
-          "Les contenus sont pédagogiques et ne remplacent pas les instructions officielles.",
+          content,
           textAlign: TextAlign.center,
           style: p.copyWith(fontSize: 14.2),
         ),

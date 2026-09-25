@@ -34,4 +34,33 @@ void main() {
     expect(find.text('Recueil de procès-verbaux (APJ 20)'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
+
+  testWidgets('les deux socles d’intervention restent distinguables', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(320, 760);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
+    await tester.pumpWidget(const MaterialApp(home: GpxSchoolArt()));
+    await tester.pumpAndSettle();
+
+    for (final title in const [
+      'Intervention — Socle initial',
+      'Intervention — Socle avancé',
+    ]) {
+      await tester.scrollUntilVisible(
+        find.text(title),
+        160,
+        scrollable: find.byType(Scrollable).first,
+      );
+      final text = tester.widget<Text>(find.text(title));
+      expect(text.maxLines, 2);
+      expect(text.overflow, TextOverflow.visible);
+      expect(text.softWrap, isTrue);
+    }
+
+    expect(tester.takeException(), isNull);
+  });
 }

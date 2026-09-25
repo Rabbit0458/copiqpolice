@@ -16,6 +16,9 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'package:copiqpolice/core/services/learning_answer_history_service.dart';
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
@@ -2526,6 +2529,9 @@ class _QuizFlagrantDelitPageState extends State<QuizFlagrantDelitPage>
       final res = await _sb
           .from('quiz_history')
           .insert({
+            'grade': 'gpx',
+            'track': 'gpx',
+            'mode': 'school',
             'uid': widget.uid,
             'email': widget.email,
             'module_name': 'Cadres Juridiques',
@@ -2547,12 +2553,14 @@ class _QuizFlagrantDelitPageState extends State<QuizFlagrantDelitPage>
     if (_historyRowId == null) return;
 
     try {
-      final int total = _qs.length.clamp(1, 1 << 30);
-      final int percent = ((_score / total) * 100).round();
+      final int answered = _answers.where((a) => a != null).length;
+      final int totalForScore = answered <= 0 ? 1 : answered;
+      final int percent = ((_score / totalForScore) * 100).round();
 
       await _sb
           .from('quiz_history')
           .update({
+            'total_questions': answered,
             'score': percent,
             'correct_count': _score,
             'finished_at': DateTime.now().toUtc().toIso8601String(),
@@ -2618,6 +2626,17 @@ class _QuizFlagrantDelitPageState extends State<QuizFlagrantDelitPage>
     }
 
     await _seedAndShuffle();
+    if (!mounted) return;
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: _qs.length,
+    );
+    if (!mounted || session == null) return;
+    if (session.questionCount < _qs.length) {
+      _qs = _qs.take(session.questionCount).toList(growable: false);
+      _opts = _opts.take(session.questionCount).toList(growable: false);
+      _answers = List<String?>.filled(_qs.length, null);
+    }
 
     setState(() {
       _index = 0;
@@ -2664,12 +2683,21 @@ class _QuizFlagrantDelitPageState extends State<QuizFlagrantDelitPage>
     unawaited(_playAnswerSfx(ok));
 
     unawaited(
-      _saveAnswer(
+      LearningAnswerHistoryService().record(
+        historyId: _historyRowId,
+        track: 'gpx',
+        mode: 'school',
+        moduleKey: q.category.toString(),
+        quizKey: 'quiz_flagrant_delit_page',
+        questionId: '${q.category}:${_index + 1}',
         question: q.question,
+        options: q.options.map((value) => value.toString()).toList(),
         userAnswer: _currentChoice!,
         correctAnswer: q.answer,
         isCorrect: ok,
+        explanation: q.explanation,
         difficulty: q.difficulty,
+        questionPosition: _index + 1,
       ),
     );
   }

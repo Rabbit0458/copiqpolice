@@ -43,6 +43,8 @@ Deno.serve(async (req: Request) => {
 
   const authHeader = req.headers.get("Authorization");
   if (!authHeader?.startsWith("Bearer ")) return json({ error: "not_authenticated", message: "Session administrateur requise." }, 401);
+  const accessToken = authHeader.slice(7).trim();
+  if (!accessToken) return json({ error: "not_authenticated", message: "Session administrateur requise." }, 401);
 
   const url = Deno.env.get("SUPABASE_URL")!;
   const anonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
@@ -50,7 +52,7 @@ Deno.serve(async (req: Request) => {
   const callerClient = createClient(url, anonKey, { global: { headers: { Authorization: authHeader } } });
   const serviceClient = createClient(url, serviceKey);
 
-  const { data: { user }, error: userError } = await callerClient.auth.getUser();
+  const { data: { user }, error: userError } = await callerClient.auth.getUser(accessToken);
   if (userError || !user) return json({ error: "not_authenticated", message: "Session invalide ou expirée." }, 401);
 
   let body: { kind?: string; id?: string; archive?: boolean; note?: string };

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-export const metadata: Metadata = { title: "À propos — COP'IQ Beta" }
+export const metadata: Metadata = { title: "À propos de la bêta" }
 export default function BetaPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">

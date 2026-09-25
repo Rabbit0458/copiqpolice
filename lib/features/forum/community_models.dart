@@ -36,7 +36,7 @@ String communityMonthYear(DateTime value) {
   return '${months[date.month - 1]} ${date.year}';
 }
 
-enum CommunityScope { global, paExam, gpxExam, paSchool, gpxSchool }
+enum CommunityScope { global, paExam, gpxExam, paSchool, gpxSchool, active }
 
 extension CommunityScopeX on CommunityScope {
   String get id => switch (this) {
@@ -45,6 +45,7 @@ extension CommunityScopeX on CommunityScope {
     CommunityScope.gpxExam => 'gpx_exam',
     CommunityScope.paSchool => 'pa_school',
     CommunityScope.gpxSchool => 'gpx_school',
+    CommunityScope.active => 'active',
   };
 
   String get label => switch (this) {
@@ -53,6 +54,7 @@ extension CommunityScopeX on CommunityScope {
     CommunityScope.gpxExam => 'Concours Gardien de la paix',
     CommunityScope.paSchool => 'École Policier adjoint',
     CommunityScope.gpxSchool => 'École Gardien de la paix',
+    CommunityScope.active => 'Policiers actifs',
   };
 
   String get shortLabel => switch (this) {
@@ -61,6 +63,7 @@ extension CommunityScopeX on CommunityScope {
     CommunityScope.gpxExam => 'Concours GPX',
     CommunityScope.paSchool => 'École PA',
     CommunityScope.gpxSchool => 'École GPX',
+    CommunityScope.active => 'Actifs',
   };
 
   String get description => switch (this) {
@@ -69,6 +72,8 @@ extension CommunityScopeX on CommunityScope {
     CommunityScope.gpxExam => 'Préparation au concours de gardien de la paix',
     CommunityScope.paSchool => 'Formation des policiers adjoints',
     CommunityScope.gpxSchool => 'Formation des gardiens de la paix',
+    CommunityScope.active =>
+      'Espace réservé aux gardiens de la paix en activité',
   };
 
   Color get color => switch (this) {
@@ -77,6 +82,7 @@ extension CommunityScopeX on CommunityScope {
     CommunityScope.gpxExam => const Color(0xFF2463EB),
     CommunityScope.paSchool => const Color(0xFF0F9F82),
     CommunityScope.gpxSchool => const Color(0xFF7C4DDB),
+    CommunityScope.active => const Color(0xFF1769E8),
   };
 
   IconData get icon => switch (this) {
@@ -85,6 +91,7 @@ extension CommunityScopeX on CommunityScope {
     CommunityScope.gpxExam => Icons.local_police_rounded,
     CommunityScope.paSchool => Icons.school_rounded,
     CommunityScope.gpxSchool => Icons.account_balance_rounded,
+    CommunityScope.active => Icons.verified_user_rounded,
   };
 
   static CommunityScope fromId(String? value) =>

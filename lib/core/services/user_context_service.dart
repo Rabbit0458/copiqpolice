@@ -14,7 +14,7 @@
 //
 // Les valeurs possibles :
 //   track : 'gpx' | 'pa' | 'reserve'
-//   mode  : 'school' | 'exam'
+//   mode  : 'school' | 'exam' | 'active'
 
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -37,8 +37,9 @@ class UserTracks {
 class UserModes {
   static const String school = 'school';
   static const String exam = 'exam';
+  static const String active = 'active';
 
-  static const Set<String> values = {school, exam};
+  static const Set<String> values = {school, exam, active};
 
   static bool isValid(String? v) => v != null && values.contains(v);
 
@@ -88,14 +89,12 @@ class UserContextService {
   String? get mode => _mode;
 
   /// Track courant avec fallback safe (jamais null).
-  String get trackOrDefault => UserTracks.isValid(_track)
-      ? _track!
-      : UserTracks.fallback;
+  String get trackOrDefault =>
+      UserTracks.isValid(_track) ? _track! : UserTracks.fallback;
 
   /// Mode courant avec fallback safe (jamais null).
-  String get modeOrDefault => UserModes.isValid(_mode)
-      ? _mode!
-      : UserModes.fallback;
+  String get modeOrDefault =>
+      UserModes.isValid(_mode) ? _mode! : UserModes.fallback;
 
   bool get isInitialized => _initialized;
 

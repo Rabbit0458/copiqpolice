@@ -16,6 +16,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'package:copiqpolice/core/services/revenuecat_service.dart';
 import 'package:copiqpolice/core/widgets/user_verification_badge.dart';
 
 class Entitlement {
@@ -24,8 +25,9 @@ class Entitlement {
   final bool isOwner;
   final bool isAdmin; // owner OR admin
   final bool premium; // any source: owner bypass, paid sub, trial
-  final String plan;  // 'free' | 'week' | 'month' | 'year'
-  final String status;// 'active' | 'trial' | 'cancelled' | 'expired' | 'past_due'
+  final String plan; // 'free' | 'week' | 'month' | 'year'
+  final String
+  status; // 'active' | 'trial' | 'cancelled' | 'expired' | 'past_due'
   final DateTime? validUntil;
   final bool cancelAtPeriodEnd;
   final int freeUsed;
@@ -88,8 +90,12 @@ class Entitlement {
       validUntil: parse(j['valid_until']),
       cancelAtPeriodEnd: j['cancel_at_period_end'] == true,
       freeUsed: (j['free_used'] is num) ? (j['free_used'] as num).toInt() : 0,
-      freeLimit: (j['free_limit'] is num) ? (j['free_limit'] as num).toInt() : 10,
-      freeRemaining: (j['free_remaining'] is num) ? (j['free_remaining'] as num).toInt() : 10,
+      freeLimit: (j['free_limit'] is num)
+          ? (j['free_limit'] as num).toInt()
+          : 10,
+      freeRemaining: (j['free_remaining'] is num)
+          ? (j['free_remaining'] as num).toInt()
+          : 10,
       freeResetsAt: parse(j['free_resets_at']),
       quizAttemptsCount: (j['quiz_attempts_count'] is num)
           ? (j['quiz_attempts_count'] as num).toInt()
@@ -102,7 +108,8 @@ class Entitlement {
   /// futur écran de récompenses ("57/100 quiz lancés") sans reconstruire la
   /// logique — pas encore affichée faute d'emplacement dédié.
   double get nextBadgeProgress {
-    if (badgeType == UserBadgeType.admin || badgeType == UserBadgeType.moderator) {
+    if (badgeType == UserBadgeType.admin ||
+        badgeType == UserBadgeType.moderator) {
       return 1.0;
     }
     final target = badgeType == UserBadgeType.active ? 2000 : 100;
@@ -127,7 +134,9 @@ class EntitlementService {
 
   SupabaseClient get _sb => Supabase.instance.client;
 
-  final ValueNotifier<Entitlement> state = ValueNotifier<Entitlement>(Entitlement.guest);
+  final ValueNotifier<Entitlement> state = ValueNotifier<Entitlement>(
+    Entitlement.guest,
+  );
 
   Completer<Entitlement>? _inflight;
 
@@ -142,7 +151,22 @@ class EntitlementService {
       } else {
         j = const {};
       }
-      final ent = j['authenticated'] == true ? Entitlement.fromJson(j) : Entitlement.guest;
+      final store = RevenueCatService.instance.state.value;
+      if (store.isPremium) {
+        final product = store.productIdentifier ?? '';
+        j = <String, dynamic>{
+          ...j,
+          'authenticated': true,
+          'premium': true,
+          'plan': product.contains('year') ? 'year' : 'month',
+          'status': 'active',
+          'valid_until': store.expiresAt?.toIso8601String(),
+          'cancel_at_period_end': !store.willRenew,
+        };
+      }
+      final ent = j['authenticated'] == true
+          ? Entitlement.fromJson(j)
+          : Entitlement.guest;
       state.value = ent;
       _inflight!.complete(ent);
       return ent;

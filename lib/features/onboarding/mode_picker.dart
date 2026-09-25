@@ -5,6 +5,7 @@
 // - Redirection immédiate vers le grade picker
 // ✅ V2 : Plus de lock premium sur la carte "Je suis en scolarité"
 //         Le blocage premium intervient à l'ouverture du contenu réel (modules).
+import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/features/home/home_page.dart'
     show UserMode, UserModeController;
 import 'package:copiqpolice/features/onboarding/grade_picker.dart';
+import 'package:copiqpolice/features/active/active_access_service.dart';
+import 'package:copiqpolice/core/services/user_context_service.dart';
 
 class _T {
   static const Color ink = Color(0xFF212529);
@@ -38,6 +41,9 @@ class ModePickerScreen extends StatefulWidget {
     this.schoolCardKey,
     this.examCardKey,
     this.onModeSelectedOverride,
+    this.onActiveSelectedOverride,
+    this.activeModeConfigLoader,
+    this.activeModeRefreshInterval = const Duration(seconds: 12),
     this.lockToSchoolOnly = false,
   });
 
@@ -50,6 +56,17 @@ class ModePickerScreen extends StatefulWidget {
   /// Tutoriel : si défini, le ModePicker ne fait pas de navigation ni de save.
   final Future<void> Function(UserMode mode)? onModeSelectedOverride;
 
+  /// Tutoriel : permet de faire apparaître le troisième choix sans tenter
+  /// d'interroger Supabase avant que le compte utilisateur soit créé.
+  final Future<void> Function()? onActiveSelectedOverride;
+
+  /// Point d'injection réservé aux tests. En production, la configuration est
+  /// toujours lue via la RPC sécurisée `active_mode_public_config`.
+  final Future<ActiveModeConfig> Function()? activeModeConfigLoader;
+
+  /// Le sélecteur reste aligné avec le panel tant qu'il est affiché.
+  final Duration activeModeRefreshInterval;
+
   /// Tutoriel : si true, empêche l'utilisateur de choisir "Je prépare le concours".
   final bool lockToSchoolOnly;
 
@@ -57,21 +74,135 @@ class ModePickerScreen extends StatefulWidget {
   State<ModePickerScreen> createState() => _ModePickerScreenState();
 }
 
-class _ModePickerScreenState extends State<ModePickerScreen> {
+class _ModePickerScreenState extends State<ModePickerScreen>
+    with WidgetsBindingObserver {
   UserMode? _mode;
+  bool _activeSelected = false;
   bool _saving = false;
+  bool _activeModeEnabled = false;
+  bool _checkingActiveMode = false;
+  int? _activeModeRevision;
+  String? _displayName;
+  Timer? _activeModeRefreshTimer;
 
-  /// Upsert dans `public.user_profiles` (clé unique: user_id)
-  Future<void> _upsertProfile({required String userMode}) async {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _loadDisplayName();
+    _loadActiveModeAvailability();
+    _startActiveModeRefresh();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _activeModeRefreshTimer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _loadActiveModeAvailability();
+      _startActiveModeRefresh();
+    } else if (state == AppLifecycleState.inactive ||
+        state == AppLifecycleState.paused ||
+        state == AppLifecycleState.detached) {
+      _activeModeRefreshTimer?.cancel();
+      _activeModeRefreshTimer = null;
+    }
+  }
+
+  void _startActiveModeRefresh() {
+    if (widget.onActiveSelectedOverride != null ||
+        widget.activeModeRefreshInterval <= Duration.zero) {
+      return;
+    }
+    _activeModeRefreshTimer?.cancel();
+    _activeModeRefreshTimer = Timer.periodic(
+      widget.activeModeRefreshInterval,
+      (_) => _loadActiveModeAvailability(),
+    );
+  }
+
+  Future<void> _loadActiveModeAvailability() async {
+    if (widget.onActiveSelectedOverride != null) {
+      if (mounted) setState(() => _activeModeEnabled = true);
+      return;
+    }
+    if (_checkingActiveMode) return;
+    _checkingActiveMode = true;
+    try {
+      final config =
+          await (widget.activeModeConfigLoader?.call() ??
+              ActiveAccessService().config());
+      if (!mounted) return;
+      if (_activeModeEnabled != config.available ||
+          _activeModeRevision != config.revision) {
+        setState(() {
+          _activeModeEnabled = config.available;
+          _activeModeRevision = config.revision;
+        });
+      }
+    } catch (error) {
+      // Fail closed: a network/database error must never expose a disabled mode.
+      debugPrint('[ModePicker] active mode config unavailable: $error');
+    } finally {
+      _checkingActiveMode = false;
+    }
+  }
+
+  Future<void> _loadDisplayName() async {
+    String? name;
     try {
       final client = Supabase.instance.client;
       final user = client.auth.currentUser;
       if (user == null) return;
-      await client.from('user_profiles').upsert({
+      final profile = await client
+          .from('user_profiles')
+          .select('first_name, username')
+          .eq('user_id', user.id)
+          .maybeSingle();
+      name = _firstUsefulName(profile?['first_name'], profile?['username']);
+      name ??= _firstUsefulName(
+        user.userMetadata?['first_name'] ?? user.userMetadata?['given_name'],
+        user.userMetadata?['username'] ?? user.userMetadata?['full_name'],
+      );
+    } catch (error) {
+      debugPrint('[ModePicker] display name unavailable: $error');
+    }
+    if (mounted && name != null) setState(() => _displayName = name);
+  }
+
+  Future<void> _refreshModePicker() async {
+    await Future.wait([_loadActiveModeAvailability(), _loadDisplayName()]);
+  }
+
+  String? _firstUsefulName(dynamic firstName, dynamic username) {
+    for (final candidate in [firstName, username]) {
+      final value = candidate?.toString().trim() ?? '';
+      if (value.isNotEmpty) return value.split(RegExp(r'\s+')).first;
+    }
+    return null;
+  }
+
+  /// Upsert dans `public.user_profiles` (clé unique: user_id)
+  Future<void> _upsertProfile({
+    required String userMode,
+    String? userTrack,
+  }) async {
+    try {
+      final client = Supabase.instance.client;
+      final user = client.auth.currentUser;
+      if (user == null) return;
+      final values = <String, dynamic>{
         'user_id': user.id,
-        'user_mode': userMode, // 'exam' | 'school'
+        'user_mode': userMode, // 'exam' | 'school' | 'active'
         'updated_at': DateTime.now().toIso8601String(),
-      }, onConflict: 'user_id');
+      };
+      if (userTrack != null) values['user_track'] = userTrack;
+      await client.from('user_profiles').upsert(values, onConflict: 'user_id');
     } catch (e) {
       debugPrint('[ModePicker] upsert user_profiles failed: $e');
     }
@@ -103,6 +234,7 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
       final sp = await SharedPreferences.getInstance();
       final userModeString = mode == UserMode.school ? 'school' : 'exam';
       await sp.setString('user_mode', userModeString);
+      await UserContextService.I.setMode(userModeString);
       await UserModeController.I.setMode(mode);
 
       // 2) Distant
@@ -118,6 +250,56 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
     }
   }
 
+  Future<void> _selectActive() async {
+    if (_saving) return;
+
+    if (widget.onActiveSelectedOverride != null) {
+      HapticFeedback.selectionClick();
+      await widget.onActiveSelectedOverride!();
+      return;
+    }
+
+    setState(() {
+      _activeSelected = true;
+      _saving = true;
+    });
+    try {
+      final sp = await SharedPreferences.getInstance();
+      await sp.setString('user_mode', 'active');
+      await sp.setString('selected_track', 'gpx');
+      await UserContextService.I.setMode(UserModes.active);
+      await UserContextService.I.setTrack(UserTracks.gpx);
+      await _upsertProfile(userMode: 'active', userTrack: 'gpx');
+      final activeService = ActiveAccessService();
+      final config = await activeService.config();
+      final status = config.ownerPreviewActive
+          ? null
+          : await activeService.status();
+      if (!mounted) return;
+      Navigator.of(context).pushNamedAndRemoveUntil(
+        config.ownerPreviewActive || status?.granted == true
+            ? '/active-home'
+            : '/active-verification',
+        (_) => false,
+      );
+    } catch (error) {
+      debugPrint('[ModePicker] active mode unavailable: $error');
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Impossible de vérifier cet accès. Réessaie.'),
+        ),
+      );
+    } finally {
+      if (mounted) {
+        setState(() {
+          _saving = false;
+          _activeSelected = false;
+        });
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -126,55 +308,77 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
       body: SafeArea(
-        child: ListView(
-          padding: const EdgeInsets.fromLTRB(20, 24, 20, 28),
-          children: [
-            Text(
-              'Bienvenue 👋',
-              style: GoogleFonts.instrumentSans(
-                fontSize: 24,
-                fontWeight: FontWeight.w900,
-                color: isDark ? Colors.white : _T.ink,
-              ),
+        child: RefreshIndicator(
+          onRefresh: _refreshModePicker,
+          color: isDark ? Colors.white : const Color(0xFF1565C0),
+          backgroundColor: isDark ? const Color(0xFF202328) : Colors.white,
+          child: ListView(
+            physics: const AlwaysScrollableScrollPhysics(
+              parent: BouncingScrollPhysics(),
             ),
-            const SizedBox(height: 6),
-            Text(
-              "Choisis ton mode pour adapter l'application.",
-              style: theme.textTheme.bodyMedium?.copyWith(
-                color: _muted(context, .8),
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            _ChoiceHeroCard(
-              key: widget.examCardKey,
-              image: 'assets/images/exam.jpeg',
-              badge: 'Préparation',
-              title: 'Je prépare le concours',
-              selected: _mode == UserMode.exam,
-              onTap: () => _select(UserMode.exam),
-            ),
-
-            _ChoiceHeroCard(
-              key: widget.schoolCardKey,
-              image: 'assets/images/school.jpeg',
-              badge: 'École',
-              title: 'Je suis en scolarité',
-              selected: _mode == UserMode.school,
-              onTap: () => _select(UserMode.school),
-            ),
-
-            const SizedBox(height: 22),
-            Center(
-              child: Text(
-                'Tu pourras modifier ce choix plus tard dans "Mon compte".',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: _muted(context, .7),
+            padding: const EdgeInsets.fromLTRB(20, 24, 20, 28),
+            children: [
+              Text(
+                _displayName == null
+                    ? 'Bienvenue 👋'
+                    : 'Bienvenue $_displayName 👋',
+                style: GoogleFonts.instrumentSans(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w900,
+                  color: isDark ? Colors.white : _T.ink,
                 ),
               ),
-            ),
-          ],
+              const SizedBox(height: 6),
+              Text(
+                "Choisis ton mode pour adapter l'application.",
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: _muted(context, .8),
+                ),
+              ),
+              const SizedBox(height: 20),
+
+              _ChoiceHeroCard(
+                key: widget.examCardKey,
+                image: 'assets/images/exam.jpeg',
+                badge: 'Préparation',
+                title: 'Je prépare le concours',
+                selected: _mode == UserMode.exam,
+                onTap: () => _select(UserMode.exam),
+              ),
+
+              _ChoiceHeroCard(
+                key: widget.schoolCardKey,
+                image: 'assets/images/school.jpeg',
+                badge: 'École',
+                title: 'Je suis en scolarité',
+                selected: _mode == UserMode.school,
+                onTap: () => _select(UserMode.school),
+              ),
+
+              if (_activeModeEnabled &&
+                  (!widget.lockToSchoolOnly ||
+                      widget.onActiveSelectedOverride != null))
+                _ChoiceHeroCard(
+                  image:
+                      'https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/website_assets/police.webp',
+                  badge: 'Terrain',
+                  title: 'Je suis actif',
+                  selected: _activeSelected,
+                  onTap: _selectActive,
+                ),
+
+              const SizedBox(height: 22),
+              Center(
+                child: Text(
+                  'Tu pourras modifier ce choix plus tard dans "Mon compte".',
+                  textAlign: TextAlign.center,
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: _muted(context, .7),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -202,12 +406,22 @@ class _ChoiceHeroCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    Widget img;
-    try {
-      img = Image.asset(image, fit: BoxFit.cover);
-    } catch (_) {
-      img = Container(color: Colors.black.withValues(alpha: .06));
-    }
+    final img = image.startsWith('http')
+        ? Image.network(
+            image,
+            fit: BoxFit.cover,
+            loadingBuilder: (context, child, progress) => progress == null
+                ? child
+                : Container(color: Colors.black.withValues(alpha: .08)),
+            errorBuilder: (_, __, ___) =>
+                Container(color: Colors.black.withValues(alpha: .08)),
+          )
+        : Image.asset(
+            image,
+            fit: BoxFit.cover,
+            errorBuilder: (_, __, ___) =>
+                Container(color: Colors.black.withValues(alpha: .08)),
+          );
 
     return AnimatedScale(
       scale: selected ? 1.0 : 0.97,
@@ -245,11 +459,37 @@ class _ChoiceHeroCard extends StatelessWidget {
                 // Image
                 Positioned.fill(child: img),
 
+                Positioned(
+                  left: 16,
+                  top: 16,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 7,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withValues(alpha: .58),
+                      borderRadius: BorderRadius.circular(999),
+                      border: Border.all(color: Colors.white24),
+                    ),
+                    child: Text(
+                      badge,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
+                ),
+
                 // Overlay blur
                 Positioned.fill(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 7, sigmaY: 7),
-                    child: Container(color: Colors.black.withValues(alpha: 0.28)),
+                    child: Container(
+                      color: Colors.black.withValues(alpha: 0.28),
+                    ),
                   ),
                 ),
 

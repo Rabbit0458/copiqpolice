@@ -2,8 +2,9 @@
 // Choix du grade : Réserviste / Policier adjoint / Gardien de la paix
 // - Upsert Supabase (user_profiles.user_track)
 // - Persistance locale + live controllers (si exposés)
-// - Redirection Home (le module Réserve reste verrouillé)
+// - Redirection Home ; la carte Réserviste est pilotée à distance par le panel.
 
+import 'dart:async';
 import 'dart:ui'; // pour ImageFilter.blur
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/features/home/home_page.dart'
     show UserTrackController, UserTrack;
 import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppNotifier;
+import 'package:copiqpolice/core/services/user_context_service.dart';
+import 'package:copiqpolice/features/onboarding/grade_picker_config.dart';
 
 class _T {
   static const Color ink = Color(0xFF212529);
@@ -50,9 +53,60 @@ class GradePickerScreen extends StatefulWidget {
   State<GradePickerScreen> createState() => _GradePickerScreenState();
 }
 
-class _GradePickerScreenState extends State<GradePickerScreen> {
+class _GradePickerScreenState extends State<GradePickerScreen>
+    with WidgetsBindingObserver {
   GradeChoice? _grade;
   bool _saving = false;
+  bool _reserveEnabled = false;
+  int? _reserveRevision;
+  bool _loadingReserve = false;
+  Timer? _reserveRefreshTimer;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    _loadReserveVisibility();
+    _reserveRefreshTimer = Timer.periodic(
+      const Duration(seconds: 12),
+      (_) => _loadReserveVisibility(),
+    );
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    _reserveRefreshTimer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) {
+      _loadReserveVisibility();
+    }
+  }
+
+  Future<void> _loadReserveVisibility() async {
+    if (_loadingReserve) return;
+    _loadingReserve = true;
+    try {
+      final config = await GradePickerConfigService().load();
+      if (!mounted) return;
+      if (_reserveEnabled != config.reserveEnabled ||
+          _reserveRevision != config.revision) {
+        setState(() {
+          _reserveEnabled = config.reserveEnabled;
+          _reserveRevision = config.revision;
+        });
+      }
+    } catch (error) {
+      // Fail closed : la carte reste masquée si la configuration est indisponible.
+      debugPrint('[GradePicker] reserve visibility unavailable: $error');
+    } finally {
+      _loadingReserve = false;
+    }
+  }
 
   Future<void> _upsertProfile({required String userTrack}) async {
     try {
@@ -107,12 +161,14 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
 
       if (g == GradeChoice.pa) {
         await sp.setString('selected_track', 'pa');
+        await UserContextService.I.setTrack(UserTracks.pa);
         try {
           await UserTrackController.I.setTrack(UserTrack.pa);
         } catch (_) {}
         await _upsertProfile(userTrack: 'pa');
       } else {
         await sp.setString('selected_track', 'gpx');
+        await UserContextService.I.setTrack(UserTracks.gpx);
         try {
           await UserTrackController.I.setTrack(UserTrack.gpx);
         } catch (_) {}
@@ -166,23 +222,27 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    'Réserve, Policier adjoint ou Gardien de la paix.',
+                    _reserveEnabled
+                        ? 'Réserviste, Policier adjoint ou Gardien de la paix.'
+                        : 'Policier adjoint ou Gardien de la paix.',
                     style: theme.textTheme.bodyMedium?.copyWith(
                       color: _muted(context, .8),
                     ),
                   ),
                   SizedBox(height: compact ? 14 : 22),
 
-                  _ChoiceHeroCard(
-                    image: 'assets/images/reserve.jpeg',
-                    badge: 'Réserve',
-                    title: 'Réserviste',
-                    locked: true,
-                    height: cardHeight,
-                    selected: _grade == GradeChoice.reserve,
-                    onTap: () => _apply(GradeChoice.reserve),
-                  ),
-                  SizedBox(height: gap),
+                  if (_reserveEnabled) ...[
+                    _ChoiceHeroCard(
+                      image: 'assets/images/reserve.jpeg',
+                      badge: 'Réserve',
+                      title: 'Réserviste',
+                      locked: true,
+                      height: cardHeight,
+                      selected: _grade == GradeChoice.reserve,
+                      onTap: () => _apply(GradeChoice.reserve),
+                    ),
+                    SizedBox(height: gap),
+                  ],
 
                   _ChoiceHeroCard(
                     image: 'assets/images/pa.jpg',

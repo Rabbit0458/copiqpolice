@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:copiqpolice/core/services/school_program_preferences.dart';
 
 // Types publics
 import 'package:copiqpolice/features/home/home_page.dart'
@@ -10,16 +11,19 @@ import 'package:copiqpolice/features/home/home_page.dart'
 // Homes
 import 'package:copiqpolice/features/home/home_page_gpx_school.dart'
     show HomePageGpxSchool;
-import 'package:copiqpolice/features/home/home_page_gpx_exam.dart' show HomePageGpxExam;
-import 'package:copiqpolice/features/home/home_page_pa_exam.dart' show HomePagePaExam;
+import 'package:copiqpolice/features/home/home_page_gpx_exam.dart'
+    show HomePageGpxExam;
+import 'package:copiqpolice/features/home/home_page_pa_exam.dart'
+    show HomePagePaExam;
 import 'package:copiqpolice/features/home/home_page_pa_school.dart'
     show HomePagePaSchool;
 
-// ✅ Programme PA du jour (NON sauvegardé)
+// Programmes de scolarité mémorisés pour restaurer la dernière home choisie.
 import 'package:copiqpolice/features/onboarding/pa_school.dart'
-    show PaSchoolArt, PaSchoolProgram;
+    show PaSchoolArt, PaSchoolProgram, PaSchoolProgramX;
 import 'package:copiqpolice/features/onboarding/gpx_school.dart'
-    show GpxSchoolArt, GpxSchoolProgram;
+    show GpxSchoolArt, GpxSchoolProgram, GpxSchoolProgramX;
+import 'package:copiqpolice/features/active/active_access_service.dart';
 
 class HomeBootstrap extends StatefulWidget {
   static const routeName = '/home-bootstrap';
@@ -33,7 +37,7 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
   bool _didRoute = false;
 
   // Local keys (uniquement mode + track)
-  static const _kUserMode = 'user_mode'; // school | exam
+  static const _kUserMode = 'user_mode'; // school | exam | active
   static const _kSelectedTrack = 'selected_track'; // gpx | pa | reserve
 
   @override
@@ -45,10 +49,26 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
   // ----------------- Helpers -----------------
 
   String _norm(String? s) => (s ?? '').trim().toLowerCase();
-  bool _isValidMode(String? m) => m == 'school' || m == 'exam';
+  bool _isValidMode(String? m) => m == 'school' || m == 'exam' || m == 'active';
   bool _isValidTrack(String? t) => t == 'gpx' || t == 'pa' || t == 'reserve';
 
   Future<SharedPreferences> get _sp async => SharedPreferences.getInstance();
+
+  GpxSchoolProgram? _gpxProgramFromKey(String? key) {
+    if (key == null) return null;
+    for (final program in GpxSchoolProgram.values) {
+      if (program.key == key) return program;
+    }
+    return null;
+  }
+
+  PaSchoolProgram? _paProgramFromKey(String? key) {
+    if (key == null) return null;
+    for (final program in PaSchoolProgram.values) {
+      if (program.key == key) return program;
+    }
+    return null;
+  }
 
   // ----------------- Main decision -----------------
 
@@ -113,6 +133,24 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
       nav.pushNamedAndRemoveUntil('/mode_picker', (_) => false);
       return;
     }
+    if (mode == 'active') {
+      try {
+        final sp = await _sp;
+        await sp.setString(_kUserMode, 'active');
+        final status = await ActiveAccessService().status();
+        if (!mounted) return;
+        nav.pushNamedAndRemoveUntil(
+          status.granted ? '/active-home' : '/active-verification',
+          (_) => false,
+        );
+      } catch (error) {
+        debugPrint('[Bootstrap] Active access failed: $error');
+        if (mounted) {
+          nav.pushNamedAndRemoveUntil('/active-verification', (_) => false);
+        }
+      }
+      return;
+    }
     if (!_isValidTrack(track)) {
       nav.pushNamedAndRemoveUntil('/grade_picker', (_) => false);
       return;
@@ -154,8 +192,15 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
         return;
       }
 
-      // ✅ GPX SCHOOL : choix OBLIGATOIRE à chaque démarrage (NON sauvegardé)
-      final picked = await nav.push<GpxSchoolProgram>(
+      // GPX SCHOOL : restaure le dernier programme. Le sélecteur reste le
+      // parcours de secours au premier lancement ou si la valeur est invalide.
+      GpxSchoolProgram? picked;
+      try {
+        picked = _gpxProgramFromKey(await SchoolProgramPreferences.readGpx());
+      } catch (error) {
+        debugPrint('[Bootstrap] GPX program read failed: $error');
+      }
+      picked ??= await nav.push<GpxSchoolProgram>(
         MaterialPageRoute(builder: (_) => const GpxSchoolArt()),
       );
 
@@ -164,7 +209,6 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
         return;
       }
 
-      // ✅ FIX : on applique le programme choisi à la Home GPX
       HomePageGpxSchool.program = picked;
 
       nav.pushAndRemoveUntil(
@@ -188,8 +232,14 @@ class _HomeBootstrapState extends State<HomeBootstrap> {
         return;
       }
 
-      // ✅ PA SCHOOL : choix OBLIGATOIRE à chaque démarrage (NON sauvegardé)
-      final picked = await nav.push<PaSchoolProgram>(
+      // PA SCHOOL : même restauration automatique que pour GPX.
+      PaSchoolProgram? picked;
+      try {
+        picked = _paProgramFromKey(await SchoolProgramPreferences.readPa());
+      } catch (error) {
+        debugPrint('[Bootstrap] PA program read failed: $error');
+      }
+      picked ??= await nav.push<PaSchoolProgram>(
         MaterialPageRoute(builder: (_) => const PaSchoolArt()),
       );
 

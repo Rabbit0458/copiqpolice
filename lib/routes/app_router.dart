@@ -245,6 +245,8 @@ class RouteRegistry {
     // 404 sans aucun moyen de revenir. Tout nouveau compte était concerné.
     '/mode_picker': (_) => const ModePickerScreen(),
     '/grade_picker': (_) => const GradePickerScreen(),
+    '/active-verification': (_) => const ActiveVerificationPage(),
+    '/active-home': (_) => const HomePagePolicierActif(),
     "/abonnement": (_) => const AbonnementPage(),
     // Alias historique : plusieurs écrans poussent encore '/subscription'.
     '/subscription': (_) => const AbonnementPage(),

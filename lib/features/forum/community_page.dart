@@ -14,8 +14,13 @@ import 'community_feedback.dart';
 import 'community_notification_service.dart';
 
 class CommunityPage extends StatefulWidget {
-  const CommunityPage({super.key, required this.initialScope});
+  const CommunityPage({
+    super.key,
+    required this.initialScope,
+    this.lockedToInitialScope = false,
+  });
   final CommunityScope initialScope;
+  final bool lockedToInitialScope;
   @override
   State<CommunityPage> createState() => _CommunityPageState();
 }
@@ -67,6 +72,7 @@ class _CommunityPageState extends State<CommunityPage> {
   }
 
   Future<void> _loadActiveScope() async {
+    if (widget.lockedToInitialScope) return;
     try {
       final active = await _repository.activeScope();
       if (active != null && mounted) {
@@ -106,6 +112,10 @@ class _CommunityPageState extends State<CommunityPage> {
   }
 
   Future<void> _chooseScope() async {
+    if (widget.lockedToInitialScope) return;
+    final availableScopes = CommunityScope.values
+        .where((scope) => scope != CommunityScope.active)
+        .toList(growable: false);
     final selected = await showModalBottomSheet<CommunityScope>(
       context: context,
       isScrollControlled: true,
@@ -142,10 +152,10 @@ class _CommunityPageState extends State<CommunityPage> {
                   padding: EdgeInsets.only(
                     bottom: MediaQuery.paddingOf(sheetContext).bottom + 8,
                   ),
-                  itemCount: CommunityScope.values.length,
+                  itemCount: availableScopes.length,
                   separatorBuilder: (_, __) => const SizedBox(height: 8),
                   itemBuilder: (context, index) {
-                    final scope = CommunityScope.values[index];
+                    final scope = availableScopes[index];
                     return Material(
                       color: scope == _scope
                           ? scope.color.withValues(alpha: .11)
@@ -340,7 +350,7 @@ class _CommunityPageState extends State<CommunityPage> {
                 children: [
                   Expanded(
                     child: InkWell(
-                      onTap: _chooseScope,
+                      onTap: widget.lockedToInitialScope ? null : _chooseScope,
                       borderRadius: BorderRadius.circular(16),
                       child: Container(
                         height: 48,
@@ -386,8 +396,13 @@ class _CommunityPageState extends State<CommunityPage> {
                                   ),
                                 ),
                               ),
-                            const SizedBox(width: 7),
-                            const Icon(Icons.keyboard_arrow_down_rounded),
+                            if (!widget.lockedToInitialScope) ...[
+                              const SizedBox(width: 7),
+                              const Icon(Icons.keyboard_arrow_down_rounded),
+                            ] else ...[
+                              const SizedBox(width: 7),
+                              const Icon(Icons.lock_rounded, size: 18),
+                            ],
                           ],
                         ),
                       ),
@@ -736,7 +751,8 @@ class _PostCard extends StatelessWidget {
                             Flexible(
                               child: Text(
                                 post.authorDisplayName,
-                                overflow: TextOverflow.ellipsis,
+                                maxLines: 2,
+                                softWrap: true,
                                 style: const TextStyle(
                                   fontWeight: FontWeight.w800,
                                 ),
@@ -2215,7 +2231,8 @@ class _CommunityPostPageState extends State<CommunityPostPage> {
                   Flexible(
                     child: Text(
                       widget.post.authorDisplayName,
-                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      softWrap: true,
                       style: const TextStyle(
                         fontWeight: FontWeight.w900,
                         fontSize: 16,
@@ -2965,6 +2982,22 @@ class _CommunityPostPageState extends State<CommunityPostPage> {
   }
 
   Widget _commentContent(BuildContext context, CommunityComment comment) {
+    // Une réponse contenant une mention doit conserver exactement la même
+    // typographie qu'un commentaire classique. Utiliser le DefaultTextStyle
+    // ambiant ici pouvait récupérer le style d'un titre parent (taille,
+    // couleur et décoration), d'où les réponses démesurées observées.
+    final bodyStyle =
+        Theme.of(context).textTheme.bodyMedium?.copyWith(
+          height: 1.45,
+          fontWeight: FontWeight.w400,
+          decoration: TextDecoration.none,
+        ) ??
+        const TextStyle(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w400,
+          decoration: TextDecoration.none,
+        );
     final mention = RegExp(r'@[A-Za-z0-9_.-]{2,30}');
     final matches = mention.allMatches(comment.content).toList();
     if (matches.isEmpty) {
@@ -2974,7 +3007,7 @@ class _CommunityPostPageState extends State<CommunityPostPage> {
         overflow: _expandedComments.contains(comment.id)
             ? TextOverflow.visible
             : TextOverflow.ellipsis,
-        style: const TextStyle(height: 1.45),
+        style: bodyStyle,
       );
     }
     final spans = <InlineSpan>[];
@@ -2988,9 +3021,10 @@ class _CommunityPostPageState extends State<CommunityPostPage> {
       spans.add(
         TextSpan(
           text: match.group(0),
-          style: TextStyle(
+          style: bodyStyle.copyWith(
             color: widget.post.scope.color,
-            fontWeight: FontWeight.w800,
+            fontWeight: FontWeight.w700,
+            decoration: TextDecoration.none,
           ),
         ),
       );
@@ -3002,10 +3036,7 @@ class _CommunityPostPageState extends State<CommunityPostPage> {
     return GestureDetector(
       onTap: () => _openMention(matches.first.group(0)!.substring(1)),
       child: Text.rich(
-        TextSpan(
-          style: DefaultTextStyle.of(context).style.copyWith(height: 1.45),
-          children: spans,
-        ),
+        TextSpan(style: bodyStyle, children: spans),
         maxLines: _expandedComments.contains(comment.id) ? null : 8,
         overflow: _expandedComments.contains(comment.id)
             ? TextOverflow.visible
@@ -3018,193 +3049,228 @@ class _CommunityPostPageState extends State<CommunityPostPage> {
     BuildContext context,
     CommunityComment comment, {
     required int depth,
-  }) => Padding(
-    key: _commentKeys.putIfAbsent(comment.id, () => GlobalKey()),
-    padding: EdgeInsets.only(
-      left: depth == 0 ? 0 : (depth.clamp(1, 2) * 22),
-      bottom: 10,
-    ),
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        InkWell(
-          customBorder: const CircleBorder(),
-          onTap: () => Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (_) => CommunityProfilePage(userId: comment.authorId),
-            ),
-          ),
-          child: CommunityAvatar(
-            name: comment.authorDisplayName,
-            color: widget.post.scope.color,
-            avatarIndex: comment.authorAvatarIndex,
-            size: depth == 0 ? 40 : 34,
-          ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: Container(
-            padding: const EdgeInsets.fromLTRB(14, 11, 14, 12),
-            decoration: BoxDecoration(
-              color: comment.isSolution
-                  ? const Color(0xFF2DCB86).withValues(alpha: .08)
-                  : Theme.of(context).colorScheme.surface,
-              borderRadius: const BorderRadius.only(
-                topRight: Radius.circular(19),
-                bottomLeft: Radius.circular(19),
-                bottomRight: Radius.circular(19),
-                topLeft: Radius.circular(5),
-              ),
-              border: Border.all(
-                color: comment.isSolution
-                    ? const Color(0xFF2DCB86).withValues(alpha: .6)
-                    : Theme.of(context).colorScheme.outlineVariant,
-              ),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Flexible(
-                      child: Text(
-                        comment.authorDisplayName,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(fontWeight: FontWeight.w900),
-                      ),
-                    ),
-                    const SizedBox(width: 5),
-                    UserVerificationBadge(
-                      type: UserBadgeType.fromString(comment.authorBadgeType),
-                      size: 14,
-                    ),
-                    const Spacer(),
-                    Text(
-                      communityShortDateTime(comment.createdAt),
-                      style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                        color: Theme.of(context).colorScheme.onSurfaceVariant,
-                      ),
-                    ),
-                    const SizedBox(width: 2),
-                    IconButton(
-                      tooltip: 'Actions du commentaire',
-                      onPressed: () => _showCommentMenu(comment),
-                      icon: const Icon(Icons.more_horiz_rounded, size: 20),
-                      padding: EdgeInsets.zero,
-                      constraints: const BoxConstraints(
-                        minWidth: 44,
-                        minHeight: 44,
-                      ),
-                    ),
-                  ],
+  }) {
+    final theme = Theme.of(context);
+    final colors = theme.colorScheme;
+    final isNested = depth > 0;
+
+    return Padding(
+      key: _commentKeys.putIfAbsent(comment.id, () => GlobalKey()),
+      padding: EdgeInsets.only(
+        left: isNested ? (depth.clamp(1, 2) * 16) : 0,
+        bottom: isNested ? 8 : 12,
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox.square(
+            dimension: 44,
+            child: InkWell(
+              customBorder: const CircleBorder(),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) =>
+                      CommunityProfilePage(userId: comment.authorId),
                 ),
-                if (comment.isSolution) ...[
-                  const SizedBox(height: 5),
-                  const Row(
+              ),
+              child: Center(
+                child: CommunityAvatar(
+                  name: comment.authorDisplayName,
+                  color: widget.post.scope.color,
+                  avatarIndex: comment.authorAvatarIndex,
+                  size: isNested ? 34 : 40,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(14, 12, 10, 10),
+              decoration: BoxDecoration(
+                color: comment.isSolution
+                    ? const Color(0xFF2DCB86).withValues(alpha: .08)
+                    : colors.surface,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(
+                  color: comment.isSolution
+                      ? const Color(0xFF2DCB86).withValues(alpha: .6)
+                      : colors.outlineVariant,
+                ),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      Icon(
-                        Icons.check_circle_rounded,
-                        size: 16,
-                        color: Color(0xFF169B62),
-                      ),
-                      SizedBox(width: 5),
-                      Text(
-                        'Solution choisie',
-                        style: TextStyle(
-                          color: Color(0xFF169B62),
-                          fontWeight: FontWeight.w900,
+                      Expanded(
+                        child: Wrap(
+                          crossAxisAlignment: WrapCrossAlignment.center,
+                          spacing: 5,
+                          runSpacing: 2,
+                          children: [
+                            Text(
+                              comment.authorDisplayName,
+                              softWrap: true,
+                              style: theme.textTheme.bodyMedium?.copyWith(
+                                fontWeight: FontWeight.w800,
+                                height: 1.2,
+                              ),
+                            ),
+                            UserVerificationBadge(
+                              type: UserBadgeType.fromString(
+                                comment.authorBadgeType,
+                              ),
+                              size: 14,
+                            ),
+                          ],
                         ),
+                      ),
+                      IconButton(
+                        tooltip: 'Actions du commentaire',
+                        onPressed: () => _showCommentMenu(comment),
+                        icon: const Icon(Icons.more_horiz_rounded, size: 20),
+                        padding: EdgeInsets.zero,
+                        constraints: const BoxConstraints(
+                          minWidth: 44,
+                          minHeight: 44,
+                        ),
+                        visualDensity: VisualDensity.compact,
                       ),
                     ],
                   ),
-                ],
-                Text(
-                  '@${comment.authorUsername}',
-                  style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                    color: widget.post.scope.color,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-                const SizedBox(height: 8),
-                if (comment.status != 'published')
-                  _moderationPlaceholder(context, comment.status)
-                else ...[
-                  _commentContent(context, comment),
-                  if (comment.content.length > 280)
-                    TextButton(
-                      onPressed: () => setState(() {
-                        if (!_expandedComments.add(comment.id)) {
-                          _expandedComments.remove(comment.id);
-                        }
-                      }),
-                      style: TextButton.styleFrom(
-                        padding: EdgeInsets.zero,
-                        minimumSize: const Size(44, 36),
-                      ),
-                      child: Text(
-                        _expandedComments.contains(comment.id)
-                            ? 'Réduire'
-                            : 'Lire la suite',
-                      ),
-                    ),
-                ],
-                if (comment.editedAt != null)
-                  Text(
-                    'Modifié',
-                    style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                      color: Theme.of(context).colorScheme.onSurfaceVariant,
-                      fontStyle: FontStyle.italic,
-                    ),
-                  ),
-                const SizedBox(height: 4),
-                if (comment.status == 'published')
-                  Row(
-                    children: [
-                      TextButton.icon(
-                        onPressed: _readOnly
-                            ? null
-                            : () => _toggleCommentLike(comment),
-                        style: TextButton.styleFrom(
-                          minimumSize: const Size(44, 40),
-                          padding: const EdgeInsets.symmetric(horizontal: 7),
-                          foregroundColor: comment.liked
-                              ? widget.post.scope.color
-                              : Theme.of(context).colorScheme.onSurfaceVariant,
-                        ),
-                        icon: Icon(
-                          comment.liked
-                              ? Icons.favorite_rounded
-                              : Icons.favorite_border_rounded,
-                          size: 17,
-                        ),
-                        label: Text(
-                          comment.reactionCount == 0
-                              ? 'J’aime'
-                              : '${comment.reactionCount}',
-                        ),
-                      ),
-                      TextButton.icon(
-                        onPressed: _readOnly ? null : () => _replyTo(comment),
-                        style: TextButton.styleFrom(
-                          minimumSize: const Size(44, 40),
-                          padding: const EdgeInsets.symmetric(horizontal: 8),
-                          foregroundColor: widget.post.scope.color,
-                          textStyle: const TextStyle(
-                            fontWeight: FontWeight.w800,
+                  Transform.translate(
+                    offset: const Offset(0, -3),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            '@${comment.authorUsername}',
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: theme.textTheme.labelSmall?.copyWith(
+                              color: widget.post.scope.color,
+                              fontWeight: FontWeight.w700,
+                            ),
                           ),
                         ),
-                        icon: const Icon(Icons.reply_rounded, size: 17),
-                        label: const Text('Répondre'),
-                      ),
-                    ],
+                        const SizedBox(width: 8),
+                        Text(
+                          communityShortDateTime(comment.createdAt),
+                          style: theme.textTheme.labelSmall?.copyWith(
+                            color: colors.onSurfaceVariant,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-              ],
+                  if (comment.isSolution) ...[
+                    const SizedBox(height: 6),
+                    const Row(
+                      children: [
+                        Icon(
+                          Icons.check_circle_rounded,
+                          size: 16,
+                          color: Color(0xFF169B62),
+                        ),
+                        SizedBox(width: 5),
+                        Text(
+                          'Solution choisie',
+                          style: TextStyle(
+                            color: Color(0xFF169B62),
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                  const SizedBox(height: 9),
+                  if (comment.status != 'published')
+                    _moderationPlaceholder(context, comment.status)
+                  else ...[
+                    _commentContent(context, comment),
+                    if (comment.content.length > 280)
+                      TextButton(
+                        onPressed: () => setState(() {
+                          if (!_expandedComments.add(comment.id)) {
+                            _expandedComments.remove(comment.id);
+                          }
+                        }),
+                        style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          minimumSize: const Size(44, 36),
+                        ),
+                        child: Text(
+                          _expandedComments.contains(comment.id)
+                              ? 'Réduire'
+                              : 'Lire la suite',
+                        ),
+                      ),
+                  ],
+                  if (comment.editedAt != null)
+                    Text(
+                      'Modifié',
+                      style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                  const SizedBox(height: 6),
+                  if (comment.status == 'published')
+                    Wrap(
+                      spacing: 2,
+                      runSpacing: 0,
+                      children: [
+                        TextButton.icon(
+                          onPressed: _readOnly
+                              ? null
+                              : () => _toggleCommentLike(comment),
+                          style: TextButton.styleFrom(
+                            minimumSize: const Size(44, 40),
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            foregroundColor: comment.liked
+                                ? widget.post.scope.color
+                                : Theme.of(
+                                    context,
+                                  ).colorScheme.onSurfaceVariant,
+                          ),
+                          icon: Icon(
+                            comment.liked
+                                ? Icons.favorite_rounded
+                                : Icons.favorite_border_rounded,
+                            size: 17,
+                          ),
+                          label: Text(
+                            comment.reactionCount == 0
+                                ? 'J’aime'
+                                : '${comment.reactionCount}',
+                          ),
+                        ),
+                        TextButton.icon(
+                          onPressed: _readOnly ? null : () => _replyTo(comment),
+                          style: TextButton.styleFrom(
+                            minimumSize: const Size(44, 40),
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            foregroundColor: widget.post.scope.color,
+                            textStyle: const TextStyle(
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          icon: const Icon(Icons.reply_rounded, size: 17),
+                          label: const Text('Répondre'),
+                        ),
+                      ],
+                    ),
+                ],
+              ),
             ),
           ),
-        ),
-      ],
-    ),
-  );
+        ],
+      ),
+    );
+  }
 
   Widget _replyComposer(BuildContext context) => Material(
     color: Theme.of(context).colorScheme.surface,

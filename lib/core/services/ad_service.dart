@@ -1,180 +1,273 @@
-// lib/core/services/ad_service.dart
-//
-// COP'IQ — AdMob orchestration (free-tier monetization).
-//
-// Rules:
-//   • Premium users (incl. owner) NEVER see ads.
-//   • Interstitial: shown only at NATURAL breakpoints (end of a quiz, going
-//     back to home), never during a quiz. Cooldown: 5 minutes between ads.
-//   • Rewarded: optional opt-in to recover 1 free request when quota hit.
-//
-// Setup:
-//   1. Add to pubspec.yaml:  google_mobile_ads: ^5.2.0
-//   2. AndroidManifest.xml — inside <application>:
-//        <meta-data
-//            android:name="com.google.android.gms.ads.APPLICATION_ID"
-//            android:value="@string/admob_app_id"/>
-//   3. ios/Runner/Info.plist — add GADApplicationIdentifier.
-//   4. Replace REAL_*_AD_UNIT_* constants below with your live AdMob IDs.
-//   5. Call AdService.instance.init() once after MobileAds.instance.initialize().
-//
-// During development, Google's TEST IDs are used automatically (kDebugMode).
-// NEVER ship test IDs to production: AdMob will ban your account.
-//
-// This file uses dynamic imports (no hard import of google_mobile_ads) so
-// the app still compiles before the package is installed. Once the package
-// is added, this module wires up automatically.
-
 import 'dart:async';
+
 import 'package:flutter/foundation.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'subscription_service.dart';
 
-class AdIds {
-  // Google's official test units (use in debug):
-  static const _testInterstitialAndroid = 'ca-app-pub-3940256099942544/1033173712';
+/// Identifiants AdMob COP'IQ.
+///
+/// Les builds debug utilisent toujours les identifiants de test officiels de
+/// Google. Les builds release utilisent les blocs d'annonces créés dans le
+/// compte AdMob COP'IQ.
+abstract final class AdIds {
+  static const _testInterstitialAndroid =
+      'ca-app-pub-3940256099942544/1033173712';
   static const _testInterstitialIos = 'ca-app-pub-3940256099942544/4411468910';
   static const _testRewardedAndroid = 'ca-app-pub-3940256099942544/5224354917';
   static const _testRewardedIos = 'ca-app-pub-3940256099942544/1712485313';
 
-  // 🔁 REPLACE WITH YOUR REAL AD UNIT IDS BEFORE RELEASE 🔁
-  static const _realInterstitialAndroid = String.fromEnvironment('ADMOB_INTERSTITIAL_ANDROID');
-  static const _realInterstitialIos = String.fromEnvironment('ADMOB_INTERSTITIAL_IOS');
-  static const _realRewardedAndroid = String.fromEnvironment('ADMOB_REWARDED_ANDROID');
-  static const _realRewardedIos = String.fromEnvironment('ADMOB_REWARDED_IOS');
+  static const _liveInterstitialAndroid =
+      'ca-app-pub-5486022144325892/9625359483';
+  static const _liveInterstitialIos = 'ca-app-pub-5486022144325892/8648204215';
+  static const _liveRewardedAndroid = 'ca-app-pub-5486022144325892/3779020910';
+  static const _liveRewardedIos = 'ca-app-pub-5486022144325892/5012211534';
 
-  static String interstitial({required bool isAndroid}) {
+  static String interstitial(TargetPlatform platform) {
     if (kDebugMode) {
-      return isAndroid ? _testInterstitialAndroid : _testInterstitialIos;
+      return platform == TargetPlatform.android
+          ? _testInterstitialAndroid
+          : _testInterstitialIos;
     }
-    return isAndroid ? _realInterstitialAndroid : _realInterstitialIos;
+    return platform == TargetPlatform.android
+        ? _liveInterstitialAndroid
+        : _liveInterstitialIos;
   }
 
-  static String rewarded({required bool isAndroid}) {
+  static String rewarded(TargetPlatform platform) {
     if (kDebugMode) {
-      return isAndroid ? _testRewardedAndroid : _testRewardedIos;
+      return platform == TargetPlatform.android
+          ? _testRewardedAndroid
+          : _testRewardedIos;
     }
-    return isAndroid ? _realRewardedAndroid : _realRewardedIos;
+    return platform == TargetPlatform.android
+        ? _liveRewardedAndroid
+        : _liveRewardedIos;
   }
 }
 
 class AdService {
   AdService._();
+
   static final AdService instance = AdService._();
 
-  bool _initialized = false;
-  DateTime? _lastInterstitialAt;
-  static const Duration interstitialCooldown = Duration(minutes: 5);
+  static const interstitialCooldown = Duration(minutes: 5);
+  static const _lastInterstitialKey = 'admob_last_interstitial_at_v1';
 
-  /// Call once at app boot, AFTER MobileAds.instance.initialize().
-  Future<void> init() async {
-    if (_initialized) return;
-    if (kIsWeb) return;
-    await MobileAds.instance.initialize();
-    _initialized = true;
-    if (kDebugMode) {
-      // ignore: avoid_print
-      debugPrint('[ADS] AdService initialized (debug=$kDebugMode).');
-    }
-  }
+  bool _initialized = false;
+  bool _canRequestAds = false;
+  bool _interstitialLoading = false;
+  bool _rewardedLoading = false;
+  DateTime? _lastInterstitialAt;
+  InterstitialAd? _interstitial;
+  RewardedAd? _rewarded;
+
+  bool get _supportedPlatform =>
+      !kIsWeb &&
+      (defaultTargetPlatform == TargetPlatform.android ||
+          defaultTargetPlatform == TargetPlatform.iOS);
 
   bool get _hasPremium => SubscriptionService.instance.state.value.isPremium;
 
+  Future<void> init() async {
+    if (_initialized || !_supportedPlatform) return;
+
+    SubscriptionService.instance.registerRewardedUnlockHandler(
+      showRewardedAndGrant,
+    );
+
+    final preferences = await SharedPreferences.getInstance();
+    final lastShownMillis = preferences.getInt(_lastInterstitialKey);
+    if (lastShownMillis != null) {
+      _lastInterstitialAt = DateTime.fromMillisecondsSinceEpoch(
+        lastShownMillis,
+      );
+    }
+
+    await _requestConsent();
+    if (!_canRequestAds) return;
+
+    await MobileAds.instance.initialize();
+    _initialized = true;
+    _preloadInterstitial();
+    _preloadRewarded();
+  }
+
+  Future<void> _requestConsent() async {
+    final completer = Completer<void>();
+    ConsentInformation.instance.requestConsentInfoUpdate(
+      ConsentRequestParameters(),
+      () => completer.complete(),
+      (error) {
+        debugPrint('[ADS] Consentement indisponible: ${error.message}');
+        completer.complete();
+      },
+    );
+    await completer.future;
+
+    final formCompleter = Completer<void>();
+    ConsentForm.loadAndShowConsentFormIfRequired((error) {
+      if (error != null) {
+        debugPrint('[ADS] Formulaire de consentement: ${error.message}');
+      }
+      formCompleter.complete();
+    });
+    await formCompleter.future;
+    _canRequestAds = await ConsentInformation.instance.canRequestAds();
+  }
+
+  Future<void> showPrivacyOptions() async {
+    if (!_supportedPlatform) return;
+    final completer = Completer<void>();
+    ConsentForm.showPrivacyOptionsForm((error) {
+      if (error != null) {
+        debugPrint('[ADS] Options de confidentialité: ${error.message}');
+      }
+      completer.complete();
+    });
+    await completer.future;
+  }
+
   bool _cooldownElapsed() {
     final last = _lastInterstitialAt;
-    if (last == null) return true;
-    return DateTime.now().difference(last) >= interstitialCooldown;
+    return last == null ||
+        DateTime.now().difference(last) >= interstitialCooldown;
   }
 
-  /// Maybe show an interstitial. Safe to call from end-of-quiz screens.
-  /// • No-ops if the user is premium.
-  /// • Respects the 5-minute cooldown.
-  /// • Awaits dismissal so the caller can navigate after.
+  Future<void> _rememberInterstitial() async {
+    _lastInterstitialAt = DateTime.now();
+    final preferences = await SharedPreferences.getInstance();
+    await preferences.setInt(
+      _lastInterstitialKey,
+      _lastInterstitialAt!.millisecondsSinceEpoch,
+    );
+  }
+
+  void _preloadInterstitial() {
+    if (!_initialized || !_canRequestAds || _hasPremium) return;
+    if (_interstitial != null || _interstitialLoading) return;
+    _interstitialLoading = true;
+    InterstitialAd.load(
+      adUnitId: AdIds.interstitial(defaultTargetPlatform),
+      request: const AdRequest(),
+      adLoadCallback: InterstitialAdLoadCallback(
+        onAdLoaded: (ad) {
+          _interstitialLoading = false;
+          _interstitial = ad;
+        },
+        onAdFailedToLoad: (error) {
+          _interstitialLoading = false;
+          debugPrint('[ADS] Interstitielle non chargée: $error');
+        },
+      ),
+    );
+  }
+
+  void _preloadRewarded() {
+    if (!_initialized || !_canRequestAds || _hasPremium) return;
+    if (_rewarded != null || _rewardedLoading) return;
+    _rewardedLoading = true;
+    RewardedAd.load(
+      adUnitId: AdIds.rewarded(defaultTargetPlatform),
+      request: const AdRequest(),
+      rewardedAdLoadCallback: RewardedAdLoadCallback(
+        onAdLoaded: (ad) {
+          _rewardedLoading = false;
+          _rewarded = ad;
+        },
+        onAdFailedToLoad: (error) {
+          _rewardedLoading = false;
+          debugPrint('[ADS] Récompense non chargée: $error');
+        },
+      ),
+    );
+  }
+
+  /// À appeler uniquement à une rupture naturelle, après l'écran de résultat.
   Future<void> maybeShowInterstitial() async {
-    if (kIsWeb) return;
-    if (_hasPremium) return;
-    if (!_cooldownElapsed()) return;
+    if (!_supportedPlatform || _hasPremium || !_cooldownElapsed()) return;
+    if (!_initialized) await init();
+    if (!_initialized || !_canRequestAds || _hasPremium) return;
 
-    try {
-      if (!_initialized) await init();
-      if (_hasPremium) return;
-      final completer = Completer<void>();
-      InterstitialAd.load(
-        adUnitId: AdIds.interstitial(
-          isAndroid: defaultTargetPlatform == TargetPlatform.android,
-        ),
-        request: const AdRequest(),
-        adLoadCallback: InterstitialAdLoadCallback(
-          onAdLoaded: (ad) {
-            if (_hasPremium) {
-              ad.dispose();
-              completer.complete();
-              return;
-            }
-            ad.fullScreenContentCallback = FullScreenContentCallback(
-              onAdDismissedFullScreenContent: (ad) { ad.dispose(); completer.complete(); },
-              onAdFailedToShowFullScreenContent: (ad, _) { ad.dispose(); completer.complete(); },
-            );
-            _lastInterstitialAt = DateTime.now();
-            ad.show();
-          },
-          onAdFailedToLoad: (_) => completer.complete(),
-        ),
-      );
-      await completer.future.timeout(const Duration(seconds: 12), onTimeout: () {});
-    } catch (e) {
-      if (kDebugMode) {
-        // ignore: avoid_print
-        debugPrint('[ADS] interstitial failed: $e');
-      }
+    _preloadInterstitial();
+    final deadline = DateTime.now().add(const Duration(seconds: 8));
+    while (_interstitial == null && DateTime.now().isBefore(deadline)) {
+      await Future<void>.delayed(const Duration(milliseconds: 150));
     }
+
+    final ad = _interstitial;
+    if (ad == null || _hasPremium) return;
+    _interstitial = null;
+    final dismissed = Completer<void>();
+    ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdDismissedFullScreenContent: (shownAd) {
+        shownAd.dispose();
+        if (!dismissed.isCompleted) dismissed.complete();
+      },
+      onAdFailedToShowFullScreenContent: (shownAd, error) {
+        shownAd.dispose();
+        if (!dismissed.isCompleted) dismissed.complete();
+      },
+    );
+    await _rememberInterstitial();
+    ad.show();
+    await dismissed.future;
+    _preloadInterstitial();
   }
 
-  /// Show a rewarded ad to grant +1 free request.
-  /// Returns true if the user fully watched it AND the server granted credit.
+  /// Affiche volontairement une annonce et crédite une utilisation gratuite
+  /// côté serveur uniquement après réception de la récompense AdMob.
   Future<bool> showRewardedAndGrant() async {
-    if (kIsWeb) return false;
-    if (_hasPremium) return false; // premium has unlimited, no need
+    if (!_supportedPlatform || _hasPremium) return false;
     final user = Supabase.instance.client.auth.currentUser;
     if (user == null) return false;
+    if (!_initialized) await init();
+    if (!_initialized || !_canRequestAds || _hasPremium) return false;
 
-    bool watched = false;
-    try {
-      if (!_initialized) await init();
-      final completer = Completer<bool>();
-      RewardedAd.load(
-        adUnitId: AdIds.rewarded(
-          isAndroid: defaultTargetPlatform == TargetPlatform.android,
-        ),
-        request: const AdRequest(),
-        rewardedAdLoadCallback: RewardedAdLoadCallback(
-          onAdLoaded: (ad) {
-            ad.fullScreenContentCallback = FullScreenContentCallback(
-              onAdDismissedFullScreenContent: (ad) { ad.dispose(); if (!completer.isCompleted) completer.complete(false); },
-              onAdFailedToShowFullScreenContent: (ad, _) { ad.dispose(); if (!completer.isCompleted) completer.complete(false); },
-            );
-            ad.show(onUserEarnedReward: (_, __) { if (!completer.isCompleted) completer.complete(true); });
-          },
-          onAdFailedToLoad: (_) => completer.complete(false),
-        ),
-      );
-      watched = await completer.future.timeout(const Duration(seconds: 20), onTimeout: () => false);
-    } catch (_) {
-      watched = false;
+    _preloadRewarded();
+    final deadline = DateTime.now().add(const Duration(seconds: 10));
+    while (_rewarded == null && DateTime.now().isBefore(deadline)) {
+      await Future<void>.delayed(const Duration(milliseconds: 150));
     }
 
-    if (!watched) return false;
+    final ad = _rewarded;
+    if (ad == null) return false;
+    _rewarded = null;
+    var earnedReward = false;
+    final dismissed = Completer<void>();
+    ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdDismissedFullScreenContent: (shownAd) {
+        shownAd.dispose();
+        if (!dismissed.isCompleted) dismissed.complete();
+      },
+      onAdFailedToShowFullScreenContent: (shownAd, error) {
+        shownAd.dispose();
+        if (!dismissed.isCompleted) dismissed.complete();
+      },
+    );
+    ad.show(onUserEarnedReward: (_, __) => earnedReward = true);
+    await dismissed.future;
+    _preloadRewarded();
+    if (!earnedReward) return false;
 
-    // Server-side credit (atomic, throttled, idempotent)
-    final nonce = '${user.id}-${DateTime.now().millisecondsSinceEpoch}';
-    final res = await Supabase.instance.client
-        .rpc('grant_rewarded_request', params: {'p_nonce': nonce});
-    final ok = res is Map && res['allowed'] == true;
-    if (ok) {
+    final nonce = '${user.id}-${DateTime.now().microsecondsSinceEpoch}';
+    final response = await Supabase.instance.client.rpc(
+      'grant_rewarded_request',
+      params: {'p_nonce': nonce},
+    );
+    final granted = response is Map && response['allowed'] == true;
+    if (granted) {
       await SubscriptionService.instance.refresh(force: true, withQuota: true);
     }
-    return ok;
+    return granted;
+  }
+
+  void disposeCachedAds() {
+    _interstitial?.dispose();
+    _rewarded?.dispose();
+    _interstitial = null;
+    _rewarded = null;
   }
 }

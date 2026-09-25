@@ -16,6 +16,9 @@ class PaProgressActivity {
     required this.finishedAt,
     this.durationSeconds,
     this.route,
+    this.availableQuestions,
+    this.answeredCount,
+    this.answers = const [],
   });
 
   final String id;
@@ -28,10 +31,42 @@ class PaProgressActivity {
   final DateTime finishedAt;
   final int? durationSeconds;
   final String? route;
+  final int? availableQuestions;
+  final int? answeredCount;
+  final List<PaProgressAnswerDetail> answers;
 
-  bool get hasScore => total > 0;
+  int get effectiveAnsweredCount => answeredCount ?? total;
+  bool get hasScore => effectiveAnsweredCount > 0 && total > 0;
   int get percent =>
       total <= 0 ? 0 : ((correct / total) * 100).round().clamp(0, 100);
+}
+
+class PaProgressAnswerDetail {
+  const PaProgressAnswerDetail({
+    required this.question,
+    required this.userAnswer,
+    required this.correctAnswer,
+    required this.isCorrect,
+    this.explanation,
+    this.options = const [],
+    this.questionId,
+    this.difficulty,
+    this.responseTimeMs,
+    this.answeredAt,
+    this.answerId,
+  });
+
+  final String question;
+  final String userAnswer;
+  final String correctAnswer;
+  final bool isCorrect;
+  final String? explanation;
+  final List<String> options;
+  final String? questionId;
+  final String? difficulty;
+  final int? responseTimeMs;
+  final DateTime? answeredAt;
+  final String? answerId;
 }
 
 class PaProgressDay {
@@ -138,6 +173,13 @@ class PaProgressSnapshot {
   final String? partialWarning;
 
   bool get isEmpty => activities.isEmpty;
+
+  List<PaProgressAnswerDetail> get answerHistory =>
+      activities.expand((activity) => activity.answers).toList(growable: false);
+
+  List<PaProgressAnswerDetail> get wrongAnswerHistory => answerHistory
+      .where((answer) => !answer.isCorrect)
+      .toList(growable: false);
 }
 
 sealed class PaProgressLoadResult {

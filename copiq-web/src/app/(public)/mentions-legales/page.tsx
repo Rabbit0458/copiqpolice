@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { EditorialDocument } from "@/components/information/editorial-document";
 export const metadata: Metadata = {
-  title: "Mentions légales — COP'IQ",
+  title: "Mentions légales",
   description: "Éditeur, hébergeur et informations légales COP'IQ.",
 };
 const fallback = `## 1. Éditeur du site

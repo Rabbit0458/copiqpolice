@@ -17,6 +17,7 @@ import 'package:vibration/vibration.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 Color _opa(Color c, double a) => c.withValues(alpha: a);
 
@@ -180,6 +181,7 @@ class _PaQuizPsycotechniquesSuitesLogiquesState
   int currentIndex = 1;
   int totalQuestions = 0;
   int availableForSelectedDifficulty = 0;
+  int selectedSessionLength = 10;
 
   int correctAnswers = 0;
   int totalAnswers = 0;
@@ -500,6 +502,13 @@ class _PaQuizPsycotechniquesSuitesLogiquesState
       );
       return;
     }
+
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: filteredQuestions.length,
+    );
+    if (!mounted || session == null) return;
+    selectedSessionLength = session.questionCount;
 
     if (hideIntroForever) {
       _beginSessionNow();
@@ -1238,6 +1247,9 @@ class _PaQuizPsycotechniquesSuitesLogiquesState
                                                         child: _PrimaryButton(
                                                           label: !showResult
                                                               ? 'Valider'
+                                                              : totalAnswers >=
+                                                                    selectedSessionLength
+                                                              ? 'Voir les résultats'
                                                               : 'Suivant',
                                                           onTap: !showResult
                                                               ? (selectedAnswer ==
@@ -1247,11 +1259,15 @@ class _PaQuizPsycotechniquesSuitesLogiquesState
                                                                         selectedAnswer!,
                                                                       ))
                                                               : () {
-                                                                  if (consecutiveAfkTimeouts >=
-                                                                      afkStopLimit) {
+                                                                  final autoStopped =
+                                                                      consecutiveAfkTimeouts >=
+                                                                      afkStopLimit;
+                                                                  if (autoStopped ||
+                                                                      totalAnswers >=
+                                                                          selectedSessionLength) {
                                                                     endGame(
                                                                       autoStoppedByAfk:
-                                                                          true,
+                                                                          autoStopped,
                                                                     );
                                                                     return;
                                                                   }

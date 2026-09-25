@@ -52,6 +52,8 @@ void main() {
 
     expect(snapshot.globalPercent, 80);
     expect(snapshot.activities, hasLength(2));
+    expect(snapshot.doneToday, 1);
+    expect(snapshot.doneThisWeek, 1);
   });
 
   test('calcule le streak depuis aujourd’hui', () {

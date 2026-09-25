@@ -42,9 +42,9 @@ android {
         applicationId = "fr.copiq.app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        // ⚠️ Core library desugaring exige minSdk ≥ 21. On force la valeur
-        // si la valeur héritée de Flutter est inférieure.
-        minSdk = maxOf(flutter.minSdkVersion, 21)
+        // RevenueCat 10 utilise Google Play Billing 8, compatible à partir
+        // d'Android 6 (API 23). La V6 ne doit donc plus cibler API 21/22.
+        minSdk = maxOf(flutter.minSdkVersion, 23)
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName

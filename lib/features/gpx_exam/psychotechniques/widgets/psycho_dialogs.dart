@@ -86,10 +86,14 @@ Future<bool> showPsychoExitDialog(BuildContext context) async {
                       ),
                     ),
                     child: const Text(
-                      'Mettre fin et voir mes résultats',
+                      'Terminer le quiz',
+                      textAlign: TextAlign.center,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontFamily: 'InstrumentSans',
                         fontWeight: FontWeight.w800,
+                        fontSize: 14,
                       ),
                     ),
                   ),

@@ -22,6 +22,7 @@ import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
 import 'package:copiqpolice/features/home/parametre_home.dart';
+import 'package:copiqpolice/features/home/widgets/continue_preparation_panel.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart'
     show ModePickerScreen;
@@ -277,6 +278,12 @@ class _HomePagePaExamState extends State<HomePagePaExam>
     final theme = Theme.of(context);
     final screenHeight = MediaQuery.sizeOf(context).height;
     final compactHome = screenHeight < 760;
+    // Hauteur réelle de la pill nav flottante (voir _SlidingPillNavBar) +
+    // marge de confort, pour que le dernier bloc scrollable ne colle jamais
+    // dessus — remplace un SizedBox à valeur fixe qui coupait le contenu
+    // sur les écrans avec une zone de sécurité basse plus grande.
+    final navBarFootprint =
+        64.0 + 8 + math.max(MediaQuery.paddingOf(context).bottom, 8.0) + 24;
     final heroHeight = screenHeight < 700
         ? 232.0
         : screenHeight < 820
@@ -491,7 +498,7 @@ class _HomePagePaExamState extends State<HomePagePaExam>
               ),
             ),
 
-            const SizedBox(height: 92),
+            SizedBox(height: navBarFootprint),
           ],
         ),
       ),
@@ -923,8 +930,9 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                   const SizedBox(height: 4),
                   Text(
                     widget.item.label,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                    maxLines: 3,
+                    overflow: TextOverflow.visible,
+                    softWrap: true,
                     style: GoogleFonts.instrumentSans(
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
@@ -1042,474 +1050,27 @@ class _ContinuePreparationSectionState
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final snap = _snap;
+    final resume = snap?.resume;
+    final hasScore =
+        resume?.scorePercent != null && (resume?.totalQuestions ?? 0) > 0;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // En-tête
-        Row(
-          children: [
-            Expanded(
-              child: Text(
-                'Continue ta préparation',
-                style: theme.textTheme.titleMedium?.copyWith(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w800,
-                ),
-              ),
-            ),
-            InkWell(
-              borderRadius: BorderRadius.circular(12),
-              onTap: widget.onSeeAll,
-              child: Padding(
-                padding: const EdgeInsets.all(6.0),
-                child: Text(
-                  'Voir mon parcours',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    color: _muted(context, .7),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-
-        if (_loading || snap == null)
-          const _ResumeSkeleton()
-        else if (snap.hasActivity)
-          _ResumeCard(
-            resume: snap.resume!,
-            onTap: () => widget.onOpenResume(snap.resume!),
-          )
-        else
-          _StartCard(onTap: widget.onStart),
-
-        const SizedBox(height: 12),
-
-        // Chips streak + objectif du jour
-        if (!_loading && snap != null)
-          Row(
-            children: [
-              Expanded(
-                child: _StatChip(
-                  icon: Icons.local_fire_department_rounded,
-                  iconColor: const Color(0xFFF5A623),
-                  value: '${snap.streakDays}',
-                  label: snap.streakDays <= 1
-                      ? 'jour de suite'
-                      : 'jours de suite',
-                ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: _StatChip(
-                  icon: snap.goalReached
-                      ? Icons.check_circle_rounded
-                      : Icons.track_changes_rounded,
-                  iconColor: snap.goalReached
-                      ? const Color(0xFF2FB170)
-                      : const Color(0xFF3B82F6),
-                  value: '${snap.doneToday}/${snap.dailyGoal}',
-                  label: 'objectif du jour',
-                ),
-              ),
-            ],
-          )
-        else
-          const _ChipsSkeleton(),
-      ],
+    return ContinuePreparationPanel(
+      loading: _loading || snap == null,
+      hasActivity: snap?.hasActivity ?? false,
+      activityTitle: resume?.quizName,
+      activitySubtitle: resume?.moduleName,
+      scorePercent: hasScore ? resume!.scorePercent : null,
+      streakDays: snap?.streakDays ?? 0,
+      doneToday: snap?.doneToday ?? 0,
+      dailyGoal: snap?.dailyGoal ?? kPaDailyGoal,
+      onPrimaryTap: resume == null
+          ? widget.onStart
+          : () => widget.onOpenResume(resume),
+      onSeeAll: widget.onSeeAll,
+      startSubtitle:
+          'Lance ton premier module concours PA et suis ta progression.',
     );
-  }
-}
-
-// ---- Carte "Reprendre" (dernière activité) ---------------------------
-
-class _ResumeCard extends StatelessWidget {
-  final PaResumeActivity resume;
-  final VoidCallback onTap;
-
-  const _ResumeCard({required this.resume, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-    const anthracite = Color(0xFF2E3137);
-
-    final hasScore = resume.scorePercent != null && resume.totalQuestions > 0;
-    final pct = (resume.scorePercent ?? 0).clamp(0, 100);
-
-    return Material(
-      color: theme.cardColor,
-      borderRadius: BorderRadius.circular(_T.r20),
-      elevation: 0,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(_T.r20),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(_T.r20),
-            boxShadow: const [_T.shadow],
-          ),
-          padding: const EdgeInsets.all(14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  // Icône ronde
-                  Container(
-                    width: 52,
-                    height: 52,
-                    decoration: BoxDecoration(
-                      color: (isDark ? Colors.white : _T.ink).withValues(
-                        alpha: isDark ? .10 : .06,
-                      ),
-                      borderRadius: BorderRadius.circular(14),
-                    ),
-                    child: Icon(
-                      Icons.menu_book_rounded,
-                      color: isDark ? Colors.white : _T.ink,
-                      size: 26,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Reprendre où tu t’es arrêté',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w600,
-                            color: _muted(context, .7),
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          resume.quizName,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: GoogleFonts.poppins(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w800,
-                            color: isDark ? Colors.white : _T.ink,
-                          ),
-                        ),
-                        Text(
-                          resume.moduleName,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: _muted(context, .6),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              if (hasScore) ...[
-                const SizedBox(height: 14),
-                Row(
-                  children: [
-                    Text(
-                      'Dernier score',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: _muted(context, .7),
-                      ),
-                    ),
-                    const Spacer(),
-                    Text(
-                      '$pct%',
-                      style: GoogleFonts.poppins(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w800,
-                        color: isDark ? Colors.white : _T.ink,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 6),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(99),
-                  child: LinearProgressIndicator(
-                    value: pct / 100.0,
-                    minHeight: 8,
-                    backgroundColor: (isDark ? Colors.white : Colors.black)
-                        .withValues(alpha: .08),
-                    valueColor: AlwaysStoppedAnimation<Color>(
-                      isDark ? Colors.white : _T.ink,
-                    ),
-                  ),
-                ),
-              ],
-              const SizedBox(height: 14),
-              // CTA Continuer
-              GestureDetector(
-                onTap: onTap,
-                child: Container(
-                  height: 46,
-                  decoration: BoxDecoration(
-                    color: anthracite,
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
-                      Icon(
-                        Icons.play_arrow_rounded,
-                        color: Colors.white,
-                        size: 22,
-                      ),
-                      SizedBox(width: 6),
-                      Text(
-                        'Continuer',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// ---- Carte "Commence ici" (aucun historique) -------------------------
-
-class _StartCard extends StatelessWidget {
-  final VoidCallback onTap;
-  const _StartCard({required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-    const anthracite = Color(0xFF2E3137);
-
-    return Material(
-      color: theme.cardColor,
-      borderRadius: BorderRadius.circular(_T.r20),
-      elevation: 0,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(_T.r20),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(_T.r20),
-            boxShadow: const [_T.shadow],
-          ),
-          padding: const EdgeInsets.all(16),
-          child: Row(
-            children: [
-              Container(
-                width: 52,
-                height: 52,
-                decoration: BoxDecoration(
-                  color: (isDark ? Colors.white : _T.ink).withValues(
-                    alpha: isDark ? .10 : .06,
-                  ),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                child: Icon(
-                  Icons.rocket_launch_rounded,
-                  color: isDark ? Colors.white : _T.ink,
-                  size: 26,
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Commence ta préparation',
-                      style: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
-                        color: isDark ? Colors.white : _T.ink,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      'Lance ton premier module concours PA',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: _muted(context, .7),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              CircleAvatar(
-                radius: 18,
-                backgroundColor: anthracite,
-                child: const Icon(
-                  Icons.arrow_forward_rounded,
-                  size: 18,
-                  color: Colors.white,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// ---- Chip de statistique (streak / objectif) -------------------------
-
-class _StatChip extends StatelessWidget {
-  final IconData icon;
-  final Color iconColor;
-  final String value;
-  final String label;
-
-  const _StatChip({
-    required this.icon,
-    required this.iconColor,
-    required this.value,
-    required this.label,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-      decoration: BoxDecoration(
-        color: theme.cardColor,
-        borderRadius: BorderRadius.circular(_T.r16),
-        boxShadow: const [_T.shadow],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Row(
-            children: [
-              Icon(icon, size: 20, color: iconColor),
-              const SizedBox(width: 6),
-              Text(
-                value,
-                style: GoogleFonts.poppins(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w900,
-                  color: isDark ? Colors.white : _T.ink,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 4),
-          Text(
-            label,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 12, color: _muted(context, .7)),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-// ---- Skeletons de chargement -----------------------------------------
-
-class _ResumeSkeleton extends StatelessWidget {
-  const _ResumeSkeleton();
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Container(
-      height: 168,
-      decoration: BoxDecoration(
-        color: theme.cardColor,
-        borderRadius: BorderRadius.circular(_T.r20),
-        boxShadow: const [_T.shadow],
-      ),
-      padding: const EdgeInsets.all(14),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              _bar(52, 52, r: 14, context: context),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _bar(120, 10, context: context),
-                    const SizedBox(height: 8),
-                    _bar(180, 12, context: context),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const Spacer(),
-          _bar(double.infinity, 46, r: 14, context: context),
-        ],
-      ),
-    );
-  }
-
-  Widget _bar(
-    double w,
-    double h, {
-    double r = 8,
-    required BuildContext context,
-  }) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    return Container(
-      width: w,
-      height: h,
-      decoration: BoxDecoration(
-        color: (isDark ? Colors.white : Colors.black).withValues(alpha: .06),
-        borderRadius: BorderRadius.circular(r),
-      ),
-    );
-  }
-}
-
-class _ChipsSkeleton extends StatelessWidget {
-  const _ChipsSkeleton();
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    Widget chip() => Expanded(
-      child: Container(
-        height: 64,
-        decoration: BoxDecoration(
-          color: theme.cardColor,
-          borderRadius: BorderRadius.circular(_T.r16),
-          boxShadow: const [_T.shadow],
-        ),
-      ),
-    );
-    return Row(children: [chip(), const SizedBox(width: 10), chip()]);
   }
 }
 
@@ -1637,8 +1198,9 @@ class _CategoryDetailPage extends StatelessWidget {
         ),
         title: Text(
           title,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
+          maxLines: 2,
+          overflow: TextOverflow.visible,
+          softWrap: true,
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,

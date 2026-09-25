@@ -2,6 +2,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'pa_exam_progress_models.dart';
 import 'pa_exam_progress_source_registry.dart';
+import 'quiz_progress_enrichment.dart';
 
 class PaExamProgressRepository {
   PaExamProgressRepository(this._client);
@@ -17,11 +18,10 @@ class PaExamProgressRepository {
         .eq('uid', userId)
         .eq('track', 'pa')
         .eq('mode', 'exam')
-        .not('completed_at', 'is', null)
-        .order('finished_at', ascending: false)
+        .order('started_at', ascending: false)
         .limit(500);
 
-    return List<Map<String, dynamic>>.from(rows as List)
+    final activities = List<Map<String, dynamic>>.from(rows as List)
         .map((row) {
           final moduleName = (row['module_name'] ?? '').toString().trim();
           final quizName = (row['quiz_name'] ?? '').toString().trim();
@@ -35,12 +35,21 @@ class PaExamProgressRepository {
             title: _cleanTitle(quizName.isEmpty ? moduleName : quizName),
             correct: _integer(row['correct_count']),
             total: _integer(row['total_questions']),
-            finishedAt: _date(row['finished_at'] ?? row['completed_at']),
+            finishedAt: _date(
+              row['finished_at'] ?? row['completed_at'] ?? row['started_at'],
+            ),
             route: meta.route,
           );
         })
         .where((activity) => activity.finishedAt.year > 2000)
         .toList();
+    return enrichQuizProgress(
+      client: _client,
+      userId: userId,
+      track: 'pa',
+      mode: 'exam',
+      activities: activities,
+    );
   }
 
   Future<List<PaProgressActivity>> fetchPsychotechniqueActivities(

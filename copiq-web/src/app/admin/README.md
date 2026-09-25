@@ -72,6 +72,13 @@ n'obtiendrait **aucune donnée**. C'est le comportement attendu.
 | `/admin/signalements/` | Fautes signalées, bugs, messages de contact |
 | `/admin/utilisateurs/` | Comptes, abonnements, activité (lecture seule) |
 | `/admin/journal/` | Journal d'audit immuable de toutes les actions admin |
+| `/admin/versions/` | Préparation et activation sécurisée des builds mobiles iOS/Android |
+| `/admin/statistiques/` | Statistiques réelles, pédagogie, parcours, périodes et exports |
+| `/admin/pilotage-avance/` | Sources, économie, prévisions, impact, dépendances, rapports et continuité |
+| `/admin/exploitation/` | Tâches, incidents, objectifs, feature flags et opérations groupées |
+| `/admin/messages/` | Contact individuel ou groupé, modèles et suivi des envois |
+| `/admin/actif/` | Création et organisation du module « Je suis actif » avec aperçu propriétaire |
+| `/admin/demo/` | Démonstration isolée avec données fictives et aucune écriture production |
 
 ---
 
@@ -172,8 +179,14 @@ une RPC qui vérifie les droits.
 
 ---
 
-## Reste à faire
+## État du programme PREMIUM
 
-Voir `ADMIN_PANEL_PROGRESSION.md` à la racine du projet : les modules
-facturation, forum, notes de patch et gestion des admins ne sont pas encore
-construits côté interface (le backend existe déjà en grande partie).
+Les 85 axes du programme disposent de leur interface, de leur logique et de leurs
+protections dans le périmètre raccordé. Le détail vérifiable est conservé dans :
+
+- `progression/REGISTRE_EXECUTION_85_AXES.md` ;
+- `progression/AUDIT_LIVRAISON_PREMIUM_85_AXES.md`.
+
+Les connecteurs externes non autorisés ou non configurés (App Store Connect,
+Google Play ou métriques de coûts Supabase) restent volontairement dans l’état
+« non connecté ». Le panel ne fabrique aucun chiffre pour les remplacer.

@@ -10,12 +10,19 @@ void main() {
     expect(communityMonthYear(date), 'août 2026');
   });
 
-  test('les cinq portées ont un identifiant stable et unique', () {
+  test('les six portées ont un identifiant stable et unique', () {
     final ids = CommunityScope.values.map((scope) => scope.id).toSet();
-    expect(ids, hasLength(5));
+    expect(ids, hasLength(6));
     expect(
       ids,
-      containsAll(['global', 'pa_exam', 'gpx_exam', 'pa_school', 'gpx_school']),
+      containsAll([
+        'global',
+        'pa_exam',
+        'gpx_exam',
+        'pa_school',
+        'gpx_school',
+        'active',
+      ]),
     );
   });
 

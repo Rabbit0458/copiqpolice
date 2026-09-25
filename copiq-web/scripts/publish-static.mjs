@@ -1,10 +1,10 @@
 import {
   access,
   cp,
-  mkdir,
+  mkdtemp,
   readFile,
   rename,
-  rm,
+  rmdir,
   stat,
   writeFile,
 } from "node:fs/promises"
@@ -17,16 +17,30 @@ const projectDir = resolve(scriptDir, "..")
 const workspaceDir = resolve(projectDir, "..")
 const sourceDir = join(projectDir, "out")
 const targetDir = join(workspaceDir, "fae16dc1")
-const stagedDir = join(workspaceDir, ".fae16dc1-next")
-const backupDir = join(workspaceDir, ".fae16dc1-backup")
 const hostingConfig = join(projectDir, "deploy", ".htaccess")
+const docsDir = join(projectDir, "deploy", "docs")
+// Documents de livraison. Ils vivent dans copiq-web/deploy/docs/ parce que
+// fae16dc1/ est un dossier GÉNÉRÉ : un fichier écrit à la main dedans serait
+// détruit à la publication suivante. Le script les recopie donc à chaque fois.
+const deliveryDocs = ["README.md", "DEPLOYMENT.md", "CHANGELOG.md", "SECURITY.md"]
 const requiredRoutes = [
   "index.html",
   "404.html",
   "admin/index.html",
+  "admin/statistiques/index.html",
+  "admin/exploitation/index.html",
+  "admin/pilotage-avance/index.html",
+  "admin/demo/index.html",
   "login/index.html",
   "signup/index.html",
   "auth/callback/index.html",
+  // Ajoutés par la refonte 2026-09 : vitrine, tarifs, acquisition, SEO.
+  "tarifs/index.html",
+  "ressources/index.html",
+  "preparation/gardien-de-la-paix/index.html",
+  "preparation/policier-adjoint/index.html",
+  "robots.txt",
+  "sitemap.xml",
 ]
 
 async function exists(path) {
@@ -99,11 +113,21 @@ async function main() {
   await assertDirectory(sourceDir, "_next")
 
   const config = await runtimeConfig()
-  await rm(stagedDir, { recursive: true, force: true })
-  await rm(backupDir, { recursive: true, force: true })
-  await mkdir(stagedDir, { recursive: true })
+  const stagingRoot = await mkdtemp(join(workspaceDir, ".fae16dc1-next-"))
+  const stagedDir = join(stagingRoot, "fae16dc1")
+  const backupDir = join(
+    workspaceDir,
+    `fae16dc1-backup-${new Date().toISOString().replace(/[:.]/g, "-")}`,
+  )
   await cp(sourceDir, stagedDir, { recursive: true, force: true })
   await cp(hostingConfig, join(stagedDir, ".htaccess"), { force: true })
+  for (const doc of deliveryDocs) {
+    const source = join(docsDir, doc)
+    if (!(await exists(source))) {
+      throw new Error(`Document de livraison manquant : deploy/docs/${doc}`)
+    }
+    await cp(source, join(stagedDir, doc), { force: true })
+  }
   await writeFile(join(stagedDir, "copiq-config.js"), config, "utf8")
   await writeFile(
     join(stagedDir, "deployment-manifest.json"),
@@ -118,21 +142,27 @@ async function main() {
   )
 
   for (const route of requiredRoutes) await assertFile(stagedDir, route)
+  for (const doc of deliveryDocs) await assertFile(stagedDir, doc)
   await assertFile(stagedDir, ".htaccess")
   await assertFile(stagedDir, "copiq-config.js")
   await assertFile(stagedDir, "deployment-manifest.json")
 
-  if (await exists(targetDir)) await rename(targetDir, backupDir)
+  const hadTarget = await exists(targetDir)
+  if (hadTarget) await rename(targetDir, backupDir)
   try {
     await rename(stagedDir, targetDir)
-    await rm(backupDir, { recursive: true, force: true })
   } catch (error) {
-    if (await exists(backupDir)) await rename(backupDir, targetDir)
+    if (hadTarget && await exists(backupDir) && !(await exists(targetDir))) {
+      await rename(backupDir, targetDir)
+    }
     throw error
   }
+  await rmdir(stagingRoot).catch(() => {})
 
   console.log("\n✓ fae16dc1 est à jour et prêt à être envoyé chez l'hébergeur.")
   console.log(`✓ ${requiredRoutes.length} routes critiques vérifiées, dont /admin/.`)
+  console.log(`✓ ${deliveryDocs.length} documents de livraison copiés : ${deliveryDocs.join(", ")}.`)
+  if (hadTarget) console.log(`✓ Ancien export conservé : ${backupDir}`)
   if (config.includes("VOTRE_URL_SUPABASE_ICI")) {
     console.warn("⚠ copiq-config.js contient encore les valeurs Supabase de démonstration.")
   } else {

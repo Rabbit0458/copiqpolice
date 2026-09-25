@@ -27,6 +27,38 @@ require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelpe
 
 flutter_ios_podfile_setup
 
+# Xcode 26.2 ne déclare pas encore le sélecteur Objective-C
+# `isiOSAppOnVision` utilisé directement par device_info_plus 13.2.0.
+# Le garde dynamique conserve la détection quand elle existe et évite à la
+# fois l'erreur de compilation et le crash sur les autres environnements.
+def patch_device_info_plus_vision_selector
+  source_path = File.join(
+    __dir__,
+    '.symlinks',
+    'plugins',
+    'device_info_plus',
+    'ios',
+    'device_info_plus',
+    'Sources',
+    'device_info_plus',
+    'FPPDeviceInfoPlusPlugin.m'
+  )
+  return unless File.exist?(source_path)
+
+  source = File.read(source_path)
+  direct_call = 'isiOSAppOnVision = [NSNumber numberWithBool:[info isiOSAppOnVision]];'
+  guarded_call = <<~'OBJC'.strip
+    SEL visionSelector = NSSelectorFromString(@"isiOSAppOnVision");
+    if ([info respondsToSelector:visionSelector]) {
+      isiOSAppOnVision = [info valueForKey:@"isiOSAppOnVision"];
+    }
+  OBJC
+
+  return unless source.include?(direct_call)
+
+  File.write(source_path, source.sub(direct_call, guarded_call))
+end
+
 target 'Runner' do
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 
@@ -36,6 +68,7 @@ target 'Runner' do
 end
 
 post_install do |installer|
+  patch_device_info_plus_vision_selector
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
   end

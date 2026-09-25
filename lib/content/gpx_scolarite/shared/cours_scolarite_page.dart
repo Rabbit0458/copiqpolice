@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'package:copiqpolice/core/content/course_markdown_parser.dart';
+
 /// Catalogue des nouvelles fiches créées depuis le panneau administrateur.
 /// Les cours historiques conservent leurs routes et leurs widgets d'origine.
 class CoursScolariteCatalogPage extends StatefulWidget {
@@ -162,26 +164,40 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
   }
 
   Color get _accent {
-    final hex = (_cours?['color_hex'] as String?) ?? '#1147D9';
-    final v = hex.replaceAll('#', '').trim();
-    return Color(
-      int.tryParse(v.length == 6 ? 'FF$v' : v, radix: 16) ?? 0xFF1147D9,
-    );
+    // Une seule couleur de marque sur toutes les fiches dynamiques. Les
+    // anciennes valeurs distantes rouge/bleu créaient deux designs différents.
+    return const Color(0xFF2563EB);
   }
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final bg = isDark ? const Color(0xFF06102A) : const Color(0xFFF4F6FB);
+    final bg = isDark ? const Color(0xFF101114) : const Color(0xFFF5F6F8);
+    final foreground = isDark ? Colors.white : const Color(0xFF17181B);
 
     return Scaffold(
       backgroundColor: bg,
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: bg,
+        surfaceTintColor: Colors.transparent,
         elevation: 0,
+        scrolledUnderElevation: 0,
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).maybePop(),
+          tooltip: 'Retour',
+          icon: Icon(Icons.arrow_back_ios_new_rounded, color: foreground),
+        ),
         title: Text(
           (_cours?['code'] as String?) ?? 'Fiche',
-          style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 16),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+            fontFamily: 'InstrumentSans',
+            color: foreground,
+            fontWeight: FontWeight.w800,
+            fontSize: 16,
+          ),
         ),
       ),
       body: SafeArea(
@@ -220,7 +236,14 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
 
   Widget _buildContent(bool isDark) {
     final c = _cours!;
-    final surface = isDark ? const Color(0xFF0D1B4B) : Colors.white;
+    final surface = isDark ? const Color(0xFF1A1C20) : Colors.white;
+    final foreground = isDark ? Colors.white : const Color(0xFF17181B);
+    final muted = isDark
+        ? Colors.white.withValues(alpha: .68)
+        : const Color(0xFF596170);
+    final border = isDark
+        ? Colors.white.withValues(alpha: .09)
+        : const Color(0xFFE6E9EF);
     final keyPoints = <String>[
       if (c['key_points'] is List)
         ...(c['key_points'] as List).map((e) => e.toString()),
@@ -230,200 +253,398 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
         ...(c['legal_refs'] as List).map((e) => e.toString()),
     ];
     final quizModule = c['quiz_module'] as String?;
+    final title = (c['title'] as String?)?.trim() ?? '';
+    final subtitle = (c['subtitle'] as String?)?.trim() ?? '';
+    final code = (c['code'] as String?)?.trim() ?? '';
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 32),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // ─── En-tête ───────────────────────────────────────────────────
-          Container(
-            padding: const EdgeInsets.all(22),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [_accent, _accent.withValues(alpha: .78)],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-              borderRadius: BorderRadius.circular(20),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (c['code'] != null)
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 4,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: .22),
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                    child: Text(
-                      c['code'] as String,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 11.5,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: .5,
-                      ),
-                    ),
-                  ),
-                const SizedBox(height: 10),
-                Text(
-                  (c['title'] as String?) ?? '',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 23,
-                    fontWeight: FontWeight.w800,
-                    height: 1.25,
-                  ),
-                ),
-                if (c['subtitle'] != null) ...[
-                  const SizedBox(height: 8),
-                  Text(
-                    c['subtitle'] as String,
-                    style: TextStyle(
-                      color: Colors.white.withValues(alpha: .9),
-                      fontSize: 14,
-                      height: 1.4,
-                    ),
-                  ),
-                ],
-              ],
-            ),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final horizontalPadding = constraints.maxWidth >= 760 ? 28.0 : 16.0;
+        return SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          padding: EdgeInsets.fromLTRB(
+            horizontalPadding,
+            6,
+            horizontalPadding,
+            32,
           ),
-
-          // ─── Points clés ───────────────────────────────────────────────
-          if (keyPoints.isNotEmpty) ...[
-            const SizedBox(height: 18),
-            Container(
-              padding: const EdgeInsets.all(18),
-              decoration: BoxDecoration(
-                color: surface,
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: _accent.withValues(alpha: .28)),
-              ),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 720),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Row(
-                    children: [
-                      Icon(Icons.push_pin_rounded, size: 17, color: _accent),
-                      const SizedBox(width: 7),
-                      Text(
-                        'À RETENIR',
-                        style: TextStyle(
-                          fontSize: 11.5,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: .8,
-                          color: _accent,
-                        ),
+                  Semantics(
+                    header: true,
+                    child: Container(
+                      padding: const EdgeInsets.fromLTRB(20, 18, 20, 21),
+                      decoration: BoxDecoration(
+                        color: surface,
+                        borderRadius: BorderRadius.circular(26),
+                        border: Border.all(color: border),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withValues(
+                              alpha: isDark ? .12 : .045,
+                            ),
+                            blurRadius: 22,
+                            offset: const Offset(0, 9),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                  const SizedBox(height: 12),
-                  ...keyPoints.map(
-                    (p) => Padding(
-                      padding: const EdgeInsets.only(bottom: 9),
-                      child: Row(
+                      child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            margin: const EdgeInsets.only(top: 7, right: 10),
-                            width: 5,
-                            height: 5,
-                            decoration: BoxDecoration(
-                              color: _accent,
-                              shape: BoxShape.circle,
+                          Row(
+                            children: [
+                              const _FrenchSignature(),
+                              const Spacer(),
+                              Container(
+                                width: 42,
+                                height: 42,
+                                decoration: BoxDecoration(
+                                  color: _accent.withValues(
+                                    alpha: isDark ? .18 : .09,
+                                  ),
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                child: Icon(
+                                  Icons.menu_book_rounded,
+                                  color: _accent,
+                                  size: 21,
+                                ),
+                              ),
+                            ],
+                          ),
+                          if (code.isNotEmpty) ...[
+                            const SizedBox(height: 14),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 5,
+                              ),
+                              decoration: BoxDecoration(
+                                color: _accent.withValues(
+                                  alpha: isDark ? .17 : .08,
+                                ),
+                                borderRadius: BorderRadius.circular(99),
+                              ),
+                              child: Text(
+                                code.toUpperCase(),
+                                style: TextStyle(
+                                  fontFamily: 'InstrumentSans',
+                                  color: isDark
+                                      ? const Color(0xFF8AB4FF)
+                                      : const Color(0xFF1D4ED8),
+                                  fontSize: 10.5,
+                                  letterSpacing: .9,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ),
+                          ],
+                          const SizedBox(height: 11),
+                          Text(
+                            title,
+                            style: TextStyle(
+                              fontFamily: 'InstrumentSans',
+                              color: foreground,
+                              fontSize: title.length > 44 ? 23 : 26,
+                              fontWeight: FontWeight.w900,
+                              height: 1.12,
+                              letterSpacing: -.4,
                             ),
                           ),
-                          Expanded(
-                            child: Text(
-                              p,
-                              style: const TextStyle(
-                                fontSize: 14,
-                                height: 1.45,
+                          if (subtitle.isNotEmpty) ...[
+                            const SizedBox(height: 8),
+                            Text(
+                              subtitle,
+                              style: TextStyle(
+                                fontFamily: 'InstrumentSans',
+                                color: muted,
+                                fontSize: 14.5,
+                                height: 1.42,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                          ),
+                          ],
                         ],
                       ),
                     ),
                   ),
-                ],
-              ),
-            ),
-          ],
-
-          // ─── Corps de la fiche ─────────────────────────────────────────
-          const SizedBox(height: 20),
-          _MarkdownBody(
-            source: (c['body_md'] as String?) ?? '',
-            accent: _accent,
-            surface: surface,
-          ),
-
-          // ─── Références légales ────────────────────────────────────────
-          if (legalRefs.isNotEmpty) ...[
-            const SizedBox(height: 22),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: legalRefs
-                  .map(
-                    (r) => Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 7,
-                      ),
+                  if (keyPoints.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    Container(
+                      padding: const EdgeInsets.all(18),
                       decoration: BoxDecoration(
-                        color: _accent.withValues(alpha: .10),
-                        borderRadius: BorderRadius.circular(100),
+                        color: surface,
+                        borderRadius: BorderRadius.circular(22),
+                        border: Border.all(color: border),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withValues(
+                              alpha: isDark ? .12 : .045,
+                            ),
+                            blurRadius: 22,
+                            offset: const Offset(0, 9),
+                          ),
+                        ],
                       ),
-                      child: Text(
-                        r,
-                        style: TextStyle(
-                          fontSize: 12.5,
-                          fontWeight: FontWeight.w600,
-                          color: _accent,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                width: 36,
+                                height: 36,
+                                decoration: BoxDecoration(
+                                  color: _accent.withValues(
+                                    alpha: isDark ? .18 : .1,
+                                  ),
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                child: Icon(
+                                  Icons.lightbulb_outline_rounded,
+                                  size: 20,
+                                  color: _accent,
+                                ),
+                              ),
+                              const SizedBox(width: 11),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'L’ESSENTIEL',
+                                    style: TextStyle(
+                                      fontFamily: 'InstrumentSans',
+                                      fontSize: 10.5,
+                                      fontWeight: FontWeight.w900,
+                                      letterSpacing: 1,
+                                      color: _accent,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 1),
+                                  Text(
+                                    'À retenir',
+                                    style: TextStyle(
+                                      fontFamily: 'InstrumentSans',
+                                      color: foreground,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 15),
+                          Divider(color: border, height: 1),
+                          const SizedBox(height: 14),
+                          ...List.generate(keyPoints.length, (index) {
+                            return Padding(
+                              padding: EdgeInsets.only(
+                                bottom: index == keyPoints.length - 1 ? 0 : 12,
+                              ),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 20,
+                                    height: 20,
+                                    margin: const EdgeInsets.only(top: 1),
+                                    decoration: BoxDecoration(
+                                      color: _accent.withValues(
+                                        alpha: isDark ? .18 : .1,
+                                      ),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Icon(
+                                      Icons.check_rounded,
+                                      size: 13,
+                                      color: _accent,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Expanded(
+                                    child: Text(
+                                      keyPoints[index],
+                                      style: TextStyle(
+                                        fontFamily: 'InstrumentSans',
+                                        color: foreground.withValues(
+                                          alpha: .86,
+                                        ),
+                                        fontSize: 14.5,
+                                        height: 1.42,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            );
+                          }),
+                        ],
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: const EdgeInsets.fromLTRB(18, 18, 18, 8),
+                    decoration: BoxDecoration(
+                      color: surface,
+                      borderRadius: BorderRadius.circular(22),
+                      border: Border.all(color: border),
+                    ),
+                    child: _MarkdownBody(
+                      source: (c['body_md'] as String?) ?? '',
+                      accent: _accent,
+                      surface: surface,
+                    ),
+                  ),
+                  if (legalRefs.isNotEmpty) ...[
+                    const SizedBox(height: 16),
+                    Container(
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: surface,
+                        borderRadius: BorderRadius.circular(20),
+                        border: Border.all(color: border),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.account_balance_outlined,
+                                size: 19,
+                                color: _accent,
+                              ),
+                              const SizedBox(width: 9),
+                              Text(
+                                'Références',
+                                style: TextStyle(
+                                  fontFamily: 'InstrumentSans',
+                                  color: foreground,
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 12),
+                          Wrap(
+                            spacing: 8,
+                            runSpacing: 8,
+                            children: legalRefs
+                                .map(
+                                  (reference) => Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 11,
+                                      vertical: 7,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      color: _accent.withValues(
+                                        alpha: isDark ? .16 : .08,
+                                      ),
+                                      borderRadius: BorderRadius.circular(99),
+                                    ),
+                                    child: Text(
+                                      reference,
+                                      style: TextStyle(
+                                        fontFamily: 'InstrumentSans',
+                                        fontSize: 12.5,
+                                        fontWeight: FontWeight.w600,
+                                        color: isDark
+                                            ? const Color(0xFF8AB4FF)
+                                            : const Color(0xFF1D4ED8),
+                                      ),
+                                    ),
+                                  ),
+                                )
+                                .toList(),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                  if (quizModule != null) ...[
+                    const SizedBox(height: 18),
+                    Semantics(
+                      button: true,
+                      label: 'Tester mes connaissances sur ce cours',
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(minHeight: 56),
+                        child: FilledButton.icon(
+                          onPressed: () {
+                            HapticFeedback.selectionClick();
+                            Navigator.of(context).pushNamed(
+                              '/gpx/scolarite/quiz',
+                              arguments: quizModule,
+                            );
+                          },
+                          icon: const Icon(Icons.quiz_rounded, size: 20),
+                          label: Text(
+                            'Tester mes connaissances',
+                            style: const TextStyle(
+                              fontFamily: 'InstrumentSans',
+                              fontSize: 15,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          style: FilledButton.styleFrom(
+                            backgroundColor: const Color(0xFF17181B),
+                            foregroundColor: Colors.white,
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 18,
+                              vertical: 15,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                  )
-                  .toList(),
-            ),
-          ],
-
-          // ─── Quiz associé ──────────────────────────────────────────────
-          if (quizModule != null) ...[
-            const SizedBox(height: 26),
-            SizedBox(
-              height: 54,
-              child: FilledButton.icon(
-                onPressed: () {
-                  HapticFeedback.selectionClick();
-                  Navigator.of(
-                    context,
-                  ).pushNamed('/gpx/scolarite/quiz', arguments: quizModule);
-                },
-                icon: const Icon(Icons.quiz_rounded, size: 20),
-                label: const Text(
-                  'Tester mes connaissances',
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
-                ),
-                style: FilledButton.styleFrom(
-                  backgroundColor: _accent,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                ),
+                  ],
+                ],
               ),
             ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _FrenchSignature extends StatelessWidget {
+  const _FrenchSignature();
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return Semantics(
+      label: 'COP’IQ',
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(99),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const ColoredBox(
+              color: Color(0xFF2563EB),
+              child: SizedBox(width: 18, height: 4),
+            ),
+            ColoredBox(
+              color: isDark ? Colors.white : const Color(0xFFDDE1E8),
+              child: const SizedBox(width: 18, height: 4),
+            ),
+            const ColoredBox(
+              color: Color(0xFFEF4444),
+              child: SizedBox(width: 18, height: 4),
+            ),
           ],
-        ],
+        ),
       ),
     );
   }
@@ -451,224 +672,340 @@ class _MarkdownBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final blocks = <Widget>[];
-    final lines = source.split('\n');
-    var i = 0;
-
-    while (i < lines.length) {
-      final line = lines[i];
-      final trimmed = line.trim();
-
-      if (trimmed.isEmpty) {
-        i++;
-        continue;
-      }
-
-      // Séparateur
-      if (trimmed == '---' || trimmed == '___' || trimmed == '***') {
-        blocks.add(
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            child: Divider(color: accent.withValues(alpha: .2), height: 1),
-          ),
-        );
-        i++;
-        continue;
-      }
-
-      // Tableau
-      if (trimmed.startsWith('|')) {
-        final rows = <List<String>>[];
-        while (i < lines.length && lines[i].trim().startsWith('|')) {
-          final cells = lines[i]
-              .trim()
-              .split('|')
-              .where((c) => c.isNotEmpty || false)
-              .map((c) => c.trim())
-              .toList();
-          cells.removeWhere((c) => c.isEmpty && cells.length > 1);
-          // Ligne de séparation |---|---|
-          if (!RegExp(r'^[\s:\-|]+$').hasMatch(lines[i].trim())) {
-            rows.add(cells);
-          }
-          i++;
-        }
-        if (rows.isNotEmpty) blocks.add(_table(context, rows));
-        continue;
-      }
-
-      // Citation
-      if (trimmed.startsWith('>')) {
-        final buffer = <String>[];
-        while (i < lines.length && lines[i].trim().startsWith('>')) {
-          buffer.add(lines[i].trim().replaceFirst(RegExp(r'^>\s?'), ''));
-          i++;
-        }
-        blocks.add(
-          Container(
-            width: double.infinity,
-            margin: const EdgeInsets.symmetric(vertical: 10),
-            padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-            decoration: BoxDecoration(
-              color: accent.withValues(alpha: .07),
-              border: Border(left: BorderSide(color: accent, width: 3)),
-              borderRadius: const BorderRadius.only(
-                topRight: Radius.circular(10),
-                bottomRight: Radius.circular(10),
-              ),
-            ),
-            child: _rich(context, buffer.join(' '), fontSize: 14, height: 1.5),
-          ),
-        );
-        continue;
-      }
-
-      // Titres
-      final h = RegExp(r'^(#{1,4})\s+(.*)$').firstMatch(trimmed);
-      if (h != null) {
-        final level = h.group(1)!.length;
-        final sizes = {1: 22.0, 2: 19.0, 3: 16.5, 4: 15.0};
-        blocks.add(
-          Padding(
-            padding: EdgeInsets.only(top: level <= 2 ? 20 : 14, bottom: 8),
-            child: Text(
-              h.group(2)!,
-              style: TextStyle(
-                fontSize: sizes[level] ?? 15,
-                fontWeight: FontWeight.w800,
-                height: 1.3,
-                color: level <= 2 ? accent : null,
-              ),
-            ),
-          ),
-        );
-        i++;
-        continue;
-      }
-
-      // Liste numérotée
-      final ol = RegExp(r'^(\d+)\.\s+(.*)$').firstMatch(trimmed);
-      if (ol != null) {
-        blocks.add(_listItem(context, ol.group(1)!, ol.group(2)!));
-        i++;
-        continue;
-      }
-
-      // Liste à puces
-      if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
-        blocks.add(_listItem(context, '•', trimmed.substring(2)));
-        i++;
-        continue;
-      }
-
-      // Paragraphe
-      blocks.add(
-        Padding(
-          padding: const EdgeInsets.only(bottom: 11),
-          child: _rich(context, trimmed, fontSize: 14.5, height: 1.55),
-        ),
-      );
-      i++;
-    }
-
+    final parsed = parseCourseMarkdown(source);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: blocks,
+      children: List.generate(
+        parsed.length,
+        (index) => _renderBlock(
+          context,
+          parsed[index],
+          isFirst: index == 0,
+          isLast: index == parsed.length - 1,
+        ),
+      ),
     );
   }
 
-  Widget _listItem(BuildContext context, String bullet, String text) => Padding(
-    padding: const EdgeInsets.only(bottom: 8, left: 2),
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: 22,
-          child: Text(
-            bullet.length > 1 ? '$bullet.' : bullet,
-            style: TextStyle(
-              fontSize: 14.5,
-              fontWeight: FontWeight.w700,
-              color: accent,
-              height: 1.55,
-            ),
+  Widget _renderBlock(
+    BuildContext context,
+    CourseMarkdownBlock block, {
+    required bool isFirst,
+    required bool isLast,
+  }) {
+    switch (block.type) {
+      case CourseMarkdownBlockType.divider:
+        return Padding(
+          padding: const EdgeInsets.symmetric(vertical: 14),
+          child: Divider(
+            color: Theme.of(context).dividerColor.withValues(alpha: .45),
+            height: 1,
           ),
-        ),
-        Expanded(child: _rich(context, text, fontSize: 14.5, height: 1.55)),
-      ],
-    ),
-  );
-
-  Widget _table(BuildContext context, List<List<String>> rows) {
-    final header = rows.first;
-    final body = rows.skip(1).toList();
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(12),
-        child: Container(
+        );
+      case CourseMarkdownBlockType.table:
+        return _table(context, block.rows);
+      case CourseMarkdownBlockType.quote:
+        return Container(
+          width: double.infinity,
+          margin: EdgeInsets.only(top: isFirst ? 0 : 8, bottom: 14),
+          padding: const EdgeInsets.fromLTRB(15, 14, 15, 14),
           decoration: BoxDecoration(
-            color: surface,
-            border: Border.all(color: accent.withValues(alpha: .2)),
-            borderRadius: BorderRadius.circular(12),
+            color: accent.withValues(alpha: .07),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: accent.withValues(alpha: .16)),
           ),
-          child: Column(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                color: accent.withValues(alpha: .10),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 12,
-                  vertical: 10,
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: header
-                      .map(
-                        (cell) => Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 8),
-                            child: Text(
-                              cell,
-                              style: TextStyle(
-                                fontSize: 12.5,
-                                fontWeight: FontWeight.w800,
-                                color: accent,
-                              ),
-                            ),
-                          ),
-                        ),
-                      )
-                      .toList(),
-                ),
-              ),
-              ...body.map(
-                (r) => Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 10,
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: List.generate(header.length, (idx) {
-                      final cell = idx < r.length ? r[idx] : '';
-                      return Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: _rich(
-                            context,
-                            cell,
-                            fontSize: 13,
-                            height: 1.4,
-                          ),
-                        ),
-                      );
-                    }),
-                  ),
+              Icon(Icons.format_quote_rounded, color: accent, size: 21),
+              const SizedBox(width: 10),
+              Expanded(
+                child: _rich(
+                  context,
+                  block.text,
+                  fontSize: 15,
+                  height: 1.5,
+                  fontStyle: FontStyle.italic,
                 ),
               ),
             ],
           ),
+        );
+      case CourseMarkdownBlockType.heading:
+        return _heading(
+          context,
+          block.text,
+          block.headingLevel,
+          isFirst: isFirst,
+        );
+      case CourseMarkdownBlockType.orderedList:
+      case CourseMarkdownBlockType.unorderedList:
+        final ordered = block.type == CourseMarkdownBlockType.orderedList;
+        return Padding(
+          padding: EdgeInsets.only(bottom: isLast ? 8 : 14),
+          child: Column(
+            children: List.generate(
+              block.items.length,
+              (index) => _listItem(
+                context,
+                ordered ? '${block.listStart + index}' : '•',
+                block.items[index],
+                isLast: index == block.items.length - 1,
+              ),
+            ),
+          ),
+        );
+      case CourseMarkdownBlockType.paragraph:
+        return Padding(
+          padding: EdgeInsets.only(bottom: isLast ? 12 : 16),
+          child: _rich(context, block.text, fontSize: 15.5, height: 1.52),
+        );
+    }
+  }
+
+  Widget _heading(
+    BuildContext context,
+    String text,
+    int level, {
+    required bool isFirst,
+  }) {
+    final foreground = Theme.of(context).brightness == Brightness.dark
+        ? Colors.white
+        : const Color(0xFF17181B);
+    final size = switch (level) {
+      1 => 22.0,
+      2 => 19.5,
+      3 => 17.0,
+      _ => 15.5,
+    };
+    final heading = Text(
+      text,
+      style: TextStyle(
+        fontFamily: 'InstrumentSans',
+        color: foreground,
+        fontSize: size,
+        fontWeight: level <= 2 ? FontWeight.w900 : FontWeight.w800,
+        height: 1.25,
+        letterSpacing: level <= 2 ? -.2 : 0,
+      ),
+    );
+    return Semantics(
+      header: true,
+      child: Padding(
+        padding: EdgeInsets.only(
+          top: isFirst ? 0 : (level <= 2 ? 16 : 10),
+          bottom: level <= 2 ? 10 : 8,
         ),
+        child: level <= 2
+            ? Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 4,
+                    height: size * 1.25,
+                    margin: const EdgeInsets.only(right: 11),
+                    decoration: BoxDecoration(
+                      color: accent,
+                      borderRadius: BorderRadius.circular(99),
+                    ),
+                  ),
+                  Expanded(child: heading),
+                ],
+              )
+            : heading,
+      ),
+    );
+  }
+
+  Widget _listItem(
+    BuildContext context,
+    String bullet,
+    String text, {
+    required bool isLast,
+  }) {
+    final ordered = bullet != '•';
+    return Padding(
+      padding: EdgeInsets.only(bottom: isLast ? 0 : 10),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (ordered)
+            Container(
+              constraints: const BoxConstraints(minWidth: 22, minHeight: 22),
+              alignment: Alignment.center,
+              margin: const EdgeInsets.only(right: 8, top: 1),
+              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+              decoration: BoxDecoration(
+                color: accent.withValues(alpha: .1),
+                borderRadius: BorderRadius.circular(99),
+              ),
+              child: Text(
+                bullet,
+                style: TextStyle(
+                  fontFamily: 'InstrumentSans',
+                  color: accent,
+                  fontSize: 11.5,
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            )
+          else
+            SizedBox(
+              width: 28,
+              height: 24,
+              child: Align(
+                alignment: const Alignment(0, -.25),
+                child: Container(
+                  width: 6,
+                  height: 6,
+                  decoration: BoxDecoration(
+                    color: accent,
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ),
+            ),
+          Expanded(child: _rich(context, text, fontSize: 15, height: 1.5)),
+        ],
+      ),
+    );
+  }
+
+  Widget _table(BuildContext context, List<List<String>> rows) {
+    if (rows.isEmpty) return const SizedBox.shrink();
+    final header = rows.first;
+    final body = rows.skip(1).toList();
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final foreground = isDark ? Colors.white : const Color(0xFF17181B);
+    final border = isDark
+        ? Colors.white.withValues(alpha: .1)
+        : const Color(0xFFE5E9F0);
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 4, bottom: 16),
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth < 620 && body.isNotEmpty) {
+            return Column(
+              children: List.generate(body.length, (rowIndex) {
+                final row = body[rowIndex];
+                return Container(
+                  width: double.infinity,
+                  margin: EdgeInsets.only(
+                    bottom: rowIndex == body.length - 1 ? 0 : 10,
+                  ),
+                  padding: const EdgeInsets.all(14),
+                  decoration: BoxDecoration(
+                    color: isDark
+                        ? Colors.white.withValues(alpha: .035)
+                        : const Color(0xFFF8F9FB),
+                    borderRadius: BorderRadius.circular(16),
+                    border: Border.all(color: border),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: List.generate(header.length, (cellIndex) {
+                      final value = cellIndex < row.length
+                          ? row[cellIndex]
+                          : '';
+                      if (value.isEmpty) return const SizedBox.shrink();
+                      return Padding(
+                        padding: EdgeInsets.only(
+                          bottom: cellIndex == header.length - 1 ? 0 : 10,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              header[cellIndex],
+                              style: TextStyle(
+                                fontFamily: 'InstrumentSans',
+                                color: accent,
+                                fontSize: 10.5,
+                                letterSpacing: .65,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                            const SizedBox(height: 3),
+                            _rich(context, value, fontSize: 14, height: 1.4),
+                          ],
+                        ),
+                      );
+                    }),
+                  ),
+                );
+              }),
+            );
+          }
+
+          final desiredWidth = header.length * 150.0;
+          final tableWidth = desiredWidth < constraints.maxWidth
+              ? constraints.maxWidth
+              : desiredWidth;
+          return ClipRRect(
+            borderRadius: BorderRadius.circular(16),
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                color: surface,
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: border),
+              ),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: SizedBox(
+                  width: tableWidth,
+                  child: Table(
+                    border: TableBorder(
+                      horizontalInside: BorderSide(color: border),
+                      verticalInside: BorderSide(color: border),
+                    ),
+                    children: [
+                      TableRow(
+                        decoration: BoxDecoration(
+                          color: accent.withValues(alpha: isDark ? .16 : .08),
+                        ),
+                        children: header
+                            .map(
+                              (cell) => Padding(
+                                padding: const EdgeInsets.all(11),
+                                child: Text(
+                                  cell,
+                                  style: TextStyle(
+                                    fontFamily: 'InstrumentSans',
+                                    color: isDark
+                                        ? const Color(0xFF8AB4FF)
+                                        : const Color(0xFF1D4ED8),
+                                    fontSize: 12.5,
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                              ),
+                            )
+                            .toList(),
+                      ),
+                      ...body.map(
+                        (row) => TableRow(
+                          children: List.generate(header.length, (index) {
+                            final value = index < row.length ? row[index] : '';
+                            return Padding(
+                              padding: const EdgeInsets.all(11),
+                              child: _rich(
+                                context,
+                                value,
+                                fontSize: 13,
+                                height: 1.4,
+                              ),
+                            );
+                          }),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
@@ -679,6 +1016,7 @@ class _MarkdownBody extends StatelessWidget {
     String text, {
     required double fontSize,
     required double height,
+    FontStyle? fontStyle,
   }) {
     final spans = <TextSpan>[];
     final pattern = RegExp(r'(\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)');
@@ -720,10 +1058,18 @@ class _MarkdownBody extends StatelessWidget {
     if (last < text.length) spans.add(TextSpan(text: text.substring(last)));
 
     return RichText(
+      textScaler: MediaQuery.textScalerOf(context),
       text: TextSpan(
-        style: DefaultTextStyle.of(
-          context,
-        ).style.copyWith(fontSize: fontSize, height: height),
+        style: TextStyle(
+          fontFamily: 'InstrumentSans',
+          color: Theme.of(context).brightness == Brightness.dark
+              ? Colors.white.withValues(alpha: .82)
+              : const Color(0xFF2C3037),
+          fontSize: fontSize,
+          height: height,
+          fontWeight: FontWeight.w500,
+          fontStyle: fontStyle,
+        ),
         children: spans,
       ),
     );

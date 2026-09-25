@@ -61,7 +61,7 @@ STRIPE_PRICE_WEEK=price_xxx
 STRIPE_PRICE_MONTH=price_xxx
 STRIPE_PRICE_YEAR=price_xxx
 
-NEXT_PUBLIC_SITE_URL=https://copiqpolice.app
+NEXT_PUBLIC_SITE_URL=https://copiq.fr
 NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID=ca-pub-xxxxxxxx
 ```
 

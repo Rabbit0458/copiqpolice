@@ -8,6 +8,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 Color _opa(Color c, double a) => c.withValues(alpha: a);
 
@@ -165,7 +166,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     answer: "Commissaire général de police",
     explanation: "Insigne correspondant au Commissaire général de police.",
     difficulty: "Facile",
-    questionImageAsset: "assets/images/commisaire_general_police.png",
+    questionImageAsset: "assets/grades/grade_005_commissaire_general.png",
   ),
 
   const QuizQuestion(
@@ -4616,6 +4617,16 @@ class _QuizOrganisationPnGPXState extends State<QuizOrganisationPnGPX>
     }
 
     _seedAndShuffle();
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: _qs.length,
+    );
+    if (!mounted || session == null) return;
+    if (session.questionCount < _qs.length) {
+      _qs = _qs.take(session.questionCount).toList(growable: false);
+      _opts = _opts.take(session.questionCount).toList(growable: false);
+      _answers = List<String?>.filled(_qs.length, null);
+    }
 
     setState(() {
       _index = 0;

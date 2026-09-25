@@ -9,14 +9,14 @@
 //   - on app resume, asks SubscriptionService to refresh so realtime + RPC
 //     reconcile the entitlement immediately after Stripe webhook fires.
 //
-// Plans: 'week' | 'month' | 'year' — must match enum subscription_plan in DB.
+// Conservé uniquement pour les anciens abonnements Stripe et l'accès aux
+// anciennes factures. Les nouveaux achats mobiles passent par RevenueCat.
 //
 // Setup (env vars in Supabase project → Edge Functions → Secrets):
 //   STRIPE_SECRET_KEY
 //   STRIPE_WEBHOOK_SECRET
-//   STRIPE_PRICE_WEEK   (Stripe price ID, recurring weekly,  €4.99)
 //   STRIPE_PRICE_MONTH  (Stripe price ID, recurring monthly, €8.99)
-//   STRIPE_PRICE_YEAR   (Stripe price ID, recurring yearly,  €86.99)
+//   STRIPE_PRICE_YEAR   (ancien Stripe price ID)
 //   STRIPE_SUCCESS_URL  (optional — defaults to https://copiqpolice.app/payment-success)
 //   STRIPE_CANCEL_URL   (optional)
 //   STRIPE_PORTAL_RETURN_URL (optional)
@@ -28,87 +28,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'subscription_service.dart';
-
-enum CopiqPlan { week, month, year }
-
-/// Source de vérité unique des prix affichés en UI. Doit rester synchronisé
-/// avec les montants des price ID Stripe (STRIPE_PRICE_WEEK/MONTH/YEAR,
-/// voir en-tête de fichier) — un seul endroit à modifier si le prix change.
-extension CopiqPlanX on CopiqPlan {
-  String get id => switch (this) {
-    CopiqPlan.week => 'week',
-    CopiqPlan.month => 'month',
-    CopiqPlan.year => 'year',
-  };
-
-  String get label => switch (this) {
-    CopiqPlan.week => 'Hebdomadaire',
-    CopiqPlan.month => 'Mensuel',
-    CopiqPlan.year => 'Annuel',
-  };
-
-  String get title => switch (this) {
-    CopiqPlan.week => 'Semaine',
-    CopiqPlan.month => 'Mensuel',
-    CopiqPlan.year => 'Annuel',
-  };
-
-  double get priceEur => switch (this) {
-    CopiqPlan.week => 4.99,
-    CopiqPlan.month => 8.99,
-    CopiqPlan.year => 86.99,
-  };
-
-  String get priceLabel => switch (this) {
-    CopiqPlan.week => '4,99 € / semaine',
-    CopiqPlan.month => '8,99 € / mois',
-    CopiqPlan.year => '86,99 € / an',
-  };
-
-  String get subtitle => switch (this) {
-    CopiqPlan.week => 'Renouvellement automatique • Accès intégral 7 jours',
-    CopiqPlan.month => 'Renouvellement automatique',
-    CopiqPlan.year => '20 % d’économie • Renouvellement automatique',
-  };
-
-  String get badge => switch (this) {
-    CopiqPlan.week => 'Découverte',
-    CopiqPlan.month => 'Recommandé',
-    CopiqPlan.year => '-20 %',
-  };
-
-  String get valueLine => switch (this) {
-    CopiqPlan.week => 'Idéal pour tester COP’IQ à fond',
-    CopiqPlan.month => 'Le plus flexible • Résiliation en 30 secondes',
-    CopiqPlan.year => 'Meilleur prix sur l’année',
-  };
-
-  List<String> get details => switch (this) {
-    CopiqPlan.week => const [
-      'Accès complet concours + scolarité + quiz',
-      'Entraînements illimités (culture G + psycho + langues)',
-      'Annulable à tout moment (effet fin de période)',
-    ],
-    CopiqPlan.month => const [
-      'Tout débloqué + entraînements illimités',
-      'Mises à jour incluses — chaque semaine',
-      'Annulable à tout moment (effet fin de période)',
-    ],
-    CopiqPlan.year => const [
-      'Accès complet 12 mois + mises à jour incluses',
-      'Le meilleur rapport valeur / prix',
-      'Annulable à tout moment (effet fin de période)',
-    ],
-  };
-
-  bool get highlighted => this == CopiqPlan.month;
-}
-
-/// Le paiement est traité par Stripe Checkout (navigateur externe), pas par
-/// l’IAP App Store / Google Play. Ne JAMAIS afficher "Facturé via App Store
-/// / Google Play / AppGallery" dans l’UI — c’est faux et trompeur.
-const String kCopiqBillingLine =
-    'Facturé par carte bancaire via Stripe (paiement sécurisé, navigateur externe)';
+import 'subscription_plan.dart';
 
 class StripePaymentService {
   StripePaymentService._();

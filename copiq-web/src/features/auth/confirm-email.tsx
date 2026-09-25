@@ -209,7 +209,7 @@ function Screen({
         </p>
         {detail && (
           <p
-            className="copiq-card text-[var(--on-surface-faint)] text-[12px] leading-relaxed mb-2"
+            className="copiq-card text-[var(--on-surface-muted)] text-[12px] leading-relaxed mb-2"
             style={{ animationDelay: ".32s" }}
           >
             {detail}

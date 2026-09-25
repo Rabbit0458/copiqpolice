@@ -74,7 +74,11 @@ export function CookieBanner() {
           refuser sans conséquence sur ton utilisation du site.{" "}
           <Link
             href="/privacy"
-            className="font-medium text-[var(--brand)] underline underline-offset-2"
+            /* `--brand` (#1147D9) ne donne que 2,6:1 sur la surface sombre.
+               Le jeton n'est pas modifié — il sert de fond ailleurs, y compris
+               dans l'administration — on éclaircit seulement ce lien en
+               thème sombre. */
+            className="font-medium text-[var(--brand)] underline underline-offset-2 [.dark_&]:text-[#7FB3FF]"
           >
             Politique de confidentialité
           </Link>

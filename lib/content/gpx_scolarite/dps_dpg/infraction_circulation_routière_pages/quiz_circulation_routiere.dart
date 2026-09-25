@@ -17,8 +17,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:copiqpolice/core/services/learning_answer_history_service.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 // Utilitaire alpha (évite withOpacity déprécié)
 Color _opa(Color c, double a) => c.withValues(alpha: a);
@@ -4599,6 +4601,9 @@ class _QuizCirculationRoutiereState extends State<QuizCirculationRoutiere>
       final res = await _sb
           .from('quiz_history')
           .insert({
+            'grade': 'gpx',
+            'track': 'gpx',
+            'mode': 'school',
             'uid': widget.uid,
             'email': widget.email,
             'module_name': 'Infractions à la circulation routière',
@@ -4746,26 +4751,26 @@ class _QuizCirculationRoutiereState extends State<QuizCirculationRoutiere>
   }
 
   Future<void> _saveAnswer({
-    required String question,
+    required QuizQuestion quizQuestion,
     required String userAnswer,
-    required String correctAnswer,
     required bool isCorrect,
-    required String difficulty,
   }) async {
-    try {
-      await _sb.from('quiz_circulation_routiere').insert({
-        'user_uid': widget.uid,
-        'email': widget.email,
-        'question': question,
-        'user_answer': userAnswer,
-        'correct_answer': correctAnswer,
-        'is_correct': isCorrect,
-        'score': _score,
-        'difficulty': difficulty,
-      });
-    } catch (e) {
-      debugPrint('❌ quiz_circulation_routiere insert failed: $e');
-    }
+    await LearningAnswerHistoryService().record(
+      historyId: _historyRowId,
+      track: 'gpx',
+      mode: 'school',
+      moduleKey: 'infractions_circulation_routiere',
+      quizKey: 'quiz_circulation_routiere',
+      question: quizQuestion.question,
+      questionId: '${quizQuestion.category}:${_index + 1}',
+      options: quizQuestion.options,
+      userAnswer: userAnswer,
+      correctAnswer: quizQuestion.answer,
+      isCorrect: isCorrect,
+      explanation: quizQuestion.explanation,
+      difficulty: quizQuestion.difficulty,
+      questionPosition: _index + 1,
+    );
   }
 
   // ==================================================================
@@ -4798,6 +4803,16 @@ class _QuizCirculationRoutiereState extends State<QuizCirculationRoutiere>
     }
 
     _seedAndShuffle();
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: _qs.length,
+    );
+    if (!mounted || session == null) return;
+    if (session.questionCount < _qs.length) {
+      _qs = _qs.take(session.questionCount).toList(growable: false);
+      _opts = _opts.take(session.questionCount).toList(growable: false);
+      _answers = List<String?>.filled(_qs.length, null);
+    }
 
     setState(() {
       _index = 0;
@@ -4844,13 +4859,7 @@ class _QuizCirculationRoutiereState extends State<QuizCirculationRoutiere>
     unawaited(_playAnswerSfx(ok));
 
     unawaited(
-      _saveAnswer(
-        question: q.question,
-        userAnswer: _currentChoice!,
-        correctAnswer: q.answer,
-        isCorrect: ok,
-        difficulty: q.difficulty,
-      ),
+      _saveAnswer(quizQuestion: q, userAnswer: _currentChoice!, isCorrect: ok),
     );
   }
 

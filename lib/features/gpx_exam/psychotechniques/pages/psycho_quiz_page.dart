@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:copiqpolice/core/quiz/quiz_end_controller.dart';
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 import '../models/psycho_question.dart';
 import '../services/psycho_history_service.dart';
@@ -175,6 +176,15 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
   }
 
   Future<void> _startQuiz() async {
+    final countedQuestions = _availableByLevel[_selectedDifficulty];
+    final availableQuestions = countedQuestions != null && countedQuestions > 0
+        ? countedQuestions
+        : widget.config.sessionLength;
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: availableQuestions,
+    );
+    if (!mounted || session == null) return;
     setState(() {
       _phase = _Phase.loading;
       _errorMessage = null;
@@ -183,7 +193,7 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
       final list = await _service.loadByCategory(
         category: widget.config.category,
         difficulty: _selectedDifficulty!,
-        limit: widget.config.sessionLength,
+        limit: session.questionCount,
       );
       if (!mounted) return;
       if (list.isEmpty) {

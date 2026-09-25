@@ -11,7 +11,8 @@ import 'package:copiqpolice/features/home/home_page_gpx_school.dart'
 import 'package:copiqpolice/features/auth/signup.dart';
 import 'package:copiqpolice/features/home/home_page.dart' show UserMode;
 import 'package:copiqpolice/features/onboarding/gpx_school.dart';
-import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
+    show AppSettingsController;
 
 class _T {
   static const Color ink = Color(0xFF212529);
@@ -693,14 +694,18 @@ class _GpxSpaceRealStepState extends State<_GpxSpaceRealStep>
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(26),
                         border: Border.all(
-                          color: const Color(0xFF1147D9).withValues(alpha: 0.60),
+                          color: const Color(
+                            0xFF1147D9,
+                          ).withValues(alpha: 0.60),
                           width: 1.5,
                         ),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 28,
                             offset: const Offset(0, 18),
-                            color: const Color(0xFF1147D9).withValues(alpha: 0.16),
+                            color: const Color(
+                              0xFF1147D9,
+                            ).withValues(alpha: 0.16),
                           ),
                         ],
                       ),
@@ -753,8 +758,8 @@ class _TopTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final color = (isDark ? Colors.white : _T.ink).withValues(alpha: 
-      isDark ? 0.72 : 0.70,
+    final color = (isDark ? Colors.white : _T.ink).withValues(
+      alpha: isDark ? 0.72 : 0.70,
     );
 
     return GestureDetector(
@@ -1118,6 +1123,9 @@ class _ModePickerRealStepState extends State<_ModePickerRealStep> {
           child: ModePickerScreen(
             schoolCardKey: _schoolKey,
             lockToSchoolOnly: true,
+            onActiveSelectedOverride: () async {
+              widget.onPickedSchool();
+            },
             onModeSelectedOverride: (mode) async {
               if (mode == UserMode.school) {
                 HapticFeedback.selectionClick();
@@ -1130,14 +1138,18 @@ class _ModePickerRealStepState extends State<_ModePickerRealStep> {
         if (hole != null) ...[
           // ✅ overlay dim + blur léger avec trou
           Positioned.fill(
-            child: ClipPath(
-              clipper: _HoleClipper(hole),
-              child: BackdropFilter(
-                filter: ImageFilter.blur(
-                  sigmaX: _blurSigma,
-                  sigmaY: _blurSigma,
+            child: IgnorePointer(
+              child: ClipPath(
+                clipper: _HoleClipper(hole),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(
+                    sigmaX: _blurSigma,
+                    sigmaY: _blurSigma,
+                  ),
+                  child: Container(
+                    color: Colors.black.withValues(alpha: _dimOpacity),
+                  ),
                 ),
-                child: Container(color: Colors.black.withValues(alpha: _dimOpacity)),
               ),
             ),
           ),
@@ -1309,7 +1321,9 @@ class _GradePickerRealStepState extends State<_GradePickerRealStep> {
                         BoxShadow(
                           blurRadius: 26,
                           offset: const Offset(0, 16),
-                          color: const Color(0xFF1147D9).withValues(alpha: 0.14),
+                          color: const Color(
+                            0xFF1147D9,
+                          ).withValues(alpha: 0.14),
                         ),
                       ],
                     ),
@@ -1458,7 +1472,9 @@ class _ModulesRealStepState extends State<_ModulesRealStep> {
                   sigmaX: _blurSigma,
                   sigmaY: _blurSigma,
                 ),
-                child: Container(color: Colors.black.withValues(alpha: _dimOpacity)),
+                child: Container(
+                  color: Colors.black.withValues(alpha: _dimOpacity),
+                ),
               ),
             ),
           ),
@@ -2032,8 +2048,8 @@ class _TipBubble extends StatelessWidget {
     final titleColor = isDark
         ? Colors.black
         : Theme.of(context).textTheme.titleMedium?.color ?? _T.ink;
-    final bodyColor = (isDark ? Colors.black : titleColor).withValues(alpha: 
-      isDark ? 0.78 : 0.72,
+    final bodyColor = (isDark ? Colors.black : titleColor).withValues(
+      alpha: isDark ? 0.78 : 0.72,
     );
 
     return Container(
@@ -2155,7 +2171,9 @@ class _ChoiceCard extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.black.withValues(alpha: 0.25),
                     borderRadius: BorderRadius.circular(999),
-                    border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
+                    border: Border.all(
+                      color: Colors.white.withValues(alpha: 0.10),
+                    ),
                   ),
                   child: Row(
                     children: [

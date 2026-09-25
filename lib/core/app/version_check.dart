@@ -56,6 +56,8 @@ class AppVersionConfig {
     required this.platform,
     required this.minVersion,
     required this.latestVersion,
+    required this.minBuildNumber,
+    required this.latestBuildNumber,
     required this.forceUpdate,
     required this.storeUrl,
     required this.messageFr,
@@ -65,6 +67,8 @@ class AppVersionConfig {
   final String platform;
   final String minVersion;
   final String latestVersion;
+  final int minBuildNumber;
+  final int latestBuildNumber;
   final bool forceUpdate;
   final String storeUrl;
   final String messageFr;
@@ -75,11 +79,14 @@ class AppVersionConfig {
       platform: (json['platform'] as String?) ?? 'android',
       minVersion: (json['min_version'] as String?) ?? '1.0.0',
       latestVersion: (json['latest_version'] as String?) ?? '1.0.0',
+      minBuildNumber: _asInt(json['min_build_number']),
+      latestBuildNumber: _asInt(json['latest_build_number']),
       forceUpdate: (json['force_update'] as bool?) ?? false,
       storeUrl: (json['store_url'] as String?) ?? '',
       // La RPC renvoie `message` ; on accepte aussi `message_fr` pour rester
       // compatible avec l'ancien format de l'edge function.
-      messageFr: (json['message'] as String?) ??
+      messageFr:
+          (json['message'] as String?) ??
           (json['message_fr'] as String?) ??
           "Une nouvelle version de COP'IQ est disponible.",
       checkedAt: json['checked_at'] != null
@@ -89,20 +96,28 @@ class AppVersionConfig {
   }
 
   Map<String, dynamic> toJson() => {
-        'platform': platform,
-        'min_version': minVersion,
-        'latest_version': latestVersion,
-        'force_update': forceUpdate,
-        'store_url': storeUrl,
-        'message_fr': messageFr,
-        'checked_at': checkedAt.toIso8601String(),
-      };
+    'platform': platform,
+    'min_version': minVersion,
+    'latest_version': latestVersion,
+    'min_build_number': minBuildNumber,
+    'latest_build_number': latestBuildNumber,
+    'force_update': forceUpdate,
+    'store_url': storeUrl,
+    'message_fr': messageFr,
+    'checked_at': checkedAt.toIso8601String(),
+  };
 
-  /// Vrai si [currentVersion] < [minVersion] OU si [forceUpdate] est activé.
-  bool requiresUpdate(String currentVersion) {
-    if (forceUpdate) return true;
-    return _compareSemver(currentVersion, minVersion) < 0;
+  /// Une mise à jour forcée ne bloque que les builds réellement obsolètes.
+  /// Cela évite de bloquer aussi le dernier build lorsque `force_update=true`.
+  bool requiresUpdate(String currentVersion, int currentBuildNumber) {
+    if (!forceUpdate) return false;
+    final versionComparison = _compareSemver(currentVersion, minVersion);
+    return versionComparison < 0 ||
+        (versionComparison == 0 && currentBuildNumber < minBuildNumber);
   }
+
+  static int _asInt(dynamic value) =>
+      value is num ? value.round() : int.tryParse('$value') ?? 0;
 
   /// Comparaison semver simple (X.Y.Z). Retourne -1, 0 ou 1.
   static int _compareSemver(String a, String b) {
@@ -145,7 +160,7 @@ class AppVersionChecker {
   AppVersionChecker._();
   static final AppVersionChecker I = AppVersionChecker._();
 
-  static const _cacheKey = 'cp_version_check_v1';
+  static const _cacheKey = 'cp_version_check_v2';
   static const _cacheTtlHours = 6;
 
   AppVersionConfig? _cachedConfig;
@@ -163,6 +178,7 @@ class AppVersionChecker {
     try {
       final packageInfo = await PackageInfo.fromPlatform();
       final currentVersion = packageInfo.version; // ex: "1.2.0"
+      final currentBuildNumber = int.tryParse(packageInfo.buildNumber) ?? 0;
 
       AppVersionConfig? config = await _loadFromCache();
 
@@ -174,7 +190,7 @@ class AppVersionChecker {
       if (config == null) return false; // réseau KO → fail-open
 
       _cachedConfig = config;
-      return config.requiresUpdate(currentVersion);
+      return config.requiresUpdate(currentVersion, currentBuildNumber);
     } catch (e) {
       debugPrint('[AppVersionChecker] error: $e');
       return false; // fail-open
@@ -217,9 +233,7 @@ class AppVersionChecker {
 
   Future<AppVersionConfig?> _fetchFromNetwork() async {
     try {
-      final platform = kIsWeb
-          ? 'web'
-          : (Platform.isIOS ? 'ios' : 'android');
+      final platform = kIsWeb ? 'web' : (Platform.isIOS ? 'ios' : 'android');
 
       // ═══════════════════════════════════════════════════════════════════
       //  Depuis le 2026-07-26, la configuration est lue via la RPC
@@ -262,21 +276,18 @@ class ForceUpdateScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark =
-        MediaQuery.platformBrightnessOf(context) == Brightness.dark;
+    final isDark = MediaQuery.platformBrightnessOf(context) == Brightness.dark;
 
     final config = AppVersionChecker.I.currentConfig;
-    final message = config?.messageFr ??
+    final message =
+        config?.messageFr ??
         "Une nouvelle version de COP'IQ est requise pour continuer.";
     final storeUrl = config?.storeUrl ?? '';
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: isDark
-          ? SystemUiOverlayStyle.light
-          : SystemUiOverlayStyle.dark,
+      value: isDark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
       child: Scaffold(
-        backgroundColor:
-            isDark ? CpTokens.darkNavy : CpTokens.blueLight,
+        backgroundColor: isDark ? CpTokens.darkNavy : CpTokens.blueLight,
         body: _ForceUpdateBody(
           isDark: isDark,
           message: message,
@@ -307,14 +318,8 @@ class _ForceUpdateBody extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: isDark
-              ? [
-                  CpTokens.darkNavy,
-                  const Color(0xFF001875),
-                ]
-              : [
-                  const Color(0xFF1A55E6),
-                  CpTokens.darkNavy,
-                ],
+              ? [CpTokens.darkNavy, const Color(0xFF001875)]
+              : [const Color(0xFF1A55E6), CpTokens.darkNavy],
         ),
       ),
       child: SafeArea(
@@ -383,10 +388,7 @@ class _ForceUpdateBody extends StatelessWidget {
                   onPressed: storeUrl.isNotEmpty
                       ? () => _openStore(storeUrl)
                       : null,
-                  icon: const Icon(
-                    Icons.open_in_new_rounded,
-                    size: 20,
-                  ),
+                  icon: const Icon(Icons.open_in_new_rounded, size: 20),
                   label: Text(
                     "Mettre à jour COP'IQ",
                     style: GoogleFonts.montserrat(
@@ -397,7 +399,9 @@ class _ForceUpdateBody extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
                     foregroundColor: CpTokens.blueLight,
-                    disabledBackgroundColor: Colors.white.withValues(alpha: 0.4),
+                    disabledBackgroundColor: Colors.white.withValues(
+                      alpha: 0.4,
+                    ),
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),

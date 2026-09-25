@@ -14,6 +14,7 @@
  */
 
 import { useCallback, useEffect, useRef, useState } from "react"
+import { Check, Eye, EyeOff, KeyRound, LockKeyhole, ShieldCheck, Sparkles } from "lucide-react"
 import { adminAuth, type AdminSession } from "@/lib/admin/api"
 
 type Step =
@@ -189,7 +190,7 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
 
   if (step === "signin") {
     return (
-      <Shell title="Panel administrateur" subtitle="Étape 1 sur 3 — Identifiants">
+      <Shell title="Bienvenue dans votre espace sécurisé" subtitle="Identifiez-vous pour accéder au centre de pilotage." currentStep={1}>
         <form onSubmit={handleSignIn} className="space-y-3">
           <Field
             label="Adresse e-mail"
@@ -220,7 +221,8 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
     return (
       <Shell
         title="Activer la double authentification"
-        subtitle="Étape 2 sur 3 — Google Authenticator"
+        subtitle="Sécurisez votre accès avec votre application d’authentification."
+        currentStep={2}
       >
         {!enroll ? (
           <>
@@ -273,7 +275,7 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
 
   if (step === "totp-verify") {
     return (
-      <Shell title="Double authentification" subtitle="Étape 2 sur 3 — Code à 6 chiffres">
+      <Shell title="Double authentification" subtitle="Saisissez le code temporaire à 6 chiffres." currentStep={2}>
         <p className="mb-4 text-sm text-[var(--on-surface-muted)]">
           Saisis le code affiché dans Google Authenticator.
         </p>
@@ -297,7 +299,7 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
 
   // staff-code
   return (
-    <Shell title="Code staff" subtitle="Étape 3 sur 3 — Code personnel">
+    <Shell title="Dernière vérification" subtitle="Confirmez votre code staff personnel." currentStep={3}>
       <p className="mb-4 text-sm text-[var(--on-surface-muted)]">
         Dernière vérification : saisis ton code staff personnel.
       </p>
@@ -329,33 +331,51 @@ export function AdminGate({ children }: { children: (s: AdminSession) => React.R
 function Shell({
   title,
   subtitle,
+  currentStep,
   children,
 }: {
   title?: string
   subtitle?: string
+  currentStep?: 1 | 2 | 3
   children: React.ReactNode
 }) {
+  const steps = [
+    { label: "Compte", icon: KeyRound },
+    { label: "2FA", icon: ShieldCheck },
+    { label: "Staff", icon: LockKeyhole },
+  ]
   return (
-    <div className="flex min-h-screen items-center justify-center bg-[var(--surface-container)] p-4">
-      <div className="w-full max-w-sm rounded-2xl border border-[var(--outline-variant)] bg-[var(--surface)] p-7 shadow-xl">
-        <div className="mb-6 flex items-center gap-2.5">
-          <div className="grid h-9 w-9 place-items-center rounded-lg bg-[var(--brand)] text-sm font-bold text-white">
-            CQ
+    <main className="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#050817] px-4 py-8 text-white sm:px-6">
+      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(37,99,235,.24),transparent_32%),radial-gradient(circle_at_85%_80%,rgba(6,182,212,.16),transparent_34%),linear-gradient(145deg,#050817_0%,#0a1230_55%,#071020_100%)]" />
+      <div aria-hidden className="admin-auth-orb absolute -left-24 top-1/4 h-72 w-72 rounded-full bg-blue-500/15 blur-3xl" />
+      <div aria-hidden className="admin-auth-orb admin-auth-orb-delay absolute -right-20 bottom-1/4 h-80 w-80 rounded-full bg-cyan-400/10 blur-3xl" />
+      <section className="admin-auth-enter relative w-full max-w-[1080px] overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.055] shadow-[0_40px_120px_rgba(0,0,0,.55)] backdrop-blur-2xl lg:grid lg:grid-cols-[1.05fr_.95fr]">
+        <div className="relative hidden min-h-[680px] overflow-hidden border-r border-white/10 p-12 lg:flex lg:flex-col lg:justify-between">
+          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(145deg,rgba(37,99,235,.2),transparent_52%)]" />
+          <div className="relative">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/logo_gris.png" alt="COP'IQ" className="h-32 w-auto object-contain drop-shadow-[0_16px_35px_rgba(59,130,246,.3)]" />
+            <div className="mt-10 inline-flex items-center gap-2 rounded-full border border-blue-300/20 bg-blue-400/10 px-3 py-1.5 text-xs font-medium text-blue-100"><Sparkles size={14} aria-hidden /> Console nouvelle génération</div>
+            <h2 className="mt-6 max-w-md text-4xl font-semibold leading-[1.12] tracking-[-0.035em]">Pilotez COP&apos;IQ avec précision et sérénité.</h2>
+            <p className="mt-5 max-w-md text-base leading-7 text-slate-300">Un espace centralisé, protégé par trois niveaux de sécurité, pour administrer les contenus et accompagner la communauté.</p>
           </div>
-          <div>
-            <div className="text-sm font-semibold leading-tight">COP&apos;IQ</div>
-            <div className="text-[11px] uppercase tracking-wide text-[var(--on-surface-faint)]">
-              Administration
+          <div className="relative flex items-center gap-3 text-sm text-slate-300"><span className="grid h-9 w-9 place-items-center rounded-full border border-emerald-300/20 bg-emerald-400/10 text-emerald-300"><ShieldCheck size={18} /></span>Connexion chiffrée et accès contrôlé</div>
+        </div>
+        <div className="flex min-h-[620px] flex-col justify-center p-6 sm:p-10 lg:p-12">
+          <div className="mx-auto w-full max-w-md">
+            <div className="mb-8 flex justify-center lg:hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/logo_gris.png" alt="COP'IQ" className="h-24 w-auto object-contain" />
             </div>
+            {currentStep && <ol aria-label="Progression de la connexion" className="mb-9 grid grid-cols-3 gap-2">{steps.map(({ label, icon: Icon }, index) => { const number = index + 1; const active = number === currentStep; const done = number < currentStep; return <li key={label} className="text-center"><div className={`mx-auto grid h-11 w-11 place-items-center rounded-2xl border transition-all duration-300 ${active ? "border-blue-400 bg-blue-500 text-white shadow-[0_0_28px_rgba(59,130,246,.38)]" : done ? "border-emerald-400/30 bg-emerald-400/15 text-emerald-300" : "border-white/10 bg-white/5 text-slate-500"}`}>{done ? <Check size={18} /> : <Icon size={18} />}</div><span className={`mt-2 block text-[11px] font-semibold uppercase tracking-[.16em] ${active ? "text-blue-200" : done ? "text-emerald-300" : "text-slate-500"}`}>{label}</span></li> })}</ol>}
+            {title && <h1 className="text-2xl font-semibold tracking-[-0.025em] text-white sm:text-3xl">{title}</h1>}
+            {subtitle && <p className="mb-7 mt-2 text-sm leading-6 text-slate-400">{subtitle}</p>}
+            {children}
+            <p className="mt-8 text-center text-[11px] leading-5 text-slate-500">Accès strictement réservé au personnel autorisé COP&apos;IQ.</p>
           </div>
         </div>
-        {title && <h1 className="text-lg font-semibold">{title}</h1>}
-        {subtitle && (
-          <p className="mb-5 mt-0.5 text-xs text-[var(--on-surface-faint)]">{subtitle}</p>
-        )}
-        {children}
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
@@ -369,17 +389,17 @@ function Field({
   value: string
   onChange: (v: string) => void
 } & Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange" | "value">) {
+  const [visible, setVisible] = useState(false)
+  const isPassword = rest.type === "password"
   return (
-    <label className="block">
-      <span className="mb-1 block text-xs font-medium text-[var(--on-surface-muted)]">
+    <label className="block text-left">
+      <span className="mb-2 block text-xs font-semibold uppercase tracking-[.12em] text-slate-400">
         {label}
       </span>
-      <input
-        {...rest}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-lg border border-[var(--outline)] bg-[var(--surface)] px-3 py-2.5 text-sm outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand)]/20"
-      />
+      <span className="relative block">
+        <input {...rest} type={isPassword && visible ? "text" : rest.type} value={value} onChange={(e) => onChange(e.target.value)} className="min-h-12 w-full rounded-2xl border border-white/10 bg-white/[0.055] px-4 py-3 pr-12 text-base text-white outline-none transition duration-200 placeholder:text-slate-600 hover:border-white/20 focus:border-blue-400/70 focus:bg-white/[0.075] focus:ring-4 focus:ring-blue-500/10" />
+        {isPassword && <button type="button" aria-label={visible ? "Masquer le contenu" : "Afficher le contenu"} onClick={() => setVisible((shown) => !shown)} className="absolute right-2 top-1/2 grid h-10 w-10 -translate-y-1/2 cursor-pointer place-items-center rounded-xl text-slate-400 transition hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400">{visible ? <EyeOff size={18} /> : <Eye size={18} />}</button>}
+      </span>
     </label>
   )
 }
@@ -402,7 +422,8 @@ function OtpField({
       placeholder="000000"
       value={value}
       onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
-      className="w-full rounded-lg border border-[var(--outline)] bg-[var(--surface)] px-3 py-3 text-center font-mono text-2xl tracking-[0.4em] outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand)]/20"
+      aria-label="Code d’authentification à 6 chiffres"
+      className="min-h-14 w-full rounded-2xl border border-white/10 bg-white/[0.055] px-3 py-3 text-center font-mono text-2xl tracking-[0.42em] text-white outline-none transition hover:border-white/20 focus:border-blue-400/70 focus:ring-4 focus:ring-blue-500/10"
     />
   )
 }
@@ -410,7 +431,7 @@ function OtpField({
 function ErrorMsg({ error }: { error: string | null }) {
   if (!error) return null
   return (
-    <p className="rounded-lg bg-[var(--danger)]/10 px-3 py-2 text-xs text-[var(--danger)]">
+    <p role="alert" className="rounded-2xl border border-red-400/20 bg-red-400/10 px-4 py-3 text-sm leading-5 text-red-200">
       {error}
     </p>
   )

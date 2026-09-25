@@ -2,6 +2,7 @@
 import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -347,7 +348,14 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
         email: email,
         password: password,
         emailRedirectTo: 'https://copiq.fr/confirm/',
-        data: {'app': 'COPIQ', 'created_from': 'flutter'},
+        data: {
+          'app': 'COPIQ',
+          'created_from': 'flutter',
+          'cgv_accepted': true,
+          'cgv_version': '2026-08',
+          'cgv_accepted_client_at': DateTime.now().toUtc().toIso8601String(),
+          'platform': kIsWeb ? 'web' : defaultTargetPlatform.name.toLowerCase(),
+        },
       );
 
       debugPrint(

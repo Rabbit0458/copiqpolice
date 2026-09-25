@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[47277,["/_next/static/chunks/1l1cp6-u6awm5.js","/_next/static/chunks/17soygbyacdz3.js","/_next/static/chunks/2mo6kbtoqfgy7.js","/_next/static/chunks/3l2lbz9me70t6.js","/_next/static/chunks/0h-1r9lluk2wa.js","/_next/static/chunks/0w76y6bq7hy3-.js"],"EditorialDocument"]
-4:I[25573,["/_next/static/chunks/1l1cp6-u6awm5.js","/_next/static/chunks/17soygbyacdz3.js"],"OutletBoundary"]
+2:I[47277,["/_next/static/chunks/373fryfz7afv6.js","/_next/static/chunks/3nw2d-gnvse25.js","/_next/static/chunks/0qe__vpp7_698.js","/_next/static/chunks/40d2jad3hded9.js","/_next/static/chunks/40qy74vb9tq6u.js","/_next/static/chunks/0w76y6bq7hy3-.js"],"EditorialDocument"]
+4:I[25573,["/_next/static/chunks/3hap93h_2rlz1.js","/_next/static/chunks/17soygbyacdz3.js"],"OutletBoundary"]
 5:"$Sreact.suspense"
 3:T609,## 1. Éditeur du site
 Le site **copiq.fr** et l'application mobile COP'IQ sont édités par :
@@ -28,5 +28,5 @@ Les traitements sont détaillés dans la politique de confidentialité. Pour exe
 Les coordonnées du médiateur de la consommation doivent être complétées avant la commercialisation du service.
 
 ## 7. Indépendance
-COP'IQ est un service privé de préparation, sans lien avec le ministère de l'Intérieur, la Police nationale ou un organisme officiel organisant les concours.0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"type":"legal_notice","title":"Mentions légales","fallback":"$3","updatedAt":"26 juillet 2026"}],[["$","script","script-0",{"src":"/_next/static/chunks/0h-1r9lluk2wa.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0w76y6bq7hy3-.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"9tqJK-Ks9lsok7Z0DtHsV"}
+COP'IQ est un service privé de préparation, sans lien avec le ministère de l'Intérieur, la Police nationale ou un organisme officiel organisant les concours.0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"type":"legal_notice","title":"Mentions légales","fallback":"$3","updatedAt":"26 juillet 2026"}],[["$","script","script-0",{"src":"/_next/static/chunks/40qy74vb9tq6u.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0w76y6bq7hy3-.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OJFagZwq8d7P88YWpVMma"}
 6:null

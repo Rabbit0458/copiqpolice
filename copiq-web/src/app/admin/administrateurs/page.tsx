@@ -248,6 +248,7 @@ const COMMUNITY_SPACES = [
   ["gpx_exam", "Concours gardien de la paix"],
   ["pa_school", "École policier adjoint"],
   ["gpx_school", "École gardien de la paix"],
+  ["active", "Policiers actifs"],
 ] as const
 
 type ScopeDraft = {

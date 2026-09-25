@@ -1,11 +1,11 @@
 // lib/home/pa_school.dart
-// Espace PA — Choix du programme du jour (NON sauvegardé)
+// Espace PA — Choix du programme de scolarité
 // - 2 cartes héro ultra premium (blur + spotlight + badge glass)
-// - Aucun SharedPreferences / Supabase
 // - Retourne le choix via Navigator.pop(PaSchoolProgram)
 
 import 'dart:ui'; // ImageFilter.blur
 
+import 'package:copiqpolice/core/services/school_program_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -101,6 +101,12 @@ class _PaSchoolArtState extends State<PaSchoolArt> {
     await Future.delayed(const Duration(milliseconds: 140));
 
     if (!mounted) return;
+    try {
+      await SchoolProgramPreferences.savePa(program.key);
+    } catch (error) {
+      debugPrint('[PaSchoolArt] Program persistence failed: $error');
+    }
+    if (!mounted) return;
     Navigator.of(context).pop(program);
   }
 
@@ -179,7 +185,7 @@ class _PaSchoolArtState extends State<PaSchoolArt> {
                   const SizedBox(width: 9),
                   Expanded(
                     child: Text(
-                      'Tu pourras changer de programme à chaque démarrage.',
+                      'Ce programme sera rouvert au prochain démarrage. Tu pourras le changer depuis l’accueil.',
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: _muted(context, .76),
                         height: 1.3,
@@ -320,7 +326,7 @@ class _ProgramCompactCard extends StatelessWidget {
             onTap: disabled ? null : onTap,
             borderRadius: BorderRadius.circular(20),
             child: Ink(
-              height: 104,
+              height: 124,
               decoration: BoxDecoration(
                 color: theme.cardColor,
                 borderRadius: BorderRadius.circular(20),
@@ -393,8 +399,9 @@ class _ProgramCompactCard extends StatelessWidget {
                       children: [
                         Text(
                           program.compactTitle,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
+                          maxLines: 2,
+                          overflow: TextOverflow.visible,
+                          softWrap: true,
                           style: GoogleFonts.instrumentSans(
                             fontSize: 16,
                             fontWeight: FontWeight.w900,

@@ -143,7 +143,7 @@ export function LoginForm() {
           <div className="w-full border-t border-[var(--outline)]" />
         </div>
         <div className="relative flex justify-center">
-          <span className="px-3 text-xs text-[var(--on-surface-faint)] bg-[var(--surface)]">
+          <span className="px-3 text-xs text-[var(--on-surface-muted)] bg-[var(--surface)]">
             Pas encore de compte ?
           </span>
         </div>

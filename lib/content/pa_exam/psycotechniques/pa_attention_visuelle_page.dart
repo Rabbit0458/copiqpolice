@@ -15,6 +15,7 @@ import 'package:vibration/vibration.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 Color _opa(Color c, double a) => c.withValues(alpha: a);
 
@@ -91,6 +92,7 @@ class _PaAttentionVisuellePageState extends State<PaAttentionVisuellePage>
   int currentIndex = 1;
   int totalQuestions = 0;
   int availableForSelectedDifficulty = 0;
+  int selectedSessionLength = 10;
 
   int correctAnswers = 0;
   int totalAnswers = 0;
@@ -425,6 +427,13 @@ class _PaAttentionVisuellePageState extends State<PaAttentionVisuellePage>
       return;
     }
 
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: filteredQuestions.length,
+    );
+    if (!mounted || session == null) return;
+    selectedSessionLength = session.questionCount;
+
     if (hideIntroForever) {
       _beginSessionNow();
     } else {
@@ -528,8 +537,8 @@ class _PaAttentionVisuellePageState extends State<PaAttentionVisuellePage>
 
     Future.delayed(const Duration(milliseconds: 720), () async {
       if (!mounted) return;
-      if (shouldAutoStopAfk) {
-        await endGame(autoStoppedByAfk: true);
+      if (shouldAutoStopAfk || totalAnswers >= selectedSessionLength) {
+        await endGame(autoStoppedByAfk: shouldAutoStopAfk);
         return;
       }
       currentIndex = totalAnswers + 1;

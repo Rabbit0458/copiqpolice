@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
+import 'package:copiqpolice/core/services/revenuecat_service.dart';
 import 'package:copiqpolice/core/services/stripe_payment_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -540,8 +541,20 @@ class _FacturePageState extends State<FacturePage> {
     }
   }
 
-  Future<void> _openStripePortal() async {
+  Future<void> _openBillingPortal() async {
     HapticFeedback.lightImpact();
+    if (await RevenueCatService.instance.openSubscriptionManagement()) {
+      if (!mounted) return;
+      AppNotifier.info(
+        context,
+        title: 'Boutique ouverte',
+        message:
+            'Tu peux gérer ton abonnement et ton moyen de paiement dans ta boutique d’applications.',
+      );
+      return;
+    }
+
+    // Compatibilité avec les abonnements historiques souscrits avant la V6.
     final result = await StripePaymentService.instance.openPortal();
     if (!mounted) return;
     if (!result.ok) {
@@ -555,7 +568,7 @@ class _FacturePageState extends State<FacturePage> {
     }
     AppNotifier.info(
       context,
-      title: 'Portail Stripe ouvert',
+      title: 'Ancien espace de facturation ouvert',
       message:
           'Tu peux gérer ton abonnement, ta carte et télécharger tes factures dans le navigateur sécurisé.',
     );
@@ -564,7 +577,7 @@ class _FacturePageState extends State<FacturePage> {
   Future<void> _openInvoice(Invoice invoice) async {
     final raw = invoice.pdfUrl;
     if (raw == null || raw.isEmpty) {
-      await _openStripePortal();
+      await _openBillingPortal();
       return;
     }
     final opened = await launchUrl(
@@ -591,7 +604,7 @@ class _FacturePageState extends State<FacturePage> {
       queryParameters: {
         'subject': 'Facture COP’IQ ${invoice.invoiceNumber}',
         'body': invoice.pdfUrl == null
-            ? 'Retrouve ta facture dans ton portail Stripe COP’IQ.'
+            ? 'Retrouve ton justificatif dans la boutique utilisée pour ton abonnement COP’IQ.'
             : 'Voici le lien sécurisé vers ta facture : ${invoice.pdfUrl}',
       },
     );
@@ -668,7 +681,7 @@ class _FacturePageState extends State<FacturePage> {
                 _SubscriptionOverview(
                   subscription: _sub!,
                   invoices: _invoices,
-                  onManage: _openStripePortal,
+                  onManage: _openBillingPortal,
                 ),
 
                 const SizedBox(height: 10),
@@ -702,7 +715,7 @@ class _FacturePageState extends State<FacturePage> {
                       : "Exp ${_pm!.expMonth.toString().padLeft(2, '0')}/${(_pm!.expYear % 100).toString().padLeft(2, '0')}",
                   leading: const Icon(Icons.credit_card_rounded),
                   trailing: const Icon(Icons.chevron_right_rounded),
-                  onTap: _openStripePortal,
+                  onTap: _openBillingPortal,
                 ),
 
                 const SizedBox(height: 14),
@@ -814,7 +827,7 @@ class _FacturePageState extends State<FacturePage> {
                                         _statusFilter != null
                                     ? "Aucune facture ne correspond à la recherche."
                                     : _sub?.status.toLowerCase() == 'trialing'
-                                    ? "Aucune facture pour le moment. La première apparaîtra après le premier prélèvement Stripe, à la fin de l’essai."
+                                    ? "Aucun justificatif pour le moment. Le premier sera disponible dans ta boutique après la fin de l’essai."
                                     : "Aucune facture disponible pour le moment.",
                                 style: TextStyle(fontWeight: FontWeight.w700),
                               ),
@@ -839,7 +852,7 @@ class _FacturePageState extends State<FacturePage> {
                             onRetryPayment:
                                 (inv.status == BillingStatus.due ||
                                     inv.status == BillingStatus.failed)
-                                ? _openStripePortal
+                                ? _openBillingPortal
                                 : null,
                           ),
                           const SizedBox(height: 10),
@@ -1124,7 +1137,7 @@ class _SubscriptionOverview extends StatelessWidget {
               ),
               icon: const Icon(Icons.open_in_new_rounded, size: 18),
               label: const Text(
-                'Gérer avec Stripe',
+                'Gérer mon abonnement',
                 style: TextStyle(fontWeight: FontWeight.w900),
               ),
             ),
@@ -1132,7 +1145,7 @@ class _SubscriptionOverview extends StatelessWidget {
           const SizedBox(height: 9),
           const Center(
             child: Text(
-              'Paiement sécurisé par carte bancaire via Stripe',
+              'Paiement sécurisé par App Store ou Google Play',
               style: TextStyle(color: Colors.white54, fontSize: 11),
             ),
           ),

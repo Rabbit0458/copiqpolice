@@ -16,12 +16,15 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'package:copiqpolice/core/services/learning_answer_history_service.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:copiqpolice/core/widgets/quiz_report_dialog.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
 import 'package:copiqpolice/core/services/user_context_service.dart';
+import 'package:copiqpolice/core/quiz/quiz_session_picker.dart';
 
 // Utilitaire alpha (évite withOpacity déprécié)
 Color _opa(Color c, double a) => c.withValues(alpha: a);
@@ -2196,6 +2199,16 @@ class _QuizActionPubliquePagePAState extends State<QuizActionPubliquePagePA>
 
   Future<void> _doStartQuiz() async {
     _seedAndShuffle();
+    final session = await showQuizSessionPicker(
+      context,
+      availableQuestions: _qs.length,
+    );
+    if (!mounted || session == null) return;
+    if (session.questionCount < _qs.length) {
+      _qs = _qs.take(session.questionCount).toList(growable: false);
+      _opts = _opts.take(session.questionCount).toList(growable: false);
+      _answers = List<String?>.filled(_qs.length, null);
+    }
     setState(() {
       _index = 0;
       _score = 0;
@@ -2241,12 +2254,21 @@ class _QuizActionPubliquePagePAState extends State<QuizActionPubliquePagePA>
     unawaited(_playAnswerSfx(ok));
 
     unawaited(
-      _saveAnswer(
+      LearningAnswerHistoryService().record(
+        historyId: _historyRowId,
+        track: 'pa',
+        mode: 'school',
+        moduleKey: q.category.toString(),
+        quizKey: 'pa_quiz_action_publique_page',
+        questionId: '${q.category}:${_index + 1}',
         question: q.question,
+        options: q.options.map((value) => value.toString()).toList(),
         userAnswer: _currentChoice!,
         correctAnswer: q.answer,
         isCorrect: ok,
+        explanation: q.explanation,
         difficulty: q.difficulty,
+        questionPosition: _index + 1,
       ),
     );
   }

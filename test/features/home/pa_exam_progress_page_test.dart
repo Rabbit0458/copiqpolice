@@ -135,4 +135,80 @@ void main() {
     expect(find.text('Mon suivi'), findsOneWidget);
     expect(find.text('Progression générale'), findsOneWidget);
   });
+
+  testWidgets("affiche le carnet d'erreurs et la correction détaillée", (
+    tester,
+  ) async {
+    final now = DateTime(2026, 8, 27, 12);
+    final activity = PaProgressActivity(
+      id: 'quiz:42',
+      source: PaProgressSource.quiz,
+      moduleKey: 'culture_generale',
+      moduleLabel: 'Culture générale',
+      title: 'Institutions',
+      correct: 0,
+      total: 1,
+      answeredCount: 1,
+      finishedAt: now,
+      answers: [
+        PaProgressAnswerDetail(
+          question: 'Où siège l’OMS ?',
+          userAnswer: 'Paris',
+          correctAnswer: 'Genève',
+          explanation: 'Le siège de l’OMS se situe à Genève.',
+          isCorrect: false,
+          answeredAt: now,
+        ),
+      ],
+    );
+    final subject = PaProgressSubject(
+      key: 'culture_generale',
+      label: 'Culture générale',
+      activities: 1,
+      correct: 0,
+      total: 1,
+      bestPercent: 0,
+      lastPercent: 0,
+      lastActivityAt: now,
+      route: null,
+    );
+    final snapshot = PaProgressSnapshot(
+      activities: [activity],
+      subjects: [subject],
+      days: [PaProgressDay(day: now, activityCount: 1)],
+      trend: [PaProgressTrendPoint(date: now, percent: 0)],
+      errors: const [],
+      dailyGoal: 3,
+      streakDays: 1,
+      doneToday: 1,
+      doneThisWeek: 1,
+      globalPercent: 0,
+      totalQuestions: 1,
+      totalCorrect: 0,
+      totalDurationSeconds: 0,
+      recommendation: null,
+      placement: null,
+      loadedAt: now,
+    );
+
+    await tester.pumpWidget(app(PaProgressLoaded(snapshot)));
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.text("Mon carnet d'erreurs"),
+      500,
+      scrollable: find.byType(Scrollable).first,
+    );
+    expect(find.text("Mon carnet d'erreurs"), findsOneWidget);
+    await tester.scrollUntilVisible(
+      find.text('Où siège l’OMS ?'),
+      250,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -180));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Où siège l’OMS ?'));
+    await tester.pumpAndSettle();
+    expect(find.text('Comprendre mon erreur'), findsOneWidget);
+    expect(find.text('Le siège de l’OMS se situe à Genève.'), findsOneWidget);
+  });
 }

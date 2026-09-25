@@ -548,6 +548,12 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     final theme = Theme.of(context);
     final screenHeight = MediaQuery.sizeOf(context).height;
     final compactHome = screenHeight < 760;
+    // Hauteur réelle de la pill nav flottante (voir _SlidingPillNavBar) +
+    // marge de confort, pour que le dernier bloc scrollable ne colle jamais
+    // dessus — remplace un SizedBox à valeur fixe qui coupait le contenu
+    // sur les écrans avec une zone de sécurité basse plus grande.
+    final navBarFootprint =
+        64.0 + 8 + math.max(MediaQuery.paddingOf(context).bottom, 8.0) + 24;
     final heroHeight = screenHeight < 700
         ? 232.0
         : screenHeight < 820
@@ -763,12 +769,13 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
               ),
             ),
 
-            const SizedBox(height: 92),
+            SizedBox(height: navBarFootprint),
           ],
         ),
       ),
 
       PaExamProgressPage(
+        coachTrack: 'gpx',
         onStart: _openFirstTraining,
         dataSource: GpxExamProgressService(),
         subtitle: 'Ta progression vers le concours de Gardien de la paix',
@@ -1344,8 +1351,9 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
 
                       Text(
                         widget.item.label,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
+                        maxLines: 3,
+                        overflow: TextOverflow.visible,
+                        softWrap: true,
                         style: GoogleFonts.instrumentSans(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -1561,8 +1569,9 @@ class _CategoryDetailPage extends StatelessWidget {
         ),
         title: Text(
           title,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
+          maxLines: 2,
+          overflow: TextOverflow.visible,
+          softWrap: true,
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -1836,8 +1845,9 @@ class _NextStepCard extends StatelessWidget {
                           const SizedBox(height: 2),
                           Text(
                             data.title,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
+                            maxLines: 3,
+                            overflow: TextOverflow.visible,
+                            softWrap: true,
                             style: GoogleFonts.poppins(
                               fontSize: compact ? 15 : 17,
                               height: 1.15,
@@ -2066,8 +2076,9 @@ class _MiniHeroCard extends StatelessWidget {
                       // Title
                       Text(
                         title,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
+                        maxLines: 3,
+                        overflow: TextOverflow.visible,
+                        softWrap: true,
                         style: titleStyle(),
                       ),
 

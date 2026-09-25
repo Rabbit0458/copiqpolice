@@ -652,6 +652,7 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool> {
       ),
 
       PaExamProgressPage(
+        coachTrack: 'gpx',
         onStart: () {
           if (_cats.isEmpty) return;
           final first = _cats.first;
@@ -913,8 +914,9 @@ class _GpxSchoolNextStepCard extends StatelessWidget {
                                 ),
                                 child: Text(
                                   data.title,
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.visible,
+                                  softWrap: true,
                                   style: GoogleFonts.poppins(
                                     color: Colors.white,
                                     fontSize: 18,
@@ -1472,8 +1474,9 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
 
                   Text(
                     widget.item.label,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
+                    maxLines: 3,
+                    overflow: TextOverflow.visible,
+                    softWrap: true,
                     style: GoogleFonts.instrumentSans(
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
@@ -1658,8 +1661,9 @@ class _MiniCard extends StatelessWidget {
                       children: [
                         Text(
                           title,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
+                          maxLines: 2,
+                          overflow: TextOverflow.visible,
+                          softWrap: true,
                           style: TextStyle(
                             fontWeight: FontWeight.w800,
                             color: isDark ? Colors.white : _T.ink,
@@ -1912,8 +1916,9 @@ class _HomeActionCard extends StatelessWidget {
                   children: [
                     Text(
                       title,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      overflow: TextOverflow.visible,
+                      softWrap: true,
                       style: GoogleFonts.poppins(
                         fontWeight: FontWeight.w900,
                         color: ink,
@@ -1996,8 +2001,9 @@ class _CategoryDetailPage extends StatelessWidget {
         ),
         title: Text(
           title,
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
+          maxLines: 2,
+          overflow: TextOverflow.visible,
+          softWrap: true,
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,

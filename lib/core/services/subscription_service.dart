@@ -4,6 +4,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'revenuecat_service.dart';
+
 /// ─────────────────────────────────────────────────────────────
 ///  COP’IQ — Subscription & Free Quota (Realtime + Polling + Gate)
 ///  Tables:
@@ -190,12 +192,20 @@ class SubscriptionService {
 
   Timer? _pollTimer;
   Completer<void>? _refreshing;
+  Future<bool> Function()? _rewardedUnlockHandler;
+  VoidCallback? _revenueCatListener;
 
   // Anti double-consume sur navigation
   String? _lastConsumedRoute;
   DateTime? _lastConsumedAt;
 
   bool get isHardLocked => state.value.isLocked;
+
+  /// Le module publicitaire enregistre ce gestionnaire au démarrage sans
+  /// créer de dépendance circulaire entre abonnement et AdMob.
+  void registerRewardedUnlockHandler(Future<bool> Function() handler) {
+    _rewardedUnlockHandler = handler;
+  }
 
   /// ✅ Boot: call once (ex: in MyApp.initState()).
   void startAutoSync({Duration pollingEvery = const Duration(seconds: 20)}) {
@@ -206,6 +216,20 @@ class SubscriptionService {
     _started = true;
 
     _SubLog.ok('auto_sync:start');
+
+    _revenueCatListener ??= () {
+      final storePremium = RevenueCatService.instance.isPremium;
+      if (storePremium) {
+        state.value = state.value.copyWith(
+          isPremium: true,
+          lastRefreshedAt: DateTime.now(),
+          clearLastError: true,
+        );
+      } else if (_sb.auth.currentUser != null) {
+        unawaited(refresh(force: true, withQuota: false));
+      }
+    };
+    RevenueCatService.instance.state.addListener(_revenueCatListener!);
 
     // auth listener
     _authSub = _sb.auth.onAuthStateChange.listen((evt) async {
@@ -260,6 +284,12 @@ class SubscriptionService {
     _pollTimer?.cancel();
     _pollTimer = null;
 
+    final revenueCatListener = _revenueCatListener;
+    if (revenueCatListener != null) {
+      RevenueCatService.instance.state.removeListener(revenueCatListener);
+    }
+    _revenueCatListener = null;
+
     await _unbindRealtime();
     _boundUserId = null;
   }
@@ -304,14 +334,25 @@ class SubscriptionService {
     final user = _sb.auth.currentUser;
     if (user == null) return false;
 
-    final res = await _sb.rpc(
-      'is_user_premium',
-      params: {'p_user_id': user.id},
-    );
-    final premium = res == true;
+    final storePremium = RevenueCatService.instance.isPremium;
+    try {
+      final res = await _sb.rpc(
+        'is_user_premium',
+        params: {'p_user_id': user.id},
+      );
+      final databasePremium = res == true;
+      final premium = databasePremium || storePremium;
 
-    _SubLog.d('rpc:is_user_premium', {'premium': premium});
-    return premium;
+      _SubLog.d('premium:merged', {
+        'database': databasePremium,
+        'store': storePremium,
+        'premium': premium,
+      });
+      return premium;
+    } catch (error) {
+      _SubLog.w('premium:database_unavailable -> store_fallback');
+      return storePremium;
+    }
   }
 
   /// ---------- Quota ----------
@@ -448,7 +489,7 @@ class SubscriptionService {
 
     final resetsTxt = _fmtDate(q.resetsAt.toLocal());
 
-    await showGeneralDialog(
+    final unlocked = await showGeneralDialog<bool>(
       context: context,
       barrierDismissible: true,
       barrierLabel: 'quota_lock',
@@ -460,16 +501,17 @@ class SubscriptionService {
         return _QuotaLockDialog(
           animation: a,
           resetsText: resetsTxt,
-          onLater: () => Navigator.of(context).pop(),
+          onLater: () => Navigator.of(context).pop(false),
+          onRewarded: _rewardedUnlockHandler,
           onPremium: () {
-            Navigator.of(context).pop();
+            Navigator.of(context).pop(false);
             Navigator.of(context).pushNamed('/abonnement');
           },
         );
       },
     );
 
-    return false;
+    return unlocked ?? false;
   }
 
   // ---------- Internal helpers ----------
@@ -607,18 +649,57 @@ class _SubLog {
 /// ─────────────────────────────────────────────────────────────
 ///  Lock Dialog (identique à ton style premium)
 /// ─────────────────────────────────────────────────────────────
-class _QuotaLockDialog extends StatelessWidget {
+class _QuotaLockDialog extends StatefulWidget {
   final Animation<double> animation;
   final String resetsText;
   final VoidCallback onLater;
   final VoidCallback onPremium;
+  final Future<bool> Function()? onRewarded;
 
   const _QuotaLockDialog({
     required this.animation,
     required this.resetsText,
     required this.onLater,
     required this.onPremium,
+    required this.onRewarded,
   });
+
+  @override
+  State<_QuotaLockDialog> createState() => _QuotaLockDialogState();
+}
+
+class _QuotaLockDialogState extends State<_QuotaLockDialog> {
+  bool _rewarding = false;
+  String? _rewardError;
+
+  Future<void> _unlockWithAd() async {
+    final handler = widget.onRewarded;
+    if (handler == null || _rewarding) return;
+    setState(() {
+      _rewarding = true;
+      _rewardError = null;
+    });
+    try {
+      final granted = await handler();
+      if (!mounted) return;
+      if (granted) {
+        Navigator.of(context).pop(true);
+        return;
+      }
+      setState(() {
+        _rewarding = false;
+        _rewardError =
+            'La publicité n’est pas disponible. Réessaie dans un instant.';
+      });
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _rewarding = false;
+        _rewardError =
+            'Le déblocage n’a pas pu être confirmé. Aucun accès n’a été utilisé.';
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -630,9 +711,9 @@ class _QuotaLockDialog extends StatelessWidget {
     return SafeArea(
       child: Center(
         child: AnimatedBuilder(
-          animation: animation,
+          animation: widget.animation,
           builder: (context, _) {
-            final t = Curves.easeOutCubic.transform(animation.value);
+            final t = Curves.easeOutCubic.transform(widget.animation.value);
 
             return Opacity(
               opacity: t,
@@ -755,7 +836,7 @@ class _QuotaLockDialog extends StatelessWidget {
                                       const SizedBox(width: 8),
                                       Flexible(
                                         child: Text(
-                                          'Nouveaux accès : $resetsText',
+                                          'Nouveaux accès : ${widget.resetsText}',
                                           textAlign: TextAlign.center,
                                           style: theme.textTheme.bodySmall
                                               ?.copyWith(
@@ -767,6 +848,58 @@ class _QuotaLockDialog extends StatelessWidget {
                                     ],
                                   ),
                                 ),
+                                if (widget.onRewarded != null) ...[
+                                  const SizedBox(height: 12),
+                                  SizedBox(
+                                    width: double.infinity,
+                                    height: 50,
+                                    child: OutlinedButton.icon(
+                                      onPressed: _rewarding
+                                          ? null
+                                          : _unlockWithAd,
+                                      style: OutlinedButton.styleFrom(
+                                        foregroundColor: accentSoft,
+                                        side: BorderSide(
+                                          color: accentSoft.withValues(
+                                            alpha: .55,
+                                          ),
+                                        ),
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(
+                                            16,
+                                          ),
+                                        ),
+                                      ),
+                                      icon: _rewarding
+                                          ? const SizedBox.square(
+                                              dimension: 18,
+                                              child: CircularProgressIndicator(
+                                                strokeWidth: 2,
+                                                color: accentSoft,
+                                              ),
+                                            )
+                                          : const Icon(
+                                              Icons.play_circle_outline_rounded,
+                                            ),
+                                      label: Text(
+                                        _rewarding
+                                            ? 'Validation en cours…'
+                                            : 'Regarder une pub · +1 accès',
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                                if (_rewardError != null) ...[
+                                  const SizedBox(height: 10),
+                                  Text(
+                                    _rewardError!,
+                                    textAlign: TextAlign.center,
+                                    style: theme.textTheme.bodySmall?.copyWith(
+                                      color: const Color(0xFFFF9A9A),
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                ],
                                 const SizedBox(height: 20),
                                 LayoutBuilder(
                                   builder: (context, constraints) {
@@ -774,7 +907,9 @@ class _QuotaLockDialog extends StatelessWidget {
                                     final later = SizedBox(
                                       height: 50,
                                       child: OutlinedButton(
-                                        onPressed: onLater,
+                                        onPressed: _rewarding
+                                            ? null
+                                            : widget.onLater,
                                         style: OutlinedButton.styleFrom(
                                           foregroundColor: Colors.white,
                                           side: BorderSide(
@@ -803,7 +938,9 @@ class _QuotaLockDialog extends StatelessWidget {
                                           ),
                                         ),
                                         child: FilledButton.icon(
-                                          onPressed: onPremium,
+                                          onPressed: _rewarding
+                                              ? null
+                                              : widget.onPremium,
                                           style: FilledButton.styleFrom(
                                             backgroundColor: Colors.transparent,
                                             shadowColor: Colors.transparent,

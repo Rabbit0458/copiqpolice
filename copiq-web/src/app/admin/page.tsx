@@ -1,13 +1,14 @@
 "use client"
 
 import Link from "next/link"
+import { useEffect, useState } from "react"
 import {
   ArrowUpRight,
   Activity,
-  BookOpenCheck,
+  ChartNoAxesCombined,
   Bug,
   CheckCircle2,
-  ClipboardCheck,
+  Command,
   Flag,
   GraduationCap,
   MessageSquareMore,
@@ -16,9 +17,10 @@ import {
   Sparkles,
   Users,
 } from "lucide-react"
-import { casPratiqueApi, supportApi } from "@/lib/admin/api"
+import { adminAuth, casPratiqueApi, supportApi } from "@/lib/admin/api"
+import { DecisionCenter } from "@/components/admin/decision-center"
+import { createClient } from "@/lib/supabase/client"
 import {
-  Badge,
   Card,
   ErrorBox,
   Loading,
@@ -26,13 +28,6 @@ import {
   Stat,
   useAsync,
 } from "@/components/admin/admin-ui"
-
-const journeys = [
-  { label: "Concours Policier adjoint", short: "PA · Examen", color: "#EF4056" },
-  { label: "Concours Gardien de la paix", short: "GPX · Examen", color: "#2563EB" },
-  { label: "Scolarité Policier adjoint", short: "PA · École", color: "#10B981" },
-  { label: "Scolarité Gardien de la paix", short: "GPX · École", color: "#8B5CF6" },
-]
 
 const shortcuts = [
   { href: "/admin/forum/", label: "Modérer le forum", hint: "Publications, signalements et sanctions", icon: MessageSquareMore },
@@ -42,9 +37,46 @@ const shortcuts = [
 ]
 
 export default function AdminHome() {
-  const dashboard = useAsync(() => casPratiqueApi.dashboard(), [])
-  const health = useAsync(() => casPratiqueApi.health(), [])
-  const globalStats = useAsync(() => supportApi.dashboardStats(), [])
+  const [poll, setPoll] = useState(0)
+  useEffect(() => {
+    const refresh = () => {
+      if (!document.hidden) setPoll((current) => current + 1)
+    }
+    const interval = window.setInterval(refresh, 60_000)
+    document.addEventListener("visibilitychange", refresh)
+    return () => {
+      window.clearInterval(interval)
+      document.removeEventListener("visibilitychange", refresh)
+    }
+  }, [])
+
+  useEffect(() => {
+    const supabase = createClient()
+    const channel = supabase
+      .channel("copiq-admin-live-refresh")
+      .on("postgres_changes", { event: "*", schema: "public", table: "bug_reports" }, () => setPoll((current) => current + 1))
+      .on("postgres_changes", { event: "*", schema: "public", table: "contact_messages" }, () => setPoll((current) => current + 1))
+      .on("postgres_changes", { event: "*", schema: "public", table: "forum_reports" }, () => setPoll((current) => current + 1))
+      .on("postgres_changes", { event: "*", schema: "public", table: "admin_audit_logs" }, () => setPoll((current) => current + 1))
+      .on("postgres_changes", { event: "*", schema: "public", table: "quiz_answer_history" }, () => setPoll((current) => current + 1))
+      .subscribe()
+    return () => {
+      void supabase.removeChannel(channel)
+    }
+  }, [])
+
+  const dashboard = useAsync(() => casPratiqueApi.dashboard(), [poll])
+  const health = useAsync(() => casPratiqueApi.health(), [poll])
+  const globalStats = useAsync(() => supportApi.dashboardStats(), [poll])
+  const adminSession = useAsync(() => adminAuth.status(), [])
+  const learning = useAsync(
+    () => adminSession.data?.role === "owner" ? supportApi.learningAnalytics(30) : Promise.resolve(null),
+    [adminSession.data?.role, poll],
+  )
+  const comparison = useAsync(
+    () => adminSession.data?.role === "owner" ? supportApi.periodComparison(30) : Promise.resolve(null),
+    [adminSession.data?.role, poll],
+  )
   const critiques = (health.data ?? []).filter((item) => item.gravite === "critique").length
   const importants = (health.data ?? []).filter((item) => item.gravite === "important").length
 
@@ -64,6 +96,10 @@ export default function AdminHome() {
               dashboard.reload()
               health.reload()
               globalStats.reload()
+              if (adminSession.data?.role === "owner") {
+                learning.reload()
+                comparison.reload()
+              }
             }}
             disabled={dashboard.loading || health.loading || globalStats.loading}
             className="grid h-9 w-9 cursor-pointer place-items-center rounded-xl border border-[var(--outline-variant)] bg-[var(--surface)] text-[var(--on-surface-muted)] transition duration-200 hover:border-[var(--brand)]/35 hover:text-[var(--brand)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] disabled:cursor-wait disabled:opacity-50"
@@ -76,13 +112,13 @@ export default function AdminHome() {
       />
 
       {dashboard.error && <ErrorBox error={dashboard.error} />}
-      {dashboard.loading && <Loading label="Chargement des indicateurs…" />}
+      {dashboard.loading && !dashboard.data && <Loading label="Chargement des indicateurs…" />}
 
       <section aria-labelledby="global-indicators-title" className="mb-6">
         <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
           <div>
             <h2 id="global-indicators-title" className="text-sm font-semibold">Activité globale</h2>
-            <p className="mt-0.5 text-xs text-[var(--on-surface-muted)]">Données réelles de l’application et du site</p>
+            <p className="mt-0.5 text-xs text-[var(--on-surface-muted)]">Données réelles · rafraîchissement automatique toutes les 60 secondes</p>
           </div>
           {globalStats.data?.refreshed_at && (
             <time dateTime={globalStats.data.refreshed_at} className="text-xs text-[var(--on-surface-faint)]">
@@ -96,18 +132,44 @@ export default function AdminHome() {
             <p className="mt-1 text-xs text-[var(--on-surface-muted)]">Les autres outils d’administration restent accessibles.</p>
           </Card>
         )}
-        {globalStats.loading && <GlobalStatsSkeleton />}
+        {globalStats.loading && !globalStats.data && <GlobalStatsSkeleton />}
         {globalStats.data && (
           <div className="grid grid-cols-2 gap-3 lg:grid-cols-3 2xl:grid-cols-6">
-            <GlobalMetric icon={Users} label="Utilisateurs" value={globalStats.data.users_total} hint={`${globalStats.data.users_active_30d} actifs sur 30 j`} />
-            <GlobalMetric icon={Sparkles} label="Premium" value={globalStats.data.users_premium} hint={`${globalStats.data.users_trial} en essai`} tone="brand" />
+            <GlobalMetric icon={Users} label="Comptes inscrits" value={globalStats.data.users_total} hint={`${globalStats.data.users_active_30d} actifs sur 30 j · ${globalStats.data.users_24h} sur 24 h`} />
+            <GlobalMetric icon={Sparkles} label="Premium payants" value={globalStats.data.users_premium} hint={`${globalStats.data.users_trial} essais distincts`} tone="brand" />
             <GlobalMetric icon={Flag} label="Signalements" value={globalStats.data.forum_reports_open + globalStats.data.reports_open_cg + globalStats.data.reports_open_psy} hint="à traiter" tone={globalStats.data.forum_reports_open > 0 ? "warn" : "neutral"} href="/admin/signalements/" />
             <GlobalMetric icon={Bug} label="Bugs ouverts" value={globalStats.data.bug_reports_open} hint={`${globalStats.data.contact_open} contacts en attente`} tone={globalStats.data.bug_reports_open > 0 ? "warn" : "neutral"} href="/admin/signalements/" />
             <GlobalMetric icon={ShieldCheck} label="Équipe active" value={globalStats.data.staff_total} hint={`${globalStats.data.staff_locked} compte verrouillé`} tone={globalStats.data.staff_locked > 0 ? "warn" : "neutral"} href="/admin/administrateurs/" />
             <GlobalMetric icon={Activity} label="Audits sur 24 h" value={globalStats.data.audit_logs_24h} hint={`${globalStats.data.critical_events_7d} critique sur 7 j`} tone={globalStats.data.critical_events_7d > 0 ? "bad" : "neutral"} href="/admin/journal/" />
           </div>
         )}
+        {adminSession.data?.role === "owner" && <div className="mt-3 flex flex-wrap gap-2">
+          <Link href="/admin/statistiques/" className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border border-[var(--brand)]/25 bg-[var(--brand)]/10 px-4 text-sm font-semibold text-[var(--brand)] transition-colors hover:bg-[var(--brand)]/15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)]">
+            <ChartNoAxesCombined size={17} aria-hidden="true" /> Explorer le suivi complet <ArrowUpRight size={15} aria-hidden="true" />
+          </Link>
+          <Link href="/admin/exploitation/" className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border border-[var(--outline-variant)] bg-[var(--surface)] px-4 text-sm font-semibold transition-colors hover:border-[var(--brand)]/35 hover:text-[var(--brand)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)]">
+            <Command size={17} aria-hidden="true" /> Ouvrir le centre d’exploitation <ArrowUpRight size={15} aria-hidden="true" />
+          </Link>
+        </div>}
       </section>
+
+      <DecisionCenter
+        globalStats={globalStats.data}
+        dashboard={dashboard.data}
+        health={health.data}
+        learning={learning.data}
+        comparison={comparison.data}
+      />
+
+      {adminSession.data?.role === "owner" && <section aria-labelledby="learning-overview-title" className="mb-7">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2"><div><h2 id="learning-overview-title" className="text-sm font-semibold">Préparation réelle · 30 jours</h2><p className="mt-0.5 text-xs text-[var(--on-surface-muted)]">La réussite est calculée uniquement sur les réponses sauvegardées, jamais sur la longueur prévue d’une série.</p></div><Link href="/admin/statistiques/" className="inline-flex min-h-10 items-center gap-1.5 text-xs font-semibold text-[var(--brand)] hover:underline">Analyse détaillée <ArrowUpRight size={14} /></Link></div>
+        {Boolean(learning.error) && <Card className="border-[var(--warning)]/30 bg-[var(--warning)]/5 p-4 text-sm text-[var(--warning)]">Les résultats pédagogiques ne sont pas disponibles pour le moment.</Card>}
+        {learning.loading && !learning.data && <div className="skeleton h-44 rounded-2xl" aria-label="Chargement des résultats pédagogiques" />}
+        {learning.data && <Card className="overflow-hidden border-[var(--brand)]/25 p-0">
+          <div className="grid grid-cols-2 gap-px bg-[var(--outline-variant)] lg:grid-cols-4">{learning.data.journeys.map((journey) => <div key={`${journey.track}-${journey.mode}`} className="min-w-0 bg-[var(--surface)] p-4 transition-colors hover:bg-[var(--surface-container)]"><p className="truncate text-xs font-semibold text-[var(--on-surface-muted)]">{journey.label}</p><p className="mt-2 text-2xl font-semibold tabular-nums tracking-tight text-[var(--brand)]">{journey.saved >= 20 && journey.learners >= 5 && journey.accuracy !== null ? `${journey.accuracy} %` : "—"}</p><p className="mt-1 text-xs text-[var(--on-surface-muted)]">{journey.correct} / {journey.saved} réponses · {journey.learners} apprenants</p></div>)}</div>
+          <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[var(--outline-variant)] px-4 py-3 text-xs text-[var(--on-surface-muted)]"><span>{learning.data.summary.saved.toLocaleString("fr-FR")} réponses fournies · {learning.data.summary.learners} apprenants distincts</span><span>{learning.loading ? "Actualisation…" : `Actualisé ${formatFreshness(learning.data.refreshed_at)}`}</span></div>
+        </Card>}
+      </section>}
 
       {dashboard.data && (
         <div className="space-y-6">
@@ -124,31 +186,7 @@ export default function AdminHome() {
             </div>
           </section>
 
-          <div className="grid gap-6 xl:grid-cols-[1.45fr_.8fr]">
-            <Card className="overflow-hidden">
-              <div className="flex items-center justify-between border-b border-[var(--outline-variant)] px-5 py-4">
-                <div>
-                  <h2 className="text-sm font-semibold">Les quatre parcours COP’IQ</h2>
-                  <p className="mt-0.5 text-xs text-[var(--on-surface-muted)]">Socle commun du futur site web</p>
-                </div>
-                <BookOpenCheck size={19} className="text-[var(--brand)]" />
-              </div>
-              <div className="grid gap-px bg-[var(--outline-variant)] sm:grid-cols-2">
-                {journeys.map((journey) => (
-                  <div key={journey.short} className="bg-[var(--surface)] p-5 transition hover:bg-[var(--surface-container)]">
-                    <div className="mb-4 flex items-start justify-between gap-3">
-                      <span className="grid h-10 w-10 place-items-center rounded-xl text-white shadow-sm" style={{ backgroundColor: journey.color }}>
-                        <ClipboardCheck size={19} />
-                      </span>
-                      <Badge tone="brand">À porter sur le web</Badge>
-                    </div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[var(--on-surface-faint)]">{journey.short}</p>
-                    <h3 className="mt-1 text-sm font-semibold">{journey.label}</h3>
-                  </div>
-                ))}
-              </div>
-            </Card>
-
+          <div className="grid gap-6">
             <Card className="p-5">
               <div className="flex items-center justify-between">
                 <h2 className="text-sm font-semibold">Santé opérationnelle</h2>

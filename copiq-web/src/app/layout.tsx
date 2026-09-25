@@ -4,6 +4,10 @@ import Script from "next/script"
 import { Providers } from "@/components/providers"
 import "@/styles/globals.css"
 
+const SITE_URL = "https://copiq.fr"
+const APP_ICON_URL =
+  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/app_icon.png"
+
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -30,19 +34,27 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "COP'IQ" }],
   creator: "COP'IQ",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://copiqpolice.app"),
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
+  icons: {
+    icon: [{ url: APP_ICON_URL, type: "image/png", sizes: "1024x1024" }],
+    shortcut: APP_ICON_URL,
+    apple: [{ url: APP_ICON_URL, type: "image/png", sizes: "1024x1024" }],
+  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://copiqpolice.app",
+    url: SITE_URL,
     siteName: "COP'IQ",
     title: "COP'IQ — Préparation Police Nationale",
     description: "Quiz, cours et cas pratiques pour réussir le concours Policier Adjoint et Gardien de la Paix.",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "COP'IQ — Préparation Police Nationale" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "COP'IQ — Préparation Police Nationale",
     description: "Quiz, cours et cas pratiques pour réussir le concours.",
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
@@ -69,7 +81,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={instrumentSans.variable}
     >
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        {/* Sans JavaScript, l'IntersectionObserver qui déclenche les reveals
+            ne tourne pas : sans ce repli, les sections de la vitrine
+            resteraient à `opacity: 0` et la page paraîtrait vide. Le contenu
+            doit rester lisible même si le JS ne se charge pas (§16). */}
+        <noscript>
+          <style>{`.cq-reveal{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
       </head>
       <body>
         <Script src="/copiq-config.js" strategy="beforeInteractive" />

@@ -4,7 +4,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/features/home/annulation_conditions_page.dart';
-import 'package:copiqpolice/core/services/stripe_payment_service.dart';
+import 'package:copiqpolice/core/services/entitlement_service.dart';
+import 'package:copiqpolice/core/services/revenuecat_service.dart';
+import 'package:copiqpolice/core/services/subscription_plan.dart';
+import 'package:copiqpolice/core/services/subscription_service.dart';
 
 class AbonnementPage extends StatefulWidget {
   const AbonnementPage({super.key});
@@ -19,6 +22,8 @@ class _AbonnementPageState extends State<AbonnementPage>
   late final AnimationController _ctrl;
   late final Animation<double> _fade;
   late final Animation<Offset> _slide;
+  CopiqPlan? _busyPlan;
+  bool _restoring = false;
 
   @override
   void initState() {
@@ -36,10 +41,17 @@ class _AbonnementPageState extends State<AbonnementPage>
     ).animate(CurvedAnimation(parent: _ctrl, curve: Curves.easeOutCubic));
 
     _ctrl.forward();
+    RevenueCatService.instance.state.addListener(_onStoreChanged);
+    RevenueCatService.instance.refreshOfferings();
+  }
+
+  void _onStoreChanged() {
+    if (mounted) setState(() {});
   }
 
   @override
   void dispose() {
+    RevenueCatService.instance.state.removeListener(_onStoreChanged);
     _ctrl.dispose();
     super.dispose();
   }
@@ -69,19 +81,59 @@ class _AbonnementPageState extends State<AbonnementPage>
   }
 
   Future<void> _subscribe(CopiqPlan plan) async {
-    final result = await StripePaymentService.instance.startCheckout(plan);
+    if (_busyPlan != null || _restoring) return;
+    HapticFeedback.mediumImpact();
+    setState(() => _busyPlan = plan);
+    final result = await RevenueCatService.instance.purchase(plan);
     if (!mounted) return;
+    setState(() => _busyPlan = null);
+    if (result.cancelled) return;
     if (!result.ok) {
       final message = switch (result.reason) {
         'not_authenticated' =>
           "Reconnecte-toi à ton compte avant de choisir un abonnement.",
-        'cannot_launch_browser' =>
-          "Le navigateur de paiement ne peut pas être ouvert sur cet appareil.",
-        _ =>
-          "Le paiement ne peut pas être ouvert pour le moment. Réessaie dans quelques secondes.",
+        'product_unavailable' || 'store_not_configured' =>
+          "Cette offre est momentanément indisponible dans la boutique. Réessaie dans quelques instants.",
+        'purchaseNotAllowedError' =>
+          "Les achats intégrés ne sont pas autorisés sur cet appareil.",
+        'paymentPendingError' =>
+          "Le paiement est en attente de validation par la boutique.",
+        _ => "L’achat n’a pas pu être finalisé. Aucun montant n’a été débité.",
       };
       _info(message);
+      return;
     }
+    await SubscriptionService.instance.refresh(force: true, withQuota: true);
+    await EntitlementService.instance.refresh(force: true);
+    if (!mounted) return;
+    _success(
+      'Premium activé',
+      'Ton accès COP’IQ Premium est disponible immédiatement sur tous les parcours.',
+    );
+  }
+
+  Future<void> _restorePurchases() async {
+    if (_busyPlan != null || _restoring) return;
+    HapticFeedback.selectionClick();
+    setState(() => _restoring = true);
+    final result = await RevenueCatService.instance.restorePurchases();
+    if (!mounted) return;
+    setState(() => _restoring = false);
+    if (result.ok) {
+      await SubscriptionService.instance.refresh(force: true, withQuota: true);
+      await EntitlementService.instance.refresh(force: true);
+      if (!mounted) return;
+      _success(
+        'Achats restaurés',
+        'Ton abonnement Premium a bien été restauré sur cet appareil.',
+      );
+      return;
+    }
+    _info(
+      result.reason == 'nothing_to_restore'
+          ? 'Aucun achat Premium actif n’a été trouvé pour ce compte de boutique.'
+          : 'La restauration est momentanément indisponible. Réessaie dans quelques instants.',
+    );
   }
 
   // ===================== UI =====================
@@ -185,35 +237,20 @@ class _AbonnementPageState extends State<AbonnementPage>
 
               const SizedBox(height: 12),
 
-              // ================= PLAN SEMAINE =================
-              _PlanCard(
-                stroke: stroke,
-                tone: const Color(0xFFB07A2A),
-                title: CopiqPlan.week.title,
-                price: CopiqPlan.week.priceLabel,
-                subtitle: CopiqPlan.week.subtitle,
-                badge: CopiqPlan.week.badge,
-                highlighted: CopiqPlan.week.highlighted,
-                valueLine: CopiqPlan.week.valueLine,
-                billingLine: kCopiqBillingLine,
-                details: CopiqPlan.week.details,
-                onTap: () => _subscribe(CopiqPlan.week),
-              ),
-
-              const SizedBox(height: 12),
-
               // ================= PLAN MENSUEL =================
               _PlanCard(
                 stroke: stroke,
                 tone: t.colorScheme.primary,
                 title: CopiqPlan.month.title,
-                price: CopiqPlan.month.priceLabel,
+                price: RevenueCatService.instance.priceLabel(CopiqPlan.month),
                 subtitle: CopiqPlan.month.subtitle,
                 badge: CopiqPlan.month.badge,
                 highlighted: CopiqPlan.month.highlighted,
                 valueLine: CopiqPlan.month.valueLine,
-                billingLine: kCopiqBillingLine,
+                billingLine: kStoreBillingLine,
                 details: CopiqPlan.month.details,
+                busy: _busyPlan == CopiqPlan.month,
+                enabled: _busyPlan == null && !_restoring,
                 onTap: () => _subscribe(CopiqPlan.month),
               ),
 
@@ -224,14 +261,36 @@ class _AbonnementPageState extends State<AbonnementPage>
                 stroke: stroke,
                 tone: const Color(0xFF7B3FE4),
                 title: CopiqPlan.year.title,
-                price: CopiqPlan.year.priceLabel,
+                price: RevenueCatService.instance.priceLabel(CopiqPlan.year),
                 subtitle: CopiqPlan.year.subtitle,
                 badge: CopiqPlan.year.badge,
                 highlighted: CopiqPlan.year.highlighted,
                 valueLine: CopiqPlan.year.valueLine,
-                billingLine: kCopiqBillingLine,
+                billingLine: kStoreBillingLine,
                 details: CopiqPlan.year.details,
+                busy: _busyPlan == CopiqPlan.year,
+                enabled: _busyPlan == null && !_restoring,
                 onTap: () => _subscribe(CopiqPlan.year),
+              ),
+
+              const SizedBox(height: 10),
+              Semantics(
+                button: true,
+                label: 'Restaurer mes achats précédents',
+                child: TextButton.icon(
+                  onPressed: _busyPlan == null && !_restoring
+                      ? _restorePurchases
+                      : null,
+                  icon: _restoring
+                      ? const SizedBox.square(
+                          dimension: 18,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : const Icon(Icons.restore_rounded),
+                  label: Text(
+                    _restoring ? 'Restauration…' : 'Restaurer mes achats',
+                  ),
+                ),
               ),
 
               // ================= LÉGAL =================
@@ -469,6 +528,8 @@ class _PlanCard extends StatefulWidget {
   final List<String> details; // bullets
   final String? badge; // ex: "Découverte" | "Recommandé" | "-20 %"
   final bool highlighted;
+  final bool enabled;
+  final bool busy;
   final VoidCallback onTap;
 
   const _PlanCard({
@@ -483,6 +544,8 @@ class _PlanCard extends StatefulWidget {
     this.billingLine,
     this.badge,
     this.highlighted = false,
+    this.enabled = true,
+    this.busy = false,
   });
 
   @override
@@ -497,8 +560,10 @@ class _PlanCardState extends State<_PlanCard>
 
   bool _pressed = false;
 
-  bool get _isRecommended =>
-      (widget.badge ?? '').trim().toLowerCase() == 'recommandé';
+  bool get _isRecommended => const {
+    'recommandé',
+    'meilleur choix',
+  }.contains((widget.badge ?? '').trim().toLowerCase());
 
   void _setPressed(bool v) {
     if (_pressed == v) return;
@@ -731,7 +796,7 @@ class _PlanCardState extends State<_PlanCard>
           color: Colors.transparent,
           child: InkWell(
             borderRadius: BorderRadius.circular(24),
-            onTap: widget.onTap,
+            onTap: widget.enabled ? widget.onTap : null,
             onHighlightChanged: _setPressed,
             child: Padding(
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
@@ -812,7 +877,7 @@ class _PlanCardState extends State<_PlanCard>
                     width: double.infinity,
                     height: 48,
                     child: FilledButton(
-                      onPressed: widget.onTap,
+                      onPressed: widget.enabled ? widget.onTap : null,
                       style: FilledButton.styleFrom(
                         backgroundColor: ctaBg,
                         foregroundColor: Colors.white,
@@ -825,7 +890,15 @@ class _PlanCardState extends State<_PlanCard>
                           letterSpacing: -0.1,
                         ),
                       ),
-                      child: const Text("Choisir"),
+                      child: widget.busy
+                          ? const SizedBox.square(
+                              dimension: 20,
+                              child: CircularProgressIndicator(
+                                strokeWidth: 2.2,
+                                color: Colors.white,
+                              ),
+                            )
+                          : const Text("Choisir"),
                     ),
                   ),
                 ],
@@ -848,8 +921,8 @@ class _LegalFooter extends StatelessWidget {
           constraints: const BoxConstraints(maxWidth: 520),
           child: Text(
             "Les abonnements se renouvellent automatiquement sauf annulation au moins 24 h avant la fin de la période en cours. "
-            "Le paiement est traité de façon sécurisée par Stripe (carte bancaire), via un navigateur externe à l’app. "
-            "Vous pouvez gérer ou annuler votre abonnement à tout moment depuis votre profil. "
+            "Le paiement est débité sur ton compte App Store ou Google Play après confirmation par la boutique. "
+            "Tu peux restaurer un achat ou gérer ton abonnement à tout moment depuis ton compte de boutique. "
             "L’annulation prend effet à la fin de la période en cours.",
             textAlign: TextAlign.center,
             style: t.textTheme.bodySmall?.copyWith(
@@ -911,32 +984,22 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
   bool confirmed = false;
   bool _busy = false;
 
-  String _errorMessage(String? reason) => switch (reason) {
-    'not_authenticated' => "Reconnecte-toi à ton compte avant de continuer.",
-    'no_active_subscription' ||
-    'stripe_customer_not_found' =>
-      "Aucun abonnement actif trouvé sur ce compte.",
-    'cannot_launch_browser' =>
-      "Impossible d’ouvrir le navigateur de paiement sur cet appareil.",
-    'no_portal_url' =>
-      "Le service de résiliation n’a pas répondu correctement. Réessaie dans quelques secondes.",
-    _ => "Une erreur est survenue. Réessaie dans quelques secondes.",
-  };
-
   Future<void> _confirmResiliation() async {
     if (!confirmed || _busy) return;
     setState(() => _busy = true);
 
-    final result = await StripePaymentService.instance.cancelAtPeriodEnd();
+    final opened = await RevenueCatService.instance
+        .openSubscriptionManagement();
 
     if (!mounted) return;
     setState(() => _busy = false);
 
-    if (!result.ok) {
+    if (!opened) {
       AppNotifier.error(
         context,
         title: "Résiliation impossible",
-        message: _errorMessage(result.reason),
+        message:
+            "Aucun abonnement actif n’a été trouvé ou la boutique ne peut pas être ouverte.",
       );
       return;
     }
@@ -944,9 +1007,9 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
     Navigator.pop(context);
     AppNotifier.success(
       context,
-      title: "Portail de résiliation ouvert",
+      title: "Boutique ouverte",
       message:
-          "Finalise l’annulation dans l’onglet ouvert. Ton accès reste actif jusqu’à la fin de la période en cours.",
+          "Finalise l’annulation dans ta boutique. Ton accès reste actif jusqu’à la fin de la période en cours.",
     );
   }
 
@@ -954,16 +1017,18 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
     if (_busy) return;
     setState(() => _busy = true);
 
-    final result = await StripePaymentService.instance.openPortal();
+    final opened = await RevenueCatService.instance
+        .openSubscriptionManagement();
 
     if (!mounted) return;
     setState(() => _busy = false);
 
-    if (!result.ok) {
+    if (!opened) {
       AppNotifier.error(
         context,
         title: "Ouverture impossible",
-        message: _errorMessage(result.reason),
+        message:
+            "Aucun abonnement actif n’a été trouvé ou la boutique ne peut pas être ouverte.",
       );
       return;
     }
@@ -972,7 +1037,8 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
     AppNotifier.info(
       context,
       title: "Gestion de l’abonnement",
-      message: "Gère ton abonnement, tes factures et moyens de paiement dans l’onglet ouvert.",
+      message:
+          "Gère ton abonnement et ton moyen de paiement dans ta boutique d’applications.",
     );
   }
 
@@ -1020,7 +1086,9 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
           CheckboxListTile(
             contentPadding: EdgeInsets.zero,
             value: confirmed,
-            onChanged: _busy ? null : (v) => setState(() => confirmed = v ?? false),
+            onChanged: _busy
+                ? null
+                : (v) => setState(() => confirmed = v ?? false),
             title: Text(
               "J’ai compris que l’accès reste actif jusqu’à la fin de la période en cours.",
               style: GoogleFonts.inter(

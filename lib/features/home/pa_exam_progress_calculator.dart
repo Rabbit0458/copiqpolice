@@ -16,10 +16,11 @@ class PaExamProgressCalculator {
   }) {
     final sorted = [...activities]
       ..sort((a, b) => b.finishedAt.compareTo(a.finishedAt));
+    final scored = sorted.where((activity) => activity.hasScore).toList();
     var total = 0;
     var correct = 0;
     var duration = 0;
-    for (final activity in sorted) {
+    for (final activity in scored) {
       if (activity.total > 0) {
         total += activity.total;
         correct += activity.correct.clamp(0, activity.total);
@@ -29,7 +30,7 @@ class PaExamProgressCalculator {
 
     final today = _day(now);
     final counts = <DateTime, int>{};
-    for (final activity in sorted) {
+    for (final activity in scored) {
       final day = _day(activity.finishedAt.toLocal());
       counts[day] = (counts[day] ?? 0) + 1;
     }
@@ -39,10 +40,10 @@ class PaExamProgressCalculator {
     });
 
     final startOfWeek = today.subtract(Duration(days: today.weekday - 1));
-    final doneThisWeek = sorted
+    final doneThisWeek = scored
         .where((a) => !a.finishedAt.toLocal().isBefore(startOfWeek))
         .length;
-    final subjects = _subjects(sorted);
+    final subjects = _subjects(scored);
 
     return PaProgressSnapshot(
       activities: sorted,

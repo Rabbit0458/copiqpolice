@@ -6,6 +6,7 @@ import 'pa_exam_progress_calculator.dart';
 import 'pa_exam_progress_models.dart';
 import 'pa_exam_progress_service.dart';
 import 'pa_exam_progress_source_registry.dart';
+import 'quiz_progress_enrichment.dart';
 
 /// Source de vérité du suivi « Scolarité — Gardien de la paix ».
 ///
@@ -33,19 +34,25 @@ class GpxSchoolProgressService implements PaExamProgressDataSource {
           .eq('uid', user.id)
           .eq('track', 'gpx')
           .eq('mode', 'school')
-          .not('finished_at', 'is', null)
-          .order('finished_at', ascending: false)
+          .order('started_at', ascending: false)
           .limit(750);
 
-      final activities = List<Map<String, dynamic>>.from(rows as List)
+      final rawActivities = List<Map<String, dynamic>>.from(rows as List)
           .map(_activityFromRow)
           .where((activity) => activity.finishedAt.year > 2000)
           .toList(growable: false);
+      final activities = await enrichQuizProgress(
+        client: _client,
+        userId: user.id,
+        track: 'gpx',
+        mode: 'school',
+        activities: rawActivities,
+      );
 
       return PaProgressLoaded(
         _calculator.build(
           activities: activities,
-          errors: const [],
+          errors: _errorSummaries(activities),
           dailyGoal: await _loadDailyGoal(),
           now: DateTime.now(),
         ),
@@ -66,6 +73,33 @@ class GpxSchoolProgressService implements PaExamProgressDataSource {
     }
   }
 
+  List<PaProgressErrorSummary> _errorSummaries(
+    List<PaProgressActivity> activities,
+  ) {
+    final totals = <String, int>{};
+    final wrong = <String, int>{};
+    for (final activity in activities) {
+      for (final answer in activity.answers) {
+        totals[activity.moduleKey] = (totals[activity.moduleKey] ?? 0) + 1;
+        if (!answer.isCorrect) {
+          wrong[activity.moduleKey] = (wrong[activity.moduleKey] ?? 0) + 1;
+        }
+      }
+    }
+    return totals.entries
+        .where((entry) => (wrong[entry.key] ?? 0) > 0)
+        .map(
+          (entry) => PaProgressErrorSummary(
+            moduleKey: entry.key,
+            moduleLabel: gpxSchoolModuleMeta(entry.key).label,
+            wrongCount: wrong[entry.key] ?? 0,
+            totalCount: entry.value,
+          ),
+        )
+        .toList(growable: false)
+      ..sort((a, b) => b.wrongCount.compareTo(a.wrongCount));
+  }
+
   PaProgressActivity _activityFromRow(Map<String, dynamic> row) {
     final module = (row['module_name'] ?? '').toString().trim();
     final quiz = (row['quiz_name'] ?? '').toString().trim();
@@ -80,7 +114,9 @@ class GpxSchoolProgressService implements PaExamProgressDataSource {
       title: title.isEmpty ? 'Quiz de scolarité' : title,
       correct: _integer(row['correct_count']),
       total: _integer(row['total_questions']),
-      finishedAt: _date(row['finished_at'] ?? row['completed_at']),
+      finishedAt: _date(
+        row['finished_at'] ?? row['completed_at'] ?? row['started_at'],
+      ),
       route: meta.route,
     );
   }

@@ -23,6 +23,7 @@ class CommunityRepository {
       ('exam', 'gpx') => CommunityScope.gpxExam,
       ('school', 'pa') => CommunityScope.paSchool,
       ('school', 'gpx') => CommunityScope.gpxSchool,
+      ('active', 'gpx') => CommunityScope.active,
       _ => null,
     };
   }

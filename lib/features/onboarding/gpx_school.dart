@@ -1,11 +1,12 @@
 // lib/home/gpx_school.dart
-// Espace GPX — Choix du programme du jour (NON sauvegardé)
+// Espace GPX — Choix du programme de scolarité
 // - 6 cartes héro ultra premium (blur + spotlight + badge glass)
 // - DPS/DPG -> redirection directe vers /home-gpx-school
 // - Les autres -> Navigator.pop(GpxSchoolProgram)
 
 import 'dart:ui'; // ImageFilter.blur
 
+import 'package:copiqpolice/core/services/school_program_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -182,7 +183,15 @@ class _GpxSchoolArtState extends State<GpxSchoolArt> {
       return;
     }
 
-    // ✅ comportement normal
+    // Comportement normal : ce choix devient le programme rouvert au prochain
+    // démarrage. Une panne de stockage ne doit toutefois jamais bloquer la
+    // navigation actuelle.
+    try {
+      await SchoolProgramPreferences.saveGpx(program.key);
+    } catch (error) {
+      debugPrint('[GpxSchoolArt] Program persistence failed: $error');
+    }
+    if (!mounted) return;
     Navigator.of(context).pop(program);
   }
 
@@ -278,7 +287,7 @@ class _GpxSchoolArtState extends State<GpxSchoolArt> {
                   const SizedBox(width: 9),
                   Expanded(
                     child: Text(
-                      'Tu pourras changer de programme à chaque démarrage.',
+                      'Ce programme sera rouvert au prochain démarrage. Tu pourras le changer depuis l’accueil.',
                       style: theme.textTheme.bodySmall?.copyWith(
                         color: _muted(context, .76),
                         height: 1.3,
@@ -420,7 +429,7 @@ class _ProgramCompactCard extends StatelessWidget {
             onTap: disabled ? null : onTap,
             borderRadius: BorderRadius.circular(20),
             child: Ink(
-              height: 104,
+              height: 124,
               decoration: BoxDecoration(
                 color: theme.cardColor,
                 borderRadius: BorderRadius.circular(20),
@@ -493,8 +502,9 @@ class _ProgramCompactCard extends StatelessWidget {
                       children: [
                         Text(
                           program.compactTitle,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
+                          maxLines: 2,
+                          overflow: TextOverflow.visible,
+                          softWrap: true,
                           style: GoogleFonts.instrumentSans(
                             fontSize: 16,
                             fontWeight: FontWeight.w900,

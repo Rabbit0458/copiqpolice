@@ -1,14 +1,24 @@
 {
   "product": "COP’IQ",
-  "generatedAt": "2026-08-23T20:02:43.097Z",
+  "generatedAt": "2026-09-24T22:57:15.238Z",
   "source": "copiq-web/out",
   "uploadFolder": "fae16dc1",
   "verifiedRoutes": [
     "/",
     "/404.html",
     "/admin/",
+    "/admin/statistiques/",
+    "/admin/exploitation/",
+    "/admin/pilotage-avance/",
+    "/admin/demo/",
     "/login/",
     "/signup/",
-    "/auth/callback/"
+    "/auth/callback/",
+    "/tarifs/",
+    "/ressources/",
+    "/preparation/gardien-de-la-paix/",
+    "/preparation/policier-adjoint/",
+    "/robots.txt",
+    "/sitemap.xml"
   ]
 }

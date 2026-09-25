@@ -444,19 +444,19 @@ function AsyncList<T>({
    Panneau principal
    ═══════════════════════════════════════════════════════════════════════════ */
 
-const TABS: { id: TabId; label: string }[] = [
-  { id: "overview", label: "Vue d'ensemble" },
-  { id: "account", label: "Compte" },
-  { id: "posts", label: "Publications" },
-  { id: "comments", label: "Réponses" },
-  { id: "messages", label: "Messages" },
-  { id: "reports", label: "Signalements" },
-  { id: "sanctions", label: "Sanctions" },
-  { id: "quiz", label: "Quiz" },
-  { id: "parcours", label: "Parcours" },
-  { id: "notifications", label: "Notifications" },
-  { id: "billing", label: "Abonnement" },
-  { id: "timeline", label: "Activité" },
+const TABS: { id: TabId; label: string; icon: React.ComponentType<{size?:number}> }[] = [
+  { id: "overview", label: "Vue d'ensemble", icon: LayoutGrid },
+  { id: "account", label: "Compte", icon: UserRound },
+  { id: "posts", label: "Publications", icon: FileText },
+  { id: "comments", label: "Réponses", icon: MessageSquare },
+  { id: "messages", label: "Messages", icon: MessageSquare },
+  { id: "reports", label: "Signalements", icon: ShieldAlert },
+  { id: "sanctions", label: "Sanctions", icon: AlertTriangle },
+  { id: "quiz", label: "Quiz", icon: BookOpenCheck },
+  { id: "parcours", label: "Parcours", icon: Compass },
+  { id: "notifications", label: "Notifications", icon: Bell },
+  { id: "billing", label: "Abonnement", icon: CreditCard },
+  { id: "timeline", label: "Activité", icon: History },
 ];
 
 export function UserDossier({
@@ -486,15 +486,14 @@ export function UserDossier({
         if (event.target === event.currentTarget) onClose();
       }}
     >
-      <div className="flex h-full w-full max-w-4xl flex-col border-l border-[var(--outline-variant)] bg-[var(--surface)] shadow-2xl animate-fade-in">
+      <div className="flex h-full w-full max-w-6xl flex-col border-l border-[var(--outline-variant)] bg-[var(--surface)] shadow-2xl animate-fade-in">
         {/* En-tête fixe */}
         <div className="shrink-0 border-b border-[var(--outline-variant)] bg-[var(--surface)]/95 backdrop-blur-xl">
-          <div className="flex items-start justify-between gap-3 px-5 py-4">
-            <div className="min-w-0">
-              <h2 className="font-semibold">Dossier utilisateur</h2>
+          <div className="relative flex items-start justify-between gap-3 overflow-hidden px-5 py-4"><div className="pointer-events-none absolute -left-12 -top-20 h-40 w-52 rounded-full bg-[var(--brand)]/10 blur-3xl"/>
+            <div className="relative min-w-0">
+              <h2 className="flex items-center gap-2 font-semibold"><Database size={17} className="text-[var(--brand)]"/>Dossier utilisateur 360°</h2>
               <p className="text-xs text-[var(--on-surface-muted)]">
-                Données de modération et d&apos;administration · contenu des
-                messages privés non exposé
+                Toutes les données liées au compte · informations sensibles protégées
               </p>
             </div>
             <button
@@ -514,29 +513,29 @@ export function UserDossier({
                 aria-label="Sections du dossier"
               >
                 {(detail.data.staff?.role === "owner"
-                  ? [...TABS, { id: "technical" as const, label: "Données techniques" }]
+                  ? [...TABS, { id: "technical" as const, label: "Toutes les tables", icon: Database }]
                   : TABS
-                ).map((item) => (
+                ).map((item) => { const TabIcon=item.icon; return (
                   <button
                     key={item.id}
                     onClick={() => setTab(item.id)}
                     aria-current={tab === item.id ? "page" : undefined}
-                    className={`shrink-0 border-b-2 px-3 py-2.5 text-sm font-medium transition ${
+                    className={`flex min-h-11 shrink-0 cursor-pointer items-center gap-1.5 border-b-2 px-3 py-2.5 text-sm font-medium transition ${
                       tab === item.id
                         ? "border-[var(--brand)] text-[var(--brand)]"
                         : "border-transparent text-[var(--on-surface-muted)] hover:text-[var(--on-surface)]"
                     }`}
                   >
-                    {item.label}
+                    <TabIcon size={15}/>{item.label}
                   </button>
-                ))}
+                )})}
               </nav>
             </>
           )}
         </div>
 
         {/* Contenu scrollable */}
-        <div className="min-h-0 flex-1 overflow-y-auto p-5">
+        <div className="min-h-0 flex-1 overflow-y-auto bg-[var(--surface-container)]/20 p-4 md:p-6">
           {detail.loading && <Loading label="Chargement du dossier…" />}
           {detail.error != null && <ErrorBox error={detail.error} />}
           {detail.data && (
@@ -1165,10 +1164,10 @@ function AccountTab({ detail }: { detail: CommunityAdminUserDetail }) {
             {p.has_passed_exam == null ? "—" : p.has_passed_exam ? "Oui" : "Non"}
           </Field>
           <Field label="CGV acceptées">
-            {p.cgv_accepted == null ? (
+            {detail.cgv_audit?.accepted == null ? (
               "—"
-            ) : p.cgv_accepted ? (
-              <Badge tone="good">Le {fmtDate(p.cgv_accepted_at)}</Badge>
+            ) : detail.cgv_audit.accepted ? (
+              <div className="space-y-1"><Badge tone="good">Le {fmtDateTime(detail.cgv_audit.accepted_at)}</Badge>{detail.cgv_audit.historical_inference && <div className="text-xs text-[var(--on-surface-muted)]">Date reconstituée depuis la création du compte</div>}<div className="text-xs text-[var(--on-surface-muted)]">Version {detail.cgv_audit.version ?? "—"}</div></div>
             ) : (
               <Badge tone="warn">Non acceptées</Badge>
             )}
@@ -2739,8 +2738,8 @@ function TechnicalDataTab({ userId }: { userId: string }) {
       <Card className="border-[var(--warning)]/25 bg-[var(--warning)]/5 p-3">
         <p className="text-xs text-[var(--on-surface-muted)]">
           <strong className="text-[var(--on-surface)]">Réservé owner.</strong>{" "}
-          Découverte dynamique via information_schema — chaque table est
-          réellement liée à cet utilisateur, aucune liste figée. Mots de
+          Découverte dynamique via information_schema — chaque table et toutes
+          ses colonnes de liaison sont vérifiées, sans liste figée. Mots de
           passe, hachages, jetons et secrets sont systématiquement exclus.
         </p>
       </Card>

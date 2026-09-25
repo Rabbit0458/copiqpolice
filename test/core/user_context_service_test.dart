@@ -47,6 +47,12 @@ void main() {
       expect(UserContextService.I.modeListenable.value, UserModes.school);
     });
 
+    test('le mode actif est un parcours valide et persistant', () async {
+      await UserContextService.I.setMode(UserModes.active);
+      expect(UserContextService.I.mode, UserModes.active);
+      expect(UserContextService.I.modeListenable.value, UserModes.active);
+    });
+
     test('setMode ignore une valeur invalide', () async {
       await UserContextService.I.setMode('demo');
       expect(UserContextService.I.mode, isNull);

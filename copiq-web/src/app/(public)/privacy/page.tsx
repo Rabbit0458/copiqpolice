@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { EditorialDocument } from "@/components/information/editorial-document";
 export const metadata: Metadata = {
-  title: "Politique de confidentialité — COP'IQ",
+  title: "Politique de confidentialité",
 };
 const fallback = `## 1. Responsable du traitement
 COP'IQ est responsable du traitement de vos données personnelles. Pour toute question : **contact@copiq.fr**.

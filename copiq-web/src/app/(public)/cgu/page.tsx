@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-export const metadata: Metadata = { title: "Conditions Générales d'Utilisation — COP'IQ" }
+export const metadata: Metadata = { title: "Conditions générales d'utilisation" }
 export default function CguPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">

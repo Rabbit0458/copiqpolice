@@ -1,5 +1,7 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'learning_answer_history_service.dart';
+
 class PaExamAnswerHistoryService {
   PaExamAnswerHistoryService._();
 
@@ -18,21 +20,19 @@ class PaExamAnswerHistoryService {
   }) async {
     final user = client.auth.currentUser;
     if (user == null) return;
-    await client.from('quiz_answer_history').insert({
-      'user_id': user.id,
-      'history_id': historyId,
-      'track': 'pa',
-      'mode': 'exam',
-      'module_key': moduleKey,
-      'quiz_key': quizKey,
-      'question_id': questionId,
-      'question_text': question,
-      'user_answer': userAnswer,
-      'correct_answer': correctAnswer,
-      'is_correct': isCorrect,
-      'difficulty': difficulty,
-      'response_time_ms': responseTimeMs,
-      'answered_at': DateTime.now().toUtc().toIso8601String(),
-    });
+    await LearningAnswerHistoryService(client: client).record(
+      historyId: historyId,
+      track: 'pa',
+      mode: 'exam',
+      moduleKey: moduleKey,
+      quizKey: quizKey,
+      questionId: questionId,
+      question: question,
+      userAnswer: userAnswer,
+      correctAnswer: correctAnswer,
+      isCorrect: isCorrect,
+      difficulty: difficulty,
+      responseTimeMs: responseTimeMs,
+    );
   }
 }

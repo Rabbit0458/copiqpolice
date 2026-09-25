@@ -16,12 +16,16 @@
 // ╚══════════════════════════════════════════════════════════════════════════╝
 
 import 'dart:async';
+import 'dart:convert';
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'package:copiqpolice/core/services/learning_answer_history_service.dart';
+import 'package:copiqpolice/core/services/quiz_report_queue_service.dart';
 import 'package:copiqpolice/core/services/user_context_service.dart';
 import 'package:copiqpolice/core/widgets/quiz_report_dialog.dart';
 
@@ -38,6 +42,10 @@ class QuizScolariteQuestion {
   final String answer;
   final String? explanation;
   final String? legalRef;
+  final String? imageAsset;
+  final String questionType;
+  final String stableKey;
+  final int revision;
 
   const QuizScolariteQuestion({
     required this.id,
@@ -48,6 +56,10 @@ class QuizScolariteQuestion {
     required this.answer,
     required this.explanation,
     required this.legalRef,
+    required this.imageAsset,
+    required this.questionType,
+    required this.stableKey,
+    required this.revision,
   });
 
   factory QuizScolariteQuestion.fromJson(Map<String, dynamic> j) {
@@ -55,6 +67,9 @@ class QuizScolariteQuestion {
     final opts = <String>[
       if (rawOptions is List) ...rawOptions.map((e) => e.toString()),
     ];
+    final metadata = j['metadata'] is Map
+        ? Map<String, dynamic>.from(j['metadata'] as Map)
+        : const <String, dynamic>{};
     return QuizScolariteQuestion(
       id: (j['id'] as num).toInt(),
       category: j['category'] as String?,
@@ -64,8 +79,29 @@ class QuizScolariteQuestion {
       answer: (j['answer'] as String?) ?? '',
       explanation: j['explanation'] as String?,
       legalRef: j['legal_ref'] as String?,
+      imageAsset: metadata['image_asset']?.toString(),
+      questionType: metadata['question_type']?.toString() ?? 'multiple_choice',
+      stableKey: metadata['stable_key']?.toString() ?? 'question-${j['id']}',
+      revision: (j['revision'] as num?)?.toInt() ?? 1,
     );
   }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'category': category,
+    'difficulty': difficulty,
+    'question': question,
+    'options': options,
+    'answer': answer,
+    'explanation': explanation,
+    'legal_ref': legalRef,
+    'revision': revision,
+    'metadata': {
+      'image_asset': imageAsset,
+      'question_type': questionType,
+      'stable_key': stableKey,
+    },
+  };
 }
 
 class QuizScolariteModule {
@@ -134,8 +170,11 @@ class _QuizScolariteDynamiquePageState
   int _score = 0;
   String? _selected;
   bool _revealed = false;
+  int _answeredCount = 0;
+  DateTime? _questionStartedAt;
   int? _historyRowId;
   String? _difficultyFilter; // null = tous niveaux
+  String? _pendingDifficulty;
 
   @override
   void initState() {
@@ -216,8 +255,9 @@ class _QuizScolariteDynamiquePageState
       _difficultyFilter = difficulty;
     });
     try {
+      final isOrganisation = _module.contains('organisation');
       final rows = await _sb.rpc(
-        'quiz_scolarite_session',
+        isOrganisation ? 'organisation_quiz_session' : 'quiz_scolarite_session',
         params: {
           'p_module': _module,
           'p_difficulty': difficulty,
@@ -252,16 +292,68 @@ class _QuizScolariteDynamiquePageState
         _score = 0;
         _selected = null;
         _revealed = false;
+        _answeredCount = 0;
+        _questionStartedAt = DateTime.now();
         _phase = _Phase.playing;
       });
+      await _cacheQuestions(list, difficulty);
       await _createHistory();
     } catch (e) {
+      final cached = await _readCachedQuestions(difficulty);
       if (!mounted) return;
-      setState(() {
-        _phase = _Phase.error;
-        _errorMessage = 'Impossible de démarrer le quiz.';
-      });
-      debugPrint('quiz_scolarite: démarrage KO — $e');
+      if (cached.isNotEmpty) {
+        setState(() {
+          _questions = cached;
+          _index = 0;
+          _score = 0;
+          _selected = null;
+          _revealed = false;
+          _answeredCount = 0;
+          _questionStartedAt = DateTime.now();
+          _phase = _Phase.playing;
+        });
+        await _createHistory();
+      } else {
+        setState(() {
+          _phase = _Phase.error;
+          _errorMessage = 'Impossible de démarrer le quiz, même hors ligne.';
+        });
+      }
+      debugPrint('quiz_scolarite: démarrage réseau KO — $e');
+    }
+  }
+
+  String _cacheKey(String? difficulty) =>
+      'copiq_quiz_cache_v2_${_module}_${difficulty ?? 'all'}';
+
+  Future<void> _cacheQuestions(
+    List<QuizScolariteQuestion> questions,
+    String? difficulty,
+  ) async {
+    final preferences = await SharedPreferences.getInstance();
+    await preferences.setString(
+      _cacheKey(difficulty),
+      jsonEncode(questions.map((q) => q.toJson()).toList()),
+    );
+  }
+
+  Future<List<QuizScolariteQuestion>> _readCachedQuestions(
+    String? difficulty,
+  ) async {
+    try {
+      final preferences = await SharedPreferences.getInstance();
+      final raw = preferences.getString(_cacheKey(difficulty));
+      if (raw == null) return const [];
+      return (jsonDecode(raw) as List)
+          .whereType<Map>()
+          .map(
+            (row) =>
+                QuizScolariteQuestion.fromJson(Map<String, dynamic>.from(row)),
+          )
+          .where((q) => q.options.length == 4)
+          .toList();
+    } catch (_) {
+      return const [];
     }
   }
 
@@ -298,12 +390,20 @@ class _QuizScolariteDynamiquePageState
     if (_historyRowId == null) return;
     final user = _sb.auth.currentUser;
     if (user == null) return;
-    final total = answered <= 0 ? 1 : answered;
     try {
+      if (answered <= 0) {
+        await _sb
+            .from('quiz_history')
+            .delete()
+            .eq('id', _historyRowId!)
+            .eq('uid', user.id);
+        _historyRowId = null;
+        return;
+      }
       await _sb
           .from('quiz_history')
           .update({
-            'score': (_score * 100 ~/ total).clamp(0, 100),
+            'score': (_score * 100 ~/ answered).clamp(0, 100),
             'correct_count': _score,
             'total_questions': answered,
             'finished_at': DateTime.now().toUtc().toIso8601String(),
@@ -319,34 +419,45 @@ class _QuizScolariteDynamiquePageState
   Future<void> _saveAnswer(QuizScolariteQuestion q, bool correct) async {
     final user = _sb.auth.currentUser;
     if (user == null) return;
-    try {
-      await _sb.from('quiz_scolarite_answers').insert({
-        'user_uid': user.id,
-        'email': user.email,
-        'module': _module,
-        'question_id': q.id,
-        'question': q.question,
-        'user_answer': _selected,
-        'correct_answer': q.answer,
-        'is_correct': correct,
-        'difficulty': q.difficulty,
-        'track': UserContextService.I.trackOrDefault,
-      });
-    } catch (e) {
-      debugPrint('quiz_scolarite: enregistrement réponse KO — $e');
-    }
+    final track = UserContextService.I.trackOrDefault;
+    await LearningAnswerHistoryService().record(
+      historyId: _historyRowId,
+      track: track,
+      mode: 'school',
+      moduleKey: _module,
+      quizKey: 'quiz_scolarite_dynamique',
+      questionId: q.stableKey,
+      question: q.question,
+      options: q.options,
+      userAnswer: _selected ?? '',
+      correctAnswer: q.answer,
+      isCorrect: correct,
+      explanation: q.explanation,
+      difficulty: q.difficulty,
+      responseTimeMs: _questionStartedAt == null
+          ? null
+          : DateTime.now().difference(_questionStartedAt!).inMilliseconds,
+      questionPosition: _index + 1,
+      questionVersion: q.revision.toString(),
+    );
   }
 
   // ─── Jeu ───────────────────────────────────────────────────────────────
 
   void _select(String option) {
     if (_revealed) return;
-    final q = _questions[_index];
-    final correct = option == q.answer;
     HapticFeedback.selectionClick();
+    setState(() => _selected = option);
+  }
+
+  void _validateAnswer() {
+    if (_selected == null || _revealed) return;
+    final q = _questions[_index];
+    final correct = _selected == q.answer;
+    HapticFeedback.mediumImpact();
     setState(() {
-      _selected = option;
       _revealed = true;
+      _answeredCount++;
       if (correct) _score++;
     });
     unawaited(_saveAnswer(q, correct));
@@ -354,7 +465,7 @@ class _QuizScolariteDynamiquePageState
 
   Future<void> _next() async {
     if (_index + 1 >= _questions.length) {
-      await _finishHistory(_questions.length);
+      await _finishHistory(_answeredCount);
       if (!mounted) return;
       setState(() => _phase = _Phase.finished);
       return;
@@ -363,6 +474,7 @@ class _QuizScolariteDynamiquePageState
       _index++;
       _selected = null;
       _revealed = false;
+      _questionStartedAt = DateTime.now();
     });
   }
 
@@ -388,8 +500,7 @@ class _QuizScolariteDynamiquePageState
       ),
     );
     if (confirmed != true || !mounted) return;
-    final answered = (_index + (_revealed ? 1 : 0)).clamp(0, _questions.length);
-    await _finishHistory(answered);
+    await _finishHistory(_answeredCount);
     if (!mounted) return;
     setState(() => _phase = _Phase.finished);
   }
@@ -402,15 +513,19 @@ class _QuizScolariteDynamiquePageState
       isDark: isDark,
       onInsert: ({required String reportType, required String message}) async {
         final user = _sb.auth.currentUser;
-        await _sb.from('report_question').insert({
+        await QuizReportQueueService(client: _sb).send({
           'user_uid': user?.id,
           'email': user?.email,
+          'question_id': q?.stableKey,
+          'question_version': q?.revision.toString(),
           'question_text': q?.question ?? '',
           // Permet à l'admin de retrouver la ligne exacte à corriger.
           'source_file': 'quiz_scolarite_questions#${q?.id ?? 0}',
           'question_category': q?.category,
           'question_difficulty': q?.difficulty,
           'question_answer': q?.answer,
+          'question_options': q?.options,
+          'question_snapshot': q?.toJson() ?? const <String, dynamic>{},
           'report_type': reportType,
           'report_message': message,
           'status': 'new',
@@ -426,7 +541,7 @@ class _QuizScolariteDynamiquePageState
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final bg = isDark ? const Color(0xFF06102A) : const Color(0xFFF4F6FB);
+    final bg = isDark ? const Color(0xFF071028) : const Color(0xFFF4F6FD);
 
     return PopScope(
       canPop: _phase != _Phase.playing,
@@ -446,22 +561,9 @@ class _QuizScolariteDynamiquePageState
             icon: const Icon(Icons.close_rounded),
           ),
           title: Text(
-            _config?.title ?? 'Quiz',
+            _phase == _Phase.finished ? (_config?.title ?? 'Quiz') : '',
             style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 17),
           ),
-          actions: [
-            if (_phase == _Phase.playing) ...[
-              TextButton(
-                onPressed: _requestFinish,
-                child: const Text('Mettre fin'),
-              ),
-              IconButton(
-                tooltip: 'Signaler cette question',
-                onPressed: _report,
-                icon: const Icon(Icons.flag_outlined, size: 20),
-              ),
-            ],
-          ],
         ),
         body: SafeArea(
           child: switch (_phase) {
@@ -497,176 +599,234 @@ class _QuizScolariteDynamiquePageState
   );
 
   Widget _buildIntro(bool isDark) {
-    final c = _config!;
-    final total = _counts['total'] ?? 0;
-    final surface = isDark ? const Color(0xFF0D1B4B) : Colors.white;
+    final textColor = isDark ? Colors.white : const Color(0xFF212529);
+    final secondary = textColor.withValues(alpha: .72);
 
-    return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(20, 10, 20, 28),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            padding: const EdgeInsets.all(22),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [c.color, c.color.withValues(alpha: .78)],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-              borderRadius: BorderRadius.circular(20),
-            ),
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: isDark
+              ? const [Color(0xFF071028), Color(0xFF111936)]
+              : const [Color(0xFFF8FAFF), Color(0xFFE9EDFF)],
+        ),
+      ),
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.fromLTRB(20, 70, 20, 28),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 520),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  c.title,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
+                  'Sélectionne le niveau de\ndifficulté',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: textColor,
+                    fontFamily: 'InstrumentSans',
+                    fontSize: 27,
                     fontWeight: FontWeight.w800,
-                    height: 1.2,
+                    height: 1.18,
                   ),
                 ),
-                if (c.subtitle != null) ...[
-                  const SizedBox(height: 8),
-                  Text(
-                    c.subtitle!,
-                    style: TextStyle(
-                      color: Colors.white.withValues(alpha: .9),
-                      fontSize: 14,
-                      height: 1.4,
+                const SizedBox(height: 8),
+                Text(
+                  'Nouvelles questions à chaque partie.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: secondary,
+                    fontFamily: 'InstrumentSans',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 26),
+                _difficultyCard(
+                  label: 'Facile',
+                  difficulty: 'Facile',
+                  icon: Icons.eco_rounded,
+                  tint: const Color(0xFF22C55E),
+                  isDark: isDark,
+                  count: _counts['facile'] ?? 0,
+                ),
+                const SizedBox(height: 14),
+                _difficultyCard(
+                  label: 'Moyen',
+                  difficulty: 'Moyenne',
+                  icon: Icons.military_tech_rounded,
+                  tint: const Color(0xFFF0A51B),
+                  isDark: isDark,
+                  count: _counts['moyenne'] ?? 0,
+                ),
+                const SizedBox(height: 14),
+                _difficultyCard(
+                  label: 'Difficile',
+                  difficulty: 'Difficile',
+                  icon: Icons.emoji_events_rounded,
+                  tint: const Color(0xFFE5484D),
+                  isDark: isDark,
+                  count: _counts['difficile'] ?? 0,
+                ),
+                const SizedBox(height: 26),
+                SizedBox(
+                  height: 64,
+                  child: FilledButton(
+                    onPressed: _pendingDifficulty == null
+                        ? null
+                        : () => _startQuiz(difficulty: _pendingDifficulty),
+                    style: FilledButton.styleFrom(
+                      backgroundColor: isDark
+                          ? Colors.white
+                          : const Color(0xFF212529),
+                      foregroundColor: isDark ? Colors.black : Colors.white,
+                      disabledBackgroundColor: isDark
+                          ? Colors.white.withValues(alpha: .12)
+                          : const Color(0xFFCBD2E5),
+                      disabledForegroundColor: secondary,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                    ),
+                    child: Text(
+                      _pendingDifficulty == null
+                          ? 'Choisis un niveau'
+                          : 'Commencer',
+                      style: const TextStyle(
+                        fontFamily: 'InstrumentSans',
+                        fontSize: 17,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
                   ),
-                ],
-                const SizedBox(height: 16),
-                Row(
-                  children: [
-                    _pill('$total questions'),
-                    const SizedBox(width: 8),
-                    _pill('15 par session'),
-                  ],
+                ),
+                const SizedBox(height: 14),
+                SizedBox(
+                  height: 64,
+                  child: OutlinedButton.icon(
+                    onPressed: (_counts['total'] ?? 0) > 0
+                        ? () => _startQuiz()
+                        : null,
+                    icon: const Icon(Icons.shuffle_rounded, size: 21),
+                    label: const Text('Mélanger les 3 niveaux'),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: textColor,
+                      side: BorderSide(color: textColor.withValues(alpha: .7)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      textStyle: const TextStyle(
+                        fontFamily: 'InstrumentSans',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
+                  ),
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 24),
-          const Text(
-            'Choisis ton niveau',
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
-          ),
-          const SizedBox(height: 12),
-          _levelCard(
-            surface,
-            c.color,
-            'Tous niveaux',
-            'Session mixte, recommandée',
-            total,
-            null,
-          ),
-          _levelCard(
-            surface,
-            const Color(0xFF3FA34D),
-            'Facile',
-            'Les fondamentaux',
-            _counts['facile'] ?? 0,
-            'Facile',
-          ),
-          _levelCard(
-            surface,
-            const Color(0xFFE8A44B),
-            'Moyenne',
-            'Niveau concours',
-            _counts['moyenne'] ?? 0,
-            'Moyenne',
-          ),
-          _levelCard(
-            surface,
-            const Color(0xFFC0392B),
-            'Difficile',
-            'Pour se démarquer',
-            _counts['difficile'] ?? 0,
-            'Difficile',
-          ),
-        ],
+        ),
       ),
     );
   }
 
-  Widget _pill(String text) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-    decoration: BoxDecoration(
-      color: Colors.white.withValues(alpha: .22),
-      borderRadius: BorderRadius.circular(100),
-    ),
-    child: Text(
-      text,
-      style: const TextStyle(
-        color: Colors.white,
-        fontSize: 12,
-        fontWeight: FontWeight.w700,
-      ),
-    ),
-  );
-
-  Widget _levelCard(
-    Color surface,
-    Color accent,
-    String title,
-    String subtitle,
-    int count,
-    String? difficulty,
-  ) {
+  Widget _difficultyCard({
+    required String label,
+    required String difficulty,
+    required IconData icon,
+    required Color tint,
+    required bool isDark,
+    required int count,
+  }) {
+    final active = _pendingDifficulty == difficulty;
     final enabled = count > 0;
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: Material(
-        color: surface,
-        borderRadius: BorderRadius.circular(16),
-        child: InkWell(
-          borderRadius: BorderRadius.circular(16),
-          onTap: enabled ? () => _startQuiz(difficulty: difficulty) : null,
-          child: Opacity(
-            opacity: enabled ? 1 : .45,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
+    final inactiveBorder = isDark
+        ? Colors.white.withValues(alpha: .16)
+        : Colors.white.withValues(alpha: .85);
+
+    return Opacity(
+      opacity: enabled ? 1 : .45,
+      child: Semantics(
+        button: true,
+        selected: active,
+        label: 'Niveau $label',
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: enabled
+                ? () {
+                    HapticFeedback.selectionClick();
+                    setState(() => _pendingDifficulty = difficulty);
+                  }
+                : null,
+            borderRadius: BorderRadius.circular(24),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 180),
+              curve: Curves.easeOutCubic,
+              height: 136,
+              padding: const EdgeInsets.symmetric(horizontal: 22),
+              decoration: BoxDecoration(
+                color: tint.withValues(alpha: isDark ? .18 : .20),
+                borderRadius: BorderRadius.circular(24),
+                border: Border.all(
+                  color: active ? tint : inactiveBorder,
+                  width: active ? 2 : 1,
+                ),
+                boxShadow: isDark
+                    ? null
+                    : [
+                        BoxShadow(
+                          color: tint.withValues(alpha: .10),
+                          blurRadius: 24,
+                          offset: const Offset(0, 10),
+                        ),
+                      ],
+              ),
               child: Row(
                 children: [
                   Container(
-                    width: 4,
-                    height: 38,
+                    width: 54,
+                    height: 54,
                     decoration: BoxDecoration(
-                      color: accent,
-                      borderRadius: BorderRadius.circular(4),
+                      shape: BoxShape.circle,
+                      color: tint.withValues(alpha: .13),
+                      border: Border.all(color: tint.withValues(alpha: .55)),
                     ),
+                    child: Icon(icon, color: tint, size: 27),
                   ),
-                  const SizedBox(width: 14),
+                  const SizedBox(width: 18),
                   Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          title,
-                          style: const TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w700,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          enabled
-                              ? '$subtitle · $count question${count > 1 ? 's' : ''}'
-                              : 'Aucune question pour ce niveau',
-                          style: TextStyle(
-                            fontSize: 12.5,
-                            color: Theme.of(context).textTheme.bodySmall?.color
-                                ?.withValues(alpha: .75),
-                          ),
-                        ),
-                      ],
+                    child: Text(
+                      label,
+                      style: TextStyle(
+                        color: isDark ? Colors.white : const Color(0xFF212529),
+                        fontFamily: 'InstrumentSans',
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
                   ),
-                  const Icon(Icons.chevron_right_rounded, size: 22),
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    width: 31,
+                    height: 31,
+                    padding: const EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(
+                        color: active ? tint : Colors.white,
+                        width: 2.5,
+                      ),
+                    ),
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: active ? tint : Colors.transparent,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -678,161 +838,222 @@ class _QuizScolariteDynamiquePageState
 
   Widget _buildQuestion(bool isDark) {
     final q = _questions[_index];
-    final surface = isDark ? const Color(0xFF0D1B4B) : Colors.white;
-    final accent = _config?.color ?? const Color(0xFF1147D9);
+    final surface = isDark ? const Color(0xFF151A31) : Colors.white;
+    const accent = Color(0xFF6C63FF);
+    final textColor = isDark ? Colors.white : const Color(0xFF212529);
 
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: isDark
+              ? const [Color(0xFF071028), Color(0xFF111936)]
+              : const [Color(0xFFF8FAFF), Color(0xFFE8ECFF)],
+        ),
+      ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Question ${_index + 1} / ${_questions.length}',
+                  style: TextStyle(
+                    color: textColor,
+                    fontFamily: 'InstrumentSans',
+                    fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(100),
+                  child: LinearProgressIndicator(
+                    value: (_index + 1) / _questions.length,
+                    minHeight: 7,
+                    color: accent,
+                    backgroundColor: isDark
+                        ? Colors.white.withValues(alpha: .10)
+                        : const Color(0xFFE7E9F1),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.fromLTRB(20, 30, 20, 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    'Question ${_index + 1} sur ${_questions.length}',
-                    style: const TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.w700,
+                    q.question,
+                    style: TextStyle(
+                      color: textColor,
+                      fontFamily: 'InstrumentSans',
+                      fontSize: 27,
+                      fontWeight: FontWeight.w800,
+                      height: 1.18,
                     ),
                   ),
-                  Text(
-                    '$_score bonne${_score > 1 ? 's' : ''} réponse${_score > 1 ? 's' : ''}',
-                    style: TextStyle(fontSize: 12.5, color: accent),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: LinearProgressIndicator(
-                  value: (_index + 1) / _questions.length,
-                  minHeight: 5,
-                  color: accent,
-                  backgroundColor: accent.withValues(alpha: .15),
-                ),
-              ),
-            ],
-          ),
-        ),
-        Expanded(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                if (q.category != null)
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
+                  if (q.imageAsset != null && q.imageAsset!.isNotEmpty) ...[
+                    const SizedBox(height: 22),
+                    Semantics(
+                      image: true,
+                      label: 'Insigne à identifier',
                       child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10,
-                          vertical: 4,
-                        ),
+                        constraints: const BoxConstraints(minHeight: 150),
+                        padding: const EdgeInsets.all(14),
                         decoration: BoxDecoration(
-                          color: accent.withValues(alpha: .12),
-                          borderRadius: BorderRadius.circular(100),
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(22),
+                          border: Border.all(
+                            color: Colors.white.withValues(alpha: .9),
+                          ),
                         ),
-                        child: Text(
-                          '${q.category} · ${q.difficulty}',
-                          style: TextStyle(
-                            fontSize: 11.5,
-                            fontWeight: FontWeight.w700,
-                            color: accent,
+                        child: Image.asset(
+                          q.imageAsset!,
+                          height: 190,
+                          fit: BoxFit.contain,
+                          errorBuilder: (_, __, ___) => const SizedBox(
+                            height: 150,
+                            child: Center(
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.image_not_supported_outlined,
+                                    size: 34,
+                                  ),
+                                  SizedBox(height: 8),
+                                  Text('Visuel momentanément indisponible'),
+                                ],
+                              ),
+                            ),
                           ),
                         ),
                       ),
                     ),
+                  ],
+                  const SizedBox(height: 24),
+                  ...q.options.map(
+                    (o) => _optionTile(o, q, surface, accent, isDark),
                   ),
-                Text(
-                  q.question,
-                  style: const TextStyle(
-                    fontSize: 19,
-                    fontWeight: FontWeight.w700,
-                    height: 1.35,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                ...q.options.map((o) => _optionTile(o, q, surface, accent)),
-                if (_revealed && (q.explanation?.isNotEmpty ?? false)) ...[
-                  const SizedBox(height: 18),
-                  Container(
-                    padding: const EdgeInsets.all(16),
-                    decoration: BoxDecoration(
-                      color: surface,
-                      borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: accent.withValues(alpha: .25)),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Explication',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: .4,
-                            color: accent,
+                  if (_revealed && (q.explanation?.isNotEmpty ?? false)) ...[
+                    const SizedBox(height: 18),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 22,
+                        vertical: 24,
+                      ),
+                      decoration: BoxDecoration(
+                        color: const Color(
+                          0xFF22C55E,
+                        ).withValues(alpha: isDark ? .15 : .10),
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: const Color(0xFF22C55E).withValues(alpha: .65),
+                          width: 1.5,
+                        ),
+                      ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Icon(
+                            Icons.check_circle_rounded,
+                            size: 36,
+                            color: Color(0xFF22C55E),
                           ),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          q.explanation!,
-                          style: const TextStyle(fontSize: 14, height: 1.5),
-                        ),
-                        if (q.legalRef != null) ...[
-                          const SizedBox(height: 10),
-                          Text(
-                            q.legalRef!,
-                            style: TextStyle(
-                              fontSize: 12.5,
-                              fontStyle: FontStyle.italic,
-                              color: Theme.of(context)
-                                  .textTheme
-                                  .bodySmall
-                                  ?.color
-                                  ?.withValues(alpha: .8),
+                          const SizedBox(width: 18),
+                          Expanded(
+                            child: Text(
+                              q.explanation!,
+                              style: TextStyle(
+                                color: textColor,
+                                fontFamily: 'InstrumentSans',
+                                fontSize: 15,
+                                fontWeight: FontWeight.w700,
+                                height: 1.42,
+                              ),
                             ),
                           ),
                         ],
-                      ],
+                      ),
                     ),
-                  ),
+                  ],
                 ],
-              ],
-            ),
-          ),
-        ),
-        if (_revealed)
-          Padding(
-            padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-            child: SizedBox(
-              height: 52,
-              child: FilledButton(
-                onPressed: _next,
-                style: FilledButton.styleFrom(
-                  backgroundColor: accent,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                  ),
-                ),
-                child: Text(
-                  _index + 1 >= _questions.length
-                      ? 'Voir mon résultat'
-                      : 'Question suivante',
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
               ),
             ),
           ),
-      ],
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 8, 20, 22),
+            child: Row(
+              children: [
+                Expanded(
+                  flex: 2,
+                  child: SizedBox(
+                    height: 62,
+                    child: FilledButton(
+                      onPressed: !_revealed
+                          ? (_selected == null ? null : _validateAnswer)
+                          : _next,
+                      style: FilledButton.styleFrom(
+                        backgroundColor: accent,
+                        disabledBackgroundColor: isDark
+                            ? Colors.white.withValues(alpha: .10)
+                            : const Color(0xFFCAD0E2),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(31),
+                        ),
+                      ),
+                      child: Text(
+                        !_revealed
+                            ? 'Valider'
+                            : (_index + 1 >= _questions.length
+                                  ? 'Résultats'
+                                  : 'Suivant'),
+                        style: const TextStyle(
+                          fontFamily: 'InstrumentSans',
+                          fontSize: 17,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: SizedBox(
+                    height: 62,
+                    child: OutlinedButton(
+                      onPressed: _requestFinish,
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: const Color(0xFFEF5350),
+                        side: const BorderSide(
+                          color: Color(0xFFEF6C6A),
+                          width: 1.5,
+                        ),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(31),
+                        ),
+                        textStyle: const TextStyle(
+                          fontFamily: 'InstrumentSans',
+                          fontSize: 15,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                      child: const FittedBox(child: Text('Mettre fin')),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -841,60 +1062,102 @@ class _QuizScolariteDynamiquePageState
     QuizScolariteQuestion q,
     Color surface,
     Color accent,
+    bool isDark,
   ) {
     const good = Color(0xFF27C93F);
     const bad = Color(0xFFE8574B);
 
-    Color border = Colors.transparent;
+    Color border = isDark ? Colors.white.withValues(alpha: .10) : Colors.white;
     Color bg = surface;
-    IconData? icon;
+    IconData? trailingIcon;
+    Color radioColor = isDark
+        ? Colors.white.withValues(alpha: .30)
+        : const Color(0xFFE2E5EC);
+
+    if (!_revealed && option == _selected) {
+      border = accent;
+      bg = accent.withValues(alpha: .10);
+      radioColor = accent;
+    }
 
     if (_revealed) {
       if (option == q.answer) {
         border = good;
         bg = good.withValues(alpha: .10);
-        icon = Icons.check_circle_rounded;
+        trailingIcon = Icons.check_circle_rounded;
+        radioColor = good;
       } else if (option == _selected) {
         border = bad;
         bg = bad.withValues(alpha: .10);
-        icon = Icons.cancel_rounded;
+        trailingIcon = Icons.cancel_rounded;
+        radioColor = bad;
       }
     }
 
     return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.only(bottom: 14),
       child: Material(
         color: bg,
-        borderRadius: BorderRadius.circular(14),
+        borderRadius: BorderRadius.circular(24),
         child: InkWell(
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(24),
           onTap: _revealed ? null : () => _select(option),
           child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+            constraints: const BoxConstraints(minHeight: 82),
+            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 18),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(24),
               border: Border.all(
-                color: border == Colors.transparent
-                    ? accent.withValues(alpha: .14)
-                    : border,
-                width: border == Colors.transparent ? 1 : 1.6,
+                color: border,
+                width: option == _selected || (_revealed && option == q.answer)
+                    ? 1.6
+                    : 1,
               ),
+              boxShadow: isDark
+                  ? null
+                  : const [
+                      BoxShadow(
+                        color: Color(0x100A1638),
+                        blurRadius: 16,
+                        offset: Offset(0, 7),
+                      ),
+                    ],
             ),
             child: Row(
               children: [
-                Expanded(
-                  child: Text(
-                    option,
-                    style: const TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600,
-                      height: 1.35,
+                Container(
+                  width: 28,
+                  height: 28,
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    border: Border.all(color: radioColor, width: 2.2),
+                  ),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: option == _selected && !_revealed
+                          ? radioColor
+                          : Colors.transparent,
                     ),
                   ),
                 ),
-                if (icon != null) ...[
+                const SizedBox(width: 18),
+                Expanded(
+                  child: Text(
+                    option,
+                    style: TextStyle(
+                      color: isDark ? Colors.white : const Color(0xFF212529),
+                      fontFamily: 'InstrumentSans',
+                      fontSize: 17,
+                      fontWeight: FontWeight.w800,
+                      height: 1.28,
+                    ),
+                  ),
+                ),
+                if (trailingIcon != null) ...[
                   const SizedBox(width: 10),
-                  Icon(icon, size: 21, color: border),
+                  Icon(trailingIcon, size: 28, color: border),
                 ],
               ],
             ),
@@ -905,7 +1168,7 @@ class _QuizScolariteDynamiquePageState
   }
 
   Widget _buildResult(bool isDark) {
-    final total = _questions.length;
+    final total = _answeredCount;
     final percent = total == 0 ? 0 : (_score * 100 / total).round();
     final accent = _config?.color ?? const Color(0xFF1147D9);
     final surface = isDark ? const Color(0xFF0D1B4B) : Colors.white;

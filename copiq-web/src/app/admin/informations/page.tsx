@@ -1,7 +1,22 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { BookOpen, Headphones, Plus, Search, ShieldCheck } from "lucide-react";
+import {
+  BookOpen,
+  CalendarClock,
+  CheckCircle2,
+  ChevronRight,
+  CircleDot,
+  FilePenLine,
+  Headphones,
+  Inbox,
+  Mail,
+  Plus,
+  Search,
+  ShieldCheck,
+  Sparkles,
+  TriangleAlert,
+} from "lucide-react";
 import {
   informationAdminApi,
   type EditorialStatus,
@@ -13,7 +28,6 @@ import {
   Badge,
   Button,
   Card,
-  Empty,
   ErrorBox,
   Loading,
   PageHeader,
@@ -44,14 +58,27 @@ const blank: Omit<InformationContent, "id" | "created_at" | "updated_at"> = {
 };
 
 export default function InformationAdminPage() {
-  const [tab, setTab] = useState<"contents" | "support">("contents");
+  const [tab, setTab] = useState<"contents" | "support" | "warning">("contents");
   return (
     <>
       <PageHeader
         title="Centre d'information"
-        subtitle="FAQ, assistance, documents légaux et communication utilisateurs — modifiables sans republier l'application."
+        subtitle="Pilotez les contenus publics et les demandes d’assistance depuis un espace éditorial sécurisé."
+        action={
+          <div className="hidden items-center gap-2 rounded-full border border-[var(--outline-variant)] bg-[var(--surface)]/70 px-3 py-2 text-xs text-[var(--on-surface-muted)] shadow-sm lg:flex">
+            <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--success)] opacity-60"/><span className="relative h-2 w-2 rounded-full bg-[var(--success)]"/></span>
+            Contenus synchronisés
+          </div>
+        }
       />
-      <div className="mb-6 grid gap-3 sm:grid-cols-2">
+      <Card className="relative mb-5 overflow-hidden p-5 md:p-6">
+        <div className="pointer-events-none absolute -right-12 -top-20 h-60 w-60 rounded-full bg-[var(--brand)]/12 blur-3xl" />
+        <div className="relative flex flex-col justify-between gap-5 md:flex-row md:items-center">
+          <div className="flex items-start gap-3.5"><span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-[var(--brand)]/12 text-[var(--brand)]"><Sparkles size={22}/></span><div><h2 className="text-lg font-semibold tracking-[-.02em]">Votre tour de contrôle éditorial</h2><p className="mt-1 max-w-2xl text-sm leading-6 text-[var(--on-surface-muted)]">Préparez les informations, contrôlez leur visibilité puis publiez-les sans nouvelle mise en ligne de l’application.</p></div></div>
+          <div className="flex items-center gap-2 text-xs font-medium text-[var(--on-surface-muted)]"><span className="rounded-full bg-[var(--brand)]/10 px-3 py-2 text-[var(--brand)]">Rédiger</span><ChevronRight size={14}/><span className="rounded-full bg-[var(--surface-container)] px-3 py-2">Vérifier</span><ChevronRight size={14}/><span className="rounded-full bg-[var(--surface-container)] px-3 py-2">Publier</span></div>
+        </div>
+      </Card>
+      <div className="mb-6 grid gap-3 sm:grid-cols-3" role="tablist" aria-label="Sections du centre d’information">
         <TabCard
           active={tab === "contents"}
           icon={BookOpen}
@@ -66,10 +93,63 @@ export default function InformationAdminPage() {
           subtitle="Lire, prioriser et suivre les réponses"
           onClick={() => setTab("support")}
         />
+        <TabCard
+          active={tab === "warning"}
+          icon={TriangleAlert}
+          title="Avertissement de l’application"
+          subtitle="Modifier, désactiver ou réafficher à tous"
+          onClick={() => setTab("warning")}
+        />
       </div>
-      {tab === "contents" ? <ContentsManager /> : <SupportManager />}
+      {tab === "contents" ? <ContentsManager /> : tab === "support" ? <SupportManager /> : <WarningManager />}
     </>
   );
+}
+
+function WarningManager() {
+  const config = useAsync(() => informationAdminApi.runtimeConfig(), []);
+  const [saving, setSaving] = useState(false);
+  const [message, setMessage] = useState("");
+  const [form, setForm] = useState<null | { enabled: boolean; title: string; content: string }>(null);
+  const current = form ?? (config.data ? {
+    enabled: config.data.legal_warning_enabled,
+    title: config.data.legal_warning_title,
+    content: config.data.legal_warning_content,
+  } : null);
+
+  const save = async (redisplayToAll: boolean) => {
+    if (!current || saving) return;
+    if (redisplayToAll && !window.confirm("Afficher cette nouvelle révision à tous les utilisateurs lors de leur prochain lancement ?")) return;
+    setSaving(true);
+    setMessage("");
+    try {
+      await informationAdminApi.updateRuntimeConfig({ ...current, redisplayToAll });
+      setForm(null);
+      await config.reload();
+      setMessage(redisplayToAll ? "Nouvelle révision publiée : elle sera réaffichée à tous." : "Configuration enregistrée.");
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : "Enregistrement impossible.");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  if (config.loading) return <Card><Loading label="Chargement de l’avertissement…" /></Card>;
+  if (config.error) return <ErrorBox error={config.error} />;
+  if (!current || !config.data) return null;
+  return <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_380px]">
+    <Card className="p-5 md:p-6">
+      <div className="mb-5 flex items-start justify-between gap-4">
+        <div><h2 className="font-semibold">Avertissement au démarrage</h2><p className="mt-1 text-sm text-[var(--on-surface-muted)]">La révision actuelle est la n° {config.data.legal_warning_revision}.</p></div>
+        <label className="flex cursor-pointer items-center gap-2 text-sm"><input type="checkbox" checked={current.enabled} onChange={(e) => setForm({ ...current, enabled: e.target.checked })}/>Actif</label>
+      </div>
+      <label className="block text-sm font-medium">Titre<input className={`${inputClass} mt-2`} value={current.title} onChange={(e) => setForm({ ...current, title: e.target.value })}/></label>
+      <label className="mt-4 block text-sm font-medium">Message<textarea className={`${inputClass} mt-2 min-h-40 resize-y`} value={current.content} onChange={(e) => setForm({ ...current, content: e.target.value })}/></label>
+      {message && <p className="mt-3 text-sm text-[var(--on-surface-muted)]">{message}</p>}
+      <div className="mt-5 flex flex-wrap gap-3"><Button disabled={saving} onClick={() => save(false)}><ShieldCheck size={16}/>Enregistrer</Button><Button disabled={saving} onClick={() => save(true)}><TriangleAlert size={16}/>Enregistrer et réafficher à tous</Button></div>
+    </Card>
+    <Card className="p-5"><h3 className="font-semibold">Fonctionnement</h3><div className="mt-4 space-y-3 text-sm leading-6 text-[var(--on-surface-muted)]"><p>Une modification simple met le texte à jour sans interrompre les utilisateurs qui l’ont déjà accepté.</p><p>« Réafficher à tous » augmente la révision. Chaque appareil devra alors accepter le nouveau message une seule fois.</p><p>En cas de coupure réseau, l’application utilise la dernière configuration connue.</p></div></Card>
+  </div>;
 }
 
 function TabCard({
@@ -87,8 +167,11 @@ function TabCard({
 }) {
   return (
     <button
+      type="button"
+      role="tab"
+      aria-selected={active}
       onClick={onClick}
-      className={`cursor-pointer rounded-2xl border p-4 text-left transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] ${active ? "border-[var(--brand)] bg-[var(--brand)]/8" : "border-[var(--outline)] bg-[var(--surface)] hover:bg-[var(--surface-container)]"}`}
+      className={`group min-h-24 cursor-pointer rounded-2xl border p-4 text-left transition duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] ${active ? "border-[var(--brand)]/60 bg-[var(--brand)]/8 shadow-lg shadow-blue-950/10" : "border-[var(--outline-variant)] bg-[var(--surface)] hover:-translate-y-0.5 hover:border-[var(--brand)]/25 hover:bg-[var(--surface-container)]"}`}
     >
       <div className="flex items-center gap-3">
         <span
@@ -96,12 +179,13 @@ function TabCard({
         >
           <Icon size={19} />
         </span>
-        <div>
+        <div className="min-w-0 flex-1">
           <div className="font-semibold">{title}</div>
-          <div className="text-xs text-[var(--on-surface-muted)]">
+          <div className="mt-0.5 text-xs text-[var(--on-surface-muted)]">
             {subtitle}
           </div>
         </div>
+        <ChevronRight size={18} className={`transition group-hover:translate-x-0.5 ${active ? "text-[var(--brand)]" : "text-[var(--on-surface-faint)]"}`}/>
       </div>
     </button>
   );
@@ -119,13 +203,26 @@ function ContentsManager() {
       informationAdminApi.list(type || undefined, status || undefined, search),
     [type, status, search],
   );
+  const contentCounts = useMemo(() => ({
+    total: data?.length ?? 0,
+    published: data?.filter((item) => item.status === "published").length ?? 0,
+    draft: data?.filter((item) => item.status === "draft").length ?? 0,
+    scheduled: data?.filter((item) => item.status === "scheduled").length ?? 0,
+  }), [data]);
   return (
-    <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(420px,.85fr)]">
+    <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_minmax(430px,.82fr)]">
       <section>
-        <div className="mb-4 flex flex-wrap gap-2">
+        <div className="mb-4 grid grid-cols-2 gap-2 md:grid-cols-4">
+          <MiniStat icon={BookOpen} value={contentCounts.total} label="Contenus affichés" />
+          <MiniStat icon={CheckCircle2} value={contentCounts.published} label="Publiés" tone="good" />
+          <MiniStat icon={FilePenLine} value={contentCounts.draft} label="Brouillons" />
+          <MiniStat icon={CalendarClock} value={contentCounts.scheduled} label="Programmés" tone="warn" />
+        </div>
+        <Card className="mb-4 p-3">
+        <div className="grid gap-2 lg:grid-cols-[minmax(230px,1fr)_180px_170px_auto]">
           <label className="relative min-w-56 flex-1">
             <Search
-              className="absolute left-3 top-2.5 text-[var(--on-surface-faint)]"
+              className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--on-surface-faint)]"
               size={17}
             />
             <span className="sr-only">Rechercher</span>
@@ -167,20 +264,23 @@ function ContentsManager() {
             <Plus size={16} /> Nouveau
           </Button>
         </div>
+        </Card>
         {Boolean(error) && <ErrorBox error={error} />}
-        {loading && <Loading />}
+        {loading && <Card><Loading label="Chargement des contenus…" /></Card>}
         {data?.length === 0 && (
-          <Empty>Aucun contenu ne correspond aux filtres.</Empty>
+          <Card className="px-6 py-12 text-center"><Inbox className="mx-auto text-[var(--brand)]" size={30}/><h3 className="mt-3 font-semibold">Aucun contenu trouvé</h3><p className="mt-1 text-sm text-[var(--on-surface-muted)]">Aucun élément ne correspond aux filtres actuels.</p></Card>
         )}
         <div className="space-y-3">
           {data?.map((item) => (
             <button
               key={item.id}
               onClick={() => setEditing(item)}
-              className="block w-full cursor-pointer rounded-2xl border border-[var(--outline)] bg-[var(--surface)] p-4 text-left transition-colors hover:bg-[var(--surface-container)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)]"
+              className={`group block w-full cursor-pointer rounded-2xl border bg-[var(--surface)] p-4 text-left transition duration-200 hover:-translate-y-0.5 hover:border-[var(--brand)]/30 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand)] ${editing?.id === item.id ? "border-[var(--brand)] ring-4 ring-[var(--brand)]/8" : "border-[var(--outline-variant)]"}`}
             >
               <div className="flex items-start justify-between gap-3">
-                <div>
+                <div className="flex min-w-0 gap-3">
+                  <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--brand)]/10 text-[var(--brand)]"><BookOpen size={18}/></span>
+                  <div className="min-w-0">
                   <div className="mb-1 flex flex-wrap items-center gap-2">
                     <Badge>{labels[item.content_type]}</Badge>
                     <StatusBadge status={item.status} />
@@ -189,8 +289,9 @@ function ContentsManager() {
                   <p className="mt-1 line-clamp-2 text-sm text-[var(--on-surface-muted)]">
                     {item.summary || item.body_md}
                   </p>
+                  </div>
                 </div>
-                <span className="shrink-0 text-xs text-[var(--on-surface-faint)]">
+                <span className="shrink-0 rounded-lg bg-[var(--surface-container)] px-2 py-1 text-xs text-[var(--on-surface-faint)]">
                   {new Date(item.updated_at).toLocaleDateString("fr-FR")}
                 </span>
               </div>
@@ -209,21 +310,24 @@ function ContentsManager() {
             }}
           />
         ) : (
-          <Card className="p-8 text-center">
-            <ShieldCheck
-              className="mx-auto mb-3 text-[var(--brand)]"
-              size={28}
-            />
-            <h2 className="font-semibold">Édition sécurisée</h2>
-            <p className="mt-2 text-sm text-[var(--on-surface-muted)]">
+          <Card className="relative overflow-hidden p-10 text-center"><div className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-32 w-64 rounded-full bg-[var(--brand)]/10 blur-3xl"/>
+            <span className="relative mx-auto grid h-16 w-16 place-items-center rounded-2xl border border-[var(--outline-variant)] bg-[var(--surface-container)] text-[var(--brand)] shadow-lg"><ShieldCheck size={28}/></span>
+            <h2 className="relative mt-5 text-lg font-semibold">Édition sécurisée</h2>
+            <p className="relative mx-auto mt-2 max-w-sm text-sm leading-6 text-[var(--on-surface-muted)]">
               Sélectionne un contenu ou crée-en un nouveau. Les modifications ne
               deviennent visibles qu&apos;après publication.
             </p>
+            <Button className="relative mt-5" onClick={() => setEditing({ ...blank })}><Plus size={16}/>Créer un contenu</Button>
           </Card>
         )}
       </aside>
     </div>
   );
+}
+
+function MiniStat({ icon: Icon, value, label, tone = "brand" }: { icon: typeof BookOpen; value: number; label: string; tone?: "brand" | "good" | "warn" }) {
+  const color = tone === "good" ? "text-[var(--success)] bg-[var(--success)]/10" : tone === "warn" ? "text-[var(--warning)] bg-[var(--warning)]/10" : "text-[var(--brand)] bg-[var(--brand)]/10";
+  return <Card className="flex min-h-20 items-center gap-3 p-3.5"><span className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${color}`}><Icon size={18}/></span><div><strong className="block text-xl font-semibold tabular-nums">{value}</strong><span className="text-[11px] text-[var(--on-surface-muted)]">{label}</span></div></Card>;
 }
 
 function ContentEditor({
@@ -265,16 +369,16 @@ function ContentEditor({
     }
   }
   return (
-    <Card className="overflow-hidden">
-      <div className="border-b border-[var(--outline)] bg-[var(--surface-container)] px-5 py-4">
-        <h2 className="font-semibold">
+    <Card className="overflow-hidden shadow-xl shadow-blue-950/10">
+      <div className="relative overflow-hidden border-b border-[var(--outline-variant)] bg-[var(--surface-container)] px-5 py-4"><div className="absolute inset-y-0 left-0 w-1 bg-[var(--brand)]"/>
+        <div className="flex items-start gap-3"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--brand)]/10 text-[var(--brand)]"><FilePenLine size={18}/></span><div><h2 className="font-semibold">
           {form.id ? "Modifier le contenu" : "Nouveau contenu"}
         </h2>
-        <p className="text-xs text-[var(--on-surface-muted)]">
+        <p className="mt-0.5 text-xs text-[var(--on-surface-muted)]">
           Markdown simple accepté : titres, listes et texte en gras.
-        </p>
+        </p></div></div>
       </div>
-      <form onSubmit={save} className="space-y-4 p-5">
+      <form onSubmit={save} className="space-y-5 p-5">
         <div className="grid gap-3 sm:grid-cols-2">
           <Field label="Type">
             <select
@@ -374,7 +478,7 @@ function ContentEditor({
           </Field>
         )}
         <ErrorBox error={error} />
-        <div className="flex flex-wrap justify-between gap-2">
+        <div className="sticky bottom-0 -mx-5 -mb-5 flex flex-wrap justify-between gap-2 border-t border-[var(--outline-variant)] bg-[var(--surface)]/95 p-4 backdrop-blur-xl">
           <div>
             {form.id && form.status !== "published" && (
               <Button
@@ -421,28 +525,16 @@ function SupportManager() {
   return (
     <>
       <div className="mb-4 grid gap-3 sm:grid-cols-2">
-        <Card className="p-4">
-          <div className="text-2xl font-bold">{counts.open}</div>
-          <div className="text-sm text-[var(--on-surface-muted)]">
-            demandes ouvertes
-          </div>
-        </Card>
-        <Card className="p-4">
-          <div className="text-2xl font-bold text-[var(--danger)]">
-            {counts.urgent}
-          </div>
-          <div className="text-sm text-[var(--on-surface-muted)]">
-            priorités urgentes
-          </div>
-        </Card>
+        <Card className="relative overflow-hidden p-5"><div className="absolute inset-y-0 left-0 w-1 bg-[var(--brand)]"/><div className="flex items-center gap-3"><span className="grid h-11 w-11 place-items-center rounded-xl bg-[var(--brand)]/10 text-[var(--brand)]"><Inbox size={20}/></span><div><div className="text-2xl font-bold tabular-nums">{counts.open}</div><div className="text-sm text-[var(--on-surface-muted)]">demandes ouvertes</div></div></div></Card>
+        <Card className="relative overflow-hidden p-5"><div className="absolute inset-y-0 left-0 w-1 bg-[var(--danger)]"/><div className="flex items-center gap-3"><span className="grid h-11 w-11 place-items-center rounded-xl bg-[var(--danger)]/10 text-[var(--danger)]"><CircleDot size={20}/></span><div><div className="text-2xl font-bold tabular-nums text-[var(--danger)]">{counts.urgent}</div><div className="text-sm text-[var(--on-surface-muted)]">priorités urgentes</div></div></div></Card>
       </div>
-      <div className="mb-4 flex flex-wrap gap-2">
-        <input
+      <Card className="mb-4 p-3"><div className="grid gap-2 md:grid-cols-[1fr_220px]">
+        <label className="relative"><Search className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--on-surface-faint)]" size={17}/><span className="sr-only">Rechercher une demande</span><input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           placeholder="Email, sujet ou message…"
-          className={`${inputClass} min-w-64 flex-1`}
-        />
+          className={`${inputClass} pl-10`}
+        /></label>
         <select
           value={status}
           onChange={(e) =>
@@ -457,10 +549,10 @@ function SupportManager() {
           <option value="resolved">Résolues</option>
           <option value="closed">Fermées</option>
         </select>
-      </div>
+      </div></Card>
       {Boolean(error) && <ErrorBox error={error} />}
-      {loading && <Loading />}
-      {data?.length === 0 && <Empty>Aucune demande.</Empty>}
+      {loading && <Card><Loading label="Chargement des demandes…" /></Card>}
+      {data?.length === 0 && <Card className="px-6 py-12 text-center"><Headphones className="mx-auto text-[var(--brand)]" size={30}/><h3 className="mt-3 font-semibold">Aucune demande de support</h3><p className="mt-1 text-sm text-[var(--on-surface-muted)]">La file est vide pour les filtres sélectionnés.</p></Card>}
       <div className="space-y-3">
         {data?.map((request) => (
           <SupportCard
@@ -498,13 +590,13 @@ function SupportCard({
     [busy, setBusy] = useState(false),
     [error, setError] = useState<unknown>(null);
   return (
-    <Card className="overflow-hidden">
+    <Card className={`group overflow-hidden transition duration-200 hover:border-[var(--brand)]/25 ${expanded ? "border-[var(--brand)]/50 shadow-xl shadow-blue-950/10" : ""}`}>
       <button
         onClick={onOpen}
-        className="w-full cursor-pointer p-4 text-left focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--brand)]"
+        className="w-full cursor-pointer p-4 text-left transition hover:bg-[var(--surface-container)]/50 focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-[var(--brand)]"
       >
         <div className="flex flex-wrap items-start justify-between gap-2">
-          <div>
+          <div className="flex min-w-0 gap-3"><span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--brand)]/10 text-[var(--brand)]"><Mail size={18}/></span><div className="min-w-0">
             <div className="mb-1 flex gap-2">
               <StatusBadge status={value.status} />
               <Badge
@@ -524,14 +616,15 @@ function SupportCard({
               {value.name} · {value.email} ·{" "}
               {new Date(value.created_at).toLocaleString("fr-FR")}
             </p>
-          </div>
+          </div></div>
+          <ChevronRight size={18} className={`mt-2 shrink-0 text-[var(--on-surface-faint)] transition ${expanded ? "rotate-90 text-[var(--brand)]" : "group-hover:translate-x-0.5"}`}/>
         </div>
       </button>
       {expanded && (
-        <div className="space-y-4 border-t border-[var(--outline)] p-4">
-          <p className="whitespace-pre-wrap rounded-xl bg-[var(--surface-container)] p-4 text-sm leading-relaxed">
+        <div className="space-y-4 border-t border-[var(--outline-variant)] bg-[var(--surface-container)]/25 p-4 md:p-5">
+          <div className="rounded-xl border border-[var(--outline-variant)] bg-[var(--surface-container)] p-4"><p className="mb-1.5 text-[10px] font-semibold uppercase tracking-[.14em] text-[var(--on-surface-faint)]">Message reçu</p><p className="whitespace-pre-wrap text-sm leading-6">
             {value.message}
-          </p>
+          </p></div>
           <div className="grid gap-3 sm:grid-cols-2">
             <Field label="Statut">
               <select
@@ -572,12 +665,12 @@ function SupportCard({
             />
           </Field>
           <ErrorBox error={error} />
-          <div className="flex justify-between">
+          <div className="flex flex-wrap justify-between gap-2 border-t border-[var(--outline-variant)] pt-4">
             <a
               href={`mailto:${value.email}?subject=${encodeURIComponent(`Re: ${value.subject}`)}`}
-              className="inline-flex min-h-10 items-center rounded-xl border border-[var(--outline)] px-4 text-sm font-medium transition hover:bg-[var(--surface-container)]"
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border border-[var(--outline)] px-4 text-sm font-medium transition hover:-translate-y-0.5 hover:bg-[var(--surface-container)] focus-visible:outline-2 focus-visible:outline-[var(--brand)]"
             >
-              Répondre par e-mail
+              <Mail size={16}/>Répondre par e-mail
             </a>
             <Button
               disabled={busy}
@@ -646,4 +739,4 @@ function StatusBadge({ status }: { status: string }) {
   return <Badge tone={tone}>{label[status] ?? status}</Badge>;
 }
 const inputClass =
-  "min-h-10 w-full rounded-xl border border-[var(--outline)] bg-[var(--surface)] px-3 py-2 text-sm text-[var(--on-surface)] outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand)]/15";
+  "min-h-11 w-full rounded-xl border border-[var(--outline)] bg-[var(--surface)] px-3 py-2.5 text-sm text-[var(--on-surface)] outline-none transition focus:border-[var(--brand)] focus:ring-4 focus:ring-[var(--brand)]/10";

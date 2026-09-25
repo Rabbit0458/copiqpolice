@@ -108,6 +108,37 @@ const stripe = new Stripe(STRIPE_SECRET_KEY, {
   httpClient: Stripe.createFetchHttpClient(),
 });
 
+async function resolvePlanPrice(plan: CheckoutRequest["plan"]): Promise<string> {
+  const configured = PRICE_IDS[plan];
+  if (configured) {
+    try {
+      const price = await stripe.prices.retrieve(configured);
+      const expectedInterval = plan === "week" ? "week" : plan === "month" ? "month" : "year";
+      if (price.active && price.type === "recurring" && price.recurring?.interval === expectedInterval) {
+        return price.id;
+      }
+      console.error(`[create_checkout] invalid ${plan} price interval or inactive`);
+    } catch (error) {
+      console.error(`[create_checkout] configured ${plan} price unavailable:`, error);
+    }
+  }
+
+  // Le tarif annuel de test a déjà changé d'identifiant. On retrouve le prix
+  // actif 86,99 €/an dans le même environnement Stripe au lieu de casser le
+  // bouton à chaque rotation de Price ID.
+  if (plan === "year") {
+    const prices = await stripe.prices.list({ active: true, type: "recurring", limit: 100 });
+    const annual = prices.data.find((price) =>
+      price.currency === "eur" &&
+      price.unit_amount === 8699 &&
+      price.recurring?.interval === "year"
+    );
+    if (annual) return annual.id;
+  }
+
+  throw new Error(`No active Stripe price configured for ${plan}`);
+}
+
 function jsonResponse(body: unknown, status: number): Response {
   return new Response(JSON.stringify(body), {
     status,
@@ -191,10 +222,12 @@ serve(async (req: Request) => {
   if (!body.plan || !["week", "month", "year"].includes(body.plan)) {
     return jsonResponse({ error: "invalid_plan" }, 400);
   }
-  const priceId = PRICE_IDS[body.plan];
-  if (!priceId) {
-    console.error(`[create_checkout] missing Stripe price for ${body.plan}`);
-    return jsonResponse({ error: "plan_not_configured" }, 503);
+  let priceId: string;
+  try {
+    priceId = await resolvePlanPrice(body.plan);
+  } catch (error) {
+    console.error(`[create_checkout] price resolution failed for ${body.plan}:`, error);
+    return jsonResponse({ error: "plan_not_configured", plan: body.plan }, 503);
   }
 
   // ── Identification du user ─────────────────────────────────────────────

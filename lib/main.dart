@@ -31,12 +31,17 @@ import 'package:copiqpolice/features/home/premium_required_page.dart';
 import 'package:copiqpolice/features/home/payment_result_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/revenuecat_service.dart';
 import 'package:copiqpolice/core/services/ad_service.dart';
 import 'package:copiqpolice/core/services/deep_links_service.dart';
+import 'package:copiqpolice/core/services/app_startup_service.dart';
+import 'package:copiqpolice/core/services/user_context_service.dart';
+import 'package:copiqpolice/core/app/version_check.dart';
 
 // === Écrans (imports unifiés) ===
 import 'package:copiqpolice/features/warning/warning_screen.dart';
 import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
+import 'package:copiqpolice/features/onboarding/returning_user_welcome.dart';
 import 'package:copiqpolice/features/auth/signup.dart';
 import 'package:copiqpolice/features/auth/signin.dart';
 import 'package:copiqpolice/features/auth/reset_password.dart';
@@ -56,6 +61,8 @@ import 'package:copiqpolice/features/onboarding/gpx_school.dart'
 
 // Pages
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
+import 'package:copiqpolice/features/active/active_verification_page.dart';
+import 'package:copiqpolice/features/home/home_page_policier_actif.dart';
 // Écran de choix du grade : existait mais n'était routé nulle part (audit 2026-07-26).
 import 'package:copiqpolice/features/onboarding/grade_picker.dart';
 
@@ -1510,8 +1517,6 @@ const String kSupabaseAnonKey =
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51b29uYWdua2hiZWV5bXR2cmNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYwNjE0NDUsImV4cCI6MjA3MTYzNzQ0NX0.7MRDtIcYRMwO8bykUiqhhRcdxMPjtOajbYy1SVW4PHw';
 
 const bool kDeveloperMode = false;
-const String _kWarningAckKey = 'warning_ack';
-const String _kOnboardingDoneKey = 'onboarding_done';
 
 final GlobalKey<NavigatorState> _navKey = GlobalKey<NavigatorState>();
 
@@ -1540,6 +1545,26 @@ class _T {
 
 // ================== ROUTE OBSERVER → logs ==================
 class _LoggerRouteObserver extends NavigatorObserver {
+  final Set<Route<dynamic>> _observedQuizResults = <Route<dynamic>>{};
+
+  void _observeQuizResultDismissal(Route<dynamic> route) {
+    if (route is! PopupRoute<dynamic> || route.barrierLabel != 'Résultat') {
+      return;
+    }
+    if (!_observedQuizResults.add(route)) return;
+
+    // Les quiz historiques partagent ce dialogue de résultat. La publicité
+    // n'est demandée qu'après sa fermeture : jamais pendant une question ni
+    // avant que l'utilisateur ait vu son score. AdService applique ensuite le
+    // statut Premium et le délai global de cinq minutes.
+    unawaited(
+      route.popped.whenComplete(() async {
+        _observedQuizResults.remove(route);
+        await AdService.instance.maybeShowInterstitial();
+      }),
+    );
+  }
+
   void _sync(Route<dynamic>? route) {
     final n = route?.settings.name ?? '';
     AppConsoleLogger.setScreenContext(
@@ -1551,6 +1576,7 @@ class _LoggerRouteObserver extends NavigatorObserver {
   @override
   void didPush(Route<dynamic> route, Route<dynamic>? previousRoute) {
     _sync(route);
+    _observeQuizResultDismissal(route);
 
     // ✅ D: auto-consume quand une route quiz est push
     final name = route.settings.name;
@@ -1824,10 +1850,20 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-enum _Route { loading, warning, onboarding, home }
+enum _Route {
+  loading,
+  forceUpdate,
+  warning,
+  onboarding,
+  login,
+  returningWelcome,
+  home,
+}
 
 class _MyAppState extends State<MyApp> {
   _Route _route = _Route.loading;
+  LegalWarningConfig _warningConfig = LegalWarningConfig.fallback;
+  late AppStartupService _startupService;
   StreamSubscription<AuthState>? _authSub;
 
   /// Completer déclenché par le SplashScreen quand l'animation se termine
@@ -1853,6 +1889,7 @@ class _MyAppState extends State<MyApp> {
   void dispose() {
     _authSub?.cancel();
     unawaited(DeepLinksService.I.dispose());
+    unawaited(RevenueCatService.instance.dispose());
     super.dispose();
   }
 
@@ -1912,46 +1949,53 @@ class _MyAppState extends State<MyApp> {
     });
 
     // ── 3. Démarrer la synchro abonnements ───────────────────────────────────
+    // RevenueCat utilise le même identifiant que Supabase. Son droit Premium
+    // est fusionné avec l'ancien droit serveur dans SubscriptionService.
+    await RevenueCatService.instance.initialize();
     SubscriptionService.instance.startAutoSync();
     await AdService.instance.init();
 
     await AppConsoleLogger.info('app:bootstrap:start');
 
-    final prefs = await SharedPreferences.getInstance();
-    bool ack = prefs.getBool(_kWarningAckKey) ?? false;
-    bool obDone = prefs.getBool(_kOnboardingDoneKey) ?? false;
+    // Contrôle commun iOS / Android avant toute entrée dans l'application.
+    // Le splash reste visible pendant la vérification pour éviter un flash de
+    // contenu accessible sur une version devenue incompatible.
+    final updateRequired = await AppVersionChecker.I.checkAndCache();
 
-    if (!kDeveloperMode) {
-      await prefs.remove(_kWarningAckKey);
-      await prefs.remove(_kOnboardingDoneKey);
-      ack = false;
-      obDone = false;
-      // ignore: avoid_print
-      debugPrint(
-        '$_yellow[COP\'IQ] [BOOT] Mode production: reset des flags warning/onboarding$_rst',
-      );
-      await AppConsoleLogger.warn('app:bootstrap:reset_flags');
-    }
+    _startupService = AppStartupService(Supabase.instance.client);
+    final decision = await _startupService.resolve();
+    _warningConfig = decision.warning;
+
+    // Charge le parcours depuis le cache local puis Supabase. Une mise à jour
+    // de l'application ne doit jamais reproposer les choix déjà enregistrés.
+    await UserContextService.I.init();
 
     // ── 4. Attendre la fin de l'animation du SplashScreen ────────────────────
     await _splashCompleter.future;
 
-    if (!ack) {
-      setState(() => _route = _Route.warning);
-      // ignore: avoid_print
-      debugPrint("$_cyan[COP'IQ] [NAV] -> /warning$_rst");
-      await AppConsoleLogger.info('nav:goto', message: '/warning');
-    } else if (!obDone) {
-      setState(() => _route = _Route.onboarding);
-      // ignore: avoid_print
-      debugPrint("$_cyan[COP'IQ] [NAV] -> /onboarding$_rst");
-      await AppConsoleLogger.info('nav:goto', message: '/onboarding');
-    } else {
-      setState(() => _route = _Route.home);
-      // ignore: avoid_print
-      debugPrint("$_cyan[COP'IQ] [NAV] -> /home$_rst");
-      await AppConsoleLogger.info('nav:goto', message: '/home');
+    if (updateRequired) {
+      if (mounted) setState(() => _route = _Route.forceUpdate);
+      await AppConsoleLogger.info('nav:goto', message: '/force-update');
+      return;
     }
+
+    final next = switch (decision.destination) {
+      AppStartupDestination.warning => _Route.warning,
+      AppStartupDestination.onboarding => _Route.onboarding,
+      AppStartupDestination.login => _Route.login,
+      // Seul le bootstrap d'une session déjà restaurée affiche ce message.
+      // Les connexions manuelles rejoignent toujours directement `_Route.home`.
+      AppStartupDestination.modePicker =>
+        decision.shouldWelcomeReturningUser
+            ? _Route.returningWelcome
+            : _Route.home,
+    };
+    setState(() => _route = next);
+    await AppConsoleLogger.info(
+      'nav:goto',
+      message: '/${next.name}',
+      context: {'valid_session': decision.hasValidSession},
+    );
 
     await AppConsoleLogger.success(
       'app:bootstrap:done',
@@ -1960,28 +2004,29 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> _onWarningAccepted() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_kWarningAckKey, true);
-
-    final obDone = prefs.getBool(_kOnboardingDoneKey) ?? false;
-    setState(() => _route = obDone ? _Route.home : _Route.onboarding);
-
+    await _startupService.acceptWarning(_warningConfig.revision);
+    final decision = await _startupService.resolve();
+    final next = switch (decision.destination) {
+      AppStartupDestination.warning => _Route.warning,
+      AppStartupDestination.onboarding => _Route.onboarding,
+      AppStartupDestination.login => _Route.login,
+      AppStartupDestination.modePicker => _Route.home,
+    };
+    setState(() => _route = next);
     await AppConsoleLogger.info(
       'warning:accepted',
-      context: {'next': obDone ? '/home' : '/onboarding'},
+      context: {'revision': _warningConfig.revision, 'next': '/${next.name}'},
     );
   }
 
   Future<void> _goToSignupAfterOnboarding() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_kOnboardingDoneKey, true);
+    await _startupService.completeOnboarding();
     _navKey.currentState?.pushNamed('/signup');
     await AppConsoleLogger.info('nav:push', message: '/signup');
   }
 
   Future<void> _goToLoginAfterOnboarding() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(_kOnboardingDoneKey, true);
+    await _startupService.completeOnboarding();
     _navKey.currentState?.pushNamed('/login');
     await AppConsoleLogger.info('nav:push', message: '/login');
   }
@@ -2052,8 +2097,14 @@ class _MyAppState extends State<MyApp> {
                   onAnimationComplete: _onSplashComplete,
                 ),
 
+                _Route.forceUpdate => const ForceUpdateScreen(
+                  key: ValueKey('force-update'),
+                ),
+
                 _Route.warning => WarningScreen(
                   key: const ValueKey('warning'),
+                  title: _warningConfig.title,
+                  content: _warningConfig.content,
                   onAccepted: _onWarningAccepted,
                 ),
 
@@ -2064,7 +2115,24 @@ class _MyAppState extends State<MyApp> {
                   onLogin: _goToLoginAfterOnboarding,
                 ),
 
-                _Route.home => const ModePickerScreen(key: ValueKey('home')),
+                _Route.login => SignInPage(
+                  key: const ValueKey('login'),
+                  onSignedIn: () async {
+                    await _startupService.completeOnboarding();
+                    if (mounted) setState(() => _route = _Route.home);
+                  },
+                ),
+
+                _Route.returningWelcome => ReturningUserWelcome(
+                  key: const ValueKey('returning-welcome'),
+                  onComplete: () {
+                    if (mounted) setState(() => _route = _Route.home);
+                  },
+                ),
+
+                // HomeBootstrap n'affiche les sélecteurs que si une information
+                // manque réellement. Sinon il ouvre directement le bon espace.
+                _Route.home => const HomeBootstrap(key: ValueKey('home')),
               },
             ),
           ),

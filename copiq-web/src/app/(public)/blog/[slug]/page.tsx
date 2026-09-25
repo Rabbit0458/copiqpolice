@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { BLOG_ARTICLES, getArticleBySlug } from "@/data/blog"
 import { notFound } from "next/navigation"
+import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight, Clock, Tag, ArrowLeft } from "lucide-react"
 
@@ -13,10 +14,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const article = getArticleBySlug(slug)
   if (!article) return {}
   return {
-    title: `${article.title} | COP'IQ`,
+    title: article.title,
     description: article.description,
     keywords: article.keywords,
-    openGraph: { title: article.title, description: article.description, type: "article", publishedTime: article.date },
+    alternates: { canonical: `/blog/${article.slug}` },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      type: "article",
+      url: `/blog/${article.slug}`,
+      publishedTime: article.date,
+      authors: [article.author],
+      images: [{ url: article.image, alt: article.imageAlt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [article.image],
+    },
   }
 }
 
@@ -58,6 +74,17 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
         </div>
         <h1 className="text-3xl font-bold text-[var(--on-surface)] leading-tight mb-4">{article.title}</h1>
         <p className="text-[var(--on-surface-muted)] text-base leading-relaxed mb-6">{article.description}</p>
+        <div className="relative mb-6 aspect-[16/9] overflow-hidden rounded-3xl border border-[var(--outline)] bg-[#000B36] shadow-xl shadow-[#1147D9]/10">
+          <Image
+            src={article.image}
+            alt={article.imageAlt}
+            fill
+            priority
+            sizes="(min-width: 768px) 768px, 100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#000B36]/35 via-transparent to-transparent" />
+        </div>
         <div className="flex items-center gap-4 text-sm text-[var(--on-surface-faint)] pb-6 border-b border-[var(--outline)]">
           <span>{article.author}</span>
           <span>·</span>
@@ -82,9 +109,14 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
           <h3 className="text-lg font-bold text-[var(--on-surface)] mb-4">Articles similaires</h3>
           <div className="grid gap-4 sm:grid-cols-2">
             {related.map(a => (
-              <Link key={a.slug} href={`/blog/${a.slug}`} className="group rounded-xl border border-[var(--outline)] p-4 hover:border-[#1147D9]/40 transition-all">
-                <h4 className="text-sm font-semibold text-[var(--on-surface)] group-hover:text-[#1147D9] transition-colors leading-tight">{a.title}</h4>
-                <p className="text-xs text-[var(--on-surface-muted)] mt-1 line-clamp-2">{a.description}</p>
+              <Link key={a.slug} href={`/blog/${a.slug}`} className="group overflow-hidden rounded-xl border border-[var(--outline)] transition-all hover:border-[#1147D9]/40">
+                <div className="relative aspect-[16/8] overflow-hidden bg-[#000B36]">
+                  <Image src={a.image} alt={a.imageAlt} fill sizes="(min-width: 640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                </div>
+                <div className="p-4">
+                  <h4 className="text-sm font-semibold leading-tight text-[var(--on-surface)] transition-colors group-hover:text-[#1147D9]">{a.title}</h4>
+                  <p className="mt-1 line-clamp-2 text-xs text-[var(--on-surface-muted)]">{a.description}</p>
+                </div>
               </Link>
             ))}
           </div>

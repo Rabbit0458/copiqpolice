@@ -36,6 +36,123 @@ export interface AdminSession {
   code_required?: boolean;
 }
 
+export type AdminEmailCampaignType =
+  | "product_update"
+  | "service_information"
+  | "individual_message";
+
+export type AdminEmailAudienceKind = "all" | "individual";
+
+export interface AdminEmailCampaign {
+  id: string;
+  campaign_type: AdminEmailCampaignType;
+  audience_kind: AdminEmailAudienceKind;
+  target_user_id: string | null;
+  subject: string;
+  headline: string;
+  body_text: string;
+  cta_label: string | null;
+  cta_url: string | null;
+  status: "draft" | "sending" | "sent" | "partial" | "failed" | "cancelled";
+  recipient_count: number;
+  submitted_count: number;
+  failed_count: number;
+  created_at: string;
+  completed_at: string | null;
+}
+
+export interface AdminEmailUserResult {
+  user_id: string;
+  email: string;
+  name: string;
+}
+
+export type ActiveAccessStatus = "pending" | "granted" | "revoked";
+
+export interface ActiveAccessRow {
+  user_id: string;
+  email: string | null;
+  status: ActiveAccessStatus;
+  verification_version: number | null;
+  granted_at: string | null;
+  revoked_at: string | null;
+  last_attempt_at: string | null;
+  attempts: number;
+  last_score: number | null;
+}
+
+export interface ActiveAccessAnswer {
+  position: number;
+  prompt: string;
+  answer: string;
+  correct: boolean;
+}
+
+export interface ActiveAccessAttempt {
+  id: string;
+  score: number;
+  passed: boolean;
+  completed_at: string;
+  cooldown_until: string | null;
+  answers: ActiveAccessAnswer[];
+}
+
+export interface ActiveAccessDetail {
+  access: {
+    user_id: string;
+    status: ActiveAccessStatus;
+    verification_version: number | null;
+    granted_at: string | null;
+    revoked_at: string | null;
+    revoke_reason: string | null;
+    last_attempt_at: string | null;
+    updated_at: string;
+  } | null;
+  attempts: ActiveAccessAttempt[];
+}
+
+export type ActiveNodeType = "category" | "subcategory" | "course";
+export type ActiveContentBlockType =
+  "heading" | "paragraph" | "card" | "article" | "circular" | "divider";
+export interface ActiveContentBlock {
+  type: ActiveContentBlockType;
+  text: string;
+  color?: string;
+}
+export interface ActiveContentNode {
+  id: string;
+  parent_id: string | null;
+  node_type: ActiveNodeType;
+  title: string;
+  subtitle: string | null;
+  image_url: string | null;
+  icon: string | null;
+  sort_order: number;
+  draft_content: ActiveContentBlock[];
+  published_content: ActiveContentBlock[] | null;
+  status: "draft" | "published" | "archived";
+  updated_at: string;
+}
+export interface ActiveContentState {
+  config: {
+    enabled: boolean;
+    owner_preview_enabled: boolean;
+    revision: number;
+    disable_message: string;
+    countdown_seconds: number;
+    updated_at: string;
+  };
+  nodes: ActiveContentNode[];
+}
+
+export interface GradePickerConfig {
+  id: boolean;
+  reserve_enabled: boolean;
+  revision: number;
+  updated_at: string;
+  updated_by: string | null;
+}
+
 export interface CpDashboard {
   themes: number;
   cases_total: number;
@@ -72,6 +189,389 @@ export interface AdminDashboardStats {
   quiz_questions: number;
   app_logs_total: number;
   refreshed_at: string | null;
+}
+
+export interface AdminAppAnalytics {
+  days: 7 | 30 | 90;
+  refreshed_at: string;
+  activity_definition: string;
+  daily: Array<{
+    date: string;
+    active_users: number;
+    registrations: number;
+    quiz_sessions: number;
+  }>;
+  retention: Array<{
+    day: 1 | 7 | 30;
+    eligible: number;
+    returned: number;
+    rate: number | null;
+  }>;
+  funnel: {
+    registered: number;
+    opened_app: number;
+    practiced_quiz: number;
+    paying_active_after_quiz: number;
+  };
+  engagement: {
+    active_1d: number;
+    active_7d: number;
+    active_30d: number;
+    logged_sessions: number;
+    quiz_sessions: number;
+    quiz_learners: number;
+    answers_saved: number;
+    practical_attempts: number;
+    paywall_visitors: number;
+    paid_active: number;
+    trials_active: number;
+  };
+  journeys: Array<{
+    track: string;
+    mode: string;
+    label: string;
+    current_users: number;
+    quiz_sessions: number;
+    quiz_learners: number;
+  }>;
+  platforms: Array<{ platform: string; users: number; sessions: number }>;
+  top_content: Array<{ route: string; users: number; views: number }>;
+  stores: Array<{ store: string; paid_active: number }>;
+}
+
+export interface AdminPeriodComparisonMetric {
+  current: number;
+  previous: number;
+  delta: number;
+  change_pct: number | null;
+}
+
+export interface AdminPeriodComparison {
+  days: 7 | 30 | 90;
+  refreshed_at: string;
+  current_start: string;
+  current_end: string;
+  previous_start: string;
+  previous_end: string;
+  definition: string;
+  metrics: {
+    active_users: AdminPeriodComparisonMetric;
+    registrations: AdminPeriodComparisonMetric;
+    quiz_sessions: AdminPeriodComparisonMetric;
+    answers_saved: AdminPeriodComparisonMetric;
+    correct_answers: AdminPeriodComparisonMetric;
+    incident_events: AdminPeriodComparisonMetric;
+    community_contributions: AdminPeriodComparisonMetric;
+  };
+}
+
+export interface AdminLearningAnalytics {
+  days: 7 | 30 | 90;
+  refreshed_at: string;
+  definition: string;
+  summary: { saved: number; correct: number; learners: number; accuracy: number | null };
+  journeys: Array<{ track: string; mode: string; label: string; saved: number; correct: number; learners: number; accuracy: number | null }>;
+  difficulty: Array<{ label: string; saved: number; correct: number; learners: number; accuracy: number | null }>;
+  daily: Array<{ date: string; saved: number; correct: number; accuracy: number | null }>;
+  psychotechnique: { exercises: number; learners: number; accuracy: number | null; total_answered: number | null };
+  practical: { attempts: number; learners: number; scored: number; average_percent: number | null };
+}
+
+export interface AdminQualityAnalytics {
+  days: 7 | 30 | 90;
+  refreshed_at: string;
+  definition: string;
+  summary: { events: number; incident_events: number; affected_users: number; sessions: number; affected_sessions: number };
+  daily: Array<{ date: string; incidents: number; affected_users: number }>;
+  versions: Array<{ version: string; users: number; events: number; incidents: number }>;
+  platforms: Array<{ platform: string; users: number; affected_users: number; incidents: number }>;
+  os_versions: Array<{ platform: string; os_version: string; users: number; affected_users: number; incidents: number }>;
+  incident_types: Array<{ type: string; events: number; users: number }>;
+}
+
+export interface AdminCommunityAnalytics {
+  days: 7 | 30 | 90;
+  refreshed_at: string;
+  definition: string;
+  summary: {
+    visible_posts: number;
+    new_posts: number;
+    new_comments: number;
+    new_messages: number;
+    new_reactions: number;
+    contributors: number;
+    visible_post_views: number;
+    active_spaces: number;
+  };
+}
+
+export type AdminOperationKind =
+  | "task" | "incident" | "objective" | "notification"
+  | "synchronization" | "cost" | "store_review" | "experiment"
+  | "recommendation" | "production_check" | "restore_test"
+  | "documentation" | "health_event" | "feedback";
+
+export type AdminOperationStatus =
+  | "new" | "planned" | "in_progress" | "monitoring"
+  | "blocked" | "done" | "ignored" | "archived";
+
+export type AdminOperationPriority = "low" | "normal" | "high" | "critical";
+
+export type AdminOperationScope =
+  | "global" | "gpx_school" | "pa_school" | "gpx_exam" | "pa_exam"
+  | "active" | "web" | "ios" | "android";
+
+export interface AdminOperationItem {
+  id: string;
+  kind: AdminOperationKind;
+  title: string;
+  description: string;
+  status: AdminOperationStatus;
+  priority: AdminOperationPriority;
+  scope: AdminOperationScope;
+  source_type: string | null;
+  source_id: string | null;
+  assigned_admin_id: string | null;
+  due_at: string | null;
+  started_at: string | null;
+  completed_at: string | null;
+  progress: number;
+  score: number | null;
+  metadata: Record<string, unknown>;
+  created_by: string | null;
+  updated_by: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AdminOperationsOverview {
+  refreshed_at: string;
+  open_total: number;
+  overdue: number;
+  critical: number;
+  owner_actions: number;
+  incidents_open: number;
+  sync_failures: number;
+  objectives_active: number;
+  restore_tests_due: number;
+  by_kind: Array<{ kind: AdminOperationKind; open: number }>;
+}
+
+export interface AdminOperationHistory {
+  id: number;
+  item_id: string;
+  action: string;
+  from_status: AdminOperationStatus | null;
+  to_status: AdminOperationStatus | null;
+  note: string | null;
+  snapshot: Record<string, unknown>;
+  actor_id: string | null;
+  created_at: string;
+}
+
+export interface AdminMetricDefinition {
+  metric_key: string;
+  label: string;
+  definition: string;
+  formula: string;
+  source: string;
+  unit: string;
+  cadence: string;
+  timezone: string;
+  minimum_sample: number;
+  interpretation_limit: string;
+  version: number;
+  updated_by: string | null;
+  updated_at: string;
+}
+
+export interface AdminFeatureFlag {
+  key: string;
+  description: string | null;
+  value_type: "bool" | "string" | "int" | "double" | "variant";
+  value_default: unknown;
+  rollout_percent: number | null;
+  is_active: boolean;
+  segment: string | null;
+  updated_at: string;
+}
+
+export interface AdminDataSourceStatus {
+  key: string;
+  label: string;
+  category: "product" | "learning" | "billing" | "store" | "email" | "infrastructure" | "analytics";
+  mode: "realtime" | "calculated" | "imported" | "manual";
+  status: "healthy" | "delayed" | "failed" | "not_connected" | "paused";
+  freshness_target_minutes: number;
+  last_success_at: string | null;
+  last_failure_at: string | null;
+  next_check_at: string | null;
+  record_count: number;
+  last_error: string | null;
+  public_config: Record<string, unknown>;
+  latest_run: Record<string, unknown> | null;
+}
+
+export interface AdminPremiumControlOverview {
+  refreshed_at: string;
+  days: number;
+  sources: AdminDataSourceStatus[];
+  economy: {
+    gross_revenue_cents: number;
+    paid_invoices: number;
+    active_subscriptions: number;
+    trials: number;
+    cancel_at_period_end: number;
+    past_due: number;
+    expired: number;
+    by_store: Array<{ store: string; total: number }>;
+    external_metrics_available: number;
+  };
+  content_quality: {
+    courses_total: number;
+    courses_published: number;
+    courses_without_body: number;
+    courses_without_media_alt: number;
+    orphan_courses: number;
+    active_nodes_total: number;
+    active_nodes_without_image: number;
+    translations: { total: number; approved: number; missing: number };
+  };
+  store_reviews: {
+    total: number;
+    unprocessed: number;
+    average_rating: number | null;
+    by_platform: Array<{ platform: string; reviews: number; rating: number }>;
+  };
+  forecast: {
+    method: string;
+    minimum_observed_days: number;
+    activity_available: boolean;
+    answers_available: boolean;
+    activity_observed_days: number;
+    answers_observed_days: number;
+    activity: AdminForecastPoint[];
+    answers: AdminForecastPoint[];
+  };
+  saved_views: number;
+  report_schedules: number;
+  restore_exercises: {
+    total: number;
+    passed: number;
+    failed: number;
+    last: AdminRestoreExercise | null;
+  };
+}
+
+export interface AdminForecastPoint {
+  date: string;
+  estimate: number;
+  low: number;
+  high: number;
+}
+
+export interface AdminContentGraphNode {
+  id: string;
+  entity_type: "course" | "active_node";
+  entity_id: string;
+  label: string;
+  route: string | null;
+  scope: string;
+  status: string;
+  warnings: Array<string | null>;
+}
+
+export interface AdminContentDependencyGraph {
+  nodes: AdminContentGraphNode[];
+  edges: Array<{ from: string; to: string; relation: string }>;
+}
+
+export interface AdminContentImpactPreview {
+  entity: Record<string, unknown> & { type: string; id: string | number; title: string };
+  impact_level: "low" | "medium" | "high";
+  users_30d?: number;
+  views_30d?: number;
+  children: number;
+  media?: number;
+  versions?: number;
+  quiz_answers_30d?: number;
+  checks: Array<{ label: string; ok: boolean }>;
+}
+
+export interface AdminSavedView {
+  id: string;
+  owner_id: string;
+  name: string;
+  page_key: string;
+  filters: Record<string, unknown>;
+  is_default: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AdminRestoreExercise {
+  id: string;
+  environment: "isolated" | "staging" | "disaster-recovery";
+  backup_reference: string;
+  status: "planned" | "running" | "passed" | "failed" | "cancelled";
+  started_at: string | null;
+  finished_at: string | null;
+  recovery_time_minutes: number | null;
+  data_loss_minutes: number | null;
+  integrity_checks: Array<{ label: string; ok: boolean }>;
+  result_notes: string;
+  evidence_url: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AdminStoreReview {
+  id: string;
+  source_key: string;
+  provider_review_id: string;
+  platform: "ios" | "android";
+  rating: number;
+  title: string | null;
+  review_text: string;
+  app_version: string | null;
+  country_code: string | null;
+  theme: string | null;
+  internal_status: "new" | "analysed" | "planned" | "resolved" | "ignored";
+  public_created_at: string | null;
+  imported_at: string;
+}
+
+export interface AdminReportSchedule {
+  id: string;
+  name: string;
+  report_key: string;
+  format: "pdf" | "csv" | "json";
+  cadence: "daily" | "weekly" | "monthly" | "manual";
+  filters: Record<string, unknown>;
+  recipients: string[];
+  active: boolean;
+  next_run_at: string | null;
+  last_run_at: string | null;
+  last_status: string | null;
+  last_error: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface AdminDataSourceRun {
+  id: number;
+  source_key: string;
+  run_key: string;
+  status: "running" | "succeeded" | "partial" | "failed" | "cancelled";
+  started_at: string;
+  finished_at: string | null;
+  input_count: number;
+  output_count: number;
+  duplicate_count: number;
+  duration_ms: number | null;
+  error_code: string | null;
+  error_message: string | null;
+  metadata: Record<string, unknown>;
 }
 
 export interface CpCaseRow {
@@ -266,6 +766,19 @@ export const adminAuth = {
   /** Démarre l'enrôlement : renvoie le QR code à scanner + le secret. */
   async enrollTotp() {
     const supabase = createClient();
+    const { data: factors, error: factorsError } =
+      await supabase.auth.mfa.listFactors();
+    if (factorsError) throw new AdminApiError(factorsError.message);
+    // Supprime seulement les enrôlements interrompus afin qu'un nouveau QR
+    // code puisse être généré. Un facteur vérifié n'est jamais touché.
+    for (const factor of (factors.all ?? []).filter(
+      (item) => item.factor_type === "totp" && item.status === "unverified",
+    )) {
+      const { error: cleanupError } = await supabase.auth.mfa.unenroll({
+        factorId: factor.id,
+      });
+      if (cleanupError) throw new AdminApiError(cleanupError.message);
+    }
     const { data, error } = await supabase.auth.mfa.enroll({
       factorType: "totp",
       friendlyName: `COP'IQ Admin — ${new Date().toLocaleDateString("fr-FR")}`,
@@ -640,7 +1153,67 @@ export interface CommunityMessageEvidence {
   is_reported: boolean;
 }
 
+export type CommunityActivityType =
+  | "post"
+  | "comment"
+  | "like"
+  | "deletion"
+  | "report"
+  | "moderation"
+  | "sanction";
+
+export interface CommunitySpaceSummary {
+  space_id: string;
+  space_label: string;
+  color_hex: string;
+  posts: number;
+  comments: number;
+  likes: number;
+  reports: number;
+  removed: number;
+  active_sanctions: number;
+  last_activity_at: string | null;
+}
+
+export interface CommunityActivityEvent {
+  event_id: string;
+  event_type: CommunityActivityType;
+  event_at: string;
+  space_id: string;
+  space_label: string;
+  actor_id: string | null;
+  actor_name: string;
+  actor_email: string | null;
+  target_type: string;
+  target_id: string;
+  title: string | null;
+  content: string | null;
+  status: string | null;
+  metadata: Record<string, unknown>;
+  total_count: number;
+}
+
 export const communityForumApi = {
+  spaceSummary: () =>
+    rpc<CommunitySpaceSummary[]>("community_admin_space_summary"),
+
+  activityFeed: (
+    opts: {
+      spaceId?: string;
+      eventType?: CommunityActivityType;
+      search?: string;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
+    rpc<CommunityActivityEvent[]>("community_admin_activity_feed", {
+      p_space_id: opts.spaceId || null,
+      p_event_type: opts.eventType || null,
+      p_search: opts.search || null,
+      p_limit: opts.limit ?? 50,
+      p_offset: opts.offset ?? 0,
+    }),
+
   dashboard: (spaceId?: string) =>
     rpc<CommunityModerationDashboard>("community_admin_dashboard", {
       p_space_id: spaceId || null,
@@ -828,6 +1401,16 @@ export interface SupportRequest {
   updated_at: string;
 }
 
+export interface AppRuntimeConfig {
+  id: number;
+  legal_warning_enabled: boolean;
+  legal_warning_revision: number;
+  legal_warning_title: string;
+  legal_warning_content: string;
+  updated_at: string;
+  updated_by: string | null;
+}
+
 export const informationAdminApi = {
   list: (
     type?: InformationContentType,
@@ -861,6 +1444,19 @@ export const informationAdminApi = {
       p_status: status,
       p_priority: priority,
       p_admin_note: adminNote,
+    }),
+  runtimeConfig: () => rpc<AppRuntimeConfig>("app_runtime_config_admin_get"),
+  updateRuntimeConfig: (data: {
+    enabled: boolean;
+    title: string;
+    content: string;
+    redisplayToAll: boolean;
+  }) =>
+    rpc<AppRuntimeConfig>("app_runtime_config_admin_update", {
+      p_enabled: data.enabled,
+      p_title: data.title,
+      p_content: data.content,
+      p_redisplay_to_all: data.redisplayToAll,
     }),
 };
 
@@ -979,6 +1575,88 @@ export const staffApi = {
 };
 
 /* ────────────────────────────────────────────────────────────────────────── */
+/*  Versions mobiles — mutations atomiques et contrôlées côté PostgreSQL      */
+/* ────────────────────────────────────────────────────────────────────────── */
+
+export interface MobileReleaseConfig {
+  platform: "ios" | "android";
+  min_version: string;
+  latest_version: string;
+  min_build_number: number;
+  latest_build_number: number;
+  store_url: string;
+  force_update: boolean;
+  message: string;
+  release_available: boolean;
+  available_build_number: number | null;
+  availability_confirmed_at: string | null;
+  availability_confirmed_by: string | null;
+  updated_at: string;
+}
+
+export const mobileReleaseApi = {
+  list: () => rpc<MobileReleaseConfig[]>("admin_mobile_release_list"),
+  prepare: (data: {
+    build: number;
+    version: string;
+    message: string;
+    iosUrl: string;
+    androidUrl: string;
+  }) =>
+    rpc<{ ok: boolean; build: number; version: string }>(
+      "admin_mobile_release_prepare",
+      {
+        p_build: data.build,
+        p_version: data.version,
+        p_message: data.message,
+        p_ios_url: data.iosUrl,
+        p_android_url: data.androidUrl,
+      },
+    ),
+  markAvailable: (platform: "ios" | "android", build: number) =>
+    rpc<{ ok: boolean; platform: string; build: number }>(
+      "admin_mobile_release_mark_available",
+      {
+        p_platform: platform,
+        p_build: build,
+      },
+    ),
+  activate: (build: number) =>
+    rpc<{ ok: boolean; build: number; forced: boolean }>(
+      "admin_mobile_release_activate",
+      {
+        p_build: build,
+      },
+    ),
+  disableForce: () =>
+    rpc<{ ok: boolean; forced: boolean }>("admin_mobile_release_disable_force"),
+};
+
+export interface CoachAdminOverview {
+  users_configured: number;
+  users_with_exam_date: number;
+  reflections: number;
+  weekly_summaries: number;
+  calendar_events: number;
+  generated_at: string;
+  calendar_last_run: null | {
+    status: "running" | "success" | "partial" | "failed";
+    events_found: number;
+    started_at: string;
+    finished_at: string | null;
+    error_message: string | null;
+    source_status: Record<
+      string,
+      { ok?: boolean; events?: number; url?: string }
+    >;
+  };
+}
+
+export const coachAdminApi = {
+  overview: () => rpc<CoachAdminOverview>("admin_coach_overview"),
+};
+
+/* ────────────────────────────────────────────────────────────────────────── */
 /*  Modules transverses (RPC déjà présentes en base)                          */
 /* ────────────────────────────────────────────────────────────────────────── */
 
@@ -1029,7 +1707,8 @@ export const supportApi = {
       { body: { kind, id, archive, note: note ?? null } },
     );
     if (error) {
-      const message = (data as { message?: string } | null)?.message ?? error.message;
+      const message =
+        (data as { message?: string } | null)?.message ?? error.message;
       throw new AdminApiError(message);
     }
     return data as {
@@ -1049,10 +1728,17 @@ export const supportApi = {
     patch: Record<string, unknown>,
     resolve = false,
   ) =>
-    rpc<{ ok: boolean; target: Record<string, unknown>; report_resolved: boolean }>(
-      "admin_report_update_target",
-      { p_kind: kind, p_id: id, p_expected: expected, p_patch: patch, p_resolve: resolve },
-    ),
+    rpc<{
+      ok: boolean;
+      target: Record<string, unknown>;
+      report_resolved: boolean;
+    }>("admin_report_update_target", {
+      p_kind: kind,
+      p_id: id,
+      p_expected: expected,
+      p_patch: patch,
+      p_resolve: resolve,
+    }),
 
   deleteReport: (kind: string, id: string) =>
     rpc<{ ok: boolean }>("admin_report_delete", { p_kind: kind, p_id: id }),
@@ -1086,7 +1772,103 @@ export const supportApi = {
       p_offset: 0,
     }),
 
-  dashboardStats: () => rpc<AdminDashboardStats>("admin_dashboard_stats_fast"),
+  dashboardStats: () => rpc<AdminDashboardStats>("admin_dashboard_stats_live"),
+
+  appAnalytics: (days: 7 | 30 | 90) =>
+    rpc<AdminAppAnalytics>("admin_app_analytics", { p_days: days }),
+  periodComparison: (days: 7 | 30 | 90) =>
+    rpc<AdminPeriodComparison>("admin_period_comparison", { p_days: days }),
+  learningAnalytics: (days: 7 | 30 | 90) =>
+    rpc<AdminLearningAnalytics>("admin_learning_analytics", { p_days: days }),
+  qualityAnalytics: (days: 7 | 30 | 90) =>
+    rpc<AdminQualityAnalytics>("admin_quality_analytics", { p_days: days }),
+  communityAnalytics: (days: 7 | 30 | 90) =>
+    rpc<AdminCommunityAnalytics>("admin_community_analytics", { p_days: days }),
+
+  operationsOverview: () =>
+    rpc<AdminOperationsOverview>("admin_operations_overview"),
+  operationsList: (opts: { kind?: AdminOperationKind; status?: AdminOperationStatus; search?: string; limit?: number } = {}) =>
+    rpc<AdminOperationItem[]>("admin_operations_list", {
+      p_kind: opts.kind ?? null,
+      p_status: opts.status ?? null,
+      p_search: opts.search || null,
+      p_limit: opts.limit ?? 200,
+    }),
+  operationSave: (data: Partial<AdminOperationItem> & Pick<AdminOperationItem, "title">) =>
+    rpc<AdminOperationItem>("admin_operations_save", { p_data: data }),
+  operationTransition: (id: string, status: AdminOperationStatus, note?: string) =>
+    rpc<AdminOperationItem>("admin_operations_transition", {
+      p_id: id,
+      p_status: status,
+      p_note: note ?? null,
+    }),
+  operationHistory: (id: string) =>
+    rpc<AdminOperationHistory[]>("admin_operations_history_list", { p_item_id: id }),
+  metricDictionary: () =>
+    rpc<AdminMetricDefinition[]>("admin_metric_dictionary"),
+  featureFlags: () =>
+    rpc<AdminFeatureFlag[]>("admin_feature_flags_list"),
+  featureFlagUpdate: (data: { key: string; active: boolean; rollout?: number | null; segment?: string | null; confirmation: string }) =>
+    rpc<AdminFeatureFlag>("admin_feature_flag_update", {
+      p_key: data.key,
+      p_active: data.active,
+      p_rollout: data.rollout ?? null,
+      p_segment: data.segment ?? null,
+      p_confirmation: data.confirmation,
+    }),
+
+  premiumControlOverview: (days: 7 | 30 | 90 = 30) =>
+    rpc<AdminPremiumControlOverview>("admin_premium_control_overview", { p_days: days }),
+  refreshInternalSources: () =>
+    rpc<{ refreshed_at: string; sources: number }>("admin_data_sources_refresh_internal"),
+  contentDependencyGraph: (search?: string) =>
+    rpc<AdminContentDependencyGraph>("admin_content_dependency_graph", { p_search: search || null }),
+  contentImpactPreview: (entityType: "course" | "active_node", entityId: string) =>
+    rpc<AdminContentImpactPreview>("admin_content_impact_preview", {
+      p_entity_type: entityType,
+      p_entity_id: entityId,
+    }),
+  bulkOperationsPreview: (action: "operations_start" | "operations_complete" | "operations_archive", targetIds: string[]) =>
+    rpc<{ action: "operations_start" | "operations_complete" | "operations_archive"; target_count: number; targets: Array<Record<string, unknown>>; confirmation: string; effects: string }>("admin_bulk_operations_preview", {
+      p_action: action,
+      p_target_ids: targetIds,
+    }),
+  bulkOperationsExecute: (action: "operations_start" | "operations_complete" | "operations_archive", targetIds: string[], confirmation: string) =>
+    rpc<{ job_id: string; updated: number; status: string }>("admin_bulk_operations_execute", {
+      p_action: action,
+      p_target_ids: targetIds,
+      p_confirmation: confirmation,
+    }),
+  savedViews: (pageKey?: string) =>
+    rpc<AdminSavedView[]>("admin_saved_views_list", { p_page_key: pageKey ?? null }),
+  saveView: (data: { id?: string; name: string; pageKey: string; filters: Record<string, unknown>; isDefault?: boolean }) =>
+    rpc<AdminSavedView>("admin_saved_view_save", {
+      p_id: data.id ?? null,
+      p_name: data.name,
+      p_page_key: data.pageKey,
+      p_filters: data.filters,
+      p_is_default: data.isDefault ?? false,
+    }),
+  restoreExercises: () =>
+    rpc<AdminRestoreExercise[]>("admin_restore_exercises_list"),
+  saveRestoreExercise: (data: Partial<AdminRestoreExercise> & Pick<AdminRestoreExercise, "backup_reference">) =>
+    rpc<AdminRestoreExercise>("admin_restore_exercise_save", { p_data: data }),
+  translationOverview: () =>
+    rpc<{ items: Array<Record<string, unknown>>; by_locale: Array<{ locale: string; total: number; approved: number; missing: number }> }>("admin_translation_overview"),
+  storeReviews: (status?: string, platform?: string) =>
+    rpc<AdminStoreReview[]>("admin_store_reviews_list", {
+      p_status: status ?? null,
+      p_platform: platform ?? null,
+    }),
+  reportSchedules: () =>
+    rpc<AdminReportSchedule[]>("admin_report_schedules_list"),
+  saveReportSchedule: (data: Partial<AdminReportSchedule> & Pick<AdminReportSchedule, "name">) =>
+    rpc<AdminReportSchedule>("admin_report_schedule_save", { p_data: data }),
+  dataSourceRuns: (sourceKey?: string, limit = 100) =>
+    rpc<AdminDataSourceRun[]>("admin_data_source_runs_list", {
+      p_source_key: sourceKey ?? null,
+      p_limit: limit,
+    }),
 
   users: (search?: string) =>
     rpc<Record<string, unknown>[]>("admin_users_overview", {
@@ -1132,6 +1914,7 @@ export interface CommunityAdminUserRow {
   user_role: string | null;
   user_track: string | null;
   user_mode: string | null;
+  platform: string | null;
   plan: string | null;
   subscription_status: string | null;
   current_period_end: string | null;
@@ -1189,6 +1972,14 @@ export interface CommunityAdminUserDetail {
     has_passed_exam?: boolean | null;
     cgv_accepted?: boolean | null;
     cgv_accepted_at?: string | null;
+  };
+  cgv_audit?: {
+    accepted?: boolean | null;
+    accepted_at?: string | null;
+    version?: string | null;
+    source?: string | null;
+    recorded_at?: string | null;
+    historical_inference?: boolean;
   };
   settings?: {
     locale?: string | null;
@@ -1531,7 +2322,10 @@ export interface CommunityUserCpAttempt {
 
 /* ---- Ajouts migration 20260821100000 — Phase C, owner only -------------- */
 
-export type AdminUserTableScan = Record<string, { count: number; relation: string }>;
+export type AdminUserTableScan = Record<
+  string,
+  { count: number; relation: string }
+>;
 
 export interface AdminUserRawTableData {
   table: string;
@@ -1571,10 +2365,18 @@ export const communityUsersApi = {
       p_offset: opts.offset ?? 0,
     }),
 
-  detail: (userId: string) =>
-    rpc<CommunityAdminUserDetail>("community_admin_user_detail", {
-      p_user_id: userId,
-    }),
+  detail: async (userId: string) => {
+    const [detail, cgv] = await Promise.all([
+      rpc<CommunityAdminUserDetail>("community_admin_user_detail", {
+        p_user_id: userId,
+      }),
+      rpc<NonNullable<CommunityAdminUserDetail["cgv_audit"]>>(
+        "community_admin_user_cgv_status",
+        { p_user_id: userId },
+      ),
+    ]);
+    return { ...detail, cgv_audit: cgv };
+  },
 
   imposeSanction: (data: {
     userId: string;
@@ -1633,10 +2435,7 @@ export const communityUsersApi = {
       p_offset: opts.offset ?? 0,
     }),
 
-  messages: (
-    userId: string,
-    opts: { limit?: number; offset?: number } = {},
-  ) =>
+  messages: (userId: string, opts: { limit?: number; offset?: number } = {}) =>
     rpc<CommunityUserMessage[]>("community_admin_user_messages", {
       p_user_id: userId,
       p_limit: opts.limit ?? 20,
@@ -1799,5 +2598,131 @@ export const communityUsersApi = {
       p_table: table,
       p_limit: opts.limit ?? 20,
       p_offset: opts.offset ?? 0,
+    }),
+};
+
+/** Accès professionnels « Je suis actif » — toutes les RPC restent gardées côté serveur. */
+export const activeAccessAdminApi = {
+  list: (filters: { status?: string; search?: string } = {}) =>
+    rpc<ActiveAccessRow[]>("admin_active_access_list", {
+      p_status: filters.status ?? null,
+      p_search: filters.search ?? null,
+    }),
+
+  detail: (userId: string) =>
+    rpc<ActiveAccessDetail>("admin_active_access_detail", {
+      p_user_id: userId,
+    }),
+
+  setAccess: (
+    userId: string,
+    action: "grant" | "restore" | "revoke",
+    reason?: string,
+  ) =>
+    rpc<ActiveAccessDetail["access"]>("admin_active_access_set", {
+      p_user_id: userId,
+      p_action: action,
+      p_reason: reason?.trim() || null,
+    }),
+};
+
+export const activeContentAdminApi = {
+  state: () => rpc<ActiveContentState>("admin_active_content_state"),
+  gradePickerState: () =>
+    rpc<GradePickerConfig>("admin_grade_picker_config_state"),
+  setReserveVisibility: (enabled: boolean) =>
+    rpc<GradePickerConfig>("admin_grade_picker_reserve_set", {
+      p_enabled: enabled,
+    }),
+  setEnabled: (enabled: boolean, message?: string) =>
+    rpc<ActiveContentState["config"]>("admin_active_config_set", {
+      p_enabled: enabled,
+      p_message: message?.trim() || null,
+    }),
+  setOwnerPreview: (enabled: boolean) =>
+    rpc<ActiveContentState["config"]>("admin_active_owner_preview_set", {
+      p_enabled: enabled,
+    }),
+  save: (
+    node: Partial<ActiveContentNode> &
+      Pick<ActiveContentNode, "node_type" | "title">,
+  ) =>
+    rpc<ActiveContentNode>("admin_active_content_save", {
+      p_id: node.id ?? null,
+      p_parent_id: node.parent_id ?? null,
+      p_node_type: node.node_type,
+      p_title: node.title,
+      p_subtitle: node.subtitle ?? null,
+      p_image_url: node.image_url ?? null,
+      p_icon: node.icon ?? null,
+      p_sort_order: node.sort_order ?? 0,
+      p_content: node.draft_content ?? [],
+    }),
+  publish: (id: string) =>
+    rpc<ActiveContentNode>("admin_active_content_publish", { p_id: id }),
+  archive: (id: string, title: string) =>
+    rpc<void>("admin_active_content_archive", {
+      p_id: id,
+      p_confirmation: `ARCHIVER ${title}`,
+    }),
+};
+
+type AdminContactResponse = {
+  ok: boolean;
+  message?: string;
+  emailable_count?: number;
+  sender?: string;
+  campaigns?: AdminEmailCampaign[];
+  users?: AdminEmailUserResult[];
+  campaign?: AdminEmailCampaign;
+  sent_to?: string;
+  status?: AdminEmailCampaign["status"];
+  submitted_count?: number;
+  failed_count?: number;
+};
+
+async function contactEmailInvoke(
+  body: Record<string, unknown>,
+): Promise<AdminContactResponse> {
+  const supabase = createClient();
+  const { data, error } = await supabase.functions.invoke(
+    "admin_contact_email",
+    { body },
+  );
+  if (error) {
+    const message =
+      (data as { message?: string } | null)?.message ?? error.message;
+    throw new AdminApiError(message);
+  }
+  const response = data as AdminContactResponse & { error?: string };
+  if (response.error) throw new AdminApiError(response.message ?? response.error);
+  return response;
+}
+
+/** Centre de contact owner : les adresses et l'envoi restent dans l'Edge Function. */
+export const contactEmailAdminApi = {
+  overview: () => contactEmailInvoke({ action: "overview" }),
+  searchUsers: (query: string) =>
+    contactEmailInvoke({ action: "search_users", query }),
+  createDraft: (campaign: {
+    campaign_type: AdminEmailCampaignType;
+    audience_kind: AdminEmailAudienceKind;
+    target_user_id?: string | null;
+    subject: string;
+    headline: string;
+    body_text: string;
+    cta_label?: string | null;
+    cta_url?: string | null;
+  }) => contactEmailInvoke({ action: "create_draft", campaign }),
+  sendTest: (campaignId: string) =>
+    contactEmailInvoke({ action: "send_test", campaign_id: campaignId }),
+  cancel: (campaignId: string) =>
+    contactEmailInvoke({ action: "cancel", campaign_id: campaignId }),
+  launch: (campaignId: string, recipientCount: number, confirmation: string) =>
+    contactEmailInvoke({
+      action: "launch",
+      campaign_id: campaignId,
+      confirmed_recipient_count: recipientCount,
+      confirmation,
     }),
 };
