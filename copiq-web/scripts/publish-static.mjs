@@ -27,6 +27,7 @@ const requiredRoutes = [
   "index.html",
   "404.html",
   "admin/index.html",
+  "admin/informations/index.html",
   "admin/statistiques/index.html",
   "admin/exploitation/index.html",
   "admin/pilotage-avance/index.html",

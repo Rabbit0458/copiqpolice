@@ -29,6 +29,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'subscription_service.dart';
 import 'subscription_plan.dart';
+import '../payments/store_billing_policy.dart';
 
 class StripePaymentService {
   StripePaymentService._();
@@ -56,6 +57,9 @@ class StripePaymentService {
   /// Launches Stripe Checkout for [plan] in an external browser.
   /// On return (deep-link/app resume), [SubscriptionService.refresh] reconciles state.
   Future<StripeLaunchResult> startCheckout(CopiqPlan plan) async {
+    if (usesNativeStoreBilling) {
+      return StripeLaunchResult.failure('native_store_required');
+    }
     HapticFeedback.lightImpact();
 
     if (_sb.auth.currentUser == null) {

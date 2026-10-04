@@ -8,6 +8,20 @@
 
 ## 1. Ce qu'il faut envoyer
 
+### Réglages publicitaires — 2 octobre 2026
+
+Le panneau **Centre d’information → Publicités** est livré dans
+`admin/informations/`. Il appelle la fonction Supabase `admin_ads_config_set` :
+activation, intervalle en minutes, début et fin sont enregistrés dans
+`app_runtime_config`, puis relus par le service AdMob du nouveau build Flutter.
+L’enregistrement exige le propriétaire avec double authentification.
+
+Envoyer également `_next/` : copier seulement `admin/` ne suffit pas, car le
+formulaire et les appels Supabase se trouvent dans les fichiers JavaScript partagés.
+Le nouveau build mobile doit être installé pour lire ces réglages ; les anciennes
+versions conservent leur logique précédente. Aucun transfert FTP ni publication
+mobile n’est effectué par `publish:folder`.
+
 **Le contenu du dossier `fae16dc1/`, et rien d'autre.**
 
 Vous envoyez ce qui est *à l'intérieur* de `fae16dc1/` à la racine web de

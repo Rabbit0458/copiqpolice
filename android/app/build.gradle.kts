@@ -67,10 +67,7 @@ android {
             signingConfig = if (keystorePropertiesFile.exists()) {
                 signingConfigs.getByName("release")
             } else {
-                // Filet de sécurité : si key.properties n'existe pas sur cette
-                // machine (ex. build CI sans le secret), on retombe sur la clé
-                // de debug plutôt que de faire planter le build.
-                signingConfigs.getByName("debug")
+                null
             }
         }
     }
@@ -84,4 +81,11 @@ dependencies {
 
 flutter {
     source = "../.."
+}
+
+// Un artefact de publication ne doit jamais être signé avec la clé de debug.
+gradle.taskGraph.whenReady {
+    if (allTasks.any { it.name.contains("Release") } && !keystorePropertiesFile.exists()) {
+        throw GradleException("Signature release absente : configurer android/key.properties avec la clé d'upload existante.")
+    }
 }

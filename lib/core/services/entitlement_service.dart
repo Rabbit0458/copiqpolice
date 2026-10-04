@@ -152,7 +152,7 @@ class EntitlementService {
         j = const {};
       }
       final store = RevenueCatService.instance.state.value;
-      if (store.isPremium) {
+      if (RevenueCatService.instance.isPremium) {
         final product = store.productIdentifier ?? '';
         j = <String, dynamic>{
           ...j,

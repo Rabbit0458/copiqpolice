@@ -3,7 +3,7 @@
 // ║  Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-085             ║
 // ║  Setup : docs/cas_pratique/STRIPE_SETUP.md                                ║
 // ║                                                                           ║
-// ║  Stripe est le SEUL moteur de paiement de l'application.                  ║
+// ║  Façade Stripe historique ; achats mobiles via RevenueCat uniquement.    ║
 // ║  Façade légère sans dépendance externe forcée.                            ║
 // ║   • Lit le tier courant via la vue `cp_my_subscription` (CODE-084)        ║
 // ║   • Crée une Checkout Session via edge fn `cas_pratique_create_checkout`  ║
@@ -21,6 +21,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'store_billing_policy.dart';
 
 // ──────────────────────────────────────────────────────────────────────────
 //  Modèles
@@ -218,6 +219,7 @@ class CpPayments extends ChangeNotifier implements CpPaymentsInterface {
     String? cancelUrl,
     bool allowPromotionCodes = true,
   }) async {
+    if (usesNativeStoreBilling) return null;
     try {
       final sb = Supabase.instance.client;
       final res = await sb.functions.invoke(

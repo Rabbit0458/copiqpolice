@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'subscription_service.dart';
+import 'ad_policy.dart';
 
 /// Identifiants AdMob COP'IQ.
 ///
@@ -53,7 +54,8 @@ class AdService {
 
   static final AdService instance = AdService._();
 
-  static const interstitialCooldown = Duration(minutes: 5);
+  AdPolicy _policy = const AdPolicy();
+  bool _showing = false;
   static const _lastInterstitialKey = 'admob_last_interstitial_at_v1';
 
   bool _initialized = false;
@@ -71,12 +73,34 @@ class AdService {
 
   bool get _hasPremium => SubscriptionService.instance.state.value.isPremium;
 
+  bool get _eligible =>
+      !_hasPremium &&
+      SubscriptionService.instance.state.value.lastRefreshedAt != null &&
+      SubscriptionService.instance.state.value.lastError == null &&
+      _policy.activeAt(DateTime.now());
+
+  Future<void> _refreshPolicy() async {
+    try {
+      final data = await Supabase.instance.client
+          .from('app_runtime_config')
+          .select('ads_enabled,ads_interval_minutes,ads_starts_at,ads_ends_at')
+          .eq('id', 1)
+          .single()
+          .timeout(const Duration(seconds: 4));
+      _policy = AdPolicy.fromJson(data);
+    } catch (_) {
+      _policy = const AdPolicy(); // No ads when configuration is unavailable.
+    }
+    if (!_eligible) disposeCachedAds();
+  }
+
   Future<void> init() async {
     if (_initialized || !_supportedPlatform) return;
 
     SubscriptionService.instance.registerRewardedUnlockHandler(
       showRewardedAndGrant,
     );
+    await _refreshPolicy();
 
     final preferences = await SharedPreferences.getInstance();
     final lastShownMillis = preferences.getInt(_lastInterstitialKey);
@@ -128,12 +152,13 @@ class AdService {
       completer.complete();
     });
     await completer.future;
+    _canRequestAds = await ConsentInformation.instance.canRequestAds();
+    if (!_canRequestAds) disposeCachedAds();
   }
 
   bool _cooldownElapsed() {
     final last = _lastInterstitialAt;
-    return last == null ||
-        DateTime.now().difference(last) >= interstitialCooldown;
+    return _policy.canShowInterstitial(DateTime.now(), last);
   }
 
   Future<void> _rememberInterstitial() async {
@@ -146,7 +171,7 @@ class AdService {
   }
 
   void _preloadInterstitial() {
-    if (!_initialized || !_canRequestAds || _hasPremium) return;
+    if (!_initialized || !_canRequestAds || !_eligible) return;
     if (_interstitial != null || _interstitialLoading) return;
     _interstitialLoading = true;
     InterstitialAd.load(
@@ -166,7 +191,7 @@ class AdService {
   }
 
   void _preloadRewarded() {
-    if (!_initialized || !_canRequestAds || _hasPremium) return;
+    if (!_initialized || !_canRequestAds || !_eligible) return;
     if (_rewarded != null || _rewardedLoading) return;
     _rewardedLoading = true;
     RewardedAd.load(
@@ -187,6 +212,18 @@ class AdService {
 
   /// À appeler uniquement à une rupture naturelle, après l'écran de résultat.
   Future<void> maybeShowInterstitial() async {
+    if (_showing || !_supportedPlatform) return;
+    _showing = true;
+    try {
+      await _refreshPolicy();
+      if (!_eligible) return;
+      await _showInterstitial();
+    } finally {
+      _showing = false;
+    }
+  }
+
+  Future<void> _showInterstitial() async {
     if (!_supportedPlatform || _hasPremium || !_cooldownElapsed()) return;
     if (!_initialized) await init();
     if (!_initialized || !_canRequestAds || _hasPremium) return;
@@ -198,10 +235,14 @@ class AdService {
     }
 
     final ad = _interstitial;
-    if (ad == null || _hasPremium) return;
+    if (ad == null || !_eligible || !_canRequestAds || !_cooldownElapsed())
+      return;
     _interstitial = null;
     final dismissed = Completer<void>();
     ad.fullScreenContentCallback = FullScreenContentCallback(
+      onAdShowedFullScreenContent: (_) {
+        unawaited(_rememberInterstitial());
+      },
       onAdDismissedFullScreenContent: (shownAd) {
         shownAd.dispose();
         if (!dismissed.isCompleted) dismissed.complete();
@@ -211,8 +252,7 @@ class AdService {
         if (!dismissed.isCompleted) dismissed.complete();
       },
     );
-    await _rememberInterstitial();
-    ad.show();
+    await ad.show();
     await dismissed.future;
     _preloadInterstitial();
   }
@@ -220,6 +260,18 @@ class AdService {
   /// Affiche volontairement une annonce et crédite une utilisation gratuite
   /// côté serveur uniquement après réception de la récompense AdMob.
   Future<bool> showRewardedAndGrant() async {
+    if (_showing || !_supportedPlatform) return false;
+    _showing = true;
+    try {
+      await _refreshPolicy();
+      if (!_eligible) return false;
+      return await _showRewardedAndGrant();
+    } finally {
+      _showing = false;
+    }
+  }
+
+  Future<bool> _showRewardedAndGrant() async {
     if (!_supportedPlatform || _hasPremium) return false;
     final user = Supabase.instance.client.auth.currentUser;
     if (user == null) return false;
@@ -233,7 +285,11 @@ class AdService {
     }
 
     final ad = _rewarded;
-    if (ad == null) return false;
+    if (ad == null ||
+        !_eligible ||
+        !_canRequestAds ||
+        Supabase.instance.client.auth.currentUser?.id != user.id)
+      return false;
     _rewarded = null;
     var earnedReward = false;
     final dismissed = Completer<void>();
@@ -250,7 +306,9 @@ class AdService {
     ad.show(onUserEarnedReward: (_, __) => earnedReward = true);
     await dismissed.future;
     _preloadRewarded();
-    if (!earnedReward) return false;
+    if (!earnedReward ||
+        Supabase.instance.client.auth.currentUser?.id != user.id)
+      return false;
 
     final nonce = '${user.id}-${DateTime.now().microsecondsSinceEpoch}';
     final response = await Supabase.instance.client.rpc(

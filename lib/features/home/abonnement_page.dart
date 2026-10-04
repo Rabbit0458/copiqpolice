@@ -90,7 +90,9 @@ class _AbonnementPageState extends State<AbonnementPage>
     if (result.cancelled) return;
     if (!result.ok) {
       final message = switch (result.reason) {
-        'not_authenticated' =>
+        'operation_in_progress' =>
+          "Un achat ou une restauration est déjà en cours. Attends sa confirmation.",
+        'not_authenticated' || 'identity_not_verified' || 'account_changed' =>
           "Reconnecte-toi à ton compte avant de choisir un abonnement.",
         'product_unavailable' || 'store_not_configured' =>
           "Cette offre est momentanément indisponible dans la boutique. Réessaie dans quelques instants.",
@@ -98,7 +100,8 @@ class _AbonnementPageState extends State<AbonnementPage>
           "Les achats intégrés ne sont pas autorisés sur cet appareil.",
         'paymentPendingError' =>
           "Le paiement est en attente de validation par la boutique.",
-        _ => "L’achat n’a pas pu être finalisé. Aucun montant n’a été débité.",
+        _ =>
+          "La confirmation de l’achat n’a pas pu être récupérée. Vérifie tes abonnements dans la boutique ou utilise « Restaurer mes achats » avant de réessayer.",
       };
       _info(message);
       return;
@@ -108,7 +111,7 @@ class _AbonnementPageState extends State<AbonnementPage>
     if (!mounted) return;
     _success(
       'Premium activé',
-      'Ton accès COP’IQ Premium est disponible immédiatement sur tous les parcours.',
+      'La boutique a confirmé ton abonnement. La synchronisation de ton compte est en cours.',
     );
   }
 
@@ -130,9 +133,15 @@ class _AbonnementPageState extends State<AbonnementPage>
       return;
     }
     _info(
-      result.reason == 'nothing_to_restore'
-          ? 'Aucun achat Premium actif n’a été trouvé pour ce compte de boutique.'
-          : 'La restauration est momentanément indisponible. Réessaie dans quelques instants.',
+      switch (result.reason) {
+        'nothing_to_restore' =>
+          'Aucun achat Premium actif n’a été trouvé pour ce compte de boutique.',
+        'operation_in_progress' =>
+          'Un achat ou une restauration est déjà en cours. Attends sa confirmation.',
+        'not_authenticated' || 'identity_not_verified' || 'account_changed' =>
+          'Reconnecte-toi à ton compte avant de restaurer tes achats.',
+        _ => 'La restauration est momentanément indisponible. Réessaie dans quelques instants.',
+      },
     );
   }
 

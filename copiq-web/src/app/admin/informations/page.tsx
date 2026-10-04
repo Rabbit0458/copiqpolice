@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { AdsManager } from "@/components/admin/ads-manager";
 import {
   BookOpen,
   CalendarClock,
@@ -58,7 +59,7 @@ const blank: Omit<InformationContent, "id" | "created_at" | "updated_at"> = {
 };
 
 export default function InformationAdminPage() {
-  const [tab, setTab] = useState<"contents" | "support" | "warning">("contents");
+  const [tab, setTab] = useState<"contents" | "support" | "warning" | "ads">("contents");
   return (
     <>
       <PageHeader
@@ -78,7 +79,9 @@ export default function InformationAdminPage() {
           <div className="flex items-center gap-2 text-xs font-medium text-[var(--on-surface-muted)]"><span className="rounded-full bg-[var(--brand)]/10 px-3 py-2 text-[var(--brand)]">Rédiger</span><ChevronRight size={14}/><span className="rounded-full bg-[var(--surface-container)] px-3 py-2">Vérifier</span><ChevronRight size={14}/><span className="rounded-full bg-[var(--surface-container)] px-3 py-2">Publier</span></div>
         </div>
       </Card>
-      <div className="mb-6 grid gap-3 sm:grid-cols-3" role="tablist" aria-label="Sections du centre d’information">
+      <div className="mb-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4" role="tablist" aria-label="Sections du centre d’information">
+        <TabCard active={tab === "ads"} icon={CalendarClock} title="Publicités"
+          subtitle="Fréquence et dates — comptes gratuits" onClick={() => setTab("ads")} />
         <TabCard
           active={tab === "contents"}
           icon={BookOpen}
@@ -101,7 +104,7 @@ export default function InformationAdminPage() {
           onClick={() => setTab("warning")}
         />
       </div>
-      {tab === "contents" ? <ContentsManager /> : tab === "support" ? <SupportManager /> : <WarningManager />}
+      {tab === "contents" ? <ContentsManager /> : tab === "support" ? <SupportManager /> : tab === "ads" ? <AdsManager /> : <WarningManager />}
     </>
   );
 }

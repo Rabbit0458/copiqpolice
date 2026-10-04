@@ -1556,7 +1556,7 @@ class _LoggerRouteObserver extends NavigatorObserver {
     // Les quiz historiques partagent ce dialogue de résultat. La publicité
     // n'est demandée qu'après sa fermeture : jamais pendant une question ni
     // avant que l'utilisateur ait vu son score. AdService applique ensuite le
-    // statut Premium et le délai global de cinq minutes.
+    // statut Premium, le calendrier et le délai global réglés dans le panel.
     unawaited(
       route.popped.whenComplete(() async {
         _observedQuizResults.remove(route);

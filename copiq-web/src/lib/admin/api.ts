@@ -1402,6 +1402,10 @@ export interface SupportRequest {
 }
 
 export interface AppRuntimeConfig {
+  ads_enabled: boolean;
+  ads_interval_minutes: number;
+  ads_starts_at: string | null;
+  ads_ends_at: string | null;
   id: number;
   legal_warning_enabled: boolean;
   legal_warning_revision: number;
@@ -1446,6 +1450,11 @@ export const informationAdminApi = {
       p_admin_note: adminNote,
     }),
   runtimeConfig: () => rpc<AppRuntimeConfig>("app_runtime_config_admin_get"),
+  updateAdsConfig: (data: { enabled: boolean; intervalMinutes: number; startsAt: string | null; endsAt: string | null }) =>
+    rpc<AppRuntimeConfig>("admin_ads_config_set", {
+      p_enabled: data.enabled, p_interval_minutes: data.intervalMinutes,
+      p_starts_at: data.startsAt, p_ends_at: data.endsAt,
+    }),
   updateRuntimeConfig: (data: {
     enabled: boolean;
     title: string;
@@ -1819,6 +1828,8 @@ export const supportApi = {
 
   premiumControlOverview: (days: 7 | 30 | 90 = 30) =>
     rpc<AdminPremiumControlOverview>("admin_premium_control_overview", { p_days: days }),
+  storeBillingOverview: () =>
+    rpc<{ refreshed_at: string; stores: Array<{ store: string; environment: string; subscriptions: number; active: number; cancelling: number; last_verified_at: string | null }> }>("admin_store_billing_overview"),
   refreshInternalSources: () =>
     rpc<{ refreshed_at: string; sources: number }>("admin_data_sources_refresh_internal"),
   contentDependencyGraph: (search?: string) =>

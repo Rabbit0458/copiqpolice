@@ -266,3 +266,7 @@ manuellement :
 - [x] Elles sont actives uniquement pour les comptes gratuits sur Android et iOS.
 - [x] Les identifiants de test Google sont utilisés en développement.
 - [ ] Fournir les vrais identifiants AdMob et les passer lors de la compilation de production.
+# Document historique
+
+Cette checklist Stripe ne décrit plus les paiements mobiles. Pour Apple/Google via RevenueCat et les tarifs actuels, consulter [le suivi des paiements stores](SUIVI_PAIEMENTS_STORES_2026_09_25.md).
+

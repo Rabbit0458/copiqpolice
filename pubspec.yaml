@@ -11,7 +11,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   # CODE-082 : i18n — date/number formatting, ARB-generated strings
-  intl: 0.20.2
+  intl: 0.20.3
   # --- runtime packages ---
   shared_preferences: ^2.5.5
   url_launcher: ^6.3.2
@@ -80,6 +80,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - config/revenuecat.public.json
     - assets/images/
     - assets/icon_profile/
     - assets/splash/

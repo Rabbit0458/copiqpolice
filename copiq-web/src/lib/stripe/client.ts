@@ -5,7 +5,7 @@ let stripeInstance: Stripe | null = null
 export function getStripe(): Stripe {
   if (!stripeInstance) {
     stripeInstance = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-      apiVersion: "2026-07-29.dahlia",
+      // Use the API version pinned by the installed SDK and its types.
       typescript: true,
     })
   }

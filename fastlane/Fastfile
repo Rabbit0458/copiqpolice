@@ -12,6 +12,7 @@
 #
 # iOS ──────────────────────────────────────────────────────────────────────
 #   MATCH_PASSWORD                  Passphrase chiffrement du repo Match
+#   MATCH_GIT_URL                   URL du dépôt privé contenant les certificats existants
 #   MATCH_GIT_BASIC_AUTHORIZATION   Base64(user:personal_access_token) pour le repo certs privé
 #   APP_STORE_CONNECT_API_KEY_ID    ID de la clé API App Store Connect
 #   APP_STORE_CONNECT_ISSUER_ID     Issuer ID App Store Connect
@@ -29,6 +30,7 @@
 # ────────────────────────────────────────────────────────────────────────────
 # Helpers partagés
 # ────────────────────────────────────────────────────────────────────────────
+require "json"
 
 # Retourne la version issue du pubspec.yaml
 def flutter_version
@@ -38,10 +40,16 @@ def flutter_version
   { version: match[1], build_number: match[2].to_i }
 end
 
-def dart_defines
+def dart_defines(platform)
+  billing_name = platform == :ios ? "REVENUECAT_IOS_API_KEY" : "REVENUECAT_ANDROID_API_KEY"
+  public_config = JSON.parse(File.read(File.expand_path("../config/revenuecat.public.json", __dir__)))
+  billing_key = ENV[billing_name].to_s.empty? ? public_config.fetch(billing_name) : ENV[billing_name]
+  prefix = platform == :ios ? "appl_" : "goog_"
+  raise "#{billing_name} doit contenir la clé publique de la boutique réelle" unless billing_key.match?(/\A#{prefix}[A-Za-z0-9]+\z/)
   dsn     = ENV.fetch("SENTRY_DSN", "")
   posthog = ENV.fetch("POSTHOG_API_KEY", "")
   release = ENV.fetch("APP_RELEASE", flutter_version[:version])
+  "--dart-define=#{billing_name}=#{billing_key} " \
   "--dart-define=SENTRY_DSN=\"#{dsn}\" " \
   "--dart-define=SENTRY_ENV=production " \
   "--dart-define=APP_RELEASE=\"#{release}\" " \
@@ -58,8 +66,8 @@ platform :android do
   lane :build_release do
     sh "flutter pub get", log: true
 
-    sh "flutter build appbundle --release #{dart_defines}", log: true
-    sh "flutter build apk --release #{dart_defines}", log: true
+    sh "flutter build appbundle --release #{dart_defines(:android)}", log: true
+    sh "flutter build apk --release #{dart_defines(:android)}", log: true
 
     UI.success("✅ AAB et APK Android buildés avec succès.")
   end
@@ -129,11 +137,17 @@ platform :ios do
   # ── Lane : build_release ─────────────────────────────────────────────────
   desc "Build iOS IPA (release signé avec Fastlane Match)"
   lane :build_release do
+    required = %w[MATCH_GIT_URL MATCH_PASSWORD APPLE_TEAM_ID APP_STORE_CONNECT_API_KEY_ID APP_STORE_CONNECT_ISSUER_ID APP_STORE_CONNECT_API_KEY]
+    missing = required.select { |name| ENV[name].to_s.strip.empty? }
+    UI.user_error!("Configuration de signature iOS manquante : #{missing.join(', ')}") unless missing.empty?
+    setup_ci if ENV["CI"] == "true"
     api_key = prepare_api_key
 
     # Sync des certificats + profils via Match (certs stockés dans un repo git privé)
     match(
       type:           "appstore",
+      git_url:        ENV.fetch("MATCH_GIT_URL"),
+      team_id:        ENV.fetch("APPLE_TEAM_ID"),
       api_key:        api_key,
       readonly:       true,
       clone_branch_directly: true
@@ -142,7 +156,7 @@ platform :ios do
     sh "flutter pub get", log: true
 
     # Build flutter iOS (sans codesign — Fastlane gym s'en charge)
-    sh "flutter build ios --release --no-codesign #{dart_defines}", log: true
+    sh "flutter build ios --release --no-codesign #{dart_defines(:ios)}", log: true
 
     # Signer + packager en IPA avec gym
     build_app(

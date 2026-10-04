@@ -8,6 +8,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'subscription_plan.dart';
+import 'store_operation_queue.dart';
+import 'revenuecat_configuration.dart';
 
 const String kRevenueCatEntitlementId = 'premium';
 
@@ -121,7 +123,34 @@ class RevenueCatService {
 
   String get _apiKey => Platform.isAndroid ? _androidApiKey : _iosApiKey;
 
-  bool get isPremium => state.value.isPremium;
+  String? _identifiedUserId;
+  Future<bool> _identityQueue = Future.value(false);
+  final _sdkQueue = StoreOperationQueue();
+  bool _storeOperationInFlight = false;
+
+  Future<StorePurchaseResult> _runStoreOperation(
+    Future<StorePurchaseResult> Function() operation,
+  ) async {
+    if (_storeOperationInFlight) {
+      return const StorePurchaseResult.failure('operation_in_progress');
+    }
+    _storeOperationInFlight = true;
+    try {
+      return await operation();
+    } finally {
+      _storeOperationInFlight = false;
+    }
+  }
+
+  // Identity changes and store transactions must never overlap in the SDK.
+  Future<T> _withSdkLock<T>(Future<T> Function() operation) {
+    return _sdkQueue.run(operation);
+  }
+
+  bool get isPremium =>
+      _identifiedUserId != null &&
+      _identifiedUserId == _supabase.auth.currentUser?.id &&
+      state.value.isPremium;
 
   String priceLabel(CopiqPlan plan) {
     final price = state.value.packages[plan]?.storeProduct.priceString;
@@ -136,41 +165,41 @@ class RevenueCatService {
     if (_initializing != null) return _initializing!;
     final completer = Completer<void>();
     _initializing = completer.future;
-    _initializeInternal().then(completer.complete).catchError((Object error) {
-      completer.completeError(error);
-    });
+    _initializeInternal()
+        .then(completer.complete)
+        .catchError((Object error) {
+          completer.completeError(error);
+        })
+        .whenComplete(() => _initializing = null);
     return _initializing!;
   }
 
   Future<void> _initializeInternal() async {
     if (!isSupported) return;
-    if (_apiKey.trim().isEmpty) {
-      state.value = state.value.copyWith(error: 'missing_revenuecat_api_key');
-      if (kDebugMode) {
-        debugPrint(
-          '[REVENUECAT] Clé absente. Utilise --dart-define='
-          'REVENUECAT_${Platform.isAndroid ? 'ANDROID' : 'IOS'}_API_KEY=…',
-        );
-      }
-      return;
-    }
-
     state.value = state.value.copyWith(loading: true, clearError: true);
     try {
+      final apiKey = await loadRevenueCatKey(
+        android: Platform.isAndroid,
+        override: _apiKey,
+      );
       if (kDebugMode) await Purchases.setLogLevel(LogLevel.debug);
 
       final alreadyConfigured = await Purchases.isConfigured;
       if (!alreadyConfigured) {
-        final configuration = PurchasesConfiguration(_apiKey)
-          ..appUserID = _supabase.auth.currentUser?.id
+        final userId = _supabase.auth.currentUser?.id;
+        final configuration = PurchasesConfiguration(apiKey)
+          ..appUserID = userId
           ..diagnosticsEnabled = kDebugMode;
         await Purchases.configure(configuration);
+        _identifiedUserId = userId;
       } else {
         await _identifyUser(_supabase.auth.currentUser?.id);
       }
 
-      _customerInfoListener ??= _onCustomerInfoUpdated;
-      Purchases.addCustomerInfoUpdateListener(_customerInfoListener!);
+      if (_customerInfoListener == null) {
+        _customerInfoListener = (_) => unawaited(refreshCustomerInfo());
+        Purchases.addCustomerInfoUpdateListener(_customerInfoListener!);
+      }
 
       _authSubscription ??= _supabase.auth.onAuthStateChange.listen((event) {
         final userId = event.session?.user.id ?? _supabase.auth.currentUser?.id;
@@ -207,25 +236,48 @@ class RevenueCatService {
     }
   }
 
-  Future<void> _identifyUser(String? userId) async {
-    if (!isSupported || !(await Purchases.isConfigured)) return;
+  Future<bool> _identifyUser(String? userId) {
+    // Clear rights immediately; serialize SDK identity changes across auth events.
+    _identifiedUserId = null;
+    state.value = state.value.copyWith(
+      isPremium: false,
+      clearManagementUrl: true,
+      clearProductIdentifier: true,
+      clearStore: true,
+      clearExpiresAt: true,
+      willRenew: false,
+    );
+    _identityQueue = _identityQueue.then((_) => _identifyUserInternal(userId));
+    return _identityQueue;
+  }
+
+  Future<bool> _identifyUserInternal(String? userId) => _withSdkLock(() async {
+    if (!isSupported || !(await Purchases.isConfigured)) return false;
+    if (userId != _supabase.auth.currentUser?.id) return false;
     try {
       final currentId = await Purchases.appUserID;
       if (userId == null) {
         if (!currentId.startsWith(r'$RCAnonymousID:')) {
-          final info = await Purchases.logOut();
-          _onCustomerInfoUpdated(info);
+          await Purchases.logOut();
         }
-        return;
+        return false;
       }
+      CustomerInfo info;
       if (currentId != userId) {
         final result = await Purchases.logIn(userId);
-        _onCustomerInfoUpdated(result.customerInfo);
+        info = result.customerInfo;
+      } else {
+        info = await Purchases.getCustomerInfo();
       }
+      if (userId != _supabase.auth.currentUser?.id) return false;
+      _identifiedUserId = userId;
+      _onCustomerInfoUpdated(info);
+      return true;
     } catch (error) {
       if (kDebugMode) debugPrint('[REVENUECAT] identification: $error');
+      return false;
     }
-  }
+  });
 
   Future<void> refreshOfferings() async {
     if (!isSupported || !(await Purchases.isConfigured)) return;
@@ -256,19 +308,32 @@ class RevenueCatService {
 
   Future<void> refreshCustomerInfo() async {
     if (!isSupported || !(await Purchases.isConfigured)) return;
+    final userId = _identifiedUserId;
+    if (userId == null || userId != _supabase.auth.currentUser?.id) return;
     try {
-      _onCustomerInfoUpdated(await Purchases.getCustomerInfo());
+      final info = await Purchases.getCustomerInfo();
+      if (userId != _identifiedUserId ||
+          userId != _supabase.auth.currentUser?.id)
+        return;
+      _onCustomerInfoUpdated(info);
     } catch (error) {
       if (kDebugMode) debugPrint('[REVENUECAT] droits: $error');
       state.value = state.value.copyWith(error: 'customer_info_unavailable');
     }
   }
 
-  Future<StorePurchaseResult> purchase(CopiqPlan plan) async {
+  Future<StorePurchaseResult> purchase(CopiqPlan plan) =>
+      _runStoreOperation(() => _purchase(plan));
+
+  Future<StorePurchaseResult> _purchase(CopiqPlan plan) async {
+    final purchaseUserId = _supabase.auth.currentUser?.id;
     if (_supabase.auth.currentUser == null) {
       return const StorePurchaseResult.failure('not_authenticated');
     }
     await initialize();
+    if (!await _identifyUser(_supabase.auth.currentUser?.id)) {
+      return const StorePurchaseResult.failure('identity_not_verified');
+    }
     if (!state.value.configured) {
       return const StorePurchaseResult.failure('store_not_configured');
     }
@@ -277,22 +342,40 @@ class RevenueCatService {
     if (package == null) {
       return const StorePurchaseResult.failure('product_unavailable');
     }
+    if (purchaseUserId != _supabase.auth.currentUser?.id ||
+        purchaseUserId != _identifiedUserId) {
+      return const StorePurchaseResult.failure('account_changed');
+    }
 
     state.value = state.value.copyWith(loading: true, clearError: true);
     try {
-      final result = await Purchases.purchase(PurchaseParams.package(package));
-      _onCustomerInfoUpdated(result.customerInfo);
-      final active =
-          result
-              .customerInfo
-              .entitlements
-              .active[kRevenueCatEntitlementId]
-              ?.isActive ==
-          true;
-      state.value = state.value.copyWith(loading: false);
-      return active
-          ? const StorePurchaseResult.success()
-          : const StorePurchaseResult.failure('entitlement_not_active');
+      return await _withSdkLock(() async {
+        if (purchaseUserId != _supabase.auth.currentUser?.id ||
+            purchaseUserId != _identifiedUserId) {
+          state.value = state.value.copyWith(loading: false);
+          return const StorePurchaseResult.failure('account_changed');
+        }
+        final result = await Purchases.purchase(
+          PurchaseParams.package(package),
+        );
+        if (purchaseUserId != _supabase.auth.currentUser?.id ||
+            purchaseUserId != _identifiedUserId) {
+          state.value = state.value.copyWith(loading: false);
+          return const StorePurchaseResult.failure('account_changed');
+        }
+        _onCustomerInfoUpdated(result.customerInfo);
+        final active =
+            result
+                .customerInfo
+                .entitlements
+                .active[kRevenueCatEntitlementId]
+                ?.isActive ==
+            true;
+        state.value = state.value.copyWith(loading: false);
+        return active
+            ? const StorePurchaseResult.success()
+            : const StorePurchaseResult.failure('entitlement_not_active');
+      });
     } on PlatformException catch (error) {
       final code = PurchasesErrorHelper.getErrorCode(error);
       state.value = state.value.copyWith(loading: false);
@@ -307,20 +390,46 @@ class RevenueCatService {
     }
   }
 
-  Future<StorePurchaseResult> restorePurchases() async {
+  Future<StorePurchaseResult> restorePurchases() =>
+      _runStoreOperation(_restorePurchases);
+
+  Future<StorePurchaseResult> _restorePurchases() async {
+    final restoreUserId = _supabase.auth.currentUser?.id;
+    if (_supabase.auth.currentUser == null) {
+      return const StorePurchaseResult.failure('not_authenticated');
+    }
     await initialize();
+    if (!await _identifyUser(_supabase.auth.currentUser?.id)) {
+      return const StorePurchaseResult.failure('identity_not_verified');
+    }
     if (!state.value.configured) {
       return const StorePurchaseResult.failure('store_not_configured');
     }
+    if (restoreUserId != _supabase.auth.currentUser?.id ||
+        restoreUserId != _identifiedUserId) {
+      return const StorePurchaseResult.failure('account_changed');
+    }
     state.value = state.value.copyWith(loading: true, clearError: true);
     try {
-      final info = await Purchases.restorePurchases();
-      _onCustomerInfoUpdated(info);
-      state.value = state.value.copyWith(loading: false);
-      return info.entitlements.active[kRevenueCatEntitlementId]?.isActive ==
-              true
-          ? const StorePurchaseResult.success()
-          : const StorePurchaseResult.failure('nothing_to_restore');
+      return await _withSdkLock(() async {
+        if (restoreUserId != _supabase.auth.currentUser?.id ||
+            restoreUserId != _identifiedUserId) {
+          state.value = state.value.copyWith(loading: false);
+          return const StorePurchaseResult.failure('account_changed');
+        }
+        final info = await Purchases.restorePurchases();
+        if (restoreUserId != _supabase.auth.currentUser?.id ||
+            restoreUserId != _identifiedUserId) {
+          state.value = state.value.copyWith(loading: false);
+          return const StorePurchaseResult.failure('account_changed');
+        }
+        _onCustomerInfoUpdated(info);
+        state.value = state.value.copyWith(loading: false);
+        return info.entitlements.active[kRevenueCatEntitlementId]?.isActive ==
+                true
+            ? const StorePurchaseResult.success()
+            : const StorePurchaseResult.failure('nothing_to_restore');
+      });
     } catch (error) {
       if (kDebugMode) debugPrint('[REVENUECAT] restauration: $error');
       state.value = state.value.copyWith(loading: false);
@@ -329,6 +438,9 @@ class RevenueCatService {
   }
 
   Future<bool> openSubscriptionManagement() async {
+    if (_identifiedUserId == null ||
+        _identifiedUserId != _supabase.auth.currentUser?.id)
+      return false;
     var url = state.value.managementUrl;
     if (url == null || url.isEmpty) {
       await refreshCustomerInfo();
@@ -339,6 +451,9 @@ class RevenueCatService {
   }
 
   void _onCustomerInfoUpdated(CustomerInfo info) {
+    if (_identifiedUserId == null ||
+        _identifiedUserId != _supabase.auth.currentUser?.id)
+      return;
     final entitlement = info.entitlements.all[kRevenueCatEntitlementId];
     final active = entitlement?.isActive == true;
     state.value = state.value.copyWith(

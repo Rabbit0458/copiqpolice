@@ -1,5 +1,7 @@
 # COP'IQ — Suivi de livraison 1.1.0 (build 6)
 
+État actualisé des paiements : [suivi vérifié du 25 septembre 2026](SUIVI_PAIEMENTS_STORES_2026_09_25.md). Les éléments ci-dessous datent du 18 septembre et doivent être confrontés à ce suivi.
+
 Dernière mise à jour : 18 septembre 2026  
 Statut global : **préparation de la release candidate**  
 Branche cible : `codex/release-v6`  

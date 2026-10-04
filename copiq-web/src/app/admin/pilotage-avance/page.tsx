@@ -124,6 +124,7 @@ export default function AdvancedControlPage() {
     } />
 
     {error ? <ErrorBox error={error} /> : null}
+    {tab === "overview" && <NativeSubscriptions poll={poll} />}
 
     <div className="mb-5 flex flex-wrap items-center justify-between gap-3 print:hidden">
       <div className="flex overflow-x-auto rounded-2xl border border-[var(--outline-variant)] bg-[var(--surface)] p-1" role="tablist" aria-label="Sections du pilotage premium">
@@ -147,6 +148,24 @@ export default function AdvancedControlPage() {
 
     {impact && <ImpactDialog impact={impact} onClose={() => setImpact(null)} />}
   </div>
+}
+
+function NativeSubscriptions({ poll }: { poll: number }) {
+  const state = useAsync(() => supportApi.storeBillingOverview(), [poll])
+  return <Card className="mb-5 p-5">
+    <h2 className="text-base font-semibold">Abonnements Apple et Google</h2>
+    <p className="mt-1 text-sm text-[var(--on-surface-muted)]">Droits vérifiés par le serveur. Les achats de test sont affichés séparément des ventes réelles.</p>
+    {state.loading && <Loading />}
+    {state.error ? <ErrorBox error={state.error} /> : null}
+    {state.data && state.data.stores.length === 0 && <p className="mt-4 text-sm">Aucun abonnement boutique synchronisé pour le moment.</p>}
+    {state.data && state.data.stores.length > 0 && <div className="mt-4 overflow-x-auto"><table className="w-full text-left text-sm">
+      <thead><tr><th className="p-2">Boutique</th><th className="p-2">Environnement</th><th className="p-2">Actifs</th><th className="p-2">Résiliation demandée</th><th className="p-2">Dernière vérification</th></tr></thead>
+      <tbody>{state.data.stores.map(row => <tr key={`${row.store}:${row.environment}`} className="border-t border-[var(--outline-variant)]">
+        <td className="p-2">{row.store === "app_store" ? "Apple" : "Google Play"}</td><td className="p-2">{row.environment === "PRODUCTION" ? "Réel" : "Test"}</td>
+        <td className="p-2">{row.active}</td><td className="p-2">{row.cancelling}</td><td className="p-2">{row.last_verified_at ? new Date(row.last_verified_at).toLocaleString("fr-FR") : "Non vérifié"}</td>
+      </tr>)}</tbody>
+    </table></div>}
+  </Card>
 }
 
 function Overview({ data, reviewsCount }: { data: AdminPremiumControlOverview; reviewsCount: number }) {
