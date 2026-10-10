@@ -1,15 +1,22 @@
 "use client"
 
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { useTheme } from "next-themes"
+import { useEffect, useRef, useState } from "react"
+import type { User } from "@supabase/supabase-js"
+import { Bell, ChevronDown, Crown, LogOut, Menu, Moon, Settings, Sun, User as UserIcon } from "lucide-react"
+import toast from "react-hot-toast"
 import { createClient } from "@/lib/supabase/client"
 import { cn } from "@/lib/utils"
-import type { User } from "@supabase/supabase-js"
 import type { CpTier } from "@/types"
-import { Sun, Moon, Bell, Crown, LogOut, Settings, User as UserIcon, Menu } from "lucide-react"
-import { useState } from "react"
-import toast from "react-hot-toast"
+import { usePathway } from "@/features/pathway/pathway-provider"
+
+/**
+ * En-tête de l'espace connecté — version 5 (octobre 2026).
+ * Titre de la page en cours, thème, notifications, Premium et menu du compte.
+ * Un liseré tricolore file sous l'en-tête à chaque changement de page.
+ */
 
 interface HeaderProps {
   user: User
@@ -17,132 +24,169 @@ interface HeaderProps {
   onOpenMenu?: () => void
 }
 
+const TITLES: [string, string][] = [
+  ["/dashboard", "Accueil"],
+  ["/parcours/categorie", "Catégorie"],
+  ["/parcours/module", "Module"],
+  ["/progression", "Progression"],
+  ["/historique", "Historique"],
+  ["/favoris", "Favoris"],
+  ["/forum", "Forum"],
+  ["/notifications", "Notifications"],
+  ["/profil", "Mon profil"],
+  ["/parametres", "Paramètres"],
+  ["/abonnement", "Abonnement"],
+  ["/choisir-parcours", "Mon parcours"],
+  ["/culture-generale", "Culture générale"],
+  ["/psychotechniques", "Psychotechniques"],
+  ["/langues", "Langues"],
+  ["/concours-blanc", "Concours blanc"],
+  ["/memos", "Mémos"],
+  ["/notes", "Notes"],
+  ["/gpx/cas-pratiques", "Cas pratiques"],
+  ["/gpx/quiz", "Quiz"],
+  ["/pa/quiz", "Quiz"],
+  ["/gpx/scolarite", "Ma scolarité"],
+  ["/pa/scolarite", "Ma scolarité"],
+]
+
+function titleFor(pathname: string) {
+  const p = pathname.replace(/\/$/, "")
+  return [...TITLES].sort((a, b) => b[0].length - a[0].length).find(([href]) => p === href || p.startsWith(`${href}/`))?.[1] ?? "Mon espace"
+}
+
 export function Header({ user, tier, onOpenMenu }: HeaderProps) {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
   const router = useRouter()
+  const pathname = usePathname()
+  const { pathway, profile } = usePathway()
   const [menuOpen, setMenuOpen] = useState(false)
-  const supabase = createClient()
+  const menuRef = useRef<HTMLDivElement | null>(null)
+  const name = profile?.first_name?.trim() || profile?.username || user.email?.split("@")[0] || "Mon compte"
+
+  useEffect(() => {
+    if (!menuOpen) return
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMenuOpen(false)
+    const onClick = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) setMenuOpen(false)
+    }
+    window.addEventListener("keydown", onKey)
+    window.addEventListener("mousedown", onClick)
+    return () => {
+      window.removeEventListener("keydown", onKey)
+      window.removeEventListener("mousedown", onClick)
+    }
+  }, [menuOpen])
 
   async function handleLogout() {
-    await supabase.auth.signOut()
+    await createClient().auth.signOut()
     toast.success("Déconnexion réussie")
     router.push("/login")
     router.refresh()
   }
 
+  const iconBtn =
+    "grid h-10 w-10 place-items-center rounded-xl text-[var(--on-surface-muted)] transition-colors hover:bg-[var(--surface-container-hi)] hover:text-[var(--on-surface)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4D82FF]"
+
   return (
-    <header className="h-[var(--header-h,64px)] border-b border-[var(--outline)] bg-[var(--surface)] flex items-center px-4 sm:px-6 gap-4 shrink-0 sticky top-0 z-30">
-      {/* Mobile menu button */}
-      <button
-        type="button"
-        onClick={onOpenMenu}
-        aria-label="Ouvrir le menu principal"
-        className="flex h-11 w-11 items-center justify-center rounded-xl text-[var(--on-surface-muted)] transition-colors hover:bg-[var(--surface-container)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand lg:hidden"
-      >
+    <header className="cq-app-topbar relative sticky top-0 z-30 flex h-16 shrink-0 items-center gap-3 px-4 sm:px-6 lg:px-8">
+      <button type="button" onClick={onOpenMenu} aria-label="Ouvrir le menu principal" className={cn(iconBtn, "lg:hidden")}>
         <Menu size={20} aria-hidden="true" />
       </button>
 
-      {/* Breadcrumb / titre — injecté par les sous-layouts */}
-      <div className="flex-1" />
+      <Link href="/dashboard" aria-label="COP’IQ, accueil" className="shrink-0 rounded-xl">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/brand/copiq-logo.png" alt="" width={34} height={34} className="h-[34px] w-[34px] object-contain" />
+      </Link>
+      <span className="hidden h-6 w-px bg-[var(--outline)] sm:block" aria-hidden="true" />
+      <div className="flex min-w-0 items-center gap-2 text-[14px]">
+        {pathway && <span className="hidden truncate text-[var(--on-surface-faint)] sm:inline">{pathway.shortLabel}</span>}
+        {pathway && <span className="hidden text-[var(--on-surface-faint)] sm:inline" aria-hidden="true">/</span>}
+        <span className="truncate font-semibold text-[var(--on-surface)]">{titleFor(pathname)}</span>
+      </div>
 
-      {/* Actions */}
-      <div className="flex items-center gap-2">
-        {/* Dark mode */}
+      <div className="ml-auto flex items-center gap-1.5">
         <button
           type="button"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          aria-label={theme === "dark" ? "Activer le mode clair" : "Activer le mode sombre"}
-          className="flex h-11 w-11 items-center justify-center rounded-xl text-[var(--on-surface-faint)] transition-all hover:bg-[var(--surface-container)] hover:text-[var(--on-surface-muted)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-          title={theme === "dark" ? "Mode clair" : "Mode sombre"}
+          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+          aria-label={resolvedTheme === "dark" ? "Activer le mode clair" : "Activer le mode sombre"}
+          className={iconBtn}
         >
-          {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          {resolvedTheme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
         </button>
-
-        {/* Notifications */}
-        <Link
-          href="/notifications"
-          aria-label="Voir les notifications"
-          className="relative flex h-11 w-11 items-center justify-center rounded-xl text-[var(--on-surface-faint)] transition-all hover:bg-[var(--surface-container)] hover:text-[var(--on-surface-muted)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand"
-        >
+        <Link href="/notifications" aria-label="Voir les notifications" className={iconBtn}>
           <Bell size={18} />
         </Link>
-
-        {/* Premium CTA (si gratuit) */}
         {tier === "free" && (
           <Link
             href="/abonnement"
-            className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-brand to-brand-mid text-white text-xs font-semibold shadow-brand hover:shadow-brand-lg transition-shadow"
+            className="cq-btn-ink hidden h-10 items-center gap-1.5 rounded-full px-4 text-[13px] font-bold sm:inline-flex"
           >
-            <Crown size={12} />
+            <Crown size={14} className="text-[#FBBF24]" aria-hidden="true" />
             Premium
           </Link>
         )}
 
-        {/* User avatar / menu */}
-        <div className="relative">
+        <div ref={menuRef} className="relative">
           <button
             type="button"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen((v) => !v)}
             aria-expanded={menuOpen}
+            aria-haspopup="menu"
             aria-label="Ouvrir le menu du compte"
             className={cn(
-              "flex items-center gap-2 pl-2 pr-3 py-1.5 rounded-xl",
-              "hover:bg-[var(--surface-container)] transition-colors text-sm",
-              menuOpen && "bg-[var(--surface-container)]"
+              "flex h-10 items-center gap-2 rounded-xl pl-1.5 pr-2.5 text-[13.5px] font-medium text-[var(--on-surface)] transition-colors hover:bg-[var(--surface-container-hi)]",
+              menuOpen && "bg-[var(--surface-container-hi)]",
             )}
           >
-            <div className="w-7 h-7 rounded-full bg-gradient-to-br from-brand/20 to-brand-mid/20 border border-brand/20 flex items-center justify-center">
-              <UserIcon size={12} className="text-brand" />
-            </div>
-            <span className="hidden sm:block text-xs font-medium text-[var(--on-surface)] max-w-[120px] truncate">
-              {user.email?.split("@")[0]}
+            <span className="grid h-7 w-7 place-items-center rounded-full bg-[var(--cq-ink)] text-[11px] font-bold text-[var(--cq-on-ink)]">
+              {name.slice(0, 1).toUpperCase()}
             </span>
+            <span className="hidden max-w-[9rem] truncate sm:block">{name}</span>
+            <ChevronDown size={14} className={cn("text-[var(--on-surface-faint)] transition-transform duration-300", menuOpen && "rotate-180")} aria-hidden="true" />
           </button>
 
-          {/* Dropdown */}
           {menuOpen && (
-            <>
-              <div className="fixed inset-0 z-40" onClick={() => setMenuOpen(false)} />
-              <div className="absolute right-0 top-full mt-2 w-52 rounded-xl border border-[var(--outline)] bg-[var(--surface)] shadow-card-hover z-50 overflow-hidden animate-scale-in">
-                <div className="px-4 py-3 border-b border-[var(--outline)]">
-                  <div className="text-xs font-medium text-[var(--on-surface)] truncate">{user.email}</div>
-                  <div className="text-[10px] text-[var(--on-surface-faint)] mt-0.5">
-                    {tier === "free" ? "Compte gratuit" : tier === "premium_trial" ? "Essai Premium" : "Premium"}
-                  </div>
-                </div>
-
-                <div className="py-1">
-                  {[
-                    { label: "Mon profil", href: "/profil", icon: <UserIcon size={14} /> },
-                    { label: "Paramètres", href: "/parametres", icon: <Settings size={14} /> },
-                    { label: "Abonnement", href: "/abonnement", icon: <Crown size={14} /> },
-                  ].map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setMenuOpen(false)}
-                      className="flex items-center gap-3 px-4 py-2.5 text-sm text-[var(--on-surface-muted)] hover:text-[var(--on-surface)] hover:bg-[var(--surface-container)] transition-colors"
-                    >
-                      <span className="text-[var(--on-surface-faint)]">{item.icon}</span>
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-
-                <div className="border-t border-[var(--outline)] py-1">
-                  <button
-                    onClick={handleLogout}
-                    className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-danger hover:bg-danger/5 transition-colors"
-                  >
-                    <LogOut size={14} />
-                    Se déconnecter
-                  </button>
-                </div>
+            <div role="menu" className="cq-pop-in absolute right-0 top-[calc(100%+8px)] z-50 w-60 overflow-hidden rounded-2xl border border-[var(--outline)] bg-[var(--surface)] shadow-[0_24px_60px_-28px_rgba(0,11,54,0.55)]">
+              <div className="border-b border-[var(--outline)] px-4 py-3">
+                <p className="truncate text-[13.5px] font-semibold text-[var(--on-surface)]">{user.email}</p>
+                <p className="mt-0.5 text-[12px] text-[var(--on-surface-faint)]">{tier === "free" ? "Compte gratuit" : tier === "premium_trial" ? "Essai Premium" : "Premium"}</p>
               </div>
-            </>
+              <div className="p-1.5">
+                {[
+                  { label: "Mon profil", href: "/profil", icon: UserIcon },
+                  { label: "Paramètres", href: "/parametres", icon: Settings },
+                  { label: "Abonnement", href: "/abonnement", icon: Crown },
+                ].map(({ label, href, icon: Icon }) => (
+                  <Link
+                    key={href}
+                    href={href}
+                    role="menuitem"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-[14px] text-[var(--on-surface-muted)] transition-colors hover:bg-[var(--surface-container)] hover:text-[var(--on-surface)]"
+                  >
+                    <Icon size={15} className="text-[var(--on-surface-faint)]" aria-hidden="true" />
+                    {label}
+                  </Link>
+                ))}
+              </div>
+              <div className="border-t border-[var(--outline)] p-1.5">
+                <button
+                  type="button"
+                  role="menuitem"
+                  onClick={handleLogout}
+                  className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-[14px] text-[#DC2626] transition-colors hover:bg-[#DC2626]/8 dark:text-[#F87171]"
+                >
+                  <LogOut size={15} aria-hidden="true" />
+                  Se déconnecter
+                </button>
+              </div>
+            </div>
           )}
         </div>
       </div>
+
+      <span key={pathname} className="admin-route-bar cq-tricolore pointer-events-none absolute inset-x-0 bottom-[-1px] h-[2px]" aria-hidden="true" />
     </header>
   )
 }

@@ -300,11 +300,13 @@ export interface PricingPlan {
 }
 
 /**
- * Ces montants ne sont PAS décidés ici : ils reflètent les prix Stripe déjà en
- * production (`src/app/(dashboard)/abonnement/page.tsx`, et le repli
- * `unit_amount === 8699` de `cas_pratique_create_checkout`). Ils sont
- * identiques aux conditions publiées dans `lib/legal/legal_content.dart`.
- * Ne jamais les modifier sans décision du propriétaire.
+ * Tarifs alignés sur l'application mobile (décision du propriétaire,
+ * 8 octobre 2026) : Gratuit, Mensuel 8,99 €, Annuel 79,99 €. Plus de formule
+ * hebdomadaire. Mêmes montants que les produits App Store
+ * `fr.copiq.premium.monthly` / `fr.copiq.premium.yearly`.
+ *
+ * ⚠ Le Price ID Stripe annuel doit être passé à 79,99 € avant la mise en
+ * ligne (voir `progression/STRIPE_PAIEMENTS_A_CONFIGURER.md`).
  */
 export const PRICING: readonly PricingPlan[] = [
   {
@@ -312,11 +314,11 @@ export const PRICING: readonly PricingPlan[] = [
     name: "Gratuit",
     price: "0 €",
     period: "",
-    pitch: "Pour découvrir la plateforme et commencer à réviser.",
+    pitch: "Pour découvrir COP'IQ et commencer à réviser.",
     features: [
       "Quiz et QCM d'entraînement",
       "10 cas pratiques par semaine",
-      "Forum du parcours",
+      "Forum de ton parcours",
       "Progression et historique",
       "Compte synchronisé mobile et web",
     ],
@@ -324,49 +326,36 @@ export const PRICING: readonly PricingPlan[] = [
     note: "Publicités affichées dans l'application mobile.",
   },
   {
-    id: "week",
-    name: "Hebdomadaire",
-    price: "4,99 €",
-    period: "/ semaine",
-    pitch: "Pour les dernières semaines avant l'épreuve.",
-    features: [
-      "Accès Premium complet",
-      "Sans engagement",
-      "Idéal en fin de préparation",
-    ],
-    cta: "Choisir l'hebdomadaire",
-  },
-  {
     id: "month",
     name: "Mensuel",
     price: "8,99 €",
     period: "/ mois",
-    pitch: "La formule de préparation continue.",
+    pitch: "Pour une préparation continue, sans engagement.",
     features: [
-      "Tous les modules des 4 parcours",
+      "Tous les modules de ton parcours",
       "Cas pratiques illimités et corrigés",
       "Concours blancs complets",
       "Psychotechniques, langues, culture générale",
       "Statistiques détaillées",
       "Sans publicité",
     ],
-    cta: "Commencer l'essai de 7 jours",
+    cta: "Passer Premium",
     highlighted: true,
-    note: "7 jours d'essai, puis 8,99 €/mois. Résiliable à tout moment.",
+    note: "Renouvelé chaque mois. Résiliable à tout moment.",
   },
   {
     id: "year",
     name: "Annuel",
-    price: "86,99 €",
+    price: "79,99 €",
     period: "/ an",
-    pitch: "Le coût le plus bas sur une année de préparation.",
+    pitch: "Le prix le plus bas sur une année de préparation.",
     features: [
-      "Tout le mensuel, sur douze mois",
-      "Soit 7,25 € par mois",
-      "Couvre la préparation et l'entrée en école",
+      "Tout le Premium, pendant douze mois",
+      "Soit 6,67 € par mois",
+      "Couvre le concours et l'entrée en école",
     ],
-    cta: "Commencer l'essai de 7 jours",
-    note: "7 jours d'essai, puis 86,99 €/an. Résiliable à tout moment.",
+    cta: "Passer Premium à l'année",
+    note: "Renouvelé chaque année. Résiliable à tout moment.",
   },
 ] as const
 

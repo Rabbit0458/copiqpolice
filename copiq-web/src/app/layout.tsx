@@ -7,6 +7,9 @@ import "@/styles/globals.css"
 const SITE_URL = "https://copiq.fr"
 const APP_ICON_URL =
   "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/app_icon.png"
+/** Logo officiel sans fond, copie locale : icône de l'onglet du navigateur. */
+const LOGO_PNG_URL = "/brand/favicon-64.png"
+const LOGO_PNG_LARGE = "/brand/copiq-logo.png"
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
@@ -37,8 +40,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
   icons: {
-    icon: [{ url: APP_ICON_URL, type: "image/png", sizes: "1024x1024" }],
-    shortcut: APP_ICON_URL,
+    // Onglet du navigateur : logo transparent. Écran d'accueil iPhone : icône
+    // à fond plein (iOS remplit les zones transparentes en noir).
+    icon: [
+      // Nouveaux noms de fichier : Safari garde longtemps l’ancienne icône en cache.
+      { url: "/favicon-copiq.ico", sizes: "any" },
+      { url: "/brand/copiq-icon-64.png", type: "image/png", sizes: "64x64" },
+      { url: LOGO_PNG_URL, type: "image/png", sizes: "64x64" },
+      { url: LOGO_PNG_LARGE, type: "image/png", sizes: "192x192" },
+    ],
+    shortcut: "/favicon-copiq.ico",
     apple: [{ url: APP_ICON_URL, type: "image/png", sizes: "1024x1024" }],
   },
   openGraph: {

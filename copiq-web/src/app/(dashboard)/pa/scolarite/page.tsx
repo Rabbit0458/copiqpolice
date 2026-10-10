@@ -1,4 +1,5 @@
 "use client"
+import { LegacyRedirect } from "@/features/parcours/legacy-redirect"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
@@ -6,7 +7,7 @@ import { PA_COURSE_MODULES } from "@/data/modules"
 import Link from "next/link"
 import { BookOpen, Clock, Star, ChevronRight } from "lucide-react"
 
-export default function PAScolaritePage() {
+function PAScolaritePage() {
   const router = useRouter()
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
@@ -46,4 +47,11 @@ export default function PAScolaritePage() {
       </div>
     </div>
   )
+}
+
+
+/** Ancienne page de démonstration conservée ; le contenu réel est sur l’accueil du parcours. */
+export default function RedirectPage() {
+  void PAScolaritePage
+  return <LegacyRedirect />
 }

@@ -1,4 +1,5 @@
 "use client"
+import { LegacyRedirect } from "@/features/parcours/legacy-redirect"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
@@ -6,7 +7,7 @@ import { GPX_COURSE_MODULES } from "@/data/modules"
 import Link from "next/link"
 import { Clock, Star, ChevronRight } from "lucide-react"
 
-export default function GPXScolaritePage() {
+function GPXScolaritePage() {
   const router = useRouter()
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
@@ -46,4 +47,11 @@ export default function GPXScolaritePage() {
       </div>
     </div>
   )
+}
+
+
+/** Ancienne page de démonstration conservée ; le contenu réel est sur l’accueil du parcours. */
+export default function RedirectPage() {
+  void GPXScolaritePage
+  return <LegacyRedirect />
 }

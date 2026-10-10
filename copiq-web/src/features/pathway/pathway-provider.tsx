@@ -3,6 +3,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react"
 import type { User } from "@supabase/supabase-js"
 import { createClient } from "@/lib/supabase/client"
+import { completeProfileFromSignup } from "@/features/auth/profile-sync"
 import {
   getPathway,
   getPathwayFromProfile,
@@ -48,6 +49,8 @@ export function PathwayProvider({ user, children }: { user: User; children: Reac
     setLoading(true)
     setError(null)
     try {
+      // Compte créé sur copiq.fr : complète le profil s'il reste un vide.
+      await completeProfileFromSignup(supabase, user).catch(() => false)
       const result = await supabase
         .from("user_profiles")
         .select(profileColumns)
@@ -61,6 +64,8 @@ export function PathwayProvider({ user, children }: { user: User; children: Reac
     } finally {
       setLoading(false)
     }
+    // Rechargement seulement si l'utilisateur change (pas à chaque jeton rafraîchi).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [supabase, user.id])
 
   useEffect(() => {

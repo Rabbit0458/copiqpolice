@@ -21,7 +21,7 @@ export function PricingSection({ compact = false }: { compact?: boolean }) {
         align="center"
         eyebrow="Tarifs"
         title="Un abonnement, les quatre parcours."
-        lead="Aucun module n’est vendu séparément. Sept jours d’essai sur le mensuel et l’annuel, résiliation à tout moment."
+        lead="Aucun module n’est vendu séparément. Premium au mois ou à l’année, résiliation à tout moment."
       />
 
       <div

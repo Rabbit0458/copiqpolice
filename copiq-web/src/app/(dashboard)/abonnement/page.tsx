@@ -6,9 +6,8 @@ import { Crown, CheckCircle, Zap } from "lucide-react"
 import toast from "react-hot-toast"
 
 const PLANS = [
-  { id: "week", label: "Semaine", price: "4,99 €", suffix: "/ semaine", recommended: false },
   { id: "month", label: "Mensuel", price: "8,99 €", suffix: "/ mois", recommended: true },
-  { id: "year", label: "Annuel", price: "86,99 €", suffix: "/ an", recommended: false },
+  { id: "year", label: "Annuel", price: "79,99 €", suffix: "/ an", recommended: false },
 ] as const
 
 export default function AbonnementPage() {

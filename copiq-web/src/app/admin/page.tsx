@@ -21,6 +21,7 @@ import { adminAuth, casPratiqueApi, supportApi } from "@/lib/admin/api"
 import { DecisionCenter } from "@/components/admin/decision-center"
 import { createClient } from "@/lib/supabase/client"
 import {
+  AnimatedNumber,
   Card,
   ErrorBox,
   Loading,
@@ -268,7 +269,7 @@ function GlobalMetric({
         <span className={`grid h-9 w-9 place-items-center rounded-xl ${tones[tone]}`}><Icon size={17} /></span>
         {href && <ArrowUpRight size={15} className="text-[var(--on-surface-faint)]" />}
       </div>
-      <p className="mt-4 text-2xl font-semibold tabular-nums tracking-tight">{value.toLocaleString("fr-FR")}</p>
+      <p className="mt-4 text-2xl font-semibold tabular-nums tracking-tight"><AnimatedNumber value={value} /></p>
       <p className="mt-0.5 text-xs font-semibold">{label}</p>
       <p className="mt-1 text-[11px] text-[var(--on-surface-muted)]">{hint}</p>
     </Card>

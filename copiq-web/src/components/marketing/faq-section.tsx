@@ -18,32 +18,28 @@ export const HOME_FAQ = [
     a: "Non. COP’IQ est une plateforme de préparation indépendante. Elle n’est ni éditée, ni agréée, ni affiliée par la Police nationale ou le ministère de l’Intérieur. Les contenus sont pédagogiques et n’ont aucune valeur réglementaire.",
   },
   {
-    q: "Le compte web et le compte mobile sont-ils le même compte ?",
-    a: "Oui. Le site et l’application partagent le même projet Supabase : une seule identité, une seule progression, un seul abonnement. Une question répondue sur mobile apparaît dans l’historique web.",
+    q: "Mon compte du site et celui de l’application, c’est le même ?",
+    a: "Oui. Le site et l’application utilisent le même compte : une seule connexion, une seule progression, un seul abonnement. Une question répondue sur ton téléphone apparaît dans ton historique sur le web.",
   },
   {
-    q: "Puis-je préparer le concours et la scolarité ?",
-    a: "Oui. Quatre parcours existent : Gardien de la paix concours, Gardien de la paix école, Policier adjoint concours, Policier adjoint école. Vous choisissez votre parcours à l’inscription et vous pouvez en changer depuis vos paramètres.",
+    q: "Je peux préparer le concours, puis l’école ?",
+    a: "Oui. Il y a quatre parcours : Gardien de la paix concours, Gardien de la paix école, Policier adjoint concours, Policier adjoint école. Tu choisis ton parcours à l’inscription et tu peux en changer à tout moment dans tes paramètres.",
   },
   {
-    q: "Que contient la version gratuite ?",
-    a: "Les quiz et QCM d’entraînement, dix cas pratiques par semaine, le forum de votre parcours, la progression et l’historique. L’application mobile affiche de la publicité aux comptes gratuits ; Premium la supprime.",
+    q: "Qu’est-ce qui est gratuit ?",
+    a: "Les quiz et QCM d’entraînement, dix cas pratiques par semaine, le forum de ton parcours, ta progression et ton historique. L’application mobile affiche de la publicité aux comptes gratuits ; Premium la supprime.",
   },
   {
-    q: "Y a-t-il un essai gratuit ?",
-    a: "Sept jours sur les formules mensuelle et annuelle. L’essai est géré par Stripe pour un abonnement souscrit sur le web, et par l’App Store ou Google Play pour un abonnement souscrit dans l’application.",
+    q: "Le compte gratuit est-il limité dans le temps ?",
+    a: "Non. Le compte gratuit reste gratuit, sans date de fin. Premium se prend au mois (8,99 €) ou à l’année (79,99 €), sans engagement, quand tu en as besoin.",
   },
   {
-    q: "Comment résilier ?",
-    a: "Abonnement souscrit sur le web : depuis la page Abonnement, le portail de facturation Stripe s’ouvre et la résiliation prend deux clics. Abonnement souscrit sur mobile : depuis les abonnements de votre compte App Store ou Google Play. Dans les deux cas, l’accès est conservé jusqu’à la fin de la période déjà payée.",
+    q: "Comment résilier mon abonnement ?",
+    a: "Abonnement pris sur le web : depuis la page Abonnement de ton espace, en deux clics. Abonnement pris sur mobile : depuis les abonnements de ton compte App Store ou Google Play. Dans les deux cas, tu gardes l’accès jusqu’à la fin de la période déjà payée.",
   },
   {
     q: "Comment les cas pratiques sont-ils corrigés ?",
-    a: "La réponse rédigée est analysée côté serveur : normalisation du texte, lemmatisation, puis appariement avec les éléments attendus du corrigé. Vous recevez la qualification retenue, le décompte des éléments acquis et la liste des oublis.",
-  },
-  {
-    q: "La version web remplace-t-elle l’application ?",
-    a: "Non, elles se complètent. Le web donne plus de place aux cours, aux statistiques et à la rédaction des cas pratiques ; le mobile est plus pratique pour réviser par séries courtes. Les deux lisent les mêmes données.",
+    a: "Ta réponse rédigée est comparée aux éléments attendus du corrigé. Tu reçois la qualification retenue, le nombre d’éléments trouvés et la liste de ce qui manque.",
   },
 ] as const
 

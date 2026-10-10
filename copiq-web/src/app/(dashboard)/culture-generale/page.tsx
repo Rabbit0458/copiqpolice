@@ -1,4 +1,5 @@
 "use client"
+import { LegacyRedirect } from "@/features/parcours/legacy-redirect"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
@@ -13,7 +14,7 @@ const CULTURE_TOPICS = [
   { id: "droit", label: "Droit fondamental", icon: "⚖️", description: "Droits et libertés fondamentaux" },
 ]
 
-export default function CultureGeneralePage() {
+function CultureGeneralePage() {
   const router = useRouter()
   const [user, setUser] = useState<any>(null)
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null)
@@ -56,4 +57,11 @@ export default function CultureGeneralePage() {
       </div>
     </div>
   )
+}
+
+
+/** Ancienne page de démonstration conservée ; le contenu réel est sur l’accueil du parcours. */
+export default function RedirectPage() {
+  void CultureGeneralePage
+  return <LegacyRedirect />
 }

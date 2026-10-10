@@ -1,14 +1,14 @@
 import type { Metadata } from "next"
-import { LandingV4 } from "@/features/landing/landing-v4"
+import { LandingV5 } from "@/features/landing/landing-v5"
 import { HOME_FAQ, faqJsonLd } from "@/components/marketing/faq-section"
 import { PRICING, INDEPENDENCE_NOTICE } from "@/data/marketing"
 
 /**
  * Accueil.
  *
- * Rollback de la refonte : remplacer `LandingV4` par
- * `import { LandingPage } from "@/features/landing/landing-page"`.
- * L'ancienne vitrine n'a pas été supprimée.
+ * Retour arrière : remplacer `LandingV5` par
+ * `import { LandingV4 } from "@/features/landing/landing-v4"`.
+ * Les anciennes vitrines (V4 et landing-page) n'ont pas été supprimées.
  */
 
 const SITE_URL = "https://copiq.fr"
@@ -16,7 +16,7 @@ const SITE_URL = "https://copiq.fr"
 export const metadata: Metadata = {
   title: "COP'IQ — Préparation aux concours de la Police nationale",
   description:
-    "Préparez le concours de Gardien de la paix et de Policier adjoint : quiz, cours, cas pratiques corrigés, psychotechniques et suivi de progression. Un seul compte, sur mobile et sur le web.",
+    "Prépare le concours de Gardien de la paix ou de Policier adjoint, puis l'école : quiz corrigés, cours, cas pratiques, psychotechniques et concours blancs. Un seul compte, sur le web et sur mobile.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "COP'IQ — Préparation aux concours de la Police nationale",
@@ -68,7 +68,7 @@ export default function HomePage() {
           ]),
         }}
       />
-      <LandingV4 />
+      <LandingV5 />
     </>
   )
 }

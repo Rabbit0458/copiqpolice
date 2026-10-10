@@ -1,20 +1,43 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
-import { Check, GraduationCap, Shield, Sparkles } from "lucide-react"
+import Link from "next/link"
+import { Check, Crown, GraduationCap, Lock, Shield, Sparkles } from "lucide-react"
+import { useEntitlement } from "@/features/access/entitlement"
+import { flatLeaves, imgUrl, programsFor } from "@/features/parcours/tree"
 import toast from "react-hot-toast"
-import { PATHWAY_LIST, type PathwayDefinition, type PathwayId } from "@/config/pathways"
+import { PATHWAY_LIST, isPathwayId, type PathwayDefinition, type PathwayId } from "@/config/pathways"
+import { createClient } from "@/lib/supabase/client"
 import { usePathway } from "@/features/pathway/pathway-provider"
 import { cn } from "@/lib/utils"
 
 export default function ChoosePathwayPage() {
   const router = useRouter()
   const { pathway, loading, error, refresh, changePathway } = usePathway()
+  const ent = useEntitlement()
+  // Comme l'app : la scolarité (PA / GPX) est réservée aux abonnés Premium.
+  const isLocked = (item: PathwayDefinition) => item.mode === "school" && ent.loaded && !ent.premium
   const [selected, setSelected] = useState<PathwayId | null>(pathway?.id ?? null)
   const [saving, setSaving] = useState(false)
 
+  // Parcours choisi à l'inscription web (/signup?parcours=…), mémorisé dans
+  // les métadonnées du compte : on le présélectionne tant qu'aucun parcours
+  // n'est enregistré. L'utilisateur confirme toujours lui-même.
+  useEffect(() => {
+    if (pathway || selected) return
+    let cancelled = false
+    void createClient().auth.getUser().then(({ data }) => {
+      const wanted = data.user?.user_metadata?.parcours
+      if (!cancelled && isPathwayId(wanted) && !wanted.endsWith("school")) setSelected(wanted)
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [pathway, selected])
+
   async function confirmChoice() {
+    if (selected && isLocked(PATHWAY_LIST.find((p) => p.id === selected)!)) return
     if (!selected || selected === pathway?.id) {
       if (pathway) router.replace(pathway.homeHref)
       return
@@ -44,7 +67,7 @@ export default function ChoosePathwayPage() {
   }
 
   return (
-    <div className="mx-auto max-w-5xl pb-8 animate-fade-in">
+    <div className="mx-auto max-w-5xl pb-28 animate-fade-in">
       <header className="mb-8 max-w-2xl">
         <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-brand/10 text-brand">
           <Sparkles size={20} aria-hidden="true" />
@@ -65,7 +88,7 @@ export default function ChoosePathwayPage() {
         <legend className="sr-only">Choisissez un parcours</legend>
         <div className="grid gap-4 md:grid-cols-2">
           {PATHWAY_LIST.map((item) => (
-            <PathwayCard key={item.id} pathway={item} selected={selected === item.id} onSelect={() => setSelected(item.id)} />
+            <PathwayCard key={item.id} pathway={item} locked={isLocked(item)} selected={selected === item.id} onSelect={() => !isLocked(item) && setSelected(item.id)} />
           ))}
         </div>
       </fieldset>
@@ -81,23 +104,60 @@ export default function ChoosePathwayPage() {
   )
 }
 
-function PathwayCard({ pathway, selected, onSelect }: { pathway: PathwayDefinition; selected: boolean; onSelect: () => void }) {
+function PathwayCard({ pathway, selected, locked, onSelect }: { pathway: PathwayDefinition; selected: boolean; locked: boolean; onSelect: () => void }) {
   const Icon = pathway.mode === "school" ? GraduationCap : Shield
+  const programs = programsFor(pathway.id)
+  // Visuels distincts pour les 4 parcours (images de l'app).
+  const image = imgUrl(
+    pathway.id === "pa_exam"
+      ? programs[0]?.cards[1]?.image
+      : pathway.id === "gpx_exam"
+        ? programs[0]?.cards[1]?.image
+        : pathway.id === "gpx_school"
+          ? (programs[3]?.image ?? programs[0]?.image)
+          : programs[0]?.image,
+  )
+  const modules = programs.reduce((s, p) => s + p.cards.reduce((a, c) => a + flatLeaves(c.leaves).length, 0), 0)
   return (
-    <label className={cn("group relative cursor-pointer overflow-hidden rounded-3xl border bg-[var(--surface)] p-5 transition-all duration-200 hover:-translate-y-1 hover:shadow-card-hover", selected ? "shadow-card-hover" : "border-[var(--outline)]")} style={selected ? { borderColor: pathway.color, boxShadow: `0 14px 40px ${pathway.color}18` } : undefined}>
-      <input type="radio" name="pathway" value={pathway.id} checked={selected} onChange={onSelect} className="sr-only" />
-      <span className="absolute inset-x-0 top-0 h-1" style={{ backgroundColor: pathway.color }} aria-hidden="true" />
-      <span className="mb-8 flex items-start justify-between gap-4">
-        <span className="flex h-12 w-12 items-center justify-center rounded-2xl" style={{ color: pathway.color, backgroundColor: pathway.softColor }}>
-          <Icon size={22} aria-hidden="true" />
+    <label
+      className={cn(
+        "group relative block overflow-hidden rounded-3xl border bg-[var(--surface)] transition-all duration-300",
+        locked ? "cursor-not-allowed border-[var(--outline)]" : "cursor-pointer hover:-translate-y-1 hover:shadow-card-hover",
+        !locked && !selected && "border-[var(--outline)]",
+      )}
+      style={selected ? { borderColor: pathway.color, boxShadow: `0 18px 44px ${pathway.color}26` } : undefined}
+    >
+      <input type="radio" name="pathway" value={pathway.id} checked={selected} disabled={locked} onChange={onSelect} className="sr-only" />
+      <span className="relative block h-36 overflow-hidden bg-[#0B1220]">
+        {image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={image} alt="" className={cn("absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105", locked && "grayscale-[.6] opacity-70")} />
+        )}
+        <span className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.6))]" aria-hidden="true" />
+        <span className="absolute left-4 top-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-white/95 shadow-lg" style={{ color: pathway.color }}>
+          <Icon size={21} aria-hidden="true" />
         </span>
-        <span className={cn("flex h-7 w-7 items-center justify-center rounded-full border transition-colors", selected ? "text-white" : "border-[var(--outline)] text-transparent")} style={selected ? { borderColor: pathway.color, backgroundColor: pathway.color } : undefined}>
-          <Check size={15} aria-hidden="true" />
-        </span>
+        {locked ? (
+          <span className="absolute right-4 top-4 inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-black/45 px-3 py-1 text-[12px] font-bold text-white backdrop-blur">
+            <Lock size={13} aria-hidden="true" /> Premium
+          </span>
+        ) : (
+          <span className={cn("absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full border-2 transition-colors", selected ? "text-white" : "border-white/70 text-transparent")} style={selected ? { borderColor: pathway.color, backgroundColor: pathway.color } : undefined}>
+            <Check size={16} strokeWidth={3} aria-hidden="true" />
+          </span>
+        )}
+        <span className="absolute bottom-3 left-4 text-[12px] font-bold uppercase tracking-[0.14em] text-white/85">{modules} modules</span>
       </span>
-      <span className="block text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: pathway.color }}>{pathway.shortLabel}</span>
-      <span className="mt-2 block text-xl font-bold tracking-tight text-[var(--on-surface)]">{pathway.title}</span>
-      <span className="mt-2 block text-sm leading-relaxed text-[var(--on-surface-muted)]">{pathway.description}</span>
+      <span className="block p-5">
+        <span className="block text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: pathway.color }}>{pathway.shortLabel}</span>
+        <span className="mt-2 block text-xl font-bold tracking-tight text-[var(--on-surface)]">{pathway.title}</span>
+        <span className="mt-2 block text-sm leading-relaxed text-[var(--on-surface-muted)]">{pathway.description}</span>
+        {locked && (
+          <Link href="/abonnement" className="mt-4 inline-flex items-center gap-1.5 text-[13.5px] font-extrabold text-[#B45309] hover:underline dark:text-[#FBBF24]">
+            <Crown size={15} aria-hidden="true" /> Réservé aux abonnés Premium · voir les formules
+          </Link>
+        )}
+      </span>
     </label>
   )
 }

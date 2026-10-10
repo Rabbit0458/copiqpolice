@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { cn } from "@/lib/utils"
-import { CopiqWordmark } from "@/components/brand/copiq-logo"
+import { BrandWordmark, Tricolore } from "@/components/home/brand"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { ConsentLink } from "@/components/cookie-banner"
 import { INDEPENDENCE_NOTICE } from "@/data/marketing"
@@ -16,27 +16,45 @@ import { INDEPENDENCE_NOTICE } from "@/data/marketing"
  *    opaque une fois le hero dépassé ;
  *  - `solid` : opaque dès le chargement, pour les pages intérieures.
  *
- * Le logo passe par `CopiqWordmark`, jamais par une approximation CSS.
+ * Version 5 (octobre 2026) : logo officiel en PNG transparent
+ * (`BrandWordmark`), bouton d'inscription rouge COP'IQ, navigation recentrée
+ * sur l'accueil. Les liens du pied de page sont inchangés.
  */
 
 const NAV = [
-  { label: "La plateforme", href: "/#produit" },
   { label: "Parcours", href: "/#parcours" },
-  { label: "Préparation", href: "/preparation/gardien-de-la-paix" },
-  { label: "Ressources", href: "/ressources" },
+  { label: "Fonctionnalités", href: "/#fonctionnalites" },
   { label: "Tarifs", href: "/tarifs" },
+  { label: "Ressources", href: "/ressources" },
 ] as const
 
 export function SiteHeader({ variant = "solid" }: { variant?: "solid" | "overlay" }) {
   const [scrolled, setScrolled] = useState(variant === "solid")
+  const [hidden, setHidden] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
-    if (variant === "solid") return
-    const onScroll = () => setScrolled(window.scrollY > 48)
-    onScroll()
+    let last = window.scrollY
+    let frame = 0
+    const update = () => {
+      frame = 0
+      const y = window.scrollY
+      if (variant === "overlay") setScrolled(y > 48)
+      // Se cache en descendant, revient dès qu'on remonte (seuil anti-tremblement).
+      if (Math.abs(y - last) > 6) {
+        setHidden(y > last && y > 160)
+        last = y
+      }
+    }
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update)
+    }
+    update()
     window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+      cancelAnimationFrame(frame)
+    }
   }, [variant])
 
   /** L'en-tête est sur fond sombre quand il survole le hero. */
@@ -44,13 +62,11 @@ export function SiteHeader({ variant = "solid" }: { variant?: "solid" | "overlay
 
   return (
     <>
-      <a href="#contenu" className="cq-skip">
-        Aller au contenu principal
-      </a>
-
       <header
         className={cn(
-          "sticky top-0 z-50 transition-colors duration-300",
+          "sticky top-0 z-50 transition-[transform,background-color,border-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none",
+          variant === "overlay" && "cq-enter-header",
+          hidden && !menuOpen && "-translate-y-full",
           variant === "overlay"
             ? scrolled
               ? "border-b border-white/10 bg-[#00061F]/92 backdrop-blur-xl"
@@ -59,13 +75,11 @@ export function SiteHeader({ variant = "solid" }: { variant?: "solid" | "overlay
         )}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 xl:px-8">
-          <Link href="/" aria-label="COP'IQ — accueil" className="shrink-0">
-            <CopiqWordmark
-              size={36}
-              priority
-              tone={variant === "overlay" ? "light" : "auto"}
-            />
-          </Link>
+          {/* Lien classique (rechargement complet) : retour net à l'accueil. */}
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/" aria-label="COP'IQ, accueil" className="shrink-0">
+            <BrandWordmark size={40} tone={variant === "overlay" ? "light" : "auto"} />
+          </a>
 
           <nav
             aria-label="Navigation principale"
@@ -76,7 +90,7 @@ export function SiteHeader({ variant = "solid" }: { variant?: "solid" | "overlay
                 key={n.href}
                 href={n.href}
                 className={cn(
-                  "text-[13.5px] font-medium transition-colors duration-200",
+                  "text-[14.5px] font-medium transition-colors duration-200",
                   variant === "overlay"
                     ? "text-white/70 hover:text-white"
                     : "text-[var(--on-surface-muted)] hover:text-[var(--on-surface)]",
@@ -92,19 +106,19 @@ export function SiteHeader({ variant = "solid" }: { variant?: "solid" | "overlay
             <Link
               href="/login"
               className={cn(
-                "cq-tap hidden items-center px-2 text-[13.5px] font-medium transition-colors duration-200 sm:inline-flex",
+                "cq-tap hidden items-center px-2 text-[14.5px] font-medium transition-colors duration-200 sm:inline-flex",
                 variant === "overlay"
                   ? "text-white/70 hover:text-white"
                   : "text-[var(--on-surface-muted)] hover:text-[var(--on-surface)]",
               )}
             >
-              Connexion
+              Se connecter
             </Link>
             <Link
               href="/signup"
-              className="cq-tap inline-flex items-center rounded-xl bg-[#1147D9] px-4 py-2.5 text-[13.5px] font-semibold text-white shadow-[0_6px_24px_-6px_rgba(17,71,217,0.7)] transition-colors duration-200 hover:bg-[#1A55E6]"
+              className="cq-tap cq-btn cq-btn-shine inline-flex items-center rounded-xl bg-[#E0162B] px-4 py-2.5 text-[14.5px] font-semibold text-white hover:bg-[#C8102A]"
             >
-              Commencer
+              Créer un compte
             </Link>
             <button
               type="button"
@@ -181,7 +195,7 @@ export function SiteHeader({ variant = "solid" }: { variant?: "solid" | "overlay
                     variant === "overlay" ? "text-white/80" : "text-[var(--on-surface)]",
                   )}
                 >
-                  Connexion
+                  Se connecter
                 </Link>
               </li>
             </ul>
@@ -240,12 +254,13 @@ const FOOTER_COLUMNS = [
 
 export function SiteFooter() {
   return (
-    <footer className="cq-night border-t border-white/10">
+    <footer className="border-t border-white/10 bg-[#00061F] text-white">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 xl:px-8">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.2fr)]">
           <div>
-            <CopiqWordmark size={40} tone="light" />
-            <p className="mt-4 max-w-xs text-[13px] leading-relaxed text-white/55">
+            <BrandWordmark size={44} tone="light" />
+            <Tricolore className="mt-5 h-1 w-12" />
+            <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-white/60">
               Préparation aux concours, aux sélections et à la scolarité de la
               Police nationale. Mobile et web, un seul compte.
             </p>
@@ -254,13 +269,13 @@ export function SiteFooter() {
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {FOOTER_COLUMNS.map((col) => (
               <div key={col.title}>
-                <h2 className="cq-eyebrow text-white/55">{col.title}</h2>
+                <h2 className="text-[14px] font-semibold text-white">{col.title}</h2>
                 <ul className="mt-3.5 space-y-2.5">
                   {col.links.map(([label, href]) => (
                     <li key={label}>
                       <Link
                         href={href}
-                        className="text-[13px] text-white/65 transition-colors duration-200 hover:text-white"
+                        className="text-[14px] text-white/62 transition-colors duration-200 hover:text-white"
                       >
                         {label}
                       </Link>
@@ -279,7 +294,7 @@ export function SiteFooter() {
 
         <div className="mt-5 flex flex-wrap items-center justify-between gap-x-6 gap-y-3">
           <span className="text-[12px] text-white/55">
-            © {new Date().getFullYear()} COP’IQ — Tous droits réservés
+            © {new Date().getFullYear()} COP’IQ. Tous droits réservés.
           </span>
           {/* Le RGPD impose que le consentement soit retirable aussi
               facilement qu'il a été donné : ce lien rouvre le bandeau. */}

@@ -1,0 +1,7 @@
+:HL["/_next/static/chunks/41ehss0-8fl5i.css","style"]
+:HL["/_next/static/chunks/08fb4oppo9ikb.css","style"]
+:HL["/_next/static/media/instrument_sans_latin_400_normal-s.p.3xgfxban9f743.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/instrument_sans_latin_500_normal-s.p.1eggatm68an7u.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/instrument_sans_latin_600_normal-s.p.3fqsgcs0cl_0g.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/instrument_sans_latin_700_normal-s.p.1u3zznnpe1kz_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"admin","param":null,"prefetchHints":0,"slots":{"children":{"name":"cas-pratiques","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"kqabEEh2tHqmvHd9ikwvd"}

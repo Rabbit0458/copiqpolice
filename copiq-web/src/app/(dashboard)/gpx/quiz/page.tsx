@@ -1,4 +1,5 @@
 "use client"
+import { LegacyRedirect } from "@/features/parcours/legacy-redirect"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
@@ -6,7 +7,7 @@ import { GPX_COURSE_MODULES } from "@/data/modules"
 import Link from "next/link"
 import { HelpCircle, ChevronRight } from "lucide-react"
 
-export default function GPXQuizPage() {
+function GPXQuizPage() {
   const router = useRouter()
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
@@ -42,4 +43,11 @@ export default function GPXQuizPage() {
       </div>
     </div>
   )
+}
+
+
+/** Ancienne page de démonstration conservée ; le contenu réel est sur l’accueil du parcours. */
+export default function RedirectPage() {
+  void GPXQuizPage
+  return <LegacyRedirect />
 }

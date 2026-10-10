@@ -28,12 +28,12 @@ const SITE_URL = "https://copiq.fr"
 export const metadata: Metadata = {
   title: "Tarifs et abonnement",
   description:
-    "Compte gratuit, ou Premium à partir de 4,99 €. Les quatre parcours inclus, 7 jours d'essai sur le mensuel et l'annuel, résiliation à tout moment.",
+    "Compte gratuit, ou Premium à 8,99 € par mois ou 79,99 € par an. Les quatre parcours inclus, résiliation à tout moment.",
   alternates: { canonical: "/tarifs" },
   openGraph: {
     title: "Tarifs COP'IQ",
     description:
-      "Compte gratuit ou Premium à partir de 4,99 €. Les quatre parcours inclus.",
+      "Compte gratuit, ou Premium à 8,99 € par mois ou 79,99 € par an. Les quatre parcours inclus.",
     url: `${SITE_URL}/tarifs`,
     type: "website",
   },
@@ -59,8 +59,8 @@ const COMPARISON: readonly (readonly [string, string, string])[] = [
 
 const TARIFS_FAQ = [
   {
-    q: "Qu’est-ce qui change entre l’hebdomadaire, le mensuel et l’annuel ?",
-    a: "Uniquement la durée et le prix. L’accès Premium est identique dans les trois cas : aucun module n’est réservé à une périodicité. L’essai de 7 jours s’applique au mensuel et à l’annuel.",
+    q: "Qu’est-ce qui change entre le mensuel et l’annuel ?",
+    a: "Uniquement la durée et le prix. L’accès Premium est identique dans les deux cas : aucun module n’est réservé à une périodicité. L’annuel revient à 6,67 € par mois.",
   },
   {
     q: "Si je m’abonne sur mobile, suis-je Premium sur le web ?",
