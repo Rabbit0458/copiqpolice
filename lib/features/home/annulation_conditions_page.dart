@@ -14,7 +14,9 @@ class AnnulationConditionsPage extends StatelessWidget {
         ? Colors.white.withValues(alpha: .10)
         : Colors.black.withValues(alpha: .08);
 
-    final subtle = t.colorScheme.onSurface.withValues(alpha: isDark ? .75 : .70);
+    final subtle = t.colorScheme.onSurface.withValues(
+      alpha: isDark ? .75 : .70,
+    );
 
     const danger = Color(0xFFD94841);
     const warning = Color(0xFFF08C00);
@@ -105,9 +107,7 @@ class AnnulationConditionsPage extends StatelessWidget {
       ),
     );
 
-    final today = DateTime.now();
-    final updated =
-        '${today.day.toString().padLeft(2, '0')}/${today.month.toString().padLeft(2, '0')}/${today.year}';
+    const updated = '10/10/2026';
 
     return Scaffold(
       backgroundColor: t.scaffoldBackgroundColor,
@@ -150,7 +150,7 @@ class AnnulationConditionsPage extends StatelessWidget {
           card(
             child: paragraph(
               "L’utilisateur peut annuler son abonnement à tout moment depuis le store utilisé "
-              "(App Store, Google Play ou AppGallery). L’annulation empêche le renouvellement automatique "
+              "(App Store ou Google Play). L’annulation empêche le renouvellement automatique "
               "mais n’interrompt pas immédiatement l’accès aux services.",
             ),
           ),

@@ -241,7 +241,7 @@ class CpUserNotes {
   Future<List<CpUserNote>> search(String query, {int limit = 30}) async {
     try {
       final trimmed = query.trim();
-      if (trimmed.isEmpty) return listAll(limit: limit);
+      if (trimmed.isEmpty) return await listAll(limit: limit);
       final data = await _sb.rpc(
         'cp_search_notes',
         params: {

@@ -31,6 +31,7 @@ import 'package:copiqpolice/features/home/premium_required_page.dart';
 import 'package:copiqpolice/features/home/payment_result_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
+import 'package:copiqpolice/core/widgets/exam_access_gate.dart';
 import 'package:copiqpolice/core/services/revenuecat_service.dart';
 import 'package:copiqpolice/core/services/ad_service.dart';
 import 'package:copiqpolice/core/services/deep_links_service.dart';
@@ -1548,7 +1549,8 @@ class _LoggerRouteObserver extends NavigatorObserver {
   final Set<Route<dynamic>> _observedQuizResults = <Route<dynamic>>{};
 
   void _observeQuizResultDismissal(Route<dynamic> route) {
-    if (route is! PopupRoute<dynamic> || route.barrierLabel != 'Résultat') {
+    if (route is! PopupRoute<dynamic> ||
+        !const {'Résultat', 'Résultats'}.contains(route.barrierLabel)) {
       return;
     }
     if (!_observedQuizResults.add(route)) return;
@@ -1578,9 +1580,7 @@ class _LoggerRouteObserver extends NavigatorObserver {
     _sync(route);
     _observeQuizResultDismissal(route);
 
-    // ✅ D: auto-consume quand une route quiz est push
     final name = route.settings.name;
-    SubscriptionService.instance.onRoutePushed(name);
 
     AppConsoleLogger.debug('nav:push', message: name);
     super.didPush(route, previousRoute);
@@ -1590,9 +1590,7 @@ class _LoggerRouteObserver extends NavigatorObserver {
   void didReplace({Route<dynamic>? newRoute, Route<dynamic>? oldRoute}) {
     _sync(newRoute);
 
-    // ✅ D: couvre pushReplacement / replace
     final name = newRoute?.settings.name;
-    SubscriptionService.instance.onRoutePushed(name);
 
     AppConsoleLogger.debug('nav:replace', message: name);
     super.didReplace(newRoute: newRoute, oldRoute: oldRoute);
@@ -2085,7 +2083,12 @@ class _MyAppState extends State<MyApp> {
             themeMode: mode, // ← pilote tout : onboarding, login, home, etc.
             navigatorKey: _navKey,
             navigatorObservers: [_LoggerRouteObserver()],
-            routes: RouteRegistry.routes,
+            routes: RouteRegistry.routes.map(
+              (name, builder) => MapEntry(
+                name,
+                (context) => ExamAccessGate.wrap(name, builder, context),
+              ),
+            ),
             onGenerateRoute: appOnGenerateRoute,
             // AnimatedSwitcher : assure le fade de sortie du SplashScreen
             // (300 ms, soit la fenêtre 2300–2600 ms demandée dans les specs).

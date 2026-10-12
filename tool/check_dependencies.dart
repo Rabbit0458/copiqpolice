@@ -14,6 +14,14 @@ Future<void> main() async {
 
   final pubspec = loadYaml(pubspecFile.readAsStringSync());
   final dependencies = pubspec['dependencies'] as YamlMap;
+  final lockFile = File('pubspec.lock');
+  if (!lockFile.existsSync()) {
+    print('pubspec.lock introuvable. Lance flutter pub get avant ce controle.');
+    exitCode = 1;
+    return;
+  }
+  final lock = loadYaml(lockFile.readAsStringSync()) as YamlMap;
+  final packages = lock['packages'] as YamlMap;
 
   print('\n🔎 Vérification des dépendances...\n');
 
@@ -21,7 +29,15 @@ Future<void> main() async {
     final name = entry.key.toString();
     final versionConstraint = entry.value.toString();
 
-    if (versionConstraint.contains('sdk:')) continue;
+    if (entry.value is YamlMap) {
+      if ((entry.value as YamlMap).containsKey('sdk')) continue;
+    }
+    final installed = packages[name];
+    if (installed is! YamlMap || installed['source'] != 'hosted') {
+      print('$name → Pas de version pub.dev installee a comparer');
+      continue;
+    }
+    final current = installed['version'].toString();
 
     try {
       final response = await http.get(
@@ -36,13 +52,10 @@ Future<void> main() async {
       final data = jsonDecode(response.body);
       final latest = data['latest']['version'];
 
-      final current =
-          versionConstraint.replaceAll('^', '').trim();
-
       if (current == latest) {
-        print('🟢 $name ($current) → À JOUR');
+        print('🟢 $name (installee : $current ; declaree : $versionConstraint) → À JOUR');
       } else {
-        print('🟠 $name ($current) → Dernière version : $latest');
+        print('🟠 $name (installee : $current ; declaree : $versionConstraint) → Dernière version : $latest');
       }
     } catch (e) {
       print('⚠️ $name → Erreur');

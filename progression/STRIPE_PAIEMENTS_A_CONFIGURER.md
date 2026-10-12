@@ -1,5 +1,7 @@
 # COP'IQ — Stripe et abonnements à configurer
 
+> Attention, historique web/Stripe : pour la publication mobile, consulter [PUBLICATION_STORES_ETAT_2026_10_10.md](./PUBLICATION_STORES_ETAT_2026_10_10.md). La décision historique « Stripe seul moteur » et l'absence de RevenueCat ne décrivent plus la copie récente : iOS/Android utilisent les achats natifs RevenueCat, Stripe reste utilisé pour le web et les anciennes factures. Ne pas réintroduire Stripe Checkout dans le parcours d'achat mobile à partir de cet ancien document. Les prix Stripe historiques ne sont pas une preuve des prix Apple/Google actuels.
+
 > Document de reprise pour terminer plus tard la configuration des paiements.
 >
 > Dernier état des lieux : 4 août 2026.

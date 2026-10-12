@@ -150,7 +150,7 @@ class _LiteralCollector extends RecursiveAstVisitor<void> {
     AstNode? ancestor = node.parent;
     while (ancestor != null) {
       if (ancestor is Directive) return null;
-      if (ancestor is DefaultFormalParameter ||
+      if (ancestor is FormalParameterDefaultClause ||
           ancestor is AssertInitializer ||
           ancestor is Annotation ||
           ancestor.runtimeType.toString().contains('SwitchCase') ||

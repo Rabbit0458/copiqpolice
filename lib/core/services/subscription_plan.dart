@@ -38,7 +38,7 @@ extension CopiqPlanX on CopiqPlan {
 
   String get subtitle => switch (this) {
     CopiqPlan.month => 'Renouvellement automatique chaque mois',
-    CopiqPlan.year => '26 % d’économie • Renouvellement annuel',
+    CopiqPlan.year => 'Renouvellement automatique chaque année',
   };
 
   String get badge => switch (this) {
@@ -48,7 +48,7 @@ extension CopiqPlanX on CopiqPlan {
 
   String get valueLine => switch (this) {
     CopiqPlan.month => 'La liberté de résilier à tout moment',
-    CopiqPlan.year => 'Économise 27,89 € sur douze mois',
+    CopiqPlan.year => 'Un accès Premium pour douze mois',
   };
 
   List<String> get details => switch (this) {
@@ -59,7 +59,7 @@ extension CopiqPlanX on CopiqPlan {
     ],
     CopiqPlan.year => const [
       'Tous les avantages Premium pendant 12 mois',
-      'Le tarif le plus avantageux de COP’IQ',
+      'Renouvellement annuel, annulable à tout moment',
       'Mises à jour pédagogiques incluses',
     ],
   };

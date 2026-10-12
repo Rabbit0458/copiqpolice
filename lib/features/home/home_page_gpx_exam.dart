@@ -161,72 +161,12 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
 
   // ===================== 🔐 QUOTA / QUIZ ROUTES =====================
 
-  bool _isQuizLeafRoute(String route) {
-    return route.startsWith('/gpx_exam/concours/culture_generale_') ||
-        route.startsWith('/gpx_exam/concours/tests_psychotechniques/') ||
-        route.startsWith('/gpx_exam/concours/langue_etrangere/exemples_') ||
-        route.startsWith('/gpx_exam/concours/cas_pratique/');
-  }
-
   Future<void> _openRouteWithQuota(String route) async {
-    // ✅ lock global (toute l'app)
-    final ok = await SubscriptionService.instance.guardAppAccess(context);
-    if (!ok) return;
-
-    // Non quiz => accès direct
-    if (!_isQuizLeafRoute(route)) {
-      if (!mounted) return;
-      await Navigator.of(context).pushNamed(route);
-      if (mounted) unawaited(_loadHomeProgress());
-      return;
-    }
-
-    // Quiz => consomme côté backend
-    final res = await SubscriptionService.instance.consumeFreeRequest();
-
-    if (!res.allowed) {
-      if (!mounted) return;
-
-      await SubscriptionService.instance.refresh(force: true, withQuota: true);
-      final q = SubscriptionService.instance.state.value.quota;
-
-      final resetsTxt = (q?.resetsAt != null)
-          ? '${q!.resetsAt.toLocal().day.toString().padLeft(2, '0')}/${q.resetsAt.toLocal().month.toString().padLeft(2, '0')} à ${q.resetsAt.toLocal().hour.toString().padLeft(2, '0')}:${q.resetsAt.toLocal().minute.toString().padLeft(2, '0')}'
-          : 'dans 7 jours';
-
-      showDialog(
-        context: context,
-        builder: (_) => AlertDialog(
-          title: const Text('Limite atteinte'),
-          content: Text(
-            'Tu as utilisé tes 10 quiz gratuits.\n'
-            'Réinitialisation : $resetsTxt.\n\n'
-            'Passe en Premium pour accéder en illimité.',
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Plus tard'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context);
-                Navigator.of(context).pushNamed('/abonnement');
-              },
-              child: const Text('Voir Premium'),
-            ),
-          ],
-        ),
-      );
-      return;
-    }
-
+    // The shared route gate authorizes exercises before building their content.
     if (!mounted) return;
     await Navigator.of(context).pushNamed(route);
     if (mounted) unawaited(_loadHomeProgress());
   }
-
-  // ===================== 👤 PROFIL (first_name depuis user_profiles) =====================
 
   String? _sanitizeName(String? v) {
     final t = (v ?? '').trim();

@@ -132,7 +132,13 @@ class EntitlementService {
   EntitlementService._();
   static final EntitlementService instance = EntitlementService._();
 
-  SupabaseClient get _sb => Supabase.instance.client;
+  @visibleForTesting
+  EntitlementService.forTesting(SupabaseClient client) : _client = client;
+
+  SupabaseClient? _client;
+  SupabaseClient get _sb => _client ?? Supabase.instance.client;
+  String? _stateUserId;
+  int _identityRevision = 0;
 
   final ValueNotifier<Entitlement> state = ValueNotifier<Entitlement>(
     Entitlement.guest,
@@ -141,10 +147,25 @@ class EntitlementService {
   Completer<Entitlement>? _inflight;
 
   Future<Entitlement> refresh({bool force = false}) async {
-    if (_inflight != null && !force) return _inflight!.future;
-    _inflight = Completer<Entitlement>();
+    final uid = _sb.auth.currentUser?.id;
+    if (_stateUserId != uid) {
+      _stateUserId = uid;
+      _identityRevision++;
+      _inflight = null;
+      state.value = Entitlement.guest;
+    }
+    if (uid == null) return Entitlement.guest;
+    // Force bypasses a cache, not an already running request for this account.
+    if (_inflight != null) return _inflight!.future;
+    final revision = _identityRevision;
+    final pending = Completer<Entitlement>();
+    _inflight = pending;
+    bool isCurrent() =>
+        _sb.auth.currentUser?.id == uid && _identityRevision == revision;
+    var result = Entitlement.guest;
     try {
       final raw = await _sb.rpc('get_my_entitlement');
+      if (!isCurrent()) return Entitlement.guest;
       Map<String, dynamic> j;
       if (raw is Map) {
         j = raw.map((k, v) => MapEntry(k.toString(), v));
@@ -168,17 +189,18 @@ class EntitlementService {
           ? Entitlement.fromJson(j)
           : Entitlement.guest;
       state.value = ent;
-      _inflight!.complete(ent);
+      result = ent;
       return ent;
     } catch (e) {
       if (kDebugMode) {
         // ignore: avoid_print
         debugPrint('[ENTITLEMENT] refresh error: $e');
       }
-      _inflight!.complete(state.value);
-      return state.value;
+      result = isCurrent() ? state.value : Entitlement.guest;
+      return result;
     } finally {
-      _inflight = null;
+      pending.complete(result);
+      if (identical(_inflight, pending)) _inflight = null;
     }
   }
 }

@@ -8,6 +8,7 @@
 // existant déjà fonctionnel dans l'app (pas de duplication de logique).
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/core/services/ad_service.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:copiqpolice/features/home/abonnement_page.dart';
@@ -183,6 +184,30 @@ class _LegalCenterPageState extends State<LegalCenterPage>
                     LegalDocumentKeys.privacyPolicy,
                     'Politique de confidentialité',
                   ),
+                ),
+                FutureBuilder<bool>(
+                  future: AdService.instance.isPrivacyOptionsRequired(),
+                  builder: (context, snapshot) => snapshot.data == true
+                      ? LegalSettingsTile(
+                          icon: Icons.privacy_tip_outlined,
+                          title: 'Mes choix publicitaires',
+                          subtitle: 'Modifier le consentement aux publicités',
+                          showDivider: true,
+                          onTap: () async {
+                            final opened = await AdService.instance
+                                .showPrivacyOptions();
+                            if (!opened && context.mounted) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text(
+                                    'Le formulaire est momentanément indisponible. Réessaie dans quelques instants.',
+                                  ),
+                                ),
+                              );
+                            }
+                          },
+                        )
+                      : const SizedBox.shrink(),
                 ),
                 LegalSettingsTile(
                   icon: Icons.person_outline_rounded,

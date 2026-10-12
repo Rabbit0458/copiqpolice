@@ -27,10 +27,10 @@ class FreeQuota {
   /// Date de référence “backend” (si ta table l’utilise)
   final DateTime windowStart;
 
-  /// Dernière consommation réelle (updated_at). C’est ça qui pilote la reset en UI.
+  /// Derniere consommation reelle, sans effet sur la fenetre serveur.
   final DateTime lastUsedAt;
 
-  /// Date/heure de réinitialisation calculée (lastUsedAt + 7 jours)
+  /// Fin de la fenetre serveur (windowStart + 7 jours).
   final DateTime resetsAt;
 
   const FreeQuota({
@@ -77,11 +77,10 @@ class FreeQuota {
 
     final used = (row['used'] is num) ? (row['used'] as num).toInt() : 0;
 
-    // ✅ Base de reset = updated_at (dernière requête)
-    // Fallback si absent : window_start
+    // Keep the last usage for diagnostics; the server owns the reset window.
     final lastUsedAt = _parseTs(row['updated_at'])?.toUtc() ?? windowStart;
 
-    final resetsAt = lastUsedAt.add(windowDuration);
+    final resetsAt = windowStart.add(windowDuration);
 
     return normalize(
       FreeQuota(
@@ -173,7 +172,23 @@ class SubscriptionService {
   SubscriptionService._();
   static final SubscriptionService instance = SubscriptionService._();
 
-  SupabaseClient get _sb => Supabase.instance.client;
+  @visibleForTesting
+  SubscriptionService.forTesting(SupabaseClient client) : _client = client;
+
+  SupabaseClient? _client;
+  SupabaseClient get _sb => _client ?? Supabase.instance.client;
+  String? _stateUserId;
+  String? _refreshUserId;
+  int _identityRevision = 0;
+
+  void _syncIdentity() {
+    final uid = _sb.auth.currentUser?.id;
+    if (_stateUserId == uid) return;
+    _stateUserId = uid;
+    _identityRevision++;
+    _refreshing = null;
+    state.value = SubscriptionState.initial;
+  }
 
   static const int freeLimit = 10;
 
@@ -194,10 +209,6 @@ class SubscriptionService {
   Completer<void>? _refreshing;
   Future<bool> Function()? _rewardedUnlockHandler;
   VoidCallback? _revenueCatListener;
-
-  // Anti double-consume sur navigation
-  String? _lastConsumedRoute;
-  DateTime? _lastConsumedAt;
 
   bool get isHardLocked => state.value.isLocked;
 
@@ -233,6 +244,7 @@ class SubscriptionService {
 
     // auth listener
     _authSub = _sb.auth.onAuthStateChange.listen((evt) async {
+      _syncIdentity();
       final e = evt.event;
       final u = evt.session?.user ?? _sb.auth.currentUser;
 
@@ -294,41 +306,6 @@ class SubscriptionService {
     _boundUserId = null;
   }
 
-  /// ✅ Called by NavigatorObserver to auto-consume on quiz routes.
-  Future<void> onRoutePushed(String? routeName) async {
-    if (routeName == null || routeName.isEmpty) return;
-
-    // Rules: only quiz routes consume
-    final isQuiz =
-        routeName.contains('/quiz') ||
-        routeName.contains('/gpx_exam') ||
-        routeName.contains('/pa_exam') ||
-        routeName.contains('quiz_');
-
-    if (!isQuiz) return;
-
-    // Premium user -> no consume
-    await refresh(force: false, withQuota: true);
-    if (state.value.isPremium) return;
-
-    // Locked -> do not consume
-    if (state.value.isLocked) return;
-
-    // Anti-double-consume safety
-    final now = DateTime.now();
-    if (_lastConsumedRoute == routeName &&
-        _lastConsumedAt != null &&
-        now.difference(_lastConsumedAt!) < const Duration(seconds: 3)) {
-      return;
-    }
-
-    _lastConsumedRoute = routeName;
-    _lastConsumedAt = now;
-
-    _SubLog.i('route_quiz_detected', {'route': routeName});
-    await consumeFreeRequest();
-  }
-
   /// ---------- Premium ----------
   Future<bool> _fetchIsPremium() async {
     final user = _sb.auth.currentUser;
@@ -350,8 +327,9 @@ class SubscriptionService {
       });
       return premium;
     } catch (error) {
-      _SubLog.w('premium:database_unavailable -> store_fallback');
-      return storePremium;
+      _SubLog.w('premium:database_unavailable');
+      if (storePremium) return true;
+      rethrow;
     }
   }
 
@@ -376,7 +354,12 @@ class SubscriptionService {
 
   /// ---------- Refresh ----------
   Future<void> refresh({bool force = false, bool withQuota = true}) async {
-    if (_refreshing != null) return _refreshing!.future;
+    _syncIdentity();
+    final uid = _sb.auth.currentUser?.id;
+    if (uid == null) return;
+    if (_refreshing != null && _refreshUserId == uid) {
+      return _refreshing!.future;
+    }
 
     final last = state.value.lastRefreshedAt;
     if (!force &&
@@ -385,11 +368,18 @@ class SubscriptionService {
       return;
     }
 
-    _refreshing = Completer<void>();
+    final revision = _identityRevision;
+    final pending = Completer<void>();
+    _refreshing = pending;
+    _refreshUserId = uid;
+    bool isCurrent() =>
+        _sb.auth.currentUser?.id == uid && _identityRevision == revision;
     try {
       final isPremium = await _fetchIsPremium();
+      if (!isCurrent()) return;
       FreeQuota? quota;
       if (withQuota) quota = await fetchFreeQuota();
+      if (!isCurrent()) return;
 
       final newState = state.value.copyWith(
         isPremium: isPremium,
@@ -405,22 +395,22 @@ class SubscriptionService {
         'remaining': newState.quota?.remaining,
         'locked': newState.isLocked,
       });
-
-      _refreshing!.complete();
     } catch (e) {
       _SubLog.err('refresh:failed', e);
+      if (!isCurrent()) return;
       state.value = state.value.copyWith(
         lastError: e,
         lastRefreshedAt: DateTime.now(),
       );
-      _refreshing!.complete();
     } finally {
-      _refreshing = null;
+      pending.complete();
+      if (identical(_refreshing, pending)) _refreshing = null;
     }
   }
 
   /// ---------- Consume ----------
   Future<ConsumeResult> consumeFreeRequest() async {
+    _syncIdentity();
     final user = _sb.auth.currentUser;
     if (user == null) {
       _SubLog.w('consume:not_authenticated');
@@ -433,6 +423,13 @@ class SubscriptionService {
 
     try {
       final raw = await _sb.rpc('consume_free_request');
+      if (_sb.auth.currentUser?.id != user.id) {
+        return const ConsumeResult(
+          allowed: false,
+          premium: false,
+          reason: 'account_changed',
+        );
+      }
 
       final Map<String, dynamic> json = (raw is Map)
           ? raw.map((k, v) => MapEntry(k.toString(), v))
@@ -465,7 +462,9 @@ class SubscriptionService {
       return result;
     } catch (e) {
       _SubLog.err('consume:rpc_failed', e);
-      state.value = state.value.copyWith(lastError: e);
+      if (_sb.auth.currentUser?.id == user.id) {
+        state.value = state.value.copyWith(lastError: e);
+      }
       return ConsumeResult(
         allowed: false,
         premium: false,

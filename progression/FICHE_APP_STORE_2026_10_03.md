@@ -1,5 +1,7 @@
 # Fiche App Store — 3 octobre 2026
 
+> État de référence au 10 octobre : [PUBLICATION_STORES_ETAT_2026_10_10.md](./PUBLICATION_STORES_ETAT_2026_10_10.md). Contact de vérification complété le 4 octobre ; achats natifs et restauration déjà présents dans la copie récente. Restent notamment le binaire iOS récent, les tests, le compte de démonstration, les contrats/statut juridique et les déclarations finales. Les écarts des textes publics décrits ici sont historiques : contrôler les URL après transfert des nouvelles pages légales avant de les déclarer résolus.
+
 Application : 6785313391, COP’IQ – Prépa Police, fr.copiq.app.
 
 ## Changements enregistrés et vérifiés dans App Store Connect

@@ -154,7 +154,7 @@ class RevenueCatService {
 
   String priceLabel(CopiqPlan plan) {
     final price = state.value.packages[plan]?.storeProduct.priceString;
-    if (price == null || price.trim().isEmpty) return plan.fallbackPriceLabel;
+    if (price == null || price.trim().isEmpty) return 'Prix indisponible';
     return switch (plan) {
       CopiqPlan.month => '$price / mois',
       CopiqPlan.year => '$price / an',
@@ -446,8 +446,20 @@ class RevenueCatService {
       await refreshCustomerInfo();
       url = state.value.managementUrl;
     }
-    if (url == null || url.isEmpty) return false;
-    return launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    if (url == null || url.isEmpty) {
+      if (!isSupported) return false;
+      url = Platform.isIOS
+          ? 'https://apps.apple.com/account/subscriptions'
+          : 'https://play.google.com/store/account/subscriptions';
+    }
+    try {
+      return await launchUrl(
+        Uri.parse(url),
+        mode: LaunchMode.externalApplication,
+      );
+    } catch (_) {
+      return false;
+    }
   }
 
   void _onCustomerInfoUpdated(CustomerInfo info) {

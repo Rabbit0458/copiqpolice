@@ -1,5 +1,7 @@
 # Paiements stores — état actualisé le 2 octobre 2026
 
+> Mise à jour du 10 octobre : consulter [PUBLICATION_STORES_ETAT_2026_10_10.md](./PUBLICATION_STORES_ETAT_2026_10_10.md) avant reprise. Achats/restauration RevenueCat présents dans la copie récente, produits Google et build interne 8 configurés selon le suivi du 4 octobre. Webhook RevenueCat v21 et suppression `delete-user-cascade` v65 confirmés ACTIVE directement sur Supabase le 10 octobre. Les mentions historiques de webhook non déployé, produits Google absents, signature introuvable et achat natif absent ne sont plus des blocages actuels. Tests sur appareil et publication publique restent à valider.
+
 ## État de reprise du 2 octobre — prioritaire sur le journal historique ci-dessous
 
 ### Transfert Mac et build 7 — dernière mise à jour
@@ -105,3 +107,8 @@ Logique commune des droits et paiements pour Scolarité GPX, Scolarité PA, Exam
 Mensuel et annuel sont désormais tous deux au niveau 1 : modification enregistrée et vérifiée dans le tableau Apple. Ancien hebdomadaire conservé au niveau 2. Apple exigeait le retrait temporaire des trois produits du brouillon pour déverrouiller le classement ; ils ont ensuite été réajoutés, avec statut Prêt pour la vérification. Le brouillon vide précédent a été remplacé automatiquement par un nouveau brouillon contenant les trois abonnements. Aucune soumission envoyée. Apple signale encore deux prérequis : ajouter le groupe d’abonnements associé et une version iOS au brouillon. Fenêtre de soumission et mode modification fermés.
 
 Groupe COP’IQ Premium ajouté au brouillon Apple le 26 septembre, statut Prêt pour la vérification. Le brouillon contient maintenant quatre éléments (trois abonnements et le groupe). Le seul blocage affiché dans ce brouillon est l’absence de version iOS associée. Vérification de la fiche Distribution : version 1.0, aucun build chargé, identifiants de vérification à fournir. Aucun envoi effectué.
+
+## Mise à jour du 4 octobre 2026 — Android raccordé
+La clé android/copiq-release-key.jks récupérée est la bonne clé d'import Google Play. Chemin key.properties corrigé, Gradle 8.14.4 et AGP 8.11.1 ; version 1.1.0+8 compilée, acceptée et diffusée en tests internes. Les versions 6 et 7 existaient déjà dans la bibliothèque, d'où le passage à 8.
+Abonnements Google actifs en France : copiq_premium_monthly / monthly à 8,99 EUR TTC par mois ; copiq_premium_yearly / yearly à 79,99 EUR TTC par an. RevenueCat Published pour les deux, rattachement premium et packages $rc_monthly / $rc_annual de default vérifiés.
+9 tests de normalisation serveur réussis, dont les identifiants exacts des forfaits Google. Aucun achat sur appareil effectué et aucun testeur interne configuré. Pas de publication publique. Voir CONTROLE_STORES_SECURITE_2026_10_04.md et BUILD_ANDROID_SIGNATURE_ET_ABONNEMENTS.md pour les preuves et les étapes restantes.

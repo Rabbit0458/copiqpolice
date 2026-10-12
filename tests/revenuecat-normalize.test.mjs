@@ -20,6 +20,27 @@ test('refund is revoked even with future expiry', () => {
 test('sandbox stays separate from production', () => {
   assert.equal(normalizeSubscriber(body({is_sandbox:true}), uid, date).entitlements[0].environment, 'SANDBOX');
 });
+
+test('published Google Play base plans map to the shared premium plans', () => {
+  for (const [productId, plan] of [
+    ['copiq_premium_monthly:monthly', 'month'],
+    ['copiq_premium_yearly:yearly', 'year'],
+  ]) {
+    const data = body();
+    data.subscriber.subscriptions = {
+      [productId]: {
+        store: 'play_store', is_sandbox: false,
+        expires_date: '2026-11-04T00:00:00Z',
+      },
+    };
+    const [row] = normalizeSubscriber(data, uid, date).entitlements;
+    assert.equal(row.product_id, productId);
+    assert.equal(row.plan, plan);
+    assert.equal(row.store, 'play_store');
+    assert.equal(row.environment, 'PRODUCTION');
+    assert.equal(row.revoked, false);
+  }
+});
 test('grace period extends the verified expiration', () => {
   assert.equal(normalizeSubscriber(body({grace_period_expires_date:'2026-10-05T00:00:00Z'}), uid, date).entitlements[0].expires_at, '2026-10-05T00:00:00.000Z');
 });

@@ -1,12 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'subscription_service.dart';
 import 'ad_policy.dart';
+import 'ad_privacy_policy.dart';
 
 /// Identifiants AdMob COP'IQ.
 ///
@@ -97,6 +99,17 @@ class AdService {
   Future<void> init() async {
     if (_initialized || !_supportedPlatform) return;
 
+    if (defaultTargetPlatform == TargetPlatform.iOS) {
+      try {
+        final device = await DeviceInfoPlugin().iosInfo;
+        if (!AdPrivacyPolicy.supportsIosAds(device.systemVersion)) return;
+        await MobileAds.instance.setSameAppKeyEnabled(false);
+      } catch (_) {
+        // Do not load ads if the no-tracking configuration cannot be applied.
+        return;
+      }
+    }
+
     SubscriptionService.instance.registerRewardedUnlockHandler(
       showRewardedAndGrant,
     );
@@ -142,18 +155,34 @@ class AdService {
     _canRequestAds = await ConsentInformation.instance.canRequestAds();
   }
 
-  Future<void> showPrivacyOptions() async {
-    if (!_supportedPlatform) return;
-    final completer = Completer<void>();
-    ConsentForm.showPrivacyOptionsForm((error) {
-      if (error != null) {
-        debugPrint('[ADS] Options de confidentialité: ${error.message}');
-      }
-      completer.complete();
-    });
-    await completer.future;
-    _canRequestAds = await ConsentInformation.instance.canRequestAds();
-    if (!_canRequestAds) disposeCachedAds();
+  Future<bool> isPrivacyOptionsRequired() async {
+    if (!_supportedPlatform) return false;
+    try {
+      return await ConsentInformation.instance
+              .getPrivacyOptionsRequirementStatus() ==
+          PrivacyOptionsRequirementStatus.required;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  Future<bool> showPrivacyOptions() async {
+    if (!_supportedPlatform) return false;
+    final completer = Completer<bool>();
+    try {
+      // Cached ads were requested under the previous consent choices.
+      disposeCachedAds();
+      ConsentForm.showPrivacyOptionsForm((error) {
+        if (!completer.isCompleted) completer.complete(error == null);
+      });
+      final opened = await completer.future;
+      _canRequestAds = await ConsentInformation.instance.canRequestAds();
+      return opened;
+    } catch (_) {
+      _canRequestAds = false;
+      disposeCachedAds();
+      return false;
+    }
   }
 
   bool _cooldownElapsed() {
@@ -176,7 +205,7 @@ class AdService {
     _interstitialLoading = true;
     InterstitialAd.load(
       adUnitId: AdIds.interstitial(defaultTargetPlatform),
-      request: const AdRequest(),
+      request: AdPrivacyPolicy.request,
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ad) {
           _interstitialLoading = false;
@@ -196,7 +225,7 @@ class AdService {
     _rewardedLoading = true;
     RewardedAd.load(
       adUnitId: AdIds.rewarded(defaultTargetPlatform),
-      request: const AdRequest(),
+      request: AdPrivacyPolicy.request,
       rewardedAdLoadCallback: RewardedAdLoadCallback(
         onAdLoaded: (ad) {
           _rewardedLoading = false;
@@ -290,6 +319,22 @@ class AdService {
         !_canRequestAds ||
         Supabase.instance.client.auth.currentUser?.id != user.id)
       return false;
+    final request = await Supabase.instance.client.rpc(
+      'begin_rewarded_request',
+      params: {'p_ad_unit': AdIds.rewarded(defaultTargetPlatform)},
+    );
+    if (request is! Map ||
+        request['allowed'] != true ||
+        request['challenge_id'] is! String)
+      return false;
+    final challenge = request['challenge_id'] as String;
+    await ad.setServerSideOptions(
+      ServerSideVerificationOptions(customData: challenge),
+    );
+    if (!_eligible ||
+        Supabase.instance.client.auth.currentUser?.id != user.id) {
+      return false;
+    }
     _rewarded = null;
     var earnedReward = false;
     final dismissed = Completer<void>();
@@ -310,16 +355,30 @@ class AdService {
         Supabase.instance.client.auth.currentUser?.id != user.id)
       return false;
 
-    final nonce = '${user.id}-${DateTime.now().microsecondsSinceEpoch}';
-    final response = await Supabase.instance.client.rpc(
-      'grant_rewarded_request',
-      params: {'p_nonce': nonce},
+    // Only the signed Google callback can credit the server-side challenge.
+    final confirmationDeadline = DateTime.now().add(
+      const Duration(seconds: 20),
     );
-    final granted = response is Map && response['allowed'] == true;
-    if (granted) {
-      await SubscriptionService.instance.refresh(force: true, withQuota: true);
+    while (DateTime.now().isBefore(confirmationDeadline)) {
+      if (Supabase.instance.client.auth.currentUser?.id != user.id)
+        return false;
+      final row = await Supabase.instance.client
+          .from('rewarded_ssv_challenges')
+          .select('granted_at')
+          .eq('id', challenge)
+          .maybeSingle();
+      if (Supabase.instance.client.auth.currentUser?.id != user.id)
+        return false;
+      if (row?['granted_at'] != null) {
+        await SubscriptionService.instance.refresh(
+          force: true,
+          withQuota: true,
+        );
+        return true;
+      }
+      await Future<void>.delayed(const Duration(seconds: 1));
     }
-    return granted;
+    return false;
   }
 
   void disposeCachedAds() {

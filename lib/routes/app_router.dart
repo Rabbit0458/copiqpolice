@@ -186,7 +186,11 @@ Route<dynamic>? appOnGenerateRoute(RouteSettings settings) {
           RouteRegistry.routes[settings.name] ??
           PaSchoolRouteRegistry.routes[settings.name];
       if (builder != null) {
-        return MaterialPageRoute(builder: builder, settings: settings);
+        return MaterialPageRoute(
+          builder: (context) =>
+              ExamAccessGate.wrap(settings.name, builder, context),
+          settings: settings,
+        );
       }
       // Les quiz ajoutés ou migrés depuis le panel disposent d'une route
       // stable sans devoir ajouter une entrée au binaire à chaque création.

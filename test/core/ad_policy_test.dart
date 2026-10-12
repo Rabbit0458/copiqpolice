@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../../lib/core/services/ad_policy.dart';
+import 'package:copiqpolice/core/services/ad_policy.dart';
 
 void main() {
   final start = DateTime.utc(2026, 10, 2, 10);

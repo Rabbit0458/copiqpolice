@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
@@ -132,17 +133,16 @@ class _AbonnementPageState extends State<AbonnementPage>
       );
       return;
     }
-    _info(
-      switch (result.reason) {
-        'nothing_to_restore' =>
-          'Aucun achat Premium actif n’a été trouvé pour ce compte de boutique.',
-        'operation_in_progress' =>
-          'Un achat ou une restauration est déjà en cours. Attends sa confirmation.',
-        'not_authenticated' || 'identity_not_verified' || 'account_changed' =>
-          'Reconnecte-toi à ton compte avant de restaurer tes achats.',
-        _ => 'La restauration est momentanément indisponible. Réessaie dans quelques instants.',
-      },
-    );
+    _info(switch (result.reason) {
+      'nothing_to_restore' =>
+        'Aucun achat Premium actif n’a été trouvé pour ce compte de boutique.',
+      'operation_in_progress' =>
+        'Un achat ou une restauration est déjà en cours. Attends sa confirmation.',
+      'not_authenticated' || 'identity_not_verified' || 'account_changed' =>
+        'Reconnecte-toi à ton compte avant de restaurer tes achats.',
+      _ =>
+        'La restauration est momentanément indisponible. Réessaie dans quelques instants.',
+    });
   }
 
   // ===================== UI =====================
@@ -246,6 +246,21 @@ class _AbonnementPageState extends State<AbonnementPage>
 
               const SizedBox(height: 12),
 
+              if (RevenueCatService.instance.state.value.packages.isEmpty)
+                Column(
+                  children: [
+                    const Text(
+                      'Les offres de la boutique ne sont pas disponibles. Vérifie ta connexion puis réessaie.',
+                    ),
+                    TextButton(
+                      onPressed: _busyPlan == null && !_restoring
+                          ? () => RevenueCatService.instance.refreshOfferings()
+                          : null,
+                      child: const Text('Recharger les offres'),
+                    ),
+                  ],
+                ),
+
               // ================= PLAN MENSUEL =================
               _PlanCard(
                 stroke: stroke,
@@ -259,7 +274,12 @@ class _AbonnementPageState extends State<AbonnementPage>
                 billingLine: kStoreBillingLine,
                 details: CopiqPlan.month.details,
                 busy: _busyPlan == CopiqPlan.month,
-                enabled: _busyPlan == null && !_restoring,
+                enabled:
+                    _busyPlan == null &&
+                    !_restoring &&
+                    RevenueCatService.instance.state.value.packages.containsKey(
+                      CopiqPlan.month,
+                    ),
                 onTap: () => _subscribe(CopiqPlan.month),
               ),
 
@@ -278,7 +298,12 @@ class _AbonnementPageState extends State<AbonnementPage>
                 billingLine: kStoreBillingLine,
                 details: CopiqPlan.year.details,
                 busy: _busyPlan == CopiqPlan.year,
-                enabled: _busyPlan == null && !_restoring,
+                enabled:
+                    _busyPlan == null &&
+                    !_restoring &&
+                    RevenueCatService.instance.state.value.packages.containsKey(
+                      CopiqPlan.year,
+                    ),
                 onTap: () => _subscribe(CopiqPlan.year),
               ),
 
@@ -921,6 +946,23 @@ class _PlanCardState extends State<_PlanCard>
 }
 
 class _LegalFooter extends StatelessWidget {
+  Future<void> _open(BuildContext context, String url) async {
+    var opened = false;
+    try {
+      opened = await launchUrl(
+        Uri.parse(url),
+        mode: LaunchMode.externalApplication,
+      );
+    } catch (_) {}
+    if (!opened && context.mounted) {
+      AppNotifier.error(
+        context,
+        title: 'Ouverture impossible',
+        message: 'Réessaie ou consulte $url dans ton navigateur.',
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final t = Theme.of(context);
@@ -943,8 +985,28 @@ class _LegalFooter extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          "Annulation en 30 secondes — sans engagement.",
+          "Renouvellement annulable depuis ta boutique.",
           style: t.textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w700),
+        ),
+        Wrap(
+          alignment: WrapAlignment.center,
+          children: [
+            TextButton(
+              onPressed: () => _open(context, 'https://copiq.fr/privacy/'),
+              child: const Text('Confidentialité'),
+            ),
+            TextButton(
+              onPressed: () => _open(context, 'https://copiq.fr/cgu/'),
+              child: const Text('Conditions d’utilisation'),
+            ),
+            TextButton(
+              onPressed: () => _open(
+                context,
+                'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/',
+              ),
+              child: const Text('Licence Apple (EULA)'),
+            ),
+          ],
         ),
       ],
     );

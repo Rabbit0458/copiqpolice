@@ -307,35 +307,50 @@ class _ResumeActivityCard extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      if (percentage != null)
-                        Expanded(
-                          child: _ScoreProgress(
-                            percentage: percentage,
-                            palette: palette,
-                          ),
-                        )
-                      else
-                        Expanded(
-                          child: Text(
-                            'Ta progression est prête à continuer.',
-                            style: Theme.of(context).textTheme.bodySmall
-                                ?.copyWith(
-                                  color: palette.muted,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      const SizedBox(width: 14),
-                      _PrimaryAction(
+                  LayoutBuilder(
+                    builder: (context, constraints) {
+                      final progress = percentage != null
+                          ? _ScoreProgress(
+                              percentage: percentage,
+                              palette: palette,
+                            )
+                          : Text(
+                              'Ta progression est prête à continuer.',
+                              style: Theme.of(context).textTheme.bodySmall
+                                  ?.copyWith(
+                                    color: palette.muted,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                            );
+                      final action = _PrimaryAction(
                         label: 'Continuer',
                         icon: Icons.play_arrow_rounded,
                         palette: palette,
                         onTap: onTap,
-                      ),
-                    ],
+                      );
+                      if (constraints.maxWidth < 280 ||
+                          MediaQuery.textScalerOf(context).scale(14) > 18) {
+                        return Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            progress,
+                            const SizedBox(height: 14),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: action,
+                            ),
+                          ],
+                        );
+                      }
+                      return Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Expanded(child: progress),
+                          const SizedBox(width: 14),
+                          action,
+                        ],
+                      );
+                    },
                   ),
                 ],
               ),
@@ -531,11 +546,16 @@ class _PrimaryAction extends StatelessWidget {
               children: [
                 Icon(icon, size: 20, color: palette.ctaInk),
                 const SizedBox(width: 5),
-                Text(
-                  label,
-                  style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: palette.ctaInk,
-                    fontWeight: FontWeight.w800,
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      label,
+                      style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                        color: palette.ctaInk,
+                        fontWeight: FontWeight.w800,
+                      ),
+                    ),
                   ),
                 ),
               ],

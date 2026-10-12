@@ -36,7 +36,7 @@ void main() {
           .listSync()
           .whereType<File>()
           .where(
-            (file) => file.path.split('/').last.startsWith('grade_$prefix'),
+            (file) => file.uri.pathSegments.last.startsWith('grade_$prefix'),
           );
       expect(matches, hasLength(1), reason: 'Planche $prefix manquante');
     }
