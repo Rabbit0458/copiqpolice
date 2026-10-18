@@ -2188,6 +2188,9 @@ export interface CommunityUserQuizAnswer {
 export interface CommunityUserBilling {
   subscriptions: {
     id: string;
+    source?: string;
+    environment?: string;
+    grants_access?: boolean;
     plan: string | null;
     status: string | null;
     current_period_start: string | null;
@@ -2486,10 +2489,26 @@ export const communityUsersApi = {
       p_offset: opts.offset ?? 0,
     }),
 
-  billing: (userId: string) =>
-    rpc<CommunityUserBilling>("community_admin_user_billing", {
+  billing: async (userId: string): Promise<CommunityUserBilling> => {
+    const legacy = await rpc<Partial<CommunityUserBilling>>("community_admin_user_billing", {
       p_user_id: userId,
-    }),
+    });
+    const rows = await rpc<{ sources: {
+      source: string; environment: string; product_id?: string; plan: string;
+      status: string; expires_at: string | null; verified_at: string | null;
+      grants_access: boolean;
+    }[] }[]>("admin_subscription_sources", { p_search: userId, p_limit: 1 });
+    return {
+      subscriptions: (rows[0]?.sources ?? []).map((s, index) => ({
+        id: `${s.source}-${s.environment}-${s.product_id ?? index}`,
+        source: s.source, environment: s.environment, grants_access: s.grants_access,
+        plan: s.plan, status: s.status, current_period_start: null,
+        current_period_end: s.expires_at, created_at: null, updated_at: s.verified_at,
+      })),
+      invoices: legacy.invoices ?? [],
+      events: legacy.events ?? [],
+    };
+  },
 
   timeline: (userId: string, opts: { limit?: number; offset?: number } = {}) =>
     rpc<CommunityUserTimelineEvent[]>("community_admin_user_timeline", {

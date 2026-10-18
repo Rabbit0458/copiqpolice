@@ -195,6 +195,7 @@ const NAV: NavItem[] = [
     icon: BadgeEuro,
     group: "Communauté",
     perm: "subscriptions",
+    ownerOnly: true,
   },
   {
     href: "/admin/actif/",
@@ -278,7 +279,9 @@ export function AdminShell({
   const perms = session.permissions ?? {};
   const isOwner = session.role === "owner";
   const visible = NAV.filter(
-    (n) => (!n.ownerOnly || isOwner) && (!n.perm || isOwner || perms[n.perm]),
+    (n) => session.role === "moderator"
+      ? n.href === "/admin/forum/"
+      : (!n.ownerOnly || isOwner) && (!n.perm || isOwner || perms[n.perm]),
   );
   const q = paletteQuery.trim().toLocaleLowerCase("fr-FR");
   const paletteItems = visible.filter((item) =>
@@ -559,7 +562,11 @@ export function AdminShell({
 
         <main ref={mainRef} className="admin-main min-w-0 px-4 pb-16 pt-6 md:px-8 md:pt-8 lg:px-10">
           <div key={pathname} className="admin-page-enter mx-auto w-full max-w-[1520px]">
-            {children}
+            {session.role === "moderator" && !pathname.startsWith("/admin/forum/") ? (
+              <Empty><Link href="/admin/forum/">Accéder à la modération du forum</Link></Empty>
+            ) : current?.ownerOnly && !isOwner ? (
+              <Empty>Cette page est réservée au fondateur.</Empty>
+            ) : children}
           </div>
         </main>
       </div>

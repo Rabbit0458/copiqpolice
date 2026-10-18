@@ -1,8 +1,8 @@
 /// Plans Premium COP'IQ vendus par l'App Store et Google Play.
 ///
 /// Les identifiants ci-dessous doivent rester identiques dans les boutiques,
-/// RevenueCat et l'application. Les prix affichés par défaut ne servent que
-/// pendant le chargement : le prix final vient toujours de la boutique.
+/// RevenueCat et l'application. Les tarifs France de référence sont signalés
+/// comme tels sur iOS si la boutique renvoie une autre devise.
 enum CopiqPlan { month, year }
 
 extension CopiqPlanX on CopiqPlan {
@@ -35,6 +35,21 @@ extension CopiqPlanX on CopiqPlan {
     CopiqPlan.month => '8,99 € / mois',
     CopiqPlan.year => '79,99 € / an',
   };
+
+  // France reference prices checked in App Store Connect on 2026-10-16.
+  // Keep these in sync when changing French App Store prices.
+  String displayPrice({
+    required String? storePrice,
+    required String? currencyCode,
+    required bool isIOS,
+  }) {
+    if (storePrice == null || storePrice.trim().isEmpty) {
+      return 'Prix indisponible';
+    }
+    if (isIOS && currencyCode != 'EUR') return fallbackPriceLabel;
+    final period = this == CopiqPlan.month ? 'mois' : 'an';
+    return '$storePrice / $period';
+  }
 
   String get subtitle => switch (this) {
     CopiqPlan.month => 'Renouvellement automatique chaque mois',

@@ -4,6 +4,19 @@
 
 ---
 
+## Preparation du build 10 - 2026-10-18
+
+- Abonnements reserves au fondateur, avec lecture des droits Apple, Google et
+  des acces offerts. Distinction Sandbox/production et date de verification.
+- Retirer un cadeau ne supprime pas les droits d'un achat Apple ou Google.
+- Le role moderateur est limite au forum dans la navigation et les autorisations.
+- Dossier utilisateur : les actions fondateur utilisent le role de la session,
+  et non celui de la personne consultee. Facturation alignee sur les boutiques.
+- Protections serveur renforcees pour les contenus moderes, les sanctions et
+  le dernier compte fondateur. Modifications normales des auteurs conservees.
+- Compilation, tests Flutter, tests web et controles de livraison executes.
+- Un nouveau build mobile et les tests d'achat sur appareil restent necessaires.
+
 ## Refonte de la vitrine — 2026-09-25
 
 Refonte **UI/UX**. Aucun fichier supprimé, aucune URL cassée, aucune table ni

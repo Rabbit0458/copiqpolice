@@ -17,6 +17,7 @@
  */
 
 import { useDeferredValue, useMemo, useState } from "react";
+import { useAdminSession } from "@/components/admin/admin-session";
 import {
   AlertTriangle,
   Award,
@@ -469,6 +470,7 @@ export function UserDossier({
   onChanged: () => void;
 }) {
   const [tab, setTab] = useState<TabId>("overview");
+  const isOwner = useAdminSession()?.role === "owner";
   const detail = useAsync(() => communityUsersApi.detail(userId), [userId]);
 
   const reload = () => {
@@ -512,9 +514,9 @@ export function UserDossier({
                 className="flex gap-1 overflow-x-auto px-4 pb-1"
                 aria-label="Sections du dossier"
               >
-                {(detail.data.staff?.role === "owner"
+                {(isOwner
                   ? [...TABS, { id: "technical" as const, label: "Toutes les tables", icon: Database }]
-                  : TABS
+                  : TABS.filter(item => item.id !== "billing")
                 ).map((item) => { const TabIcon=item.icon; return (
                   <button
                     key={item.id}
@@ -622,6 +624,7 @@ function DossierBody({
   reload: () => void;
   onClose: () => void;
 }) {
+  const isOwner = useAdminSession()?.role === "owner";
   switch (tab) {
     case "overview":
       return (
@@ -651,11 +654,11 @@ function DossierBody({
     case "notifications":
       return <NotificationsTab userId={userId} />;
     case "billing":
-      return <BillingTab userId={userId} />;
+      return isOwner ? <BillingTab userId={userId} /> : <Empty>Réservé au fondateur.</Empty>;
     case "timeline":
       return <TimelineTab userId={userId} />;
     case "technical":
-      return detail.staff?.role === "owner" ? (
+      return isOwner ? (
         <TechnicalDataTab userId={userId} />
       ) : (
         <Empty>Réservé au rôle owner.</Empty>
@@ -831,7 +834,7 @@ function AdminActions({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<unknown>(null);
   const [exporting, setExporting] = useState(false);
-  const isOwner = detail.staff?.role === "owner";
+  const isOwner = useAdminSession()?.role === "owner";
   const userId = detail.profile.user_id;
 
   async function exportUser360() {
@@ -873,7 +876,7 @@ function AdminActions({
         communityUsersApi.reports(userId, { direction: "received", limit: 500 }),
         communityUsersApi.reports(userId, { direction: "sent", limit: 500 }),
         communityUsersApi.quizSummary(userId),
-        communityUsersApi.billing(userId),
+        isOwner ? communityUsersApi.billing(userId) : Promise.resolve(null),
         communityUsersApi.timeline(userId, { limit: 500 }),
         isOwner ? communityUsersApi.scanTables(userId) : Promise.resolve(null),
       ]);
@@ -2428,6 +2431,8 @@ function BillingTab({ userId }: { userId: string }) {
               <Card key={sub.id} className="p-4">
                 <div className="flex flex-wrap items-center gap-2">
                   <strong className="text-sm">{sub.plan ?? "Plan inconnu"}</strong>
+                  <Badge>{sub.source}</Badge>
+                  {sub.environment === "SANDBOX" && <Badge tone="warn">Test Sandbox{sub.grants_access ? "" : " · sans droit Premium"}</Badge>}
                   <Badge tone={isPremium(sub.status) ? "good" : "neutral"}>
                     {sub.status ?? "statut inconnu"}
                   </Badge>

@@ -271,7 +271,9 @@ class _AbonnementPageState extends State<AbonnementPage>
                 badge: CopiqPlan.month.badge,
                 highlighted: CopiqPlan.month.highlighted,
                 valueLine: CopiqPlan.month.valueLine,
-                billingLine: kStoreBillingLine,
+                billingLine: RevenueCatService.instance.billingLine(
+                  CopiqPlan.month,
+                ),
                 details: CopiqPlan.month.details,
                 busy: _busyPlan == CopiqPlan.month,
                 enabled:
@@ -295,7 +297,9 @@ class _AbonnementPageState extends State<AbonnementPage>
                 badge: CopiqPlan.year.badge,
                 highlighted: CopiqPlan.year.highlighted,
                 valueLine: CopiqPlan.year.valueLine,
-                billingLine: kStoreBillingLine,
+                billingLine: RevenueCatService.instance.billingLine(
+                  CopiqPlan.year,
+                ),
                 details: CopiqPlan.year.details,
                 busy: _busyPlan == CopiqPlan.year,
                 enabled:

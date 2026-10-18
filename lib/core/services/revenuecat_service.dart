@@ -153,12 +153,24 @@ class RevenueCatService {
       state.value.isPremium;
 
   String priceLabel(CopiqPlan plan) {
-    final price = state.value.packages[plan]?.storeProduct.priceString;
-    if (price == null || price.trim().isEmpty) return 'Prix indisponible';
-    return switch (plan) {
-      CopiqPlan.month => '$price / mois',
-      CopiqPlan.year => '$price / an',
-    };
+    final product = state.value.packages[plan]?.storeProduct;
+    return plan.displayPrice(
+      storePrice: product?.priceString,
+      currencyCode: product?.currencyCode,
+      isIOS: !kIsWeb && Platform.isIOS,
+    );
+  }
+
+  String billingLine(CopiqPlan plan) {
+    final product = state.value.packages[plan]?.storeProduct;
+    if (!kIsWeb &&
+        Platform.isIOS &&
+        product != null &&
+        product.currencyCode != 'EUR') {
+      return 'Tarif France de référence. Le montant et la devise facturés '
+          'sont confirmés par Apple avant validation de l’achat.';
+    }
+    return kStoreBillingLine;
   }
 
   Future<void> initialize() {
